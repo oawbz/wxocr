@@ -1,0 +1,58 @@
+services:
+  ocr-gpu:
+    image: wxocr-web:amd-migraphx-20261004
+    platform: linux/amd64
+    pull_policy: never
+    restart: unless-stopped
+    ports:
+      - "${OCR_GPU_BIND_ADDRESS:-127.0.0.1}:${OCR_GPU_PORT:-7677}:7676"
+    devices:
+      - /dev/kfd:/dev/kfd
+      - /dev/dri/renderD128:/dev/dri/renderD128
+    volumes:
+      - type: bind
+        source: ${OCR_BINARY_PATH:-./ocr-web}
+        target: /app/ocr-web
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${OCR_CONFIG_PATH:-./config.yaml}
+        target: /app/config.yaml
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./models
+        target: /app/models
+        read_only: true
+        bind:
+          create_host_path: false
+      - ./cache:/app/cache
+    environment:
+      WXOCR_GPU_PROFILE: "1"
+      HOME: /app/cache
+      XDG_CACHE_HOME: /app/cache
+      MIOPEN_USER_DB_PATH: /app/cache/miopen
+      MIOPEN_CUSTOM_CACHE_DIR: /app/cache/miopen
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "--max-time", "3", "http://127.0.0.1:7676/"]
+      interval: 30s
+      timeout: 5s
+      start_period: 180s
+      retries: 5
+    read_only: true
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 120s
+    pids_limit: 256
+    mem_limit: 8g
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "2"

@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!ort_migraphx.c
+!onnxruntime_c_api.h
+!wheel/
+!wheel/onnxruntime/
+!wheel/onnxruntime/capi/
+!wheel/onnxruntime/capi/libonnxruntime*.so*

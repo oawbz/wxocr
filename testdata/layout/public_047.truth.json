@@ -1,0 +1,110 @@
+{
+  "purpose": "Manual partial-order constraints on clear fields and their values. Faint overlapping print and merged-cell ambiguities are not fully annotated.",
+  "image_sha256": "d5bf4f852717223a3b3a5316861ed836a16d1c7b15f4474a981ad0a3c9deb8ca",
+  "source": {
+    "repository": "PaddlePaddle/PaddleOCR",
+    "commit": "8cce9b6fd7ccb50226d0c38f94054d81c29b8184",
+    "path": "ppstructure/docs/kie/input/zh_val_42.jpg",
+    "category": "document-form-table",
+    "annotated_example": false,
+    "id": "public_047",
+    "file": "public_047.jpg",
+    "source_url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/8cce9b6fd7ccb50226d0c38f94054d81c29b8184/ppstructure/docs/kie/input/zh_val_42.jpg",
+    "sha256": "d5bf4f852717223a3b3a5316861ed836a16d1c7b15f4474a981ad0a3c9deb8ca",
+    "size": [
+      2480,
+      3508
+    ],
+    "mode": "RGB"
+  },
+  "before_pairs": [
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      13,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      20,
+      19
+    ],
+    [
+      21,
+      14
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      17,
+      23
+    ],
+    [
+      23,
+      22
+    ],
+    [
+      40,
+      38
+    ],
+    [
+      42,
+      41
+    ],
+    [
+      44,
+      43
+    ],
+    [
+      54,
+      56
+    ],
+    [
+      56,
+      55
+    ],
+    [
+      55,
+      53
+    ]
+  ]
+}

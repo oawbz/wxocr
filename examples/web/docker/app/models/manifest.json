@@ -1,0 +1,57 @@
+{
+  "format_version": 1,
+  "recognition_output": "logits",
+  "confidence_normalization": "stable softmax and length-normalized CTC sequence evidence",
+  "files": [
+    {
+      "role": "detection",
+      "file": "detection.onnx",
+      "sha256": "c6785de94c978d4163beabc72bc9df56e1c0a8cd9db53962aeb6a3f2e245d38c",
+      "input_shape": [
+        1,
+        3,
+        "height",
+        "width"
+      ],
+      "outputs": [
+        "rw_310",
+        "rw_311",
+        "rw_312"
+      ]
+    },
+    {
+      "role": "recognition",
+      "file": "recognition.onnx",
+      "sha256": "ff748cc58b0299076e6da2d0d6d85ba2ae9b17d7c1a7e8635379975fa51167a9",
+      "input_shape": [
+        1,
+        3,
+        32,
+        "width"
+      ],
+      "outputs": [
+        "logits"
+      ]
+    },
+    {
+      "role": "paragraph",
+      "file": "paragraph.onnx",
+      "sha256": "5fca3d058db3c87896452e3a667a71931bd5e12fc7c94f8477f8cfc0c883c69c",
+      "input_shape": [
+        1,
+        3,
+        768,
+        768
+      ],
+      "outputs": [
+        "rw_231"
+      ]
+    },
+    {
+      "role": "charset",
+      "file": "charset_zh13562.txt",
+      "sha256": "e61c2b740d4f09263cdd3495825c1b17d69bd073e4bf99272ac2c075e4c5bbc8",
+      "entries": 13563
+    }
+  ]
+}

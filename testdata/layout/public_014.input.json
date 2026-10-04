@@ -1,0 +1,192 @@
+{
+  "width": 905,
+  "height": 480,
+  "paragraphs": [
+    {
+      "left": 233.79167,
+      "top": 33.882355,
+      "right": 668.3802,
+      "bottom": 61.17647,
+      "line_indices": [
+        0
+      ]
+    },
+    {
+      "left": 328.06244,
+      "top": 101.64706,
+      "right": 596.7344,
+      "bottom": 147.7647,
+      "line_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "left": 248.875,
+      "top": 173.17647,
+      "right": 592.96356,
+      "bottom": 219.29411,
+      "line_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "left": 320.5208,
+      "top": 240.94118,
+      "right": 623.13007,
+      "bottom": 290.82352,
+      "line_indices": [
+        5,
+        6
+      ]
+    },
+    {
+      "left": 252.6458,
+      "top": 323.76468,
+      "right": 510.0051,
+      "bottom": 347.2941,
+      "line_indices": [
+        7
+      ]
+    },
+    {
+      "left": 335.6041,
+      "top": 399.05884,
+      "right": 460.9843,
+      "bottom": 418.82352,
+      "line_indices": [
+        8
+      ]
+    },
+    {
+      "left": 335.60413,
+      "top": 372.70587,
+      "right": 638.21344,
+      "bottom": 392.47058,
+      "line_indices": [
+        9
+      ]
+    },
+    {
+      "left": 595.7917,
+      "top": 429.17648,
+      "right": 683.46356,
+      "bottom": 460.2353,
+      "line_indices": [
+        10,
+        11
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "left": 233.79167,
+      "top": 33.882355,
+      "right": 668.3802,
+      "bottom": 61.17647,
+      "confidence": 0.9828013,
+      "text": "Reduce your risk of coronavirus infection:",
+      "detection_score": 0.9229973
+    },
+    {
+      "left": 328.0625,
+      "top": 101.64706,
+      "right": 596.7344,
+      "bottom": 121.411766,
+      "confidence": 0.96434754,
+      "text": "Clean hands with soap and water",
+      "detection_score": 0.89268017
+    },
+    {
+      "left": 328.06244,
+      "top": 127.999985,
+      "right": 540.1718,
+      "bottom": 147.7647,
+      "confidence": 0.93423957,
+      "text": "or alcohol-based hand rub",
+      "detection_score": 0.89526665
+    },
+    {
+      "left": 252.64583,
+      "top": 173.17647,
+      "right": 592.96356,
+      "bottom": 192.94118,
+      "confidence": 0.97657067,
+      "text": "Cover nose and mouth when coughing and",
+      "detection_score": 0.90493435
+    },
+    {
+      "left": 248.875,
+      "top": 199.52942,
+      "right": 543.9427,
+      "bottom": 219.29411,
+      "confidence": 0.97244227,
+      "text": "sneezing with tissue or flexed elbow",
+      "detection_score": 0.91111904
+    },
+    {
+      "left": 320.5208,
+      "top": 240.94118,
+      "right": 623.13007,
+      "bottom": 260.70587,
+      "confidence": 0.96478266,
+      "text": "Avoid close contact with anyone with",
+      "detection_score": 0.9291116
+    },
+    {
+      "left": 320.52084,
+      "top": 267.29413,
+      "right": 525.08856,
+      "bottom": 290.82352,
+      "confidence": 0.9709579,
+      "text": "cold or flu-like symptoms",
+      "detection_score": 0.9185033
+    },
+    {
+      "left": 252.6458,
+      "top": 323.76468,
+      "right": 510.0051,
+      "bottom": 347.2941,
+      "confidence": 0.9783416,
+      "text": "Thoroughly cook meat and eggs",
+      "detection_score": 0.9491493
+    },
+    {
+      "left": 335.6041,
+      "top": 399.05884,
+      "right": 460.9843,
+      "bottom": 418.82352,
+      "confidence": 0.9906958,
+      "text": "or farm animals",
+      "detection_score": 0.9311049
+    },
+    {
+      "left": 335.60413,
+      "top": 372.70587,
+      "right": 638.21344,
+      "bottom": 392.47058,
+      "confidence": 0.97796077,
+      "text": "No unprotected contact with live wild",
+      "detection_score": 0.9435742
+    },
+    {
+      "left": 595.7917,
+      "top": 429.17648,
+      "right": 683.46356,
+      "bottom": 443.29413,
+      "confidence": 0.9957079,
+      "text": "World Health",
+      "detection_score": 0.96541554
+    },
+    {
+      "left": 595.7917,
+      "top": 444.2353,
+      "right": 683.46356,
+      "bottom": 460.2353,
+      "confidence": 0.99388754,
+      "text": "Organization",
+      "detection_score": 0.94561595
+    }
+  ]
+}

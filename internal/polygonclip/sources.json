@@ -1,0 +1,10 @@
+{
+  "project": "https://github.com/fonttools/pyclipper",
+  "commit": "f998920369565dca56d346bb30c5741e273f0b9b",
+  "version": "6.4.2",
+  "files": {
+    "clipper.hpp": "734eba9dc9d399089b2b467017074bd24728a1b9e64c7429e827806ed10e54cc",
+    "clipper.cpp.inc": "5c642a3668311701f72572443aa42c1a981edb037298efc015166d9d90be0755"
+  },
+  "note": "Upstream clipper.cpp is unchanged in clipper.cpp.inc; the compilation wrapper disables implicit clang FMA contraction."
+}

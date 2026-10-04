@@ -1,0 +1,6 @@
+*.tar
+*.tar.gz
+*.log
+.env
+validation.json
+README.md

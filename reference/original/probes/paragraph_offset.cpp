@@ -1,0 +1,7 @@
+// Development-only ABI probe; never linked into the Go engine.
+#include <dlfcn.h>
+#include <iostream>
+#include <vector>
+#include <iomanip>
+struct I{int x,y;};struct P{float x,y;};struct R{P center,size;float angle;};struct A{int flags,pad;void*obj;long long zero;};
+int main(int argc,char**argv){if(argc!=2){std::cerr<<"usage: paragraph_offset LIBRARY\n";return 2;}void*l=dlopen(argv[1],RTLD_NOW|RTLD_LOCAL);if(!l){std::cerr<<dlerror();return 1;}auto clip=(void(*)(void*,const std::vector<I>&,std::vector<P>&))dlsym(l,"_ZN9wevision221ParagraphDetectionNew6UnClipERKNSt3__16vectorIN2cv6Point_IiEENS1_9allocatorIS5_EEEERNS2_INS4_IfEENS6_ISB_EEEE");auto rect=(R(*)(const A&))dlsym(l,"_ZN2cv11minAreaRectERKNS_11_InputArrayE");auto box=(float(*)(const R&,std::vector<P>&))dlsym(l,"_ZN9wevision23ocr9GetOCRBoxERKN2cv11RotatedRectERNSt3__16vectorINS_6Point2IfEENS5_9allocatorIS8_EEEE");if(!clip||!rect||!box)return 1;int cases;std::cin>>cases;std::cout<<std::setprecision(9)<<'[';for(int k=0;k<cases;k++){int n;std::cin>>n;std::vector<I>p(n);for(auto&v:p)std::cin>>v.x>>v.y;std::vector<P>q,b;clip(nullptr,p,q);A a{int(0x8103000d),0,&q,0};R r=rect(a);box(r,b);if(k)std::cout<<',';std::cout<<"{\"expanded\":[";for(int i=0;i<q.size();i++){if(i)std::cout<<',';std::cout<<'['<<q[i].x<<','<<q[i].y<<']';}std::cout<<"],\"quad\":[";for(int i=0;i<b.size();i++){if(i)std::cout<<',';std::cout<<'['<<b[i].x<<','<<b[i].y<<']';}std::cout<<"]}";}std::cout<<"]\n";}

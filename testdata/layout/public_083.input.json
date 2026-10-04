@@ -1,0 +1,116 @@
+{
+  "width": 878,
+  "height": 310,
+  "paragraphs": [
+    {
+      "left": 89.03193,
+      "top": 77.92749,
+      "right": 319.1369,
+      "bottom": 148.77676,
+      "line_indices": [
+        0
+      ]
+    },
+    {
+      "left": 561.39624,
+      "top": 87.01477,
+      "right": 800.20776,
+      "bottom": 133.87045,
+      "line_indices": [
+        1
+      ]
+    },
+    {
+      "left": 124.38333,
+      "top": 164.60178,
+      "right": 213.09792,
+      "bottom": 180.14749,
+      "line_indices": [
+        2
+      ]
+    },
+    {
+      "left": 95.11667,
+      "top": 234.1003,
+      "right": 121.63958,
+      "bottom": 249.64601,
+      "line_indices": [
+        3
+      ]
+    },
+    {
+      "left": 113.40833,
+      "top": 270.67847,
+      "right": 311.87292,
+      "bottom": 300.85547,
+      "line_indices": [
+        4
+      ]
+    },
+    {
+      "left": 486.55832,
+      "top": 270.67847,
+      "right": 835.0146,
+      "bottom": 300.85547,
+      "line_indices": [
+        5
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "left": 89.03193,
+      "top": 77.92749,
+      "right": 319.1369,
+      "bottom": 148.77676,
+      "confidence": 0.9916277,
+      "text": "依佳人网咖",
+      "detection_score": 0.9531351
+    },
+    {
+      "left": 561.39624,
+      "top": 87.01477,
+      "right": 800.20776,
+      "bottom": 133.87045,
+      "confidence": 0.8169121,
+      "text": "赫伦·芭蒂国际老术教意",
+      "detection_score": 0.91948164
+    },
+    {
+      "left": 124.38333,
+      "top": 164.60178,
+      "right": 213.09792,
+      "bottom": 180.14749,
+      "confidence": 0.47024822,
+      "text": "厦剑棍椎米容纯干",
+      "detection_score": 0.8643814
+    },
+    {
+      "left": 95.11667,
+      "top": 234.1003,
+      "right": 121.63958,
+      "bottom": 249.64601,
+      "confidence": 0.99332756,
+      "text": "茶",
+      "detection_score": 0.733238
+    },
+    {
+      "left": 113.40833,
+      "top": 270.67847,
+      "right": 311.87292,
+      "bottom": 300.85547,
+      "confidence": 0.9956177,
+      "text": "GT:依佳人网咖",
+      "detection_score": 0.9332735
+    },
+    {
+      "left": 486.55832,
+      "top": 270.67847,
+      "right": 835.0146,
+      "bottom": 300.85547,
+      "confidence": 0.98739755,
+      "text": "GT:赫伦芭蒂国际艺术教育",
+      "detection_score": 0.9688043
+    }
+  ]
+}

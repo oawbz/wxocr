@@ -1,4 +1,6 @@
-.venv
-__pycache__
-temp/*
-.vercel
+.codex/
+.DS_Store
+*.log
+/examples/web/web
+
+/examples/web/dist/

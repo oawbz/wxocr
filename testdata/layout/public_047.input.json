@@ -1,0 +1,1920 @@
+{
+  "width": 2480,
+  "height": 3508,
+  "paragraphs": [
+    {
+      "left": 204.53609,
+      "top": 423.88333,
+      "right": 602.65094,
+      "bottom": 486.00418,
+      "line_indices": [
+        0
+      ]
+    },
+    {
+      "left": 1037.2902,
+      "top": 306.95,
+      "right": 1493.8439,
+      "bottom": 383.6875,
+      "line_indices": [
+        1
+      ]
+    },
+    {
+      "left": 43.82916,
+      "top": 2645.6167,
+      "right": 149.74963,
+      "bottom": 2693.1208,
+      "line_indices": [
+        2
+      ]
+    },
+    {
+      "left": 14.60972,
+      "top": 3098.7334,
+      "right": 135.13991,
+      "bottom": 3146.2375,
+      "line_indices": [
+        3
+      ]
+    },
+    {
+      "left": 219.1458,
+      "top": 511.58334,
+      "right": 339.676,
+      "bottom": 632.17084,
+      "line_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "left": 1139.5582,
+      "top": 526.2,
+      "right": 1230.8689,
+      "bottom": 632.17084,
+      "line_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "left": 1607.0692,
+      "top": 526.2,
+      "right": 1712.9897,
+      "bottom": 646.7875,
+      "line_indices": [
+        8,
+        9
+      ]
+    },
+    {
+      "left": 496.7305,
+      "top": 555.43335,
+      "right": 631.8704,
+      "bottom": 617.55414,
+      "line_indices": [
+        10
+      ]
+    },
+    {
+      "left": 1796.9956,
+      "top": 555.43335,
+      "right": 1888.3063,
+      "bottom": 602.9375,
+      "line_indices": [
+        11
+      ]
+    },
+    {
+      "left": 818.14435,
+      "top": 570.05,
+      "right": 909.4551,
+      "bottom": 617.55414,
+      "line_indices": [
+        12
+      ]
+    },
+    {
+      "left": 1300.2651,
+      "top": 584.6667,
+      "right": 1581.5022,
+      "bottom": 632.17084,
+      "line_indices": [
+        13
+      ]
+    },
+    {
+      "left": 1139.5582,
+      "top": 643.13336,
+      "right": 1230.8689,
+      "bottom": 763.7208,
+      "line_indices": [
+        14,
+        15
+      ]
+    },
+    {
+      "left": 1285.6554,
+      "top": 657.75,
+      "right": 1376.9662,
+      "bottom": 719.87085,
+      "line_indices": [
+        16
+      ]
+    },
+    {
+      "left": 1504.8011,
+      "top": 657.75,
+      "right": 1786.0383,
+      "bottom": 705.25415,
+      "line_indices": [
+        17
+      ]
+    },
+    {
+      "left": 2147.629,
+      "top": 657.75,
+      "right": 2282.7688,
+      "bottom": 705.25415,
+      "line_indices": [
+        18
+      ]
+    },
+    {
+      "left": 438.2916,
+      "top": 672.36664,
+      "right": 529.60236,
+      "bottom": 719.87085,
+      "line_indices": [
+        19
+      ]
+    },
+    {
+      "left": 248.36525,
+      "top": 672.36664,
+      "right": 325.06628,
+      "bottom": 734.4875,
+      "line_indices": [
+        20
+      ]
+    },
+    {
+      "left": 818.14435,
+      "top": 672.36664,
+      "right": 909.4551,
+      "bottom": 734.4875,
+      "line_indices": [
+        21
+      ]
+    },
+    {
+      "left": 1855.4344,
+      "top": 672.36664,
+      "right": 2049.0132,
+      "bottom": 734.4875,
+      "line_indices": [
+        22
+      ]
+    },
+    {
+      "left": 1534.0206,
+      "top": 716.2167,
+      "right": 1786.0383,
+      "bottom": 763.7208,
+      "line_indices": [
+        23
+      ]
+    },
+    {
+      "left": 2147.629,
+      "top": 716.2167,
+      "right": 2238.9397,
+      "bottom": 778.3375,
+      "line_indices": [
+        24
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 774.68335,
+      "right": 471.16348,
+      "bottom": 822.1875,
+      "line_indices": [
+        25
+      ]
+    },
+    {
+      "left": 978.85126,
+      "top": 774.68335,
+      "right": 1055.5522,
+      "bottom": 829.49585,
+      "line_indices": [
+        26
+      ]
+    },
+    {
+      "left": 555.1694,
+      "top": 789.3,
+      "right": 807.187,
+      "bottom": 836.80414,
+      "line_indices": [
+        27
+      ]
+    },
+    {
+      "left": 1124.9482,
+      "top": 789.3,
+      "right": 1712.9895,
+      "bottom": 851.42084,
+      "line_indices": [
+        28
+      ]
+    },
+    {
+      "left": 1723.947,
+      "top": 818.5333,
+      "right": 1815.2577,
+      "bottom": 866.0375,
+      "line_indices": [
+        29
+      ]
+    },
+    {
+      "left": 1899.2637,
+      "top": 818.5333,
+      "right": 2019.7938,
+      "bottom": 866.0375,
+      "line_indices": [
+        30
+      ]
+    },
+    {
+      "left": 978.85126,
+      "top": 833.15,
+      "right": 1055.5522,
+      "bottom": 895.2708,
+      "line_indices": [
+        31
+      ]
+    },
+    {
+      "left": 292.1944,
+      "top": 833.15,
+      "right": 383.50516,
+      "bottom": 880.6542,
+      "line_indices": [
+        32
+      ]
+    },
+    {
+      "left": 978.85126,
+      "top": 906.23334,
+      "right": 1055.5522,
+      "bottom": 1026.8208,
+      "line_indices": [
+        33,
+        34
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 906.23334,
+      "right": 456.55374,
+      "bottom": 953.7375,
+      "line_indices": [
+        35
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 964.7,
+      "right": 456.55374,
+      "bottom": 1026.8208,
+      "line_indices": [
+        36
+      ]
+    },
+    {
+      "left": 1490.1914,
+      "top": 979.31665,
+      "right": 1654.5508,
+      "bottom": 1026.8208,
+      "line_indices": [
+        37
+      ]
+    },
+    {
+      "left": 584.3888,
+      "top": 1037.7833,
+      "right": 748.74817,
+      "bottom": 1085.2875,
+      "line_indices": [
+        38
+      ]
+    },
+    {
+      "left": 1139.5582,
+      "top": 1052.4,
+      "right": 1376.9662,
+      "bottom": 1099.9042,
+      "line_indices": [
+        39
+      ]
+    },
+    {
+      "left": 248.36525,
+      "top": 1052.4,
+      "right": 427.33432,
+      "bottom": 1099.9042,
+      "line_indices": [
+        40
+      ]
+    },
+    {
+      "left": 452.90134,
+      "top": 1125.4833,
+      "right": 588.04126,
+      "bottom": 1172.9875,
+      "line_indices": [
+        41
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 1140.1,
+      "right": 368.89545,
+      "bottom": 1187.6041,
+      "line_indices": [
+        42
+      ]
+    },
+    {
+      "left": 1197.9971,
+      "top": 1140.1,
+      "right": 1435.405,
+      "bottom": 1187.6041,
+      "line_indices": [
+        43
+      ]
+    },
+    {
+      "left": 876.5832,
+      "top": 1140.1,
+      "right": 1040.9425,
+      "bottom": 1187.6041,
+      "line_indices": [
+        44
+      ]
+    },
+    {
+      "left": 1899.2634,
+      "top": 1140.0999,
+      "right": 2049.013,
+      "bottom": 1202.2207,
+      "line_indices": [
+        45
+      ]
+    },
+    {
+      "left": 2147.629,
+      "top": 1154.7167,
+      "right": 2326.598,
+      "bottom": 1202.2208,
+      "line_indices": [
+        46
+      ]
+    },
+    {
+      "left": 467.51105,
+      "top": 1213.1833,
+      "right": 631.8704,
+      "bottom": 1275.3042,
+      "line_indices": [
+        47
+      ]
+    },
+    {
+      "left": 876.5832,
+      "top": 1227.8,
+      "right": 1040.9425,
+      "bottom": 1275.3042,
+      "line_indices": [
+        48
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 1227.8,
+      "right": 368.89545,
+      "bottom": 1275.3042,
+      "line_indices": [
+        49
+      ]
+    },
+    {
+      "left": 1197.9971,
+      "top": 1227.8,
+      "right": 1435.405,
+      "bottom": 1275.3042,
+      "line_indices": [
+        50
+      ]
+    },
+    {
+      "left": 1899.2637,
+      "top": 1242.4166,
+      "right": 2063.623,
+      "bottom": 1289.9208,
+      "line_indices": [
+        51
+      ]
+    },
+    {
+      "left": 2162.2383,
+      "top": 1242.4165,
+      "right": 2326.5977,
+      "bottom": 1304.5374,
+      "line_indices": [
+        52
+      ]
+    },
+    {
+      "left": 876.5832,
+      "top": 1300.8833,
+      "right": 1172.43,
+      "bottom": 1363.0042,
+      "line_indices": [
+        53
+      ]
+    },
+    {
+      "left": 219.1458,
+      "top": 1315.5,
+      "right": 383.50516,
+      "bottom": 1363.0042,
+      "line_indices": [
+        54
+      ]
+    },
+    {
+      "left": 642.8277,
+      "top": 1315.5,
+      "right": 821.79675,
+      "bottom": 1363.0042,
+      "line_indices": [
+        55
+      ]
+    },
+    {
+      "left": 467.51105,
+      "top": 1315.4999,
+      "right": 639.17523,
+      "bottom": 1363.004,
+      "line_indices": [
+        56
+      ]
+    },
+    {
+      "left": 1402.5331,
+      "top": 1315.4999,
+      "right": 1566.8923,
+      "bottom": 1377.6207,
+      "line_indices": [
+        57
+      ]
+    },
+    {
+      "left": 1636.2887,
+      "top": 1330.1167,
+      "right": 2282.7688,
+      "bottom": 1377.6208,
+      "line_indices": [
+        58
+      ]
+    },
+    {
+      "left": 219.14581,
+      "top": 1388.5833,
+      "right": 383.50516,
+      "bottom": 1443.3958,
+      "line_indices": [
+        59
+      ]
+    },
+    {
+      "left": 482.12076,
+      "top": 1403.2,
+      "right": 734.1384,
+      "bottom": 1443.3959,
+      "line_indices": [
+        60
+      ]
+    },
+    {
+      "left": 1402.5331,
+      "top": 1432.4333,
+      "right": 1566.8925,
+      "bottom": 1479.9375,
+      "line_indices": [
+        61
+      ]
+    },
+    {
+      "left": 2103.7998,
+      "top": 1432.4333,
+      "right": 2224.3298,
+      "bottom": 1479.9375,
+      "line_indices": [
+        62
+      ]
+    },
+    {
+      "left": 1972.3123,
+      "top": 1432.4333,
+      "right": 2063.623,
+      "bottom": 1494.5542,
+      "line_indices": [
+        63
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 1447.05,
+      "right": 383.50516,
+      "bottom": 1509.1708,
+      "line_indices": [
+        64
+      ]
+    },
+    {
+      "left": 482.12076,
+      "top": 1447.05,
+      "right": 1070.162,
+      "bottom": 1509.1708,
+      "line_indices": [
+        65
+      ]
+    },
+    {
+      "left": 189.92636,
+      "top": 1534.75,
+      "right": 441.94403,
+      "bottom": 1582.2542,
+      "line_indices": [
+        66
+      ]
+    },
+    {
+      "left": 978.85126,
+      "top": 1534.75,
+      "right": 1303.9175,
+      "bottom": 1596.8708,
+      "line_indices": [
+        67
+      ]
+    },
+    {
+      "left": 1650.8984,
+      "top": 1549.3667,
+      "right": 1902.916,
+      "bottom": 1596.8708,
+      "line_indices": [
+        68
+      ]
+    },
+    {
+      "left": 1402.5331,
+      "top": 1622.45,
+      "right": 1566.8925,
+      "bottom": 1684.5708,
+      "line_indices": [
+        69
+      ]
+    },
+    {
+      "left": 657.4374,
+      "top": 1607.8334,
+      "right": 865.6259,
+      "bottom": 1655.3375,
+      "line_indices": [
+        70
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 1680.9166,
+      "right": 295.84683,
+      "bottom": 1728.4208,
+      "line_indices": [
+        71
+      ]
+    },
+    {
+      "left": 1665.508,
+      "top": 1637.0667,
+      "right": 2019.7938,
+      "bottom": 1684.5708,
+      "line_indices": [
+        72
+      ]
+    },
+    {
+      "left": 365.243,
+      "top": 1622.45,
+      "right": 529.60236,
+      "bottom": 1669.9542,
+      "line_indices": [
+        73
+      ]
+    },
+    {
+      "left": 642.8277,
+      "top": 1710.15,
+      "right": 1230.8689,
+      "bottom": 1757.6542,
+      "line_indices": [
+        74
+      ]
+    },
+    {
+      "left": 365.243,
+      "top": 1724.7667,
+      "right": 529.60236,
+      "bottom": 1772.2709,
+      "line_indices": [
+        75
+      ]
+    },
+    {
+      "left": 1972.3123,
+      "top": 1724.7667,
+      "right": 2063.623,
+      "bottom": 1786.8875,
+      "line_indices": [
+        76
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 1739.3833,
+      "right": 295.84683,
+      "bottom": 1786.8875,
+      "line_indices": [
+        77
+      ]
+    },
+    {
+      "left": 2162.2385,
+      "top": 1739.3833,
+      "right": 2268.159,
+      "bottom": 1786.8875,
+      "line_indices": [
+        78
+      ]
+    },
+    {
+      "left": 1402.5331,
+      "top": 1754,
+      "right": 1508.4536,
+      "bottom": 1801.5042,
+      "line_indices": [
+        79
+      ]
+    },
+    {
+      "left": 365.243,
+      "top": 1812.4667,
+      "right": 529.60236,
+      "bottom": 1859.9708,
+      "line_indices": [
+        80
+      ]
+    },
+    {
+      "left": 598.99854,
+      "top": 1812.4667,
+      "right": 777.9676,
+      "bottom": 1859.9708,
+      "line_indices": [
+        81
+      ]
+    },
+    {
+      "left": 993.461,
+      "top": 1812.4667,
+      "right": 1274.6981,
+      "bottom": 1874.5875,
+      "line_indices": [
+        82
+      ]
+    },
+    {
+      "left": 1534.0206,
+      "top": 1827.0834,
+      "right": 1654.5508,
+      "bottom": 1874.5875,
+      "line_indices": [
+        83
+      ]
+    },
+    {
+      "left": 1782.3859,
+      "top": 1827.0834,
+      "right": 2063.623,
+      "bottom": 1874.5875,
+      "line_indices": [
+        84
+      ]
+    },
+    {
+      "left": 2191.458,
+      "top": 1827.0834,
+      "right": 2268.159,
+      "bottom": 1889.2042,
+      "line_indices": [
+        85
+      ]
+    },
+    {
+      "left": 1519.4109,
+      "top": 1944.0165,
+      "right": 1669.1605,
+      "bottom": 1991.5206,
+      "line_indices": [
+        86
+      ]
+    },
+    {
+      "left": 1796.9956,
+      "top": 1929.3998,
+      "right": 1946.7452,
+      "bottom": 1976.9039,
+      "line_indices": [
+        87
+      ]
+    },
+    {
+      "left": 832.754,
+      "top": 1973.25,
+      "right": 938.6745,
+      "bottom": 2020.7542,
+      "line_indices": [
+        88
+      ]
+    },
+    {
+      "left": 219.1458,
+      "top": 2002.4833,
+      "right": 281.23712,
+      "bottom": 2546.954,
+      "line_indices": [
+        89
+      ]
+    },
+    {
+      "left": 2133.019,
+      "top": 2046.3334,
+      "right": 2268.159,
+      "bottom": 2093.8374,
+      "line_indices": [
+        90
+      ]
+    },
+    {
+      "left": 350.63327,
+      "top": 2060.95,
+      "right": 2049.0132,
+      "bottom": 3021.9958,
+      "line_indices": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "left": 204.53609,
+      "top": 2645.6167,
+      "right": 339.676,
+      "bottom": 2693.1208,
+      "line_indices": [
+        109
+      ]
+    },
+    {
+      "left": 175.31664,
+      "top": 2704.0833,
+      "right": 310.45654,
+      "bottom": 2751.5874,
+      "line_indices": [
+        110
+      ]
+    },
+    {
+      "left": 219.1458,
+      "top": 2791.7834,
+      "right": 325.06628,
+      "bottom": 2839.2876,
+      "line_indices": [
+        111
+      ]
+    },
+    {
+      "left": 2118.4094,
+      "top": 2835.6333,
+      "right": 2297.3784,
+      "bottom": 2897.7542,
+      "line_indices": [
+        112
+      ]
+    },
+    {
+      "left": 219.1458,
+      "top": 2937.95,
+      "right": 266.62738,
+      "bottom": 3043.921,
+      "line_indices": [
+        113
+      ]
+    },
+    {
+      "left": 1314.8748,
+      "top": 3025.65,
+      "right": 1406.1855,
+      "bottom": 3087.7708,
+      "line_indices": [
+        114
+      ]
+    },
+    {
+      "left": 350.63327,
+      "top": 3113.35,
+      "right": 1011.72314,
+      "bottom": 3175.471,
+      "line_indices": [
+        115
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "left": 204.53609,
+      "top": 423.88333,
+      "right": 602.65094,
+      "bottom": 486.00418,
+      "confidence": 0.97968245,
+      "text": "申报学院(部门):",
+      "detection_score": 0.84527797
+    },
+    {
+      "left": 1037.2902,
+      "top": 306.95,
+      "right": 1493.8439,
+      "bottom": 383.6875,
+      "confidence": 0.99965197,
+      "text": "个人信息登记表",
+      "detection_score": 0.9274786
+    },
+    {
+      "left": 43.82916,
+      "top": 2645.6167,
+      "right": 149.74963,
+      "bottom": 2693.1208,
+      "confidence": 0.6946349,
+      "text": "侦博逢计",
+      "detection_score": 0.7686029
+    },
+    {
+      "left": 14.60972,
+      "top": 3098.7334,
+      "right": 135.13991,
+      "bottom": 3146.2375,
+      "confidence": 0.47819537,
+      "text": "吾/写作",
+      "detection_score": 0.70705694
+    },
+    {
+      "left": 248.36525,
+      "top": 511.58334,
+      "right": 325.06628,
+      "bottom": 566.3958,
+      "confidence": 0.9986828,
+      "text": "姓名",
+      "detection_score": 0.8526896
+    },
+    {
+      "left": 219.1458,
+      "top": 570.05,
+      "right": 339.676,
+      "bottom": 632.17084,
+      "confidence": 0.89989394,
+      "text": "(拼音)",
+      "detection_score": 0.869003
+    },
+    {
+      "left": 1139.5582,
+      "top": 526.2,
+      "right": 1230.8689,
+      "bottom": 573.70416,
+      "confidence": 0.999418,
+      "text": "出生",
+      "detection_score": 0.75298125
+    },
+    {
+      "left": 1139.5582,
+      "top": 584.6667,
+      "right": 1230.8689,
+      "bottom": 632.17084,
+      "confidence": 0.99925566,
+      "text": "日期",
+      "detection_score": 0.78536737
+    },
+    {
+      "left": 1621.679,
+      "top": 526.2,
+      "right": 1712.9897,
+      "bottom": 573.70416,
+      "confidence": 0.99845636,
+      "text": "政治",
+      "detection_score": 0.83337843
+    },
+    {
+      "left": 1607.0692,
+      "top": 584.6667,
+      "right": 1698.38,
+      "bottom": 646.7875,
+      "confidence": 0.9998872,
+      "text": "面貌",
+      "detection_score": 0.77827716
+    },
+    {
+      "left": 496.7305,
+      "top": 555.43335,
+      "right": 631.8704,
+      "bottom": 617.55414,
+      "confidence": 0.99989545,
+      "text": "岳欣欣",
+      "detection_score": 0.81873673
+    },
+    {
+      "left": 1796.9956,
+      "top": 555.43335,
+      "right": 1888.3063,
+      "bottom": 602.9375,
+      "confidence": 0.9999199,
+      "text": "群众",
+      "detection_score": 0.90608424
+    },
+    {
+      "left": 818.14435,
+      "top": 570.05,
+      "right": 909.4551,
+      "bottom": 617.55414,
+      "confidence": 0.9996644,
+      "text": "性别",
+      "detection_score": 0.855206
+    },
+    {
+      "left": 1300.2651,
+      "top": 584.6667,
+      "right": 1581.5022,
+      "bottom": 632.17084,
+      "confidence": 0.99703974,
+      "text": "1997年12月17日",
+      "detection_score": 0.9022319
+    },
+    {
+      "left": 1139.5582,
+      "top": 643.13336,
+      "right": 1216.2592,
+      "bottom": 705.25415,
+      "confidence": 0.999517,
+      "text": "婚育",
+      "detection_score": 0.75240564
+    },
+    {
+      "left": 1139.5582,
+      "top": 716.2167,
+      "right": 1230.8689,
+      "bottom": 763.7208,
+      "confidence": 0.99921983,
+      "text": "状况",
+      "detection_score": 0.8132884
+    },
+    {
+      "left": 1285.6554,
+      "top": 657.75,
+      "right": 1376.9662,
+      "bottom": 719.87085,
+      "confidence": 0.9804859,
+      "text": "未婚",
+      "detection_score": 0.7375391
+    },
+    {
+      "left": 1504.8011,
+      "top": 657.75,
+      "right": 1786.0383,
+      "bottom": 705.25415,
+      "confidence": 0.97627425,
+      "text": "生源地/培养形式",
+      "detection_score": 0.8308209
+    },
+    {
+      "left": 2147.629,
+      "top": 657.75,
+      "right": 2282.7688,
+      "bottom": 705.25415,
+      "confidence": 0.9748085,
+      "text": "寸报名照",
+      "detection_score": 0.88499695
+    },
+    {
+      "left": 438.2916,
+      "top": 672.36664,
+      "right": 529.60236,
+      "bottom": 719.87085,
+      "confidence": 0.9877695,
+      "text": "中国",
+      "detection_score": 0.8541769
+    },
+    {
+      "left": 248.36525,
+      "top": 672.36664,
+      "right": 325.06628,
+      "bottom": 734.4875,
+      "confidence": 0.99754936,
+      "text": "国籍",
+      "detection_score": 0.85081255
+    },
+    {
+      "left": 818.14435,
+      "top": 672.36664,
+      "right": 909.4551,
+      "bottom": 734.4875,
+      "confidence": 0.99876153,
+      "text": "民族",
+      "detection_score": 0.8282925
+    },
+    {
+      "left": 1855.4344,
+      "top": 672.36664,
+      "right": 2049.0132,
+      "bottom": 734.4875,
+      "confidence": 0.9982888,
+      "text": "辽宁省西丰县",
+      "detection_score": 0.6768668
+    },
+    {
+      "left": 1534.0206,
+      "top": 716.2167,
+      "right": 1786.0383,
+      "bottom": 763.7208,
+      "confidence": 0.9879372,
+      "text": "(应届毕业生填写)",
+      "detection_score": 0.85053253
+    },
+    {
+      "left": 2147.629,
+      "top": 716.2167,
+      "right": 2238.9397,
+      "bottom": 778.3375,
+      "confidence": 0.8869261,
+      "text": "粘贴处",
+      "detection_score": 0.8247566
+    },
+    {
+      "left": 204.53609,
+      "top": 774.68335,
+      "right": 471.16348,
+      "bottom": 822.1875,
+      "confidence": 0.99630046,
+      "text": "现工作(学习)",
+      "detection_score": 0.8405178
+    },
+    {
+      "left": 978.85126,
+      "top": 774.68335,
+      "right": 1055.5522,
+      "bottom": 829.49585,
+      "confidence": 0.9986801,
+      "text": "单位",
+      "detection_score": 0.76648444
+    },
+    {
+      "left": 555.1694,
+      "top": 789.3,
+      "right": 807.187,
+      "bottom": 836.80414,
+      "confidence": 0.999386,
+      "text": "大连海事大学",
+      "detection_score": 0.89591056
+    },
+    {
+      "left": 1124.9482,
+      "top": 789.3,
+      "right": 1712.9895,
+      "bottom": 851.42084,
+      "confidence": 0.9983152,
+      "text": "辽宁省大连市甘井子区凌海路3号",
+      "detection_score": 0.8294719
+    },
+    {
+      "left": 1723.947,
+      "top": 818.5333,
+      "right": 1815.2577,
+      "bottom": 866.0375,
+      "confidence": 0.94983,
+      "text": "邮编",
+      "detection_score": 0.90851516
+    },
+    {
+      "left": 1899.2637,
+      "top": 818.5333,
+      "right": 2019.7938,
+      "bottom": 866.0375,
+      "confidence": 0.9977826,
+      "text": "100085",
+      "detection_score": 0.8633368
+    },
+    {
+      "left": 978.85126,
+      "top": 833.15,
+      "right": 1055.5522,
+      "bottom": 895.2708,
+      "confidence": 0.9996945,
+      "text": "地址",
+      "detection_score": 0.8008315
+    },
+    {
+      "left": 292.1944,
+      "top": 833.15,
+      "right": 383.50516,
+      "bottom": 880.6542,
+      "confidence": 0.99974436,
+      "text": "单位",
+      "detection_score": 0.8385866
+    },
+    {
+      "left": 978.85126,
+      "top": 906.23334,
+      "right": 1055.5522,
+      "bottom": 961.04584,
+      "confidence": 0.9765049,
+      "text": "专技",
+      "detection_score": 0.76215416
+    },
+    {
+      "left": 978.85126,
+      "top": 964.7,
+      "right": 1055.5522,
+      "bottom": 1026.8208,
+      "confidence": 0.9972266,
+      "text": "等级",
+      "detection_score": 0.6966826
+    },
+    {
+      "left": 204.53609,
+      "top": 906.23334,
+      "right": 456.55374,
+      "bottom": 953.7375,
+      "confidence": 0.99436975,
+      "text": "现专业技术职",
+      "detection_score": 0.89920944
+    },
+    {
+      "left": 204.53609,
+      "top": 964.7,
+      "right": 456.55374,
+      "bottom": 1026.8208,
+      "confidence": 0.99839467,
+      "text": "务及评定时间",
+      "detection_score": 0.7683619
+    },
+    {
+      "left": 1490.1914,
+      "top": 979.31665,
+      "right": 1654.5508,
+      "bottom": 1026.8208,
+      "confidence": 0.9987249,
+      "text": "行政职务",
+      "detection_score": 0.90636486
+    },
+    {
+      "left": 584.3888,
+      "top": 1037.7833,
+      "right": 748.74817,
+      "bottom": 1085.2875,
+      "confidence": 0.99980056,
+      "text": "船只制造",
+      "detection_score": 0.9198755
+    },
+    {
+      "left": 1139.5582,
+      "top": 1052.4,
+      "right": 1376.9662,
+      "bottom": 1099.9042,
+      "confidence": 0.9946908,
+      "text": "主要学术兼职",
+      "detection_score": 0.913348
+    },
+    {
+      "left": 248.36525,
+      "top": 1052.4,
+      "right": 427.33432,
+      "bottom": 1099.9042,
+      "confidence": 0.99971294,
+      "text": "学科专业",
+      "detection_score": 0.8919958
+    },
+    {
+      "left": 452.90134,
+      "top": 1125.4833,
+      "right": 588.04126,
+      "bottom": 1172.9875,
+      "confidence": 0.9977402,
+      "text": "研究生",
+      "detection_score": 0.87368023
+    },
+    {
+      "left": 204.53609,
+      "top": 1140.1,
+      "right": 368.89545,
+      "bottom": 1187.6041,
+      "confidence": 0.9993487,
+      "text": "最高学历",
+      "detection_score": 0.8926476
+    },
+    {
+      "left": 1197.9971,
+      "top": 1140.1,
+      "right": 1435.405,
+      "bottom": 1187.6041,
+      "confidence": 0.99819505,
+      "text": "大连海事大学",
+      "detection_score": 0.9073381
+    },
+    {
+      "left": 876.5832,
+      "top": 1140.1,
+      "right": 1040.9425,
+      "bottom": 1187.6041,
+      "confidence": 0.99835545,
+      "text": "毕业单位",
+      "detection_score": 0.9029195
+    },
+    {
+      "left": 1899.2634,
+      "top": 1140.0999,
+      "right": 2049.013,
+      "bottom": 1202.2207,
+      "confidence": 0.99940616,
+      "text": "毕业时间",
+      "detection_score": 0.827026
+    },
+    {
+      "left": 2147.629,
+      "top": 1154.7167,
+      "right": 2326.598,
+      "bottom": 1202.2208,
+      "confidence": 0.9985094,
+      "text": "2019年6月",
+      "detection_score": 0.8702934
+    },
+    {
+      "left": 467.51105,
+      "top": 1213.1833,
+      "right": 631.8704,
+      "bottom": 1275.3042,
+      "confidence": 0.9972327,
+      "text": "硕士学位",
+      "detection_score": 0.801694
+    },
+    {
+      "left": 876.5832,
+      "top": 1227.8,
+      "right": 1040.9425,
+      "bottom": 1275.3042,
+      "confidence": 0.9985932,
+      "text": "获得单位",
+      "detection_score": 0.83908707
+    },
+    {
+      "left": 204.53609,
+      "top": 1227.8,
+      "right": 368.89545,
+      "bottom": 1275.3042,
+      "confidence": 0.86910194,
+      "text": "最高学位:",
+      "detection_score": 0.8953481
+    },
+    {
+      "left": 1197.9971,
+      "top": 1227.8,
+      "right": 1435.405,
+      "bottom": 1275.3042,
+      "confidence": 0.99928707,
+      "text": "大连海事大学",
+      "detection_score": 0.9193425
+    },
+    {
+      "left": 1899.2637,
+      "top": 1242.4166,
+      "right": 2063.623,
+      "bottom": 1289.9208,
+      "confidence": 0.99541914,
+      "text": "获得时间",
+      "detection_score": 0.84912443
+    },
+    {
+      "left": 2162.2383,
+      "top": 1242.4165,
+      "right": 2326.5977,
+      "bottom": 1304.5374,
+      "confidence": 0.99628127,
+      "text": "2019年6月",
+      "detection_score": 0.8289667
+    },
+    {
+      "left": 876.5832,
+      "top": 1300.8833,
+      "right": 1172.43,
+      "bottom": 1363.0042,
+      "confidence": 0.9940788,
+      "text": "D47854648486893",
+      "detection_score": 0.68332356
+    },
+    {
+      "left": 219.1458,
+      "top": 1315.5,
+      "right": 383.50516,
+      "bottom": 1363.0042,
+      "confidence": 0.99428284,
+      "text": "证件类型",
+      "detection_score": 0.8910281
+    },
+    {
+      "left": 642.8277,
+      "top": 1315.5,
+      "right": 821.79675,
+      "bottom": 1363.0042,
+      "confidence": 0.99915063,
+      "text": "证件号码",
+      "detection_score": 0.88739693
+    },
+    {
+      "left": 467.51105,
+      "top": 1315.4999,
+      "right": 639.17523,
+      "bottom": 1363.004,
+      "confidence": 0.99873674,
+      "text": "学位证书",
+      "detection_score": 0.8962443
+    },
+    {
+      "left": 1402.5331,
+      "top": 1315.4999,
+      "right": 1566.8923,
+      "bottom": 1377.6207,
+      "confidence": 0.99588716,
+      "text": "户籍详址",
+      "detection_score": 0.8068768
+    },
+    {
+      "left": 1636.2887,
+      "top": 1330.1167,
+      "right": 2282.7688,
+      "bottom": 1377.6208,
+      "confidence": 0.9900456,
+      "text": "辽宁省西丰县安民镇永淳村二组62号",
+      "detection_score": 0.8873062
+    },
+    {
+      "left": 219.14581,
+      "top": 1388.5833,
+      "right": 383.50516,
+      "bottom": 1443.3958,
+      "confidence": 0.99815845,
+      "text": "档案所在",
+      "detection_score": 0.82855177
+    },
+    {
+      "left": 482.12076,
+      "top": 1403.2,
+      "right": 734.1384,
+      "bottom": 1443.3959,
+      "confidence": 0.9996986,
+      "text": "大连海事大学",
+      "detection_score": 0.91484636
+    },
+    {
+      "left": 1402.5331,
+      "top": 1432.4333,
+      "right": 1566.8925,
+      "bottom": 1479.9375,
+      "confidence": 0.99951565,
+      "text": "联系电话",
+      "detection_score": 0.91739225
+    },
+    {
+      "left": 2103.7998,
+      "top": 1432.4333,
+      "right": 2224.3298,
+      "bottom": 1479.9375,
+      "confidence": 0.997679,
+      "text": "100085",
+      "detection_score": 0.85639155
+    },
+    {
+      "left": 1972.3123,
+      "top": 1432.4333,
+      "right": 2063.623,
+      "bottom": 1494.5542,
+      "confidence": 0.7507044,
+      "text": "邮编",
+      "detection_score": 0.8355062
+    },
+    {
+      "left": 204.53609,
+      "top": 1447.05,
+      "right": 383.50516,
+      "bottom": 1509.1708,
+      "confidence": 0.97883964,
+      "text": "单位及地址",
+      "detection_score": 0.74510664
+    },
+    {
+      "left": 482.12076,
+      "top": 1447.05,
+      "right": 1070.162,
+      "bottom": 1509.1708,
+      "confidence": 0.9975772,
+      "text": "辽宁省大连市甘井子区凌海路3号",
+      "detection_score": 0.8950761
+    },
+    {
+      "left": 189.92636,
+      "top": 1534.75,
+      "right": 441.94403,
+      "bottom": 1582.2542,
+      "confidence": 0.99660945,
+      "text": "有否境外永居",
+      "detection_score": 0.85777926
+    },
+    {
+      "left": 978.85126,
+      "top": 1534.75,
+      "right": 1303.9175,
+      "bottom": 1596.8708,
+      "confidence": 0.9928652,
+      "text": "有无上海市居住证",
+      "detection_score": 0.8498002
+    },
+    {
+      "left": 1650.8984,
+      "top": 1549.3667,
+      "right": 1902.916,
+      "bottom": 1596.8708,
+      "confidence": 0.971285,
+      "text": "居住证有效期",
+      "detection_score": 0.8954173
+    },
+    {
+      "left": 1402.5331,
+      "top": 1622.45,
+      "right": 1566.8925,
+      "bottom": 1684.5708,
+      "confidence": 0.86538965,
+      "text": "龟乎邮箱",
+      "detection_score": 0.85764635
+    },
+    {
+      "left": 657.4374,
+      "top": 1607.8334,
+      "right": 865.6259,
+      "bottom": 1655.3375,
+      "confidence": 0.99786097,
+      "text": "13585662395",
+      "detection_score": 0.8294188
+    },
+    {
+      "left": 204.53609,
+      "top": 1680.9166,
+      "right": 295.84683,
+      "bottom": 1728.4208,
+      "confidence": 0.9990196,
+      "text": "联系",
+      "detection_score": 0.78652745
+    },
+    {
+      "left": 1665.508,
+      "top": 1637.0667,
+      "right": 2019.7938,
+      "bottom": 1684.5708,
+      "confidence": 0.85244495,
+      "text": "28695697@qq.com",
+      "detection_score": 0.85838056
+    },
+    {
+      "left": 365.243,
+      "top": 1622.45,
+      "right": 529.60236,
+      "bottom": 1669.9542,
+      "confidence": 0.9982438,
+      "text": "联系电话",
+      "detection_score": 0.9041682
+    },
+    {
+      "left": 642.8277,
+      "top": 1710.15,
+      "right": 1230.8689,
+      "bottom": 1757.6542,
+      "confidence": 0.9966522,
+      "text": "辽宁省大连市甘井子区凌海路3号",
+      "detection_score": 0.9683356
+    },
+    {
+      "left": 365.243,
+      "top": 1724.7667,
+      "right": 529.60236,
+      "bottom": 1772.2709,
+      "confidence": 0.99990404,
+      "text": "通讯地址",
+      "detection_score": 0.95435745
+    },
+    {
+      "left": 1972.3123,
+      "top": 1724.7667,
+      "right": 2063.623,
+      "bottom": 1786.8875,
+      "confidence": 0.999738,
+      "text": "邮编",
+      "detection_score": 0.8024013
+    },
+    {
+      "left": 204.53609,
+      "top": 1739.3833,
+      "right": 295.84683,
+      "bottom": 1786.8875,
+      "confidence": 0.9985046,
+      "text": "方式",
+      "detection_score": 0.756002
+    },
+    {
+      "left": 2162.2385,
+      "top": 1739.3833,
+      "right": 2268.159,
+      "bottom": 1786.8875,
+      "confidence": 0.9933141,
+      "text": "100085",
+      "detection_score": 0.96418643
+    },
+    {
+      "left": 1402.5331,
+      "top": 1754,
+      "right": 1508.4536,
+      "bottom": 1801.5042,
+      "confidence": 0.99995446,
+      "text": "境外",
+      "detection_score": 0.673091
+    },
+    {
+      "left": 365.243,
+      "top": 1812.4667,
+      "right": 529.60236,
+      "bottom": 1859.9708,
+      "confidence": 0.9998409,
+      "text": "起始年月",
+      "detection_score": 0.9350737
+    },
+    {
+      "left": 598.99854,
+      "top": 1812.4667,
+      "right": 777.9676,
+      "bottom": 1859.9708,
+      "confidence": 0.99797773,
+      "text": "终止年月",
+      "detection_score": 0.9269713
+    },
+    {
+      "left": 993.461,
+      "top": 1812.4667,
+      "right": 1274.6981,
+      "bottom": 1874.5875,
+      "confidence": 0.99913615,
+      "text": "学校或工作单位",
+      "detection_score": 0.88333046
+    },
+    {
+      "left": 1534.0206,
+      "top": 1827.0834,
+      "right": 1654.5508,
+      "bottom": 1874.5875,
+      "confidence": 0.6786738,
+      "text": "专业",
+      "detection_score": 0.85107124
+    },
+    {
+      "left": 1782.3859,
+      "top": 1827.0834,
+      "right": 2063.623,
+      "bottom": 1874.5875,
+      "confidence": 0.91013336,
+      "text": "学或任职情况",
+      "detection_score": 0.97652596
+    },
+    {
+      "left": 2191.458,
+      "top": 1827.0834,
+      "right": 2268.159,
+      "bottom": 1889.2042,
+      "confidence": 0.98064876,
+      "text": "备注",
+      "detection_score": 0.91939867
+    },
+    {
+      "left": 1519.4109,
+      "top": 1944.0165,
+      "right": 1669.1605,
+      "bottom": 1991.5206,
+      "confidence": 0.984049,
+      "text": "通讯地址",
+      "detection_score": 0.814398
+    },
+    {
+      "left": 1796.9956,
+      "top": 1929.3998,
+      "right": 1946.7452,
+      "bottom": 1976.9039,
+      "confidence": 0.9600621,
+      "text": "辽宁省大",
+      "detection_score": 0.6690005
+    },
+    {
+      "left": 832.754,
+      "top": 1973.25,
+      "right": 938.6745,
+      "bottom": 2020.7542,
+      "confidence": 0.9086958,
+      "text": "100085",
+      "detection_score": 0.9132121
+    },
+    {
+      "left": 219.1458,
+      "top": 2002.4833,
+      "right": 281.23712,
+      "bottom": 2546.954,
+      "confidence": 0.92450124,
+      "text": "个人简历(从大学顺序填起",
+      "detection_score": 0.74667335
+    },
+    {
+      "left": 2133.019,
+      "top": 2046.3334,
+      "right": 2268.159,
+      "bottom": 2093.8374,
+      "confidence": 0.82042,
+      "text": "学校或",
+      "detection_score": 0.7003691
+    },
+    {
+      "left": 642.8277,
+      "top": 2060.95,
+      "right": 734.1384,
+      "bottom": 2108.454,
+      "confidence": 0.99968994,
+      "text": "情况",
+      "detection_score": 0.739006
+    },
+    {
+      "left": 350.63327,
+      "top": 2601.7666,
+      "right": 1946.7452,
+      "bottom": 2663.8875,
+      "confidence": 0.9362595,
+      "text": "注:1、个人简历时间上要连续;“学习或任职情况”写大专、本硕博(后)或任职岗位、访问学者等实际情况",
+      "detection_score": 0.93046653
+    },
+    {
+      "left": 409.07217,
+      "top": 2660.2332,
+      "right": 1464.6243,
+      "bottom": 2722.354,
+      "confidence": 0.85125387,
+      "text": "2、硕博连读，“直博以及在职攻读、联咨增养等经历需在“备注”内写明。",
+      "detection_score": 0.91696346
+    },
+    {
+      "left": 423.6819,
+      "top": 2718.7,
+      "right": 1859.0869,
+      "bottom": 2780.8208,
+      "confidence": 0.80418235,
+      "text": "3、兼职、派道等经历，请在“备注”中注明:无就业或学习经厉的阶段需填写“待业”或注明原因。",
+      "detection_score": 0.91569704
+    },
+    {
+      "left": 598.99854,
+      "top": 2806.4,
+      "right": 777.9676,
+      "bottom": 2853.904,
+      "confidence": 0.9993153,
+      "text": "证书名称",
+      "detection_score": 0.9518596
+    },
+    {
+      "left": 1139.5582,
+      "top": 2806.4,
+      "right": 1230.8689,
+      "bottom": 2853.904,
+      "confidence": 0.92539227,
+      "text": "写作",
+      "detection_score": 0.9320358
+    },
+    {
+      "left": 1943.0928,
+      "top": 2806.4,
+      "right": 2034.4036,
+      "bottom": 2868.5208,
+      "confidence": 0.99991083,
+      "text": "等级",
+      "detection_score": 0.83620536
+    },
+    {
+      "left": 1621.679,
+      "top": 2821.0166,
+      "right": 1844.4772,
+      "bottom": 2897.7542,
+      "confidence": 0.82803094,
+      "text": "名称得时间",
+      "detection_score": 0.92115915
+    },
+    {
+      "left": 379.85272,
+      "top": 2835.6333,
+      "right": 471.16348,
+      "bottom": 2883.1375,
+      "confidence": 0.9999968,
+      "text": "语种",
+      "detection_score": 0.8940382
+    },
+    {
+      "left": 905.8027,
+      "top": 2835.6333,
+      "right": 1070.162,
+      "bottom": 2883.1375,
+      "confidence": 0.9857912,
+      "text": "口语水平",
+      "detection_score": 0.9456048
+    },
+    {
+      "left": 1475.5818,
+      "top": 2850.25,
+      "right": 1610.7217,
+      "bottom": 2897.7542,
+      "confidence": 0.99949986,
+      "text": "或分数",
+      "detection_score": 0.94484544
+    },
+    {
+      "left": 569.77905,
+      "top": 2864.8667,
+      "right": 792.5773,
+      "bottom": 2912.3708,
+      "confidence": 0.91938657,
+      "text": "(等级或分数)",
+      "detection_score": 0.963565
+    },
+    {
+      "left": 1139.5582,
+      "top": 2864.8667,
+      "right": 1230.8689,
+      "bottom": 2912.3708,
+      "confidence": 0.9979443,
+      "text": "水平",
+      "detection_score": 0.8666979
+    },
+    {
+      "left": 1913.8733,
+      "top": 2879.4834,
+      "right": 2049.0132,
+      "bottom": 2926.9875,
+      "confidence": 0.99981314,
+      "text": "或分数",
+      "detection_score": 0.94286376
+    },
+    {
+      "left": 1314.8748,
+      "top": 2908.7166,
+      "right": 1406.1855,
+      "bottom": 2956.221,
+      "confidence": 0.9999684,
+      "text": "其他",
+      "detection_score": 0.91174316
+    },
+    {
+      "left": 379.85272,
+      "top": 2937.95,
+      "right": 471.16348,
+      "bottom": 2985.454,
+      "confidence": 0.9982643,
+      "text": "英语",
+      "detection_score": 0.94447374
+    },
+    {
+      "left": 672.0471,
+      "top": 2937.95,
+      "right": 763.35785,
+      "bottom": 2985.454,
+      "confidence": 0.999879,
+      "text": "六级",
+      "detection_score": 0.95048416
+    },
+    {
+      "left": 1314.8748,
+      "top": 2952.5667,
+      "right": 1406.1855,
+      "bottom": 3021.9958,
+      "confidence": 0.99897176,
+      "text": "资格",
+      "detection_score": 0.86272
+    },
+    {
+      "left": 204.53609,
+      "top": 2645.6167,
+      "right": 339.676,
+      "bottom": 2693.1208,
+      "confidence": 0.9973708,
+      "text": "直博以及",
+      "detection_score": 0.6891867
+    },
+    {
+      "left": 175.31664,
+      "top": 2704.0833,
+      "right": 310.45654,
+      "bottom": 2751.5874,
+      "confidence": 0.80138403,
+      "text": "当等经历，",
+      "detection_score": 0.6740848
+    },
+    {
+      "left": 219.1458,
+      "top": 2791.7834,
+      "right": 325.06628,
+      "bottom": 2839.2876,
+      "confidence": 0.472024,
+      "text": "节省杯",
+      "detection_score": 0.6932609
+    },
+    {
+      "left": 2118.4094,
+      "top": 2835.6333,
+      "right": 2297.3784,
+      "bottom": 2897.7542,
+      "confidence": 0.9944106,
+      "text": "取得时间",
+      "detection_score": 0.92365766
+    },
+    {
+      "left": 219.1458,
+      "top": 2937.95,
+      "right": 266.62738,
+      "bottom": 3043.921,
+      "confidence": 0.9596895,
+      "text": "言能",
+      "detection_score": 0.6682938
+    },
+    {
+      "left": 1314.8748,
+      "top": 3025.65,
+      "right": 1406.1855,
+      "bottom": 3087.7708,
+      "confidence": 0.99978197,
+      "text": "证书",
+      "detection_score": 0.83006334
+    },
+    {
+      "left": 350.63327,
+      "top": 3113.35,
+      "right": 1011.72314,
+      "bottom": 3175.471,
+      "confidence": 0.9233252,
+      "text": "注:门语/写作水平分为:精通、熟练、一般。",
+      "detection_score": 0.906693
+    }
+  ]
+}

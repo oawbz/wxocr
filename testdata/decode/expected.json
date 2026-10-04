@@ -1,0 +1,122 @@
+[
+  {
+    "file": "baseline.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "823315b427de9d7aa504bb39d76f31091c7f6557d4f005ef7914053fc41120f6"
+  },
+  {
+    "file": "progressive.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "823315b427de9d7aa504bb39d76f31091c7f6557d4f005ef7914053fc41120f6"
+  },
+  {
+    "file": "grayscale.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "8d10ea8fd7954b7fd90fd6a969c926770da1d38f33f05e8090c2f63c54bf423c"
+  },
+  {
+    "file": "cmyk.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "909a8c264e4f13f6aeff8515a9bbf9629978e954a64bfed57dea3e138d6e05dd"
+  },
+  {
+    "file": "exif-1-little.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "823315b427de9d7aa504bb39d76f31091c7f6557d4f005ef7914053fc41120f6"
+  },
+  {
+    "file": "exif-1-big.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "823315b427de9d7aa504bb39d76f31091c7f6557d4f005ef7914053fc41120f6"
+  },
+  {
+    "file": "exif-2-little.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "a5c6b180f03893d874bcfb2877f0806f42974bbcb907ae24639b3cc45ea3f8b3"
+  },
+  {
+    "file": "exif-2-big.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "a5c6b180f03893d874bcfb2877f0806f42974bbcb907ae24639b3cc45ea3f8b3"
+  },
+  {
+    "file": "exif-3-little.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "4452acf4b7dbfe3b439d8e63f68d4a868785ada5274180613e9433282ea2ea6f"
+  },
+  {
+    "file": "exif-3-big.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "4452acf4b7dbfe3b439d8e63f68d4a868785ada5274180613e9433282ea2ea6f"
+  },
+  {
+    "file": "exif-4-little.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "72cdd3d06e66ffeda41c00416d2186e01a2aed09423b434972d894c4442fbc16"
+  },
+  {
+    "file": "exif-4-big.jpg",
+    "width": 37,
+    "height": 23,
+    "rgb_sha256": "72cdd3d06e66ffeda41c00416d2186e01a2aed09423b434972d894c4442fbc16"
+  },
+  {
+    "file": "exif-5-little.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "af29eb041937a3ab0127fe3ad58b884e15124e360e5f17d9e8e8d9afc391ae9a"
+  },
+  {
+    "file": "exif-5-big.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "af29eb041937a3ab0127fe3ad58b884e15124e360e5f17d9e8e8d9afc391ae9a"
+  },
+  {
+    "file": "exif-6-little.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "4a6733bdfc2929633cace4b356343f7831e5bbb426ec849cf8bb8180773dc3d5"
+  },
+  {
+    "file": "exif-6-big.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "4a6733bdfc2929633cace4b356343f7831e5bbb426ec849cf8bb8180773dc3d5"
+  },
+  {
+    "file": "exif-7-little.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "fcf93c2334a7ac4220bcd1eca138492a2c4a6aa1d34bd51b3b65ee618844da23"
+  },
+  {
+    "file": "exif-7-big.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "fcf93c2334a7ac4220bcd1eca138492a2c4a6aa1d34bd51b3b65ee618844da23"
+  },
+  {
+    "file": "exif-8-little.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "2920db80616fe48b95ca036021408be284f27511beefed2cdfbc74d9ad36c9b4"
+  },
+  {
+    "file": "exif-8-big.jpg",
+    "width": 23,
+    "height": 37,
+    "rgb_sha256": "2920db80616fe48b95ca036021408be284f27511beefed2cdfbc74d9ad36c9b4"
+  }
+]

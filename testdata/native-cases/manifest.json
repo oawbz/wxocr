@@ -1,0 +1,234 @@
+[
+  {
+    "file": "blank.png",
+    "size": [
+      640,
+      480
+    ],
+    "sha256": "120c1240687151295935aed17aeca686ea6cd339ec7ffa3aff5cc7039ff350eb"
+  },
+  {
+    "file": "chinese.png",
+    "size": [
+      960,
+      960
+    ],
+    "sha256": "fdf0dcfbac414adea6b8c33de55172775dad898b965b67640442f050f103e1e8"
+  },
+  {
+    "file": "chinese_ccw_180.png",
+    "size": [
+      960,
+      960
+    ],
+    "sha256": "f03b3f827ddbf6b80bb393a3d00444411ee39a926645d0e9365af9ad7e00e5ce"
+  },
+  {
+    "file": "chinese_ccw_270.png",
+    "size": [
+      960,
+      960
+    ],
+    "sha256": "ba0b6253660272770010a01b979c21a61986deb29dddae6e377beff15c70aec8"
+  },
+  {
+    "file": "chinese_ccw_90.png",
+    "size": [
+      960,
+      960
+    ],
+    "sha256": "3c4bfa7a74a0b0be00cce86da184f4e119bc5ce472ba6d4756d8b3e10e8bae50"
+  },
+  {
+    "file": "dense_invoice.png",
+    "size": [
+      960,
+      660
+    ],
+    "sha256": "eadea4fc420ca70bf5952de24ecb92d64b587dc90a4503e2e44317e4d0747411"
+  },
+  {
+    "file": "dense_invoice_ccw_180.png",
+    "size": [
+      960,
+      660
+    ],
+    "sha256": "e402fef3085903455dfc0d2154811826b620749bc04c3285fc595639c3e1f73b"
+  },
+  {
+    "file": "dense_invoice_ccw_270.png",
+    "size": [
+      660,
+      960
+    ],
+    "sha256": "85194a14dcb845d906bd04368f630743916fa600be3ac570af48481e609a3567"
+  },
+  {
+    "file": "dense_invoice_ccw_90.png",
+    "size": [
+      660,
+      960
+    ],
+    "sha256": "8415776c948d984981b32d52c6341d4ed98d240bdcccdf265b0e0cdc59b82e8c"
+  },
+  {
+    "file": "layout_three_columns.png",
+    "size": [
+      960,
+      660
+    ],
+    "sha256": "e3faaacd12ac8d5b1a62aa5e81ead6a837b78485e07be109a5f96f96cd1d4bee"
+  },
+  {
+    "file": "layout_title_footer.png",
+    "size": [
+      960,
+      660
+    ],
+    "sha256": "b44ba2f5cde644b86c1f0de1a5cb28ad8ea6f69dc04586c04f0607429f19c096"
+  },
+  {
+    "file": "layout_two_columns.png",
+    "size": [
+      960,
+      660
+    ],
+    "sha256": "2b482facb4337f696ddb1857fe1cd5840c7a10d29214fe20add086787e9f6156"
+  },
+  {
+    "file": "layout_two_columns_ccw_270.png",
+    "size": [
+      660,
+      960
+    ],
+    "sha256": "73addd987542c77cfc658774f58463579296ad64e79cceb088337d3ce602ced0"
+  },
+  {
+    "file": "layout_two_columns_ccw_90.png",
+    "size": [
+      660,
+      960
+    ],
+    "sha256": "f817f0a7cfc6bd17edbfb0ef30c644cfc44ee7113d1ab9dff2c28f387db44b44"
+  },
+  {
+    "file": "long_line.png",
+    "size": [
+      1800,
+      220
+    ],
+    "sha256": "468c04f339b51f5a82f5c3fc43ac6a67d9d1f0d7c155293a9f7ed3c9e6884010"
+  },
+  {
+    "file": "rotated_-12.png",
+    "size": [
+      1140,
+      1140
+    ],
+    "sha256": "8c9f228a6315a7723faf245c1532f8ad9b121787c82c87a67eb9e70138b47d84"
+  },
+  {
+    "file": "rotated_25.png",
+    "size": [
+      1276,
+      1276
+    ],
+    "sha256": "b87b6c0da47c0dcf72a83b7b602c56b8162410b9c2407fab5afaf38273afb547"
+  },
+  {
+    "file": "rotated_7.png",
+    "size": [
+      1070,
+      1070
+    ],
+    "sha256": "984ff1a29195038c99458d9efd1845b55f0ec55942f595bd450a3e8e7d1a744d"
+  },
+  {
+    "file": "stress_blurred.png",
+    "size": [
+      880,
+      420
+    ],
+    "sha256": "e73ad6ad885524b27273445ed496b59a68ca4dd9f9f9641a7cd1b7905450df3e"
+  },
+  {
+    "file": "stress_dark_background.png",
+    "size": [
+      880,
+      420
+    ],
+    "sha256": "9dc3a4157ed8dceec38965f5fb6604b685ebf6450f8d3016138e20304c0c21b7"
+  },
+  {
+    "file": "stress_low_contrast.png",
+    "size": [
+      880,
+      420
+    ],
+    "sha256": "ed0e4886b0fc4503e7c7a018e9bffa04d9496aca9521549ce5ebe98c5eb5744c"
+  },
+  {
+    "file": "stress_small_text.png",
+    "size": [
+      880,
+      420
+    ],
+    "sha256": "62dcbfff440abdffa61826e5acd0b0646c779bba6630fd99e6308ff71941ae77"
+  },
+  {
+    "file": "stress_staggered_columns.png",
+    "size": [
+      1000,
+      700
+    ],
+    "sha256": "7e0f46a1f421ba60b80c524a102a2334aac43948b31705d7eb506886846688c4"
+  },
+  {
+    "file": "stress_staggered_rotated.png",
+    "size": [
+      1116,
+      878
+    ],
+    "sha256": "ac11068f6ad53fc17981ad94a9824043f8a0fa967d2e61140ba34b1211899c1b"
+  },
+  {
+    "file": "terminal.png",
+    "size": [
+      1216,
+      926
+    ],
+    "sha256": "0717de7e88cc0164a669d2781afd9a9065ed1b0d5503982f155f7a58ba3ca7ac"
+  },
+  {
+    "file": "webpage.png",
+    "size": [
+      1085,
+      958
+    ],
+    "sha256": "23ea0a09b781789032e769bce5e64c7a6c41a26678a1b5ae0c58c747b8e3efad"
+  },
+  {
+    "file": "webpage_ccw_180.png",
+    "size": [
+      1085,
+      958
+    ],
+    "sha256": "24fe2a84516c95ccd5d9147605461ff67141191f10898723c176bda8c310097e"
+  },
+  {
+    "file": "webpage_ccw_270.png",
+    "size": [
+      958,
+      1085
+    ],
+    "sha256": "159b6610a237740a6fbfbd8216ed3b3511f8e6a00458be4b2852658f66dc23a1"
+  },
+  {
+    "file": "webpage_ccw_90.png",
+    "size": [
+      958,
+      1085
+    ],
+    "sha256": "a928a5c34f1cb7ce40e5f9eb9b0c288042f927a76f28cd19b1e43f65b7e73c1e"
+  }
+]
