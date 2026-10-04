@@ -1,0 +1,93 @@
+[
+  {
+    "platform": "linux-amd64",
+    "version": "1.19.0",
+    "source": "https://github.com/microsoft/onnxruntime/releases/download/v1.19.0/onnxruntime-linux-x64-1.19.0.tgz",
+    "archive_sha256": "8627cae49b51544ed15bb70c8ecf25b187f22a301c99c1ced5f4f3af5c36b44c",
+    "files": [
+      {
+        "path": "runtime/linux-amd64/LICENSE",
+        "bytes": 1073,
+        "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+      },
+      {
+        "path": "runtime/linux-amd64/ThirdPartyNotices.txt",
+        "bytes": 338538,
+        "sha256": "cf7342f7ba482ef715ae58f5f497a8d3564fa255164175aea324cd293c5701a0"
+      },
+      {
+        "path": "runtime/linux-amd64/libonnxruntime.so",
+        "bytes": 16149816,
+        "sha256": "066897d440faec47b26ab002787511a5011c781e7188581a5bf3070dd993aafb"
+      },
+      {
+        "path": "runtime/linux-amd64/libonnxruntime_providers_shared.so",
+        "bytes": 14632,
+        "sha256": "3ea04bfcb26b5e0f3e8d2237de6cb7012f247bdb359b54622d12add00941a278"
+      }
+    ]
+  },
+  {
+    "platform": "linux-arm64",
+    "version": "1.19.0",
+    "source": "https://github.com/microsoft/onnxruntime/releases/download/v1.19.0/onnxruntime-linux-aarch64-1.19.0.tgz",
+    "archive_sha256": "5e1c92c63086564997e1a99f4e4ca7fad023cc34995d092f90d9cf5131629a00",
+    "files": [
+      {
+        "path": "runtime/linux-arm64/LICENSE",
+        "bytes": 1073,
+        "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+      },
+      {
+        "path": "runtime/linux-arm64/ThirdPartyNotices.txt",
+        "bytes": 338538,
+        "sha256": "cf7342f7ba482ef715ae58f5f497a8d3564fa255164175aea324cd293c5701a0"
+      },
+      {
+        "path": "runtime/linux-arm64/libonnxruntime.so",
+        "bytes": 13385864,
+        "sha256": "41ecd2c289234527d6f749fb0c8d62d12164ee17f7c32feacceb8341a43a21ed"
+      },
+      {
+        "path": "runtime/linux-arm64/libonnxruntime_providers_shared.so",
+        "bytes": 67720,
+        "sha256": "d93c6b9016eb23a46b7ace5a6c7d56139fdf11bfe0228e93801de758707dee2b"
+      }
+    ]
+  },
+  {
+    "platform": "darwin-amd64",
+    "version": "1.19.0",
+    "source": "https://github.com/microsoft/onnxruntime/releases/download/v1.19.0/onnxruntime-osx-x86_64-1.19.0.tgz",
+    "archive_sha256": "b54621e85068b8bb0bd05977ef896e16e6b78e7cad2976b2f4fb8fe7d6cc0bfd",
+    "files": [
+      {
+        "path": "runtime/darwin-amd64/LICENSE",
+        "bytes": 1073,
+        "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+      },
+      {
+        "path": "runtime/darwin-amd64/ThirdPartyNotices.txt",
+        "bytes": 338538,
+        "sha256": "cf7342f7ba482ef715ae58f5f497a8d3564fa255164175aea324cd293c5701a0"
+      },
+      {
+        "path": "runtime/darwin-amd64/libonnxruntime.dylib",
+        "bytes": 29357896,
+        "sha256": "75739fb284b04aaa41fcb38d12c9c77f9007ebb555b218e9ab85cd4f8372e1f4"
+      }
+    ]
+  },
+  {
+    "platform": "darwin-arm64",
+    "version": "1.19.0",
+    "source": "https://github.com/microsoft/onnxruntime/releases/download/v1.19.0/onnxruntime-osx-arm64-1.19.0.tgz",
+    "files": [
+      {
+        "path": "runtime/libonnxruntime.dylib",
+        "sha256": "37d821bcc88fd825b36ca77f54803637c6126ec74cc47f733b909f1748c1d382"
+      }
+    ],
+    "archive_sha256": "b617eb38538fca6b207c16169aa933c530156d2c2d9f878e6fcd8f1269e0ae13"
+  }
+]
