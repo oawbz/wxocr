@@ -1,0 +1,21 @@
+# 默认仅本机可访问。对外监听可改为 0.0.0.0 或 ::。
+listen_address: 0.0.0.0
+listen_port: 7676
+# 在网页填写此值；部署时请替换成自己的随机 Token。
+token: wxocr-local-demo-change-this-token
+# 默认整个上传、解码、识别、预览流程只允许一个任务；忙时立即返回 429。
+# 同一 OCR 引擎仍串行推理，建议保持为 1。
+max_concurrent_tasks: 1
+# 全服务有效鉴权请求的令牌桶速率，启动时允许同数突发；0 表示关闭此项。
+requests_per_minute: 60
+# true：启动时加载并常驻；false：每次识别时加载，结束后释放。
+model_resident: true
+# 单张图片模型推理线程数：1 保持单线程，2/4 指定线程数，0 由运行时自动选择。
+# 修改后需重新加载模型；服务配置重启生效。有效范围 0–128。
+inference_threads: 1
+# 相对路径以此配置文件所在目录为基准。
+models_dir: ./models
+# 空值按操作系统选择 ../../runtime 下的动态库；Linux 需提供适配库。
+runtime_library: ./runtime/libonnxruntime.so
+log_enabled: false
+debug: false

@@ -1,0 +1,32 @@
+services:
+  ocr:
+    image: wxocr-web:linux-arm64-20261004-home
+    platform: linux/arm64
+    pull_policy: never
+    restart: unless-stopped
+    ports:
+      - "${OCR_BIND_ADDRESS:-0.0.0.0}:${OCR_PORT:-7676}:7676"
+    volumes:
+      - type: bind
+        source: ${OCR_CONFIG_PATH:-./config.yaml}
+        target: /app/config.yaml
+        read_only: true
+        bind:
+          create_host_path: false
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    cap_drop:
+      - ALL
+    cap_add:
+      - DAC_OVERRIDE
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 120s
+    pids_limit: 128
+    mem_limit: 1536m
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "2"

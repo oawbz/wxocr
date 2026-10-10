@@ -20,13 +20,15 @@ type config struct {
 	MaxConcurrentTasks int    `yaml:"max_concurrent_tasks"`
 	RequestsPerMinute  int    `yaml:"requests_per_minute"`
 	ModelsDir          string `yaml:"models_dir"`
+	InferenceThreads   int    `yaml:"inference_threads"`
+	ModelResident      bool   `yaml:"model_resident"`
 	RuntimeLibrary     string `yaml:"runtime_library"`
 	LogEnabled         bool   `yaml:"log_enabled"`
 	Debug              bool   `yaml:"debug"`
 }
 
 func defaultConfig() config {
-	return config{ListenAddress: "127.0.0.1", ListenPort: 7676, MaxConcurrentTasks: 1, RequestsPerMinute: 60, ModelsDir: "../../models"}
+	return config{ListenAddress: "127.0.0.1", ListenPort: 7676, MaxConcurrentTasks: 1, RequestsPerMinute: 60, ModelsDir: "../../models", ModelResident: true, InferenceThreads: 1}
 }
 func loadConfig(path string) (config, error) {
 	cfg := defaultConfig()
@@ -67,6 +69,9 @@ func loadConfig(path string) (config, error) {
 	return cfg, nil
 }
 func (c config) validate() error {
+	if c.InferenceThreads < 0 || c.InferenceThreads > 128 {
+		return fmt.Errorf("inference_threads must be between 0 and 128")
+	}
 	if net.ParseIP(c.ListenAddress) == nil && c.ListenAddress != "localhost" {
 		return fmt.Errorf("listen_address must be an IP address or localhost")
 	}

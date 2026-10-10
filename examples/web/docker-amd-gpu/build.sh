@@ -10,4 +10,4 @@ with zipfile.ZipFile('ort.whl') as archive:
     archive.extractall('wheel')
 PY
 fi
-docker build -t wxocr-web:amd-migraphx-20261004 .
+docker build -t wxocr-web:amd-gpu-20261004 .

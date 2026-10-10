@@ -1,6 +1,6 @@
 services:
   ocr-gpu:
-    image: wxocr-web:amd-migraphx-20261004
+    image: wxocr-web:amd-gpu-20261004
     platform: linux/amd64
     pull_policy: never
     restart: unless-stopped
@@ -23,14 +23,17 @@ services:
         bind:
           create_host_path: false
       - type: bind
-        source: ./models
+        source: ${OCR_MODELS_PATH:-./models}
         target: /app/models
         read_only: true
         bind:
           create_host_path: false
-      - ./cache:/app/cache
+      - ${OCR_CACHE_PATH:-./cache}:/app/cache
     environment:
-      WXOCR_GPU_PROFILE: "1"
+      WXOCR_GPU_PROVIDER: rocm
+      MIOPEN_FIND_MODE: FAST
+      HSA_OVERRIDE_GFX_VERSION: "11.0.0"
+      HSA_ENABLE_SDMA: "0"
       HOME: /app/cache
       XDG_CACHE_HOME: /app/cache
       MIOPEN_USER_DB_PATH: /app/cache/miopen

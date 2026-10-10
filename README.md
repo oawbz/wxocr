@@ -33,6 +33,7 @@ func main() {
         RecognitionModel: "models/recognition.onnx",
         ParagraphModel: "models/paragraph.onnx",
         CharsetFile: "models/charset_zh13562.txt",
+        InferenceThreads: 1, // 0 由 ONNX Runtime 自动选择；1 保持单线程
     })
     if err != nil { log.Fatal(err) }
     defer engine.Close()
@@ -44,7 +45,7 @@ func main() {
 
 其他本地 Go 项目使用 `require wxocr v0.0.0` 并通过 `replace wxocr => /你的项目路径` 引用。发布到仓库时应将模块路径改为实际仓库地址。
 
-同一个 Engine 的识别调用会串行执行，可复用至应用退出。`Close` 释放模型和运行时引用。支持 JPEG / PNG；JPEG 会应用 EXIF 方向，输出坐标以旋转后图片为准。置信度是长度归一化 CTC 模型分数，尚未校准为正确率。明确网格表格支持按行列排序，复杂无边框排版仍需进一步验证。
+`Config.InferenceThreads` 控制模型算子内部线程数，Go API 零值 `0` 由 ONNX Runtime 自动选择；Web 配置省略时默认 `1`。线程数在创建 Engine 时生效。同一个 Engine 的识别调用会串行执行，可复用至应用退出。`Close` 释放模型和运行时引用。支持 JPEG / PNG；JPEG 会应用 EXIF 方向，输出坐标以旋转后图片为准。置信度是长度归一化 CTC 模型分数，尚未校准为正确率。明确网格表格支持按行列排序，复杂无边框排版仍需进一步验证。
 
 ## Gin 网页示例
 
@@ -59,7 +60,7 @@ go run .
 
 HTML、CSS 和 JavaScript 使用 `go:embed` 编译进可执行文件，无需部署 `index.html` 或其他静态文件。YAML 配置、模型和 ONNX Runtime 动态库仍为外部文件。
 
-启动时加载一次模型并常驻复用；加载失败则不会开启监听。修改 `examples/web/config.yaml` 后重启服务：
+通过 `model_resident` 选择模型加载方式，默认 `true`：启动时加载一次并常驻复用，加载失败不会开启监听。设为 `false` 时，每次识别加载模型并在结束后释放；加载错误在请求时返回，每次请求增加加载耗时，加载与推理仍串行执行。释放会话不保证进程 RSS 立即回到初始值。修改 `examples/web/config.yaml` 后重启服务：
 
 | 配置项 | 默认值 / 说明 |
 | --- | --- |
@@ -69,12 +70,16 @@ HTML、CSS 和 JavaScript 使用 `go:embed` 编译进可执行文件，无需部
 | `max_concurrent_tasks` | `1`，在读取上传前限制整个处理流程，繁忙立即返回 429，不排队；同一引擎串行推理，建议保持 1 |
 | `requests_per_minute` | `60`，全服务共享令牌桶、同数突发额度；0 关闭速率限制。仅通过鉴权且获得处理名额的 OCR 请求消耗额度 |
 | `models_dir` | `../../models` |
+| `inference_threads` | `1`；`0` 自动，`1–128` 指定单张图片的模型推理线程数 |
+| `model_resident` | `true`；`false` 为每次识别按需加载并释放 |
 | `runtime_library` | 空值按操作系统选择 `../../runtime` 下的动态库，Linux 需设置适配的 `.so` |
 | `log_enabled` / `debug` | 均为 `false`；启动配置或模型错误仍输出到标准错误并退出 |
 
 模型和运行库相对路径以 YAML 所在目录为基准。可使用 `go run . -config /path/to/config.yaml` 指定配置。未知字段、重复字段和无效数值在启动时拒绝。
 
-标准接口：`POST /api/ocr`，请求头 `Authorization: Bearer YOUR_TOKEN`，multipart 文件字段 `image`：
+标准接口只返回通用 OCR JSON，不判断证件类型；HTML 根据返回文字和坐标完成身份证模板匹配。页面“通过 API 调用”内附完整接口文档。
+
+`POST /api/ocr`，请求头 `Authorization: Bearer YOUR_TOKEN`，multipart 文件字段 `image`：
 
 ```sh
 curl -X POST http://127.0.0.1:7676/api/ocr \
@@ -106,6 +111,10 @@ docker compose up -d
 ```
 
 默认访问 `http://服务器IP:7676`。内部监听固定 `0.0.0.0:7676`，主机端口可通过 `OCR_PORT=8080 docker compose up -d` 修改。配置修改后 `docker compose restart ocr`，停止服务用 `docker compose down`。具体配置和验证边界见部署 README 与 `validation.json`；容器部署已经在 H255 实测，未在用户的 Debian 主机实测。
+
+## AMD GPU 实验部署（H255）
+
+`examples/web/docker-amd-gpu/` 提供独立 Docker Compose、运行库适配层和验证记录。服务主体复用 Linux amd64 Go 二进制，通过固定 ORT 1.19 / ROCm 6.3.1 后端推理。H255 的 Radeon 780M 需要 gfx1100 兼容目标及关闭 SDMA；修复后已通过三组图片的文字、顺序、坐标对照和三次容器重建，但未做长期压测。当前单任务性能与 CPU 接近，GPU 镜像约 4.4 GB，不建议据此默认替换 CPU 部署。具体限制见该目录 README 和 validation.json。
 
 ## 测试
 

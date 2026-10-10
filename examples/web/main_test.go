@@ -30,19 +30,19 @@ func upload(t *testing.T, handler interface {
 }, data []byte) *httptest.ResponseRecorder {
 	t.Helper()
 	var body bytes.Buffer
-	w := multipart.NewWriter(&body)
-	part, err := w.CreateFormFile("image", "test.png")
+	writer := multipart.NewWriter(&body)
+	part, err := writer.CreateFormFile("image", "test.png")
 	if err != nil {
 		t.Fatal(err)
 	}
 	if _, err = part.Write(data); err != nil {
 		t.Fatal(err)
 	}
-	if err = w.Close(); err != nil {
+	if err = writer.Close(); err != nil {
 		t.Fatal(err)
 	}
 	r := httptest.NewRequest("POST", "/api/ocr?preview=true", &body)
-	r.Header.Set("Content-Type", w.FormDataContentType())
+	r.Header.Set("Content-Type", writer.FormDataContentType())
 	r.Header.Set("Authorization", "Bearer "+testConfig().Token)
 	response := httptest.NewRecorder()
 	handler.ServeHTTP(response, r)
@@ -68,6 +68,9 @@ func TestUploadAndPage(t *testing.T) {
 	good := upload(t, r, data)
 	if good.Code != 200 || !engine.called {
 		t.Fatalf("upload: %s", good.Body.String())
+	}
+	if bytes.Contains(good.Body.Bytes(), []byte(`"document"`)) {
+		t.Fatal("backend must not classify documents")
 	}
 	var result struct {
 		Preview []byte `json:"preview_png"`

@@ -1,0 +1,438 @@
+{
+  "device": "Rockchip RK3566",
+  "architecture": "arm64",
+  "provider": "CPU",
+  "model_resident": true,
+  "restart_to_ready_ms": 2174,
+  "startup_scope": "warm filesystem caches; includes compose restart",
+  "first_request_ms": 9051,
+  "initial_metrics": {
+    "memory": {
+      "VmHWM": "74348 kB",
+      "VmRSS": "74348 kB",
+      "Threads": "8"
+    },
+    "temperature_mC": {
+      "thermal_zone0": "47222",
+      "thermal_zone1": "43750"
+    },
+    "restarts": 0
+  },
+  "final_metrics": {
+    "memory": {
+      "VmHWM": "483240 kB",
+      "VmRSS": "462000 kB",
+      "Threads": "10"
+    },
+    "temperature_mC": {
+      "thermal_zone0": "47777",
+      "thermal_zone1": "44375"
+    },
+    "restarts": 0
+  },
+  "samples": [
+    {
+      "image": "chinese",
+      "size": [
+        960,
+        960
+      ],
+      "run": 1,
+      "service_ms": 9051,
+      "wall_ms": 9056,
+      "lines": 3,
+      "texts_match_native": true,
+      "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f",
+      "metrics": {
+        "memory": {
+          "VmHWM": "325876 kB",
+          "VmRSS": "323372 kB",
+          "Threads": "9"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47777",
+          "thermal_zone1": "43125"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "chinese",
+      "size": [
+        960,
+        960
+      ],
+      "run": 2,
+      "service_ms": 9053,
+      "wall_ms": 9058,
+      "lines": 3,
+      "texts_match_native": true,
+      "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f",
+      "metrics": {
+        "memory": {
+          "VmHWM": "449696 kB",
+          "VmRSS": "443708 kB",
+          "Threads": "9"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47222",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "chinese",
+      "size": [
+        960,
+        960
+      ],
+      "run": 3,
+      "service_ms": 8841,
+      "wall_ms": 8846,
+      "lines": 3,
+      "texts_match_native": true,
+      "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f",
+      "metrics": {
+        "memory": {
+          "VmHWM": "460744 kB",
+          "VmRSS": "442048 kB",
+          "Threads": "9"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47777",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "chinese",
+      "size": [
+        960,
+        960
+      ],
+      "run": 4,
+      "service_ms": 9376,
+      "wall_ms": 9382,
+      "lines": 3,
+      "texts_match_native": true,
+      "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f",
+      "metrics": {
+        "memory": {
+          "VmHWM": "460744 kB",
+          "VmRSS": "446756 kB",
+          "Threads": "9"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47222",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "dense_invoice",
+      "size": [
+        960,
+        660
+      ],
+      "run": 1,
+      "service_ms": 12105,
+      "wall_ms": 12111,
+      "lines": 12,
+      "texts_match_native": true,
+      "text_sha256": "3d51506f6a44983547023d92998cecda35c1a9c82e27a604e8adaf65dc203372",
+      "metrics": {
+        "memory": {
+          "VmHWM": "462992 kB",
+          "VmRSS": "443076 kB",
+          "Threads": "9"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47222",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "dense_invoice",
+      "size": [
+        960,
+        660
+      ],
+      "run": 2,
+      "service_ms": 12492,
+      "wall_ms": 12499,
+      "lines": 12,
+      "texts_match_native": true,
+      "text_sha256": "3d51506f6a44983547023d92998cecda35c1a9c82e27a604e8adaf65dc203372",
+      "metrics": {
+        "memory": {
+          "VmHWM": "463280 kB",
+          "VmRSS": "451096 kB",
+          "Threads": "9"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47222",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "dense_invoice",
+      "size": [
+        960,
+        660
+      ],
+      "run": 3,
+      "service_ms": 12503,
+      "wall_ms": 12509,
+      "lines": 12,
+      "texts_match_native": true,
+      "text_sha256": "3d51506f6a44983547023d92998cecda35c1a9c82e27a604e8adaf65dc203372",
+      "metrics": {
+        "memory": {
+          "VmHWM": "465436 kB",
+          "VmRSS": "445556 kB",
+          "Threads": "10"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47777",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "webpage",
+      "size": [
+        1085,
+        958
+      ],
+      "run": 1,
+      "service_ms": 12662,
+      "wall_ms": 12667,
+      "lines": 18,
+      "texts_match_native": true,
+      "text_sha256": "2673a638f585875f5060e3f90824c028f401d2d9d228e021aefb30c45fe65f83",
+      "metrics": {
+        "memory": {
+          "VmHWM": "476096 kB",
+          "VmRSS": "460200 kB",
+          "Threads": "10"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47222",
+          "thermal_zone1": "43750"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "webpage",
+      "size": [
+        1085,
+        958
+      ],
+      "run": 2,
+      "service_ms": 12268,
+      "wall_ms": 12274,
+      "lines": 18,
+      "texts_match_native": true,
+      "text_sha256": "2673a638f585875f5060e3f90824c028f401d2d9d228e021aefb30c45fe65f83",
+      "metrics": {
+        "memory": {
+          "VmHWM": "483240 kB",
+          "VmRSS": "462340 kB",
+          "Threads": "10"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "47777",
+          "thermal_zone1": "44375"
+        },
+        "restarts": 0
+      }
+    },
+    {
+      "image": "webpage",
+      "size": [
+        1085,
+        958
+      ],
+      "run": 3,
+      "service_ms": 12035,
+      "wall_ms": 12040,
+      "lines": 18,
+      "texts_match_native": true,
+      "text_sha256": "2673a638f585875f5060e3f90824c028f401d2d9d228e021aefb30c45fe65f83",
+      "metrics": {
+        "memory": {
+          "VmHWM": "483240 kB",
+          "VmRSS": "462000 kB",
+          "Threads": "10"
+        },
+        "temperature_mC": {
+          "thermal_zone0": "48333",
+          "thermal_zone1": "44375"
+        },
+        "restarts": 0
+      }
+    }
+  ],
+  "summary": {
+    "chinese": {
+      "runs_ms": [
+        9051,
+        9053,
+        8841,
+        9376
+      ],
+      "warm_median_ms": 9053,
+      "lines": 3,
+      "size": [
+        960,
+        960
+      ],
+      "all_texts_match_native": true
+    },
+    "dense_invoice": {
+      "runs_ms": [
+        12105,
+        12492,
+        12503
+      ],
+      "warm_median_ms": 12492,
+      "lines": 12,
+      "size": [
+        960,
+        660
+      ],
+      "all_texts_match_native": true
+    },
+    "webpage": {
+      "runs_ms": [
+        12662,
+        12268,
+        12035
+      ],
+      "warm_median_ms": 12268,
+      "lines": 18,
+      "size": [
+        1085,
+        958
+      ],
+      "all_texts_match_native": true
+    }
+  },
+  "container_status": "running",
+  "health": "healthy",
+  "image_id": "sha256:9e56c9334f09112aa66309ef4a8634262d9d38e6db671c9b4d990408250ad839",
+  "url": "http://192.168.1.233:7676",
+  "image_tag": "wxocr-web:linux-arm64-20261004-home",
+  "page_status": 200,
+  "unauthorized_status": 401,
+  "logs_bytes": 0,
+  "restart_policy": "unless-stopped",
+  "memory_limit_bytes": 1610612736,
+  "image_size_bytes": 172771320,
+  "deployment_directory": "/mnt/Storage/app/wxocr",
+  "other_containers": [
+    "wxocr-home-ocr-1",
+    "openlist",
+    "xunlei",
+    "ddns-go"
+  ],
+  "validation_scope": "10 requests on three fixed PNG fixtures; no long-duration or arbitrary-image throughput claim",
+  "h255_comparison": {
+    "server": "AMD H255",
+    "provider": "CPU",
+    "samples": [
+      {
+        "image": "chinese",
+        "run": 1,
+        "service_ms": 510,
+        "wall_ms": 518,
+        "lines": 3,
+        "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f"
+      },
+      {
+        "image": "chinese",
+        "run": 2,
+        "service_ms": 507,
+        "wall_ms": 508,
+        "lines": 3,
+        "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f"
+      },
+      {
+        "image": "chinese",
+        "run": 3,
+        "service_ms": 509,
+        "wall_ms": 510,
+        "lines": 3,
+        "text_sha256": "ca39620bc9b90b4a01f15b3dfaa24ed438c02506afd3fe46f643efa11a90829f"
+      },
+      {
+        "image": "dense_invoice",
+        "run": 1,
+        "service_ms": 711,
+        "wall_ms": 713,
+        "lines": 12,
+        "text_sha256": "3d51506f6a44983547023d92998cecda35c1a9c82e27a604e8adaf65dc203372"
+      },
+      {
+        "image": "dense_invoice",
+        "run": 2,
+        "service_ms": 704,
+        "wall_ms": 705,
+        "lines": 12,
+        "text_sha256": "3d51506f6a44983547023d92998cecda35c1a9c82e27a604e8adaf65dc203372"
+      },
+      {
+        "image": "dense_invoice",
+        "run": 3,
+        "service_ms": 714,
+        "wall_ms": 715,
+        "lines": 12,
+        "text_sha256": "3d51506f6a44983547023d92998cecda35c1a9c82e27a604e8adaf65dc203372"
+      },
+      {
+        "image": "webpage",
+        "run": 1,
+        "service_ms": 733,
+        "wall_ms": 734,
+        "lines": 18,
+        "text_sha256": "2673a638f585875f5060e3f90824c028f401d2d9d228e021aefb30c45fe65f83"
+      },
+      {
+        "image": "webpage",
+        "run": 2,
+        "service_ms": 710,
+        "wall_ms": 712,
+        "lines": 18,
+        "text_sha256": "2673a638f585875f5060e3f90824c028f401d2d9d228e021aefb30c45fe65f83"
+      },
+      {
+        "image": "webpage",
+        "run": 3,
+        "service_ms": 715,
+        "wall_ms": 717,
+        "lines": 18,
+        "text_sha256": "2673a638f585875f5060e3f90824c028f401d2d9d228e021aefb30c45fe65f83"
+      }
+    ],
+    "median_ms": {
+      "chinese": 509,
+      "dense_invoice": 711,
+      "webpage": 715
+    }
+  },
+  "all_texts_match_h255": true,
+  "source_archive_sha256": "44bc8475a4a36c85cef363ed9bfde885722b1d6d499eb4d1a00000b21d3034e8",
+  "build_test_evidence": [
+    "#14 [build 6/6] RUN GOMAXPROCS=2 WXOCR_RUNTIME=/src/runtime/linux-arm64/libonnxruntime.so go test -trimpath -p 2 ./...",
+    "[stderr] #14 63.32 ok  \twxocr-web-example\t29.565s"
+  ]
+}

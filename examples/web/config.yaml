@@ -8,6 +8,11 @@ token: wxocr-local-demo-change-this-token
 max_concurrent_tasks: 1
 # 全服务有效鉴权请求的令牌桶速率，启动时允许同数突发；0 表示关闭此项。
 requests_per_minute: 60
+# true：启动时加载并常驻；false：每次识别时加载，结束后释放。
+model_resident: true
+# 单张图片模型推理线程数：1 保持单线程，2/4 指定线程数，0 由运行时自动选择。
+# 修改后需重新加载模型；服务配置重启生效。有效范围 0–128。
+inference_threads: 1
 # 相对路径以此配置文件所在目录为基准。
 models_dir: ../../models
 # 空值按操作系统选择 ../../runtime 下的动态库；Linux 需提供适配库。

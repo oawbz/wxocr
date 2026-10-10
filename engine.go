@@ -23,6 +23,8 @@ type Config struct {
 	RecognitionModel string
 	ParagraphModel   string
 	CharsetFile      string
+	// InferenceThreads controls threads within each model operator; 0 selects ORT defaults.
+	InferenceThreads int
 }
 type Line struct {
 	Left   float32 `json:"left"`
@@ -87,7 +89,7 @@ type model struct {
 	outputs int
 }
 
-func loadModel(path string, shape ort.Shape, outputShape ort.Shape) (*model, error) {
+func loadModel(path string, shape ort.Shape, outputShape ort.Shape, threads int) (*model, error) {
 	inputs, outputs, err := ort.GetInputOutputInfo(path)
 	if err != nil {
 		return nil, err
@@ -114,7 +116,7 @@ func loadModel(path string, shape ort.Shape, outputShape ort.Shape) (*model, err
 		return nil, err
 	}
 	defer options.Destroy()
-	if err = options.SetIntraOpNumThreads(1); err != nil {
+	if err = options.SetIntraOpNumThreads(threads); err != nil {
 		return nil, err
 	}
 	names := []string{outputs[0].Name}
@@ -197,6 +199,9 @@ type Engine struct {
 }
 
 func New(config Config) (*Engine, error) {
+	if config.InferenceThreads < 0 || config.InferenceThreads > 128 {
+		return nil, errors.New("inference threads must be between 0 and 128")
+	}
 	for _, field := range []struct{ name, path string }{{"runtime", config.RuntimeLibrary}, {"detection model", config.DetectionModel}, {"recognition model", config.RecognitionModel}, {"paragraph model", config.ParagraphModel}, {"charset", config.CharsetFile}} {
 		if field.path == "" {
 			return nil, fmt.Errorf("%s path is required", field.name)
@@ -215,18 +220,18 @@ func New(config Config) (*Engine, error) {
 	if err = acquireRuntime(config.RuntimeLibrary); err != nil {
 		return nil, err
 	}
-	det, err := loadModel(config.DetectionModel, ort.NewShape(1, 3, 960, 960), ort.NewShape(1, 960, 960))
+	det, err := loadModel(config.DetectionModel, ort.NewShape(1, 3, 960, 960), ort.NewShape(1, 960, 960), config.InferenceThreads)
 	if err != nil {
 		releaseRuntime()
 		return nil, err
 	}
-	rec, err := loadModel(config.RecognitionModel, ort.NewShape(1, 3, 32, -1), ort.NewShape(1, -1, 13564))
+	rec, err := loadModel(config.RecognitionModel, ort.NewShape(1, 3, 32, -1), ort.NewShape(1, -1, 13564), config.InferenceThreads)
 	if err != nil {
 		det.session.Destroy()
 		releaseRuntime()
 		return nil, err
 	}
-	paragraph, err := loadModel(config.ParagraphModel, ort.NewShape(1, 3, 768, 768), ort.NewShape(1, 768, 768))
+	paragraph, err := loadModel(config.ParagraphModel, ort.NewShape(1, 3, 768, 768), ort.NewShape(1, 768, 768), config.InferenceThreads)
 	if err != nil {
 		return nil, errors.Join(err, det.session.Destroy(), rec.session.Destroy(), releaseRuntime())
 	}

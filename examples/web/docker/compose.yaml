@@ -1,6 +1,6 @@
 services:
   ocr:
-    image: wxocr-web:linux-amd64-20261004-idcard
+    image: wxocr-web:linux-amd64-20261004-cpu-json
     platform: linux/amd64
     pull_policy: never
     restart: unless-stopped

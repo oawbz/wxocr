@@ -18,11 +18,11 @@ docker compose restart ocr
 docker compose down
 ```
 
-内部监听保持 `0.0.0.0:7676`，模型和运行库路径保持默认。主机端口可用 `OCR_PORT=8080 docker compose up -d` 修改。只允许本机访问可用 `OCR_BIND_ADDRESS=127.0.0.1 docker compose up -d`。配置修改后执行 `docker compose restart ocr`。
+内部监听保持 `0.0.0.0:7676`，模型和运行库路径保持默认。主机端口可用 `OCR_PORT=8080 docker compose up -d` 修改。只允许本机访问可用 `OCR_BIND_ADDRESS=127.0.0.1 docker compose up -d`。配置或二进制更新后执行 `docker compose up -d --force-recreate ocr`，确保重新挂载替换后的文件。
 
 默认日志关闭、debug 关闭、单任务处理，每分钟 60 请求；配置文件只读挂载。容器以前台进程运行，由 Compose 后台启动和自动重启，不使用 start.sh。停止时最多等待 120 秒。内存上限 2 GiB，临时上传文件使用最多 64 MiB 的 /tmp；不适合大量并行任务。
 
-项目 `examples/web/docker` 下的 `Dockerfile` 与 `app/` 为重建材料，使用 `docker build --platform linux/amd64 -t wxocr-web:linux-amd64-20261004-idcard .` 重建。常规部署只需要镜像压缩包、compose.yaml 和 config.yaml。
+项目 `examples/web/docker` 下的 `Dockerfile` 与 `app/` 为重建材料，使用 `docker build --platform linux/amd64 -t wxocr-web:linux-amd64-20261004-cpu-json .` 重建。常规部署只需要镜像压缩包、compose.yaml 和 config.yaml。
 
 使用 1Panel 等编排面板时，相对路径基于面板的编排目录。请将 Compose 的配置 `source` 改成服务器上实际 YAML 文件的绝对路径，或设置 `OCR_CONFIG_PATH=/opt/app/ocr/config.yaml`。文件必须存在且为普通文件，不能是目录；配置内监听地址需为 `0.0.0.0`。
 
@@ -32,4 +32,4 @@ docker compose down
 
 后续同一运行环境下更新程序和网页，只需替换二进制并执行 `docker compose up -d --force-recreate ocr`。建议先将新文件保存为 `ocr-web.new`，赋予执行权限，再通过 `mv ocr-web.new ocr-web` 原子替换；替换后必须重建容器，普通重启可能仍使用旧的文件挂载。保留旧文件可回滚。运行库或系统依赖变化时需要更新对应文件或镜像。
 
-API 响应新增 `document` 字段。身份证正面包含姓名、性别、民族、出生日期、住址、公民身份号码，背面包含签发机关、有效期限；缺失字段通过 `missing_fields` 和 `needs_review` 标记。自动分类依赖 OCR 标签和布局，模板不进行证件真伪判断。
+API 只返回通用 OCR JSON（文字、坐标、置信度、段落和耗时）。身份证类型判断与字段提取在 HTML 中完成，“识别类型”标签页位于“纯文字”之前；网页 JSON 与下载结果保留原始 API 数据。

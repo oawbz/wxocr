@@ -1,0 +1,189 @@
+{
+  "hardware": "AMD Radeon 780M gfx1103",
+  "image": "wxocr-web:amd-gpu-20261004",
+  "cases": [
+    {
+      "image": "chinese.png",
+      "same_text_and_order": true,
+      "cpu_ms": [
+        500,
+        508,
+        507
+      ],
+      "gpu_ms": [
+        567,
+        561,
+        467
+      ],
+      "cpu_median_ms": 507,
+      "gpu_median_ms": 561,
+      "gpu_first_ms": 942,
+      "lines": 3,
+      "max_coordinate_delta": 0,
+      "max_confidence_delta": 5.000000002919336e-08
+    },
+    {
+      "image": "dense_invoice.png",
+      "same_text_and_order": true,
+      "cpu_ms": [
+        700,
+        697,
+        708
+      ],
+      "gpu_ms": [
+        669,
+        661,
+        665
+      ],
+      "cpu_median_ms": 700,
+      "gpu_median_ms": 665,
+      "gpu_first_ms": 697,
+      "lines": 12,
+      "max_coordinate_delta": 0,
+      "max_confidence_delta": 2.500000000349445e-07
+    },
+    {
+      "image": "webpage.png",
+      "same_text_and_order": true,
+      "cpu_ms": [
+        707,
+        709,
+        709
+      ],
+      "gpu_ms": [
+        685,
+        693,
+        691
+      ],
+      "cpu_median_ms": 709,
+      "gpu_median_ms": 691,
+      "gpu_first_ms": 741,
+      "lines": 18,
+      "max_coordinate_delta": 0.0,
+      "max_confidence_delta": 4.7499999999978115e-06
+    }
+  ],
+  "gpu_busy_max_percent": 31,
+  "backend": "ROCMExecutionProvider",
+  "hsa_override_gfx_version": "11.0.0",
+  "image_id": "sha256:211724592184dca2fea96d6eb1647c6c7c9eb5605ee659606a7b4b32d526382d",
+  "image_bytes": 4359569246,
+  "gpu_container_stats": "519.9MiB / 8GiB",
+  "profiling_verified_models": [
+    "detection",
+    "paragraph",
+    "recognition"
+  ],
+  "profiling": [
+    {
+      "file": "ort-gpu-paragraph.onnx-5_2026-10-04_09-41-26.json",
+      "providers": {
+        "ROCMExecutionProvider": 1488
+      }
+    },
+    {
+      "file": "ort-gpu-recognition.onnx-3_2026-10-04_09-41-26.json",
+      "providers": {
+        "ROCMExecutionProvider": 14552,
+        "CPUExecutionProvider": 1224
+      }
+    },
+    {
+      "file": "ort-gpu-detection.onnx-1_2026-10-04_09-41-26.json",
+      "providers": {
+        "ROCMExecutionProvider": 1428,
+        "CPUExecutionProvider": 336
+      }
+    }
+  ],
+  "recreate_cycles": [
+    {
+      "cycle": 1,
+      "requests": [
+        {
+          "image": "chinese.png",
+          "elapsed_ms": 912,
+          "same_text_and_order": true
+        },
+        {
+          "image": "dense_invoice.png",
+          "elapsed_ms": 701,
+          "same_text_and_order": true
+        },
+        {
+          "image": "webpage.png",
+          "elapsed_ms": 802,
+          "same_text_and_order": true
+        }
+      ]
+    },
+    {
+      "cycle": 2,
+      "requests": [
+        {
+          "image": "chinese.png",
+          "elapsed_ms": 915,
+          "same_text_and_order": true
+        },
+        {
+          "image": "dense_invoice.png",
+          "elapsed_ms": 701,
+          "same_text_and_order": true
+        },
+        {
+          "image": "webpage.png",
+          "elapsed_ms": 788,
+          "same_text_and_order": true
+        }
+      ]
+    },
+    {
+      "cycle": 3,
+      "requests": [
+        {
+          "image": "chinese.png",
+          "elapsed_ms": 852,
+          "same_text_and_order": true
+        },
+        {
+          "image": "dense_invoice.png",
+          "elapsed_ms": 697,
+          "same_text_and_order": true
+        },
+        {
+          "image": "webpage.png",
+          "elapsed_ms": 754,
+          "same_text_and_order": true
+        }
+      ]
+    }
+  ],
+  "unauthorized_status": 401,
+  "parallel_statuses": [
+    200,
+    429
+  ],
+  "logs_bytes": 0,
+  "restart_policy": "unless-stopped",
+  "readonly_binary": true,
+  "status": "passed",
+  "hsa_enable_sdma": "0",
+  "profiling_enabled": false,
+  "deployment_directory": "/opt/app/wxocr-amd-gpu",
+  "url": "http://10.100.5.101:7677/",
+  "scope": "Experimental H255 Radeon 780M validation; no long duration or batch throughput test",
+  "prior_failures": [
+    "MIGraphX paragraph ConvTranspose channel mismatch",
+    "MIGraphX cold inference timed out",
+    "ROCm gfx1103 rocBLAS bank missing",
+    "SDMA enabled GPU Hang after recreate; host driver performed automatic GPU reset"
+  ],
+  "container_status": "running",
+  "health": "healthy",
+  "runtime_environment": {
+    "MIOPEN_FIND_MODE": "FAST",
+    "WXOCR_GPU_PROVIDER": "rocm",
+    "HSA_OVERRIDE_GFX_VERSION": "11.0.0",
+    "HSA_ENABLE_SDMA": "0"
+  }
+}

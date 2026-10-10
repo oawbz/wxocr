@@ -173,7 +173,10 @@ func TestNoPreviewByDefaultAndInvalidOption(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	wrapper := http.HandlerFunc(func(w http.ResponseWriter, q *http.Request) { q.URL.RawQuery = ""; r.ServeHTTP(w, q) })
+	wrapper := http.HandlerFunc(func(w http.ResponseWriter, q *http.Request) {
+		q.URL.RawQuery = ""
+		r.ServeHTTP(w, q)
+	})
 	w = upload(t, wrapper, data)
 	if w.Code != 200 || strings.Contains(w.Body.String(), "preview_png") {
 		t.Fatal("default API unnecessarily encoded preview")

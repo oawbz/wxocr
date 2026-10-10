@@ -17,7 +17,6 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
-	"path/filepath"
 	"strconv"
 	"sync"
 	"syscall"
@@ -37,7 +36,7 @@ type recognizer interface {
 	Recognize(context.Context, image.Image) (*ocr.Result, error)
 }
 
-// Admission happens before any multipart parsing or image allocation. No requests queue in memory.
+// Admission happens before upload parsing or image allocation. No requests queue in memory.
 type admission struct {
 	mu            sync.Mutex
 	active, limit int
@@ -169,14 +168,11 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 			defer c.Request.MultipartForm.RemoveAll()
 		}
 		if err != nil {
-			status := 400
-			code := "invalid_upload"
-			message := "请上传有效图片，完整请求不超过 20 MiB"
+			status, code := 400, "invalid_upload"
 			if _, ok := err.(*http.MaxBytesError); ok {
-				status = 413
-				code = "upload_too_large"
+				status, code = 413, "upload_too_large"
 			}
-			apiError(c, status, code, message)
+			apiError(c, status, code, "请上传有效图片，完整请求不超过 20 MiB")
 			return
 		}
 		file, _, err := c.Request.FormFile("image")
@@ -215,20 +211,15 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 		if requestCanceled(c) {
 			return
 		}
-		response := gin.H{"result": result, "document": classifyDocument(result), "elapsed_ms": time.Since(start).Milliseconds()}
+		response := gin.H{"result": result, "elapsed_ms": time.Since(start).Milliseconds()}
 		// API clients can omit preview to save PNG encoding and response traffic.
-		switch previewRequested {
-		case "", "false":
-		case "true":
+		if previewRequested == "true" {
 			var preview bytes.Buffer
 			if err := png.Encode(&preview, src); err != nil {
 				apiError(c, 500, "preview_failed", "生成预览失败")
 				return
 			}
 			response["preview_png"] = preview.Bytes()
-		default:
-			apiError(c, 400, "invalid_preview", "preview 必须为 true 或 false")
-			return
 		}
 		if requestCanceled(c) {
 			return
@@ -254,7 +245,7 @@ func run() error {
 	logger := log.New(writer, "", log.LstdFlags)
 	gin.DefaultWriter = writer
 	gin.DefaultErrorWriter = writer
-	engine, err := ocr.New(ocr.Config{RuntimeLibrary: cfg.RuntimeLibrary, DetectionModel: filepath.Join(cfg.ModelsDir, "detection.onnx"), RecognitionModel: filepath.Join(cfg.ModelsDir, "recognition.onnx"), ParagraphModel: filepath.Join(cfg.ModelsDir, "paragraph.onnx"), CharsetFile: filepath.Join(cfg.ModelsDir, "charset_zh13562.txt")})
+	engine, err := newServiceEngine(cfg)
 	if err != nil {
 		return fmt.Errorf("load OCR models: %w", err)
 	}
