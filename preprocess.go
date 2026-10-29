@@ -18,52 +18,98 @@ func tensorRGB(src image.Image, width, height int) ([]float32, float64) {
 	out := make([]float32, 3*n)
 	mean := [3]float32{0.485, 0.456, 0.406}
 	std := [3]float32{0.229, 0.224, 0.225}
+	var normalized [3][256]float32
 	for ch := 0; ch < 3; ch++ {
+		for v := range normalized[ch] {
+			normalized[ch][v] = (float32(v)/255 - mean[ch]) / std[ch]
+		}
 		for i := 0; i < n; i++ {
-			out[ch*n+i] = -mean[ch] / std[ch]
+			out[ch*n+i] = normalized[ch][0]
 		}
 	}
-	for y := 0; y < h; y++ {
-		for x := 0; x < w; x++ {
-			sx := float64(float32((float64(x)+0.5)*float64(b.Dx())/float64(w) - 0.5))
-			sy := float64(float32((float64(y)+0.5)*float64(b.Dy())/float64(h) - 0.5))
-			ix, iy := int(math.Floor(sx)), int(math.Floor(sy))
-			fx, fy := sx-float64(ix), sy-float64(iy)
+	// Preserve OpenCV's fixed-point rounding, but compute each axis only once.
+	type axis struct {
+		a, b   int
+		wa, wb int64
+	}
+	axes := func(length, target int) []axis {
+		out := make([]axis, target)
+		for x := range out {
+			sx := float64(float32((float64(x)+0.5)*float64(length)/float64(target) - 0.5))
+			ix := int(math.Floor(sx))
+			fx := sx - float64(ix)
 			if ix < 0 {
 				ix = 0
 				fx = 0
 			}
-			if ix >= b.Dx()-1 {
-				ix = b.Dx() - 1
+			if ix >= length-1 {
+				ix = length - 1
 				fx = 0
 			}
-			if iy < 0 {
-				iy = 0
-				fy = 0
-			}
-			if iy >= b.Dy()-1 {
-				iy = b.Dy() - 1
-				fy = 0
-			}
-			ax := [2]int{int(math.RoundToEven(float64(1-float32(fx)) * 2048)), int(math.RoundToEven(fx * 2048))}
-			ay := [2]int{int(math.RoundToEven(float64(1-float32(fy)) * 2048)), int(math.RoundToEven(fy * 2048))}
-			var rows [2][3]int64
-			for dy := 0; dy < 2; dy++ {
-				for dx := 0; dx < 2; dx++ {
-					rgb := nativeRGB(src.At(b.Min.X+min(ix+dx, b.Dx()-1), b.Min.Y+min(iy+dy, b.Dy()-1)))
-					for ch, value := range rgb {
-						rows[dy][ch] += int64(value) * int64(ax[dx])
-					}
-				}
-			}
+			out[x] = axis{ix, min(ix+1, length-1), int64(math.RoundToEven(float64(1-float32(fx)) * 2048)), int64(math.RoundToEven(fx * 2048))}
+		}
+		return out
+	}
+	xs, ys := axes(b.Dx(), w), axes(b.Dy(), h)
+	rgb := rgbSampler(src)
+	// Bilinear resize is separable. Reuse horizontally resized source rows.
+	rows := [2][][3]int64{make([][3]int64, w), make([][3]int64, w)}
+	rowY := [2]int{-1, -1}
+	fill := func(slot, y int) {
+		if rowY[slot] == y {
+			return
+		}
+		rowY[slot] = y
+		for x, a := range xs {
+			left, right := rgb(b.Min.X+a.a, b.Min.Y+y), rgb(b.Min.X+a.b, b.Min.Y+y)
 			for ch := 0; ch < 3; ch++ {
-				// OpenCV VResizeLinear<uchar> truncates each vertical term before adding.
-				pixel := float32((((int64(ay[0]) * (rows[0][ch] >> 4)) >> 16) + ((int64(ay[1]) * (rows[1][ch] >> 4)) >> 16) + 2) >> 2)
-				out[ch*n+y*width+x] = (pixel/255 - mean[ch]) / std[ch]
+				rows[slot][x][ch] = int64(left[ch])*a.wa + int64(right[ch])*a.wb
+			}
+		}
+	}
+	for y, a := range ys {
+		// If the previous lower source row is now the upper row, swap the cache.
+		if rowY[1] == a.a {
+			rows[0], rows[1] = rows[1], rows[0]
+			rowY[0], rowY[1] = rowY[1], rowY[0]
+		}
+		fill(0, a.a)
+		fill(1, a.b)
+		for x := 0; x < w; x++ {
+			for ch := 0; ch < 3; ch++ {
+				pixel := ((((a.wa * (rows[0][x][ch] >> 4)) >> 16) + ((a.wb * (rows[1][x][ch] >> 4)) >> 16) + 2) >> 2)
+				out[ch*n+y*width+x] = normalized[ch][pixel]
 			}
 		}
 	}
 	return out, scale
+}
+
+// Read common decoded pixel buffers directly, retaining unassociated RGB under alpha.
+func rgbSampler(src image.Image) func(int, int) [3]uint8 {
+	switch im := src.(type) {
+	case *image.NRGBA:
+		return func(x, y int) [3]uint8 {
+			i := (y-im.Rect.Min.Y)*im.Stride + (x-im.Rect.Min.X)*4
+			return [3]uint8{im.Pix[i], im.Pix[i+1], im.Pix[i+2]}
+		}
+	case *image.RGBA:
+		return func(x, y int) [3]uint8 {
+			i := (y-im.Rect.Min.Y)*im.Stride + (x-im.Rect.Min.X)*4
+			if im.Pix[i+3] == 255 {
+				return [3]uint8{im.Pix[i], im.Pix[i+1], im.Pix[i+2]}
+			}
+			return nativeRGB(color.RGBA{im.Pix[i], im.Pix[i+1], im.Pix[i+2], im.Pix[i+3]})
+		}
+	case *image.Gray:
+		return func(x, y int) [3]uint8 {
+			i := (y-im.Rect.Min.Y)*im.Stride + x - im.Rect.Min.X
+			v := im.Pix[i]
+			return [3]uint8{v, v, v}
+		}
+	default:
+		return func(x, y int) [3]uint8 { return nativeRGB(src.At(x, y)) }
+	}
 }
 
 type region struct {
@@ -115,6 +161,7 @@ func recognitionQuadTensor(src image.Image, q quadrilateral, dynamic bool) []flo
 		out[i] = -1
 	}
 	bounds := src.Bounds()
+	rgbAt := rgbSampler(src)
 	transform := cropTransform(q, w, h)
 	for y := 0; y < h; y++ {
 		for x := 0; x < w; x++ {
@@ -130,7 +177,7 @@ func recognitionQuadTensor(src image.Image, q quadrilateral, dynamic bool) []flo
 					if !point.In(bounds) {
 						continue
 					}
-					rgb := nativeRGB(src.At(point.X, point.Y))
+					rgb := rgbAt(point.X, point.Y)
 					wx, wy := 32-fx, 32-fy
 					if dx == 1 {
 						wx = fx

@@ -130,3 +130,20 @@ func TestRealOnDemandEngine(t *testing.T) {
 		}
 	}
 }
+
+func TestStartupWarmupConfig(t *testing.T) {
+	p := filepath.Join(t.TempDir(), "config.yaml")
+	if err := os.WriteFile(p, []byte("token: test-token-long-enough\nstartup_warmup: true\nmodel_resident: true\n"), 0600); err != nil {
+		t.Fatal(err)
+	}
+	c, err := loadConfig(p)
+	if err != nil || !c.StartupWarmup {
+		t.Fatalf("warmup config: %+v %v", c, err)
+	}
+	if err := os.WriteFile(p, []byte("token: test-token-long-enough\nstartup_warmup: true\nmodel_resident: false\n"), 0600); err != nil {
+		t.Fatal(err)
+	}
+	if _, err = loadConfig(p); err == nil {
+		t.Fatal("accepted warmup for on-demand models")
+	}
+}

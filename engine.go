@@ -23,8 +23,6 @@ type Config struct {
 	RecognitionModel string
 	ParagraphModel   string
 	CharsetFile      string
-	// InferenceThreads controls threads within each model operator; 0 selects ORT defaults.
-	InferenceThreads int
 }
 type Line struct {
 	Left   float32 `json:"left"`
@@ -84,17 +82,20 @@ func releaseRuntime() error {
 }
 
 type model struct {
-	session *ort.DynamicAdvancedSession
-	shape   ort.Shape
-	outputs int
+	session       *ort.DynamicAdvancedSession
+	shape         ort.Shape
+	outputs       int
+	compact       bool
+	probabilities bool
 }
 
-func loadModel(path string, shape ort.Shape, outputShape ort.Shape, threads int) (*model, error) {
+func loadModel(path string, shape ort.Shape, outputShape ort.Shape) (*model, error) {
 	inputs, outputs, err := ort.GetInputOutputInfo(path)
 	if err != nil {
 		return nil, err
 	}
-	dynamicRecognition := len(inputs) == 1 && shape[2] == 32 && reflect.DeepEqual(inputs[0].Dimensions, ort.NewShape(1, 3, 32, -1)) && len(outputs) > 0 && reflect.DeepEqual(outputs[0].Dimensions, ort.NewShape(1, -1, 13564))
+	compactRecognition := shape[2] == 32 && len(outputs) == 1 && outputs[0].Name == "ctc_compact_v1" && reflect.DeepEqual(outputs[0].Dimensions, ort.NewShape(1, -1, -1))
+	dynamicRecognition := len(inputs) == 1 && shape[2] == 32 && reflect.DeepEqual(inputs[0].Dimensions, ort.NewShape(1, 3, 32, -1)) && len(outputs) > 0 && (compactRecognition || reflect.DeepEqual(outputs[0].Dimensions, ort.NewShape(1, -1, 13564)))
 	dynamicDetection := len(inputs) == 1 && shape[2] == 960 && reflect.DeepEqual(inputs[0].Dimensions, ort.NewShape(1, 3, -1, -1)) && len(outputs) > 1 && reflect.DeepEqual(outputs[0].Dimensions, ort.NewShape(1, -1, -1))
 	if shape[2] == 768 && (len(inputs) != 1 || len(outputs) != 1 || !reflect.DeepEqual(inputs[0].Dimensions, shape) || !reflect.DeepEqual(outputs[0].Dimensions, outputShape)) {
 		return nil, errors.New("paragraph model requires shape [1,3,768,768] -> [1,768,768]")
@@ -108,15 +109,15 @@ func loadModel(path string, shape ort.Shape, outputShape ort.Shape, threads int)
 	if len(inputs) != 1 || len(outputs) < 1 || inputs[0].DataType != ort.TensorElementDataTypeFloat || outputs[0].DataType != ort.TensorElementDataTypeFloat {
 		return nil, fmt.Errorf("unsupported model signature: %s", path)
 	}
-	if shape[2] == 32 && (len(outputs) != 1 || outputs[0].Name != "logits") {
-		return nil, errors.New("recognizer requires a recognition model with logits output")
+	if shape[2] == 32 && (len(outputs) != 1 || (outputs[0].Name != "logits" && outputs[0].Name != "probabilities" && !compactRecognition)) {
+		return nil, errors.New("recognizer requires logits, probabilities or compact CTC output")
 	}
 	options, err := ort.NewSessionOptions()
 	if err != nil {
 		return nil, err
 	}
 	defer options.Destroy()
-	if err = options.SetIntraOpNumThreads(threads); err != nil {
+	if err = options.SetIntraOpNumThreads(1); err != nil {
 		return nil, err
 	}
 	names := []string{outputs[0].Name}
@@ -139,7 +140,7 @@ func loadModel(path string, shape ort.Shape, outputShape ort.Shape, threads int)
 	if dynamicDetection {
 		shape = ort.NewShape(1, 3, -1, -1)
 	}
-	return &model{session, shape, len(names)}, nil
+	return &model{session: session, shape: shape, outputs: len(names), compact: compactRecognition, probabilities: shape[2] == 32 && outputs[0].Name == "probabilities"}, nil
 }
 func (m *model) run(data []float32) ([]float32, ort.Shape, error) {
 	values, shapes, err := m.runAll(data)
@@ -199,9 +200,6 @@ type Engine struct {
 }
 
 func New(config Config) (*Engine, error) {
-	if config.InferenceThreads < 0 || config.InferenceThreads > 128 {
-		return nil, errors.New("inference threads must be between 0 and 128")
-	}
 	for _, field := range []struct{ name, path string }{{"runtime", config.RuntimeLibrary}, {"detection model", config.DetectionModel}, {"recognition model", config.RecognitionModel}, {"paragraph model", config.ParagraphModel}, {"charset", config.CharsetFile}} {
 		if field.path == "" {
 			return nil, fmt.Errorf("%s path is required", field.name)
@@ -220,18 +218,18 @@ func New(config Config) (*Engine, error) {
 	if err = acquireRuntime(config.RuntimeLibrary); err != nil {
 		return nil, err
 	}
-	det, err := loadModel(config.DetectionModel, ort.NewShape(1, 3, 960, 960), ort.NewShape(1, 960, 960), config.InferenceThreads)
+	det, err := loadModel(config.DetectionModel, ort.NewShape(1, 3, 960, 960), ort.NewShape(1, 960, 960))
 	if err != nil {
 		releaseRuntime()
 		return nil, err
 	}
-	rec, err := loadModel(config.RecognitionModel, ort.NewShape(1, 3, 32, -1), ort.NewShape(1, -1, 13564), config.InferenceThreads)
+	rec, err := loadModel(config.RecognitionModel, ort.NewShape(1, 3, 32, -1), ort.NewShape(1, -1, 13564))
 	if err != nil {
 		det.session.Destroy()
 		releaseRuntime()
 		return nil, err
 	}
-	paragraph, err := loadModel(config.ParagraphModel, ort.NewShape(1, 3, 768, 768), ort.NewShape(1, 768, 768), config.InferenceThreads)
+	paragraph, err := loadModel(config.ParagraphModel, ort.NewShape(1, 3, 768, 768), ort.NewShape(1, 768, 768))
 	if err != nil {
 		return nil, errors.Join(err, det.session.Destroy(), rec.session.Destroy(), releaseRuntime())
 	}
@@ -252,8 +250,10 @@ func (e *Engine) Close() error {
 // Recognize checks cancellation between inference stages; an active native
 // inference call is not interrupted. Calls on one engine are serialized.
 func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error) {
+	timing := newStageTimer(ctx)
 	e.mu.Lock()
 	defer e.mu.Unlock()
+	timing.mark("engine_wait")
 	if e.closed {
 		return nil, errors.New("engine is closed")
 	}
@@ -269,10 +269,12 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 	rw, rh, _ := scaledImageSize(bounds, dw, dh)
 	scaleY := float64(rh) / float64(bounds.Dy())
 	scaleX := float64(rw) / float64(bounds.Dx())
+	timing.mark("detector_preprocess")
 	maps, _, err := e.detector.runAll(pixels, int64(dh), int64(dw))
 	if err != nil {
 		return nil, err
 	}
+	timing.mark("detector_inference")
 	direction, _, err := pageOrientation(maps[2])
 	if err != nil {
 		return nil, err
@@ -281,6 +283,7 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 	if err != nil {
 		return nil, err
 	}
+	timing.mark("detector_postprocess")
 	result := &Result{Width: bounds.Dx(), Height: bounds.Dy(), Lines: make([]Line, 0, len(regions))}
 	lineGeometry := make(map[Line]quadrilateral)
 	for _, region := range regions {
@@ -306,20 +309,37 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 			q[i] = point{float64(float32(q[i].x)), float64(float32(q[i].y))}
 		}
 		pixels = recognitionQuadTensor(src, q.oriented(direction), true)
+		timing.mark("recognizer_preprocess")
 		prob, shape, err := e.recognizer.run(pixels)
 		if err != nil {
 			return nil, err
 		}
-		if len(shape) != 3 || shape[0] != 1 || shape[2] != int64(len(e.charset)+1) {
+		timing.mark("recognizer_inference")
+		if len(shape) != 3 || shape[0] != 1 || shape[1] < 1 {
 			return nil, errors.New("invalid recognition output shape")
 		}
-		if err := recognitionProbabilities(prob, len(e.charset)+1); err != nil {
-			return nil, err
+		var text string
+		var rate, evidence float32
+		if e.recognizer.compact {
+			if shape[2] != shape[1]+2 {
+				return nil, errors.New("invalid compact recognition output shape")
+			}
+			text, rate, evidence, err = recognitionCompactCTC(prob, int(shape[1]), e.charset)
+		} else {
+			if shape[2] != int64(len(e.charset)+1) {
+				return nil, errors.New("invalid recognition output shape")
+			}
+			if !e.recognizer.probabilities {
+				if err = recognitionProbabilities(prob, len(e.charset)+1); err != nil {
+					return nil, err
+				}
+			}
+			text, rate, evidence, err = recognitionCTC(prob, int(shape[1]), e.charset)
 		}
-		text, rate, evidence, err := recognitionCTC(prob, int(shape[1]), e.charset)
 		if err != nil {
 			return nil, err
 		}
+		timing.mark("recognizer_decode")
 		// Candidate acceptance uses mean greedy emission evidence. The reported
 		// sequence confidence has different semantics and must not share its cutoff.
 		if text == "" || evidence <= 0.4 {
@@ -332,17 +352,21 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 			q[i].y -= float64(bounds.Min.Y)
 		}
 		lineGeometry[block] = q
+		timing.mark("line_assembly")
 	}
 	sortLines(result.Lines, direction)
+	timing.mark("line_order")
 	if len(result.Lines) > 0 {
 		if err := ctx.Err(); err != nil {
 			return nil, err
 		}
 		pixels, _ = tensorRGB(src, 768, 768)
+		timing.mark("paragraph_preprocess")
 		prob, shape, err := e.paragraph.run(pixels)
 		if err != nil {
 			return nil, err
 		}
+		timing.mark("paragraph_inference")
 		if !reflect.DeepEqual(shape, ort.NewShape(1, 768, 768)) {
 			return nil, errors.New("invalid paragraph output shape")
 		}
@@ -351,8 +375,10 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		if err != nil {
 			return nil, err
 		}
+		timing.mark("paragraph_postprocess")
 		groupParagraphs(result, regions, direction, lineGeometry)
 		orderRuledTables(result, src, direction)
+		timing.mark("layout_order")
 	}
 	return result, nil
 }

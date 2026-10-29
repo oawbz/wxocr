@@ -1,0 +1,12 @@
+.git
+.codex
+.DS_Store
+reports
+reference
+runtime
+examples/web/dist
+examples/web/docker/app
+examples/web/docker-amd-gpu/wheel
+**/*.whl
+**/cache
+**/*.log

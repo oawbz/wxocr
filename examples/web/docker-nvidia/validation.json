@@ -1,0 +1,415 @@
+{
+  "date": "2026-10-29",
+  "server": "新广视-AI服务器",
+  "address": "http://10.100.5.250:7676/",
+  "gpu": "RTX 4090, host device 1",
+  "method": "Sequential variants; same 3 images, 1 warmup plus 5 measured requests each; medians; CPU uses identical graph to corresponding GPU variant; CPU profiler and ORT profiler disabled. Other host workloads were not stopped.",
+  "variants": {
+    "before-gpu": {
+      "chinese.png": {
+        "median_ms": 636.2968,
+        "min_ms": 573.987865,
+        "max_ms": 662.704059,
+        "stages_ms": {
+          "decode": 10.433378,
+          "detector_inference": 16.228734,
+          "detector_postprocess": 16.16003,
+          "detector_preprocess": 247.829267,
+          "engine_wait": 0.00015,
+          "layout_order": 0.015634,
+          "line_assembly": 0.004770999999999999,
+          "line_order": 0.003337,
+          "paragraph_inference": 8.734253,
+          "paragraph_postprocess": 50.223296,
+          "paragraph_preprocess": 172.989687,
+          "recognizer_decode": 87.760418,
+          "recognizer_inference": 27.079855000000002,
+          "recognizer_preprocess": 7.995982999999999
+        }
+      },
+      "dense_invoice.png": {
+        "median_ms": 1115.143259,
+        "min_ms": 1032.572373,
+        "max_ms": 1132.889526,
+        "stages_ms": {
+          "decode": 7.815044,
+          "detector_inference": 11.890715,
+          "detector_postprocess": 16.535032,
+          "detector_preprocess": 200.884239,
+          "engine_wait": 0.00013,
+          "layout_order": 6.905831,
+          "line_assembly": 0.020096,
+          "line_order": 0.0048,
+          "paragraph_inference": 10.719839,
+          "paragraph_postprocess": 62.408801,
+          "paragraph_preprocess": 151.606156,
+          "recognizer_decode": 438.938741,
+          "recognizer_inference": 142.76094199999997,
+          "recognizer_preprocess": 43.459366
+        }
+      },
+      "layout_two_columns.png": {
+        "median_ms": 986.611959,
+        "min_ms": 956.415467,
+        "max_ms": 1048.622236,
+        "stages_ms": {
+          "decode": 6.410304,
+          "detector_inference": 15.755758,
+          "detector_postprocess": 16.947786,
+          "detector_preprocess": 186.451936,
+          "engine_wait": 0.000117,
+          "layout_order": 9.690852,
+          "line_assembly": 0.022116999999999998,
+          "line_order": 0.0039,
+          "paragraph_inference": 11.204414,
+          "paragraph_postprocess": 46.846716,
+          "paragraph_preprocess": 152.4457,
+          "recognizer_decode": 384.226289,
+          "recognizer_inference": 124.00140700000001,
+          "recognizer_preprocess": 36.530354
+        }
+      }
+    },
+    "before-cpu": {
+      "chinese.png": {
+        "median_ms": 912.175381,
+        "min_ms": 884.152186,
+        "max_ms": 1004.851657,
+        "stages_ms": {
+          "decode": 7.596776,
+          "detector_inference": 176.236835,
+          "detector_postprocess": 16.480242,
+          "detector_preprocess": 273.684313,
+          "engine_wait": 8.3e-05,
+          "layout_order": 0.01745,
+          "line_assembly": 0.004154,
+          "line_order": 0.003031,
+          "paragraph_inference": 102.779816,
+          "paragraph_postprocess": 50.596228,
+          "paragraph_preprocess": 155.361726,
+          "recognizer_decode": 86.37035,
+          "recognizer_inference": 47.208497,
+          "recognizer_preprocess": 8.051331000000001
+        }
+      },
+      "dense_invoice.png": {
+        "median_ms": 1344.837237,
+        "min_ms": 1295.250992,
+        "max_ms": 1399.894234,
+        "stages_ms": {
+          "decode": 5.759439,
+          "detector_inference": 134.746199,
+          "detector_postprocess": 18.507694,
+          "detector_preprocess": 197.528006,
+          "engine_wait": 0.000114,
+          "layout_order": 6.8118,
+          "line_assembly": 0.019887000000000002,
+          "line_order": 0.003081,
+          "paragraph_inference": 112.527201,
+          "paragraph_postprocess": 54.380681,
+          "paragraph_preprocess": 136.996526,
+          "recognizer_decode": 423.534665,
+          "recognizer_inference": 232.29266699999997,
+          "recognizer_preprocess": 40.819348000000005
+        }
+      },
+      "layout_two_columns.png": {
+        "median_ms": 1217.059095,
+        "min_ms": 1187.451926,
+        "max_ms": 1348.486619,
+        "stages_ms": {
+          "decode": 7.103906,
+          "detector_inference": 137.97138,
+          "detector_postprocess": 15.044299,
+          "detector_preprocess": 200.221908,
+          "engine_wait": 0.000114,
+          "layout_order": 6.720168,
+          "line_assembly": 0.019777999999999997,
+          "line_order": 0.003677,
+          "paragraph_inference": 126.512122,
+          "paragraph_postprocess": 33.697826,
+          "paragraph_preprocess": 116.524898,
+          "recognizer_decode": 387.81986,
+          "recognizer_inference": 188.285583,
+          "recognizer_preprocess": 34.907729999999994
+        }
+      }
+    },
+    "after-gpu": {
+      "chinese.png": {
+        "median_ms": 243.475546,
+        "min_ms": 212.126146,
+        "max_ms": 254.560434,
+        "stages_ms": {
+          "decode": 7.707575,
+          "detector_inference": 15.881087,
+          "detector_postprocess": 13.854999,
+          "detector_preprocess": 56.711624,
+          "engine_wait": 0.000116,
+          "layout_order": 0.015344,
+          "line_assembly": 0.004344,
+          "line_order": 0.002688,
+          "paragraph_inference": 9.990238,
+          "paragraph_postprocess": 48.819338,
+          "paragraph_preprocess": 41.912684,
+          "recognizer_decode": 17.013334,
+          "recognizer_inference": 30.485256999999997,
+          "recognizer_preprocess": 3.1282259999999997
+        }
+      },
+      "dense_invoice.png": {
+        "median_ms": 459.286908,
+        "min_ms": 447.503034,
+        "max_ms": 461.614572,
+        "stages_ms": {
+          "decode": 6.817097,
+          "detector_inference": 14.239599,
+          "detector_postprocess": 12.598528,
+          "detector_preprocess": 42.600747,
+          "engine_wait": 0.00013,
+          "layout_order": 10.274813,
+          "line_assembly": 0.0201,
+          "line_order": 0.003204,
+          "paragraph_inference": 10.892497,
+          "paragraph_postprocess": 68.0041,
+          "paragraph_preprocess": 31.216427,
+          "recognizer_decode": 91.106223,
+          "recognizer_inference": 147.90608100000003,
+          "recognizer_preprocess": 18.412328000000002
+        }
+      },
+      "layout_two_columns.png": {
+        "median_ms": 407.501985,
+        "min_ms": 397.849765,
+        "max_ms": 411.883467,
+        "stages_ms": {
+          "decode": 7.150225,
+          "detector_inference": 13.523061,
+          "detector_postprocess": 12.620526,
+          "detector_preprocess": 45.557062,
+          "engine_wait": 0.000149,
+          "layout_order": 15.936571,
+          "line_assembly": 0.023890999999999996,
+          "line_order": 0.004206,
+          "paragraph_inference": 10.842962,
+          "paragraph_postprocess": 45.456263,
+          "paragraph_preprocess": 31.877711,
+          "recognizer_decode": 84.006949,
+          "recognizer_inference": 123.73439300000001,
+          "recognizer_preprocess": 16.886138
+        }
+      }
+    },
+    "after-cpu": {
+      "chinese.png": {
+        "median_ms": 517.543089,
+        "min_ms": 479.809495,
+        "max_ms": 551.999373,
+        "stages_ms": {
+          "decode": 8.646681,
+          "detector_inference": 186.720073,
+          "detector_postprocess": 9.403075,
+          "detector_preprocess": 45.198426,
+          "engine_wait": 0.000107,
+          "layout_order": 0.019934,
+          "line_assembly": 0.004531,
+          "line_order": 0.002638,
+          "paragraph_inference": 117.74781,
+          "paragraph_postprocess": 39.795597,
+          "paragraph_preprocess": 42.242251,
+          "recognizer_decode": 19.166127000000003,
+          "recognizer_inference": 40.965601,
+          "recognizer_preprocess": 3.682011
+        }
+      },
+      "dense_invoice.png": {
+        "median_ms": 772.627917,
+        "min_ms": 749.41231,
+        "max_ms": 811.996764,
+        "stages_ms": {
+          "decode": 6.562914,
+          "detector_inference": 156.444709,
+          "detector_postprocess": 9.62997,
+          "detector_preprocess": 40.940133,
+          "engine_wait": 0.000113,
+          "layout_order": 16.30483,
+          "line_assembly": 0.018282999999999997,
+          "line_order": 0.003491,
+          "paragraph_inference": 123.865822,
+          "paragraph_postprocess": 47.564213,
+          "paragraph_preprocess": 27.916952,
+          "recognizer_decode": 89.68008699999999,
+          "recognizer_inference": 230.05050700000004,
+          "recognizer_preprocess": 17.095422999999997
+        }
+      },
+      "layout_two_columns.png": {
+        "median_ms": 719.875076,
+        "min_ms": 670.80005,
+        "max_ms": 795.129026,
+        "stages_ms": {
+          "decode": 4.979033,
+          "detector_inference": 142.677002,
+          "detector_postprocess": 8.592643,
+          "detector_preprocess": 28.837908,
+          "engine_wait": 9.3e-05,
+          "layout_order": 15.088154,
+          "line_assembly": 0.017872000000000002,
+          "line_order": 0.00368,
+          "paragraph_inference": 134.579022,
+          "paragraph_postprocess": 38.426719,
+          "paragraph_preprocess": 32.598524,
+          "recognizer_decode": 90.543747,
+          "recognizer_inference": 193.12785000000002,
+          "recognizer_preprocess": 15.399739
+        }
+      }
+    }
+  },
+  "corpus": {
+    "images": 29,
+    "text_order_mismatches": [],
+    "paragraph_mismatches": [],
+    "coordinate_max_abs_delta": 0,
+    "confidence_max_abs_delta": 1.5000000000986446e-06
+  },
+  "softmax_providers": {
+    "CUDAExecutionProvider": 6
+  },
+  "http": {
+    "page_status": 200,
+    "cases": [
+      {
+        "image": "chinese",
+        "run": 0,
+        "wall_ms": 915.11,
+        "elapsed_ms": 912,
+        "lines": 3,
+        "texts": [
+          "微信模型跨平台测试",
+          "中文识别2026",
+          "Hello OCR 123"
+        ]
+      },
+      {
+        "image": "chinese",
+        "run": 1,
+        "wall_ms": 265.01,
+        "elapsed_ms": 262,
+        "lines": 3,
+        "texts": [
+          "微信模型跨平台测试",
+          "中文识别2026",
+          "Hello OCR 123"
+        ]
+      },
+      {
+        "image": "dense_invoice",
+        "run": 0,
+        "wall_ms": 464.01,
+        "elapsed_ms": 461,
+        "lines": 12,
+        "texts": [
+          "订单编号AB-20261004-123456",
+          "客户名称:跨平台识别测试",
+          "合计金额:¥12345.67",
+          "短词 OCR 中文ABC 123",
+          "状态:已完成数量:100",
+          "日期2026-10-0411:30",
+          "地址:北京市朝阳区测试路88号",
+          "服务热线400-800-1234",
+          "电子邮箱 test@example.com",
+          "备注:中文English混合识别测试",
+          "左栏:名称数量金额",
+          "右栏:客户联系方式"
+        ]
+      },
+      {
+        "image": "dense_invoice",
+        "run": 1,
+        "wall_ms": 468.06,
+        "elapsed_ms": 465,
+        "lines": 12,
+        "texts": [
+          "订单编号AB-20261004-123456",
+          "客户名称:跨平台识别测试",
+          "合计金额:¥12345.67",
+          "短词 OCR 中文ABC 123",
+          "状态:已完成数量:100",
+          "日期2026-10-0411:30",
+          "地址:北京市朝阳区测试路88号",
+          "服务热线400-800-1234",
+          "电子邮箱 test@example.com",
+          "备注:中文English混合识别测试",
+          "左栏:名称数量金额",
+          "右栏:客户联系方式"
+        ]
+      },
+      {
+        "image": "layout_two_columns",
+        "run": 0,
+        "wall_ms": 410.85,
+        "elapsed_ms": 408,
+        "lines": 12,
+        "texts": [
+          "第1栏第1行:识别测试。",
+          "第1栏第2行:识别测试。",
+          "第1栏第3行:识别测试。",
+          "第1栏第4行:识别测试。",
+          "第1栏第5行:识别测试。",
+          "第1栏第6行:识别测试。",
+          "第2栏第1行:识别测试。",
+          "第2栏第2行:识别测试。",
+          "第2栏第3行:识别测试。",
+          "第2栏第4行:识别测试。",
+          "第2栏第5行:识别测试。",
+          "第2栏第6行:识别测试。"
+        ]
+      },
+      {
+        "image": "layout_two_columns",
+        "run": 1,
+        "wall_ms": 426.69,
+        "elapsed_ms": 423,
+        "lines": 12,
+        "texts": [
+          "第1栏第1行:识别测试。",
+          "第1栏第2行:识别测试。",
+          "第1栏第3行:识别测试。",
+          "第1栏第4行:识别测试。",
+          "第1栏第5行:识别测试。",
+          "第1栏第6行:识别测试。",
+          "第2栏第1行:识别测试。",
+          "第2栏第2行:识别测试。",
+          "第2栏第3行:识别测试。",
+          "第2栏第4行:识别测试。",
+          "第2栏第5行:识别测试。",
+          "第2栏第6行:识别测试。"
+        ]
+      }
+    ],
+    "unauthenticated_status": 401
+  },
+  "deployment": {
+    "image": "wxocr-web:cuda-perf-20261029",
+    "image_id": "sha256:6715f3a2ca7b8c2b7e43713e60dce48c901a111bc2c15667a5e603a525c644f4",
+    "user": "1000:1000",
+    "restart_count": 0,
+    "health": "healthy",
+    "gpu_request": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "1"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ]
+  }
+}

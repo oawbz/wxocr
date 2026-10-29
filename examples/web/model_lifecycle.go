@@ -5,8 +5,10 @@ import (
 	"errors"
 	"fmt"
 	"image"
+	"os"
 	"path/filepath"
 	"sync"
+	"time"
 
 	ocr "wxocr"
 )
@@ -24,13 +26,27 @@ type onDemandEngine struct {
 }
 
 func newServiceEngine(cfg config) (managedRecognizer, error) {
-	load := func() (managedRecognizer, error) {
-		return ocr.New(ocr.Config{InferenceThreads: cfg.InferenceThreads, RuntimeLibrary: cfg.RuntimeLibrary, DetectionModel: filepath.Join(cfg.ModelsDir, "detection.onnx"), RecognitionModel: filepath.Join(cfg.ModelsDir, "recognition.onnx"), ParagraphModel: filepath.Join(cfg.ModelsDir, "paragraph.onnx"), CharsetFile: filepath.Join(cfg.ModelsDir, "charset_zh13562.txt")})
+	load := func() (*ocr.Engine, error) {
+		return ocr.New(ocr.Config{RuntimeLibrary: cfg.RuntimeLibrary, DetectionModel: filepath.Join(cfg.ModelsDir, "detection.onnx"), RecognitionModel: filepath.Join(cfg.ModelsDir, "recognition.onnx"), ParagraphModel: filepath.Join(cfg.ModelsDir, "paragraph.onnx"), CharsetFile: filepath.Join(cfg.ModelsDir, "charset_zh13562.txt")})
 	}
 	if cfg.ModelResident {
-		return load()
+		e, err := load()
+		if err != nil {
+			return nil, err
+		}
+		if cfg.StartupWarmup {
+			start := time.Now()
+			ctx, cancel := context.WithTimeout(context.Background(), 90*time.Second)
+			err = e.Warmup(ctx)
+			cancel()
+			if err != nil {
+				return nil, errors.Join(fmt.Errorf("startup warmup: %w", err), e.Close())
+			}
+			fmt.Fprintf(os.Stderr, "OCR startup warmup completed in %s\n", time.Since(start).Round(time.Millisecond))
+		}
+		return e, nil
 	}
-	return &onDemandEngine{load: load}, nil
+	return &onDemandEngine{load: func() (managedRecognizer, error) { return load() }}, nil
 }
 
 func (e *onDemandEngine) Recognize(ctx context.Context, src image.Image) (result *ocr.Result, err error) {

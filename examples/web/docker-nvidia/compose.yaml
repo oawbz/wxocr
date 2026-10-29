@@ -1,0 +1,38 @@
+name: wxocr-4090
+services:
+  ocr:
+    image: ${OCR_IMAGE:-wxocr-web:cuda-perf-20261029}
+    build:
+      context: ../../..
+      dockerfile: examples/web/docker-nvidia/Dockerfile
+    user: "${OCR_UID:-1000}:${OCR_GID:-1000}"
+    restart: unless-stopped
+    ports:
+      - "${OCR_BIND_ADDRESS:-0.0.0.0}:${OCR_PORT:-7676}:7676"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./cache:/app/cache
+    environment:
+      LD_LIBRARY_PATH: /opt/ort:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu
+      WXOCR_GPU_VERBOSE: "1"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${OCR_GPU_ID:-1}"]
+              capabilities: [gpu]
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    stop_grace_period: 120s
+    mem_limit: 4g
+    pids_limit: 256
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "2"

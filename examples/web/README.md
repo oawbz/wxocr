@@ -7,5 +7,3 @@
 HTML 根据 OCR 文字和坐标匹配身份证正反面并提取字段，“识别类型”标签页在“纯文字”之前。普通图片仍显示全部文字。类型判断属于启发式模板，缺失字段提示核对；不判断证件真伪。下载 JSON 为原始 OCR 响应，不含网页模板字段。
 
 默认端口 7676、同时处理一个任务、关闭日志及 debug；Token、监听及限流在 config.yaml 配置。Docker Compose 见 docker/。
-
-`inference_threads` 控制单张图片的 CPU 模型推理线程数：默认 `1`，可指定 `2`、`4`，或 `0` 由 ONNX Runtime 自动选择。范围 `0–128`。这与 `max_concurrent_tasks` 独立，多请求仍在同一引擎中串行推理。修改配置后重新启动服务；Compose 使用 `docker compose up -d --force-recreate ocr`，避免继续使用替换前的配置挂载。多线程的提速幅度需在目标机器实测。

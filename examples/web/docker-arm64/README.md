@@ -27,5 +27,3 @@ docker compose -p wxocr-home down
 Home 构建时默认 Go 模块源在容器内连接超时，使用 `docker build --network host --build-arg GOPROXY=https://goproxy.cn,direct ...` 完成构建。该选项只用于构建阶段；运行服务仍使用 Compose 的独立 bridge 网络，模块内容保持 `go.sum` 校验。
 
 实测模型常驻、CPU 模式（各类连续三次中位数）：三行中文 9.05 秒、12 行票据 12.49 秒、18 行网页截图 12.27 秒；H255 同图 CPU 分别 0.51、0.71、0.72 秒。10 次输出文字与 H255 完全一致。服务 RSS 约 451 MiB，记录到的进程峰值约 472 MiB；重启到页面就绪约 2.17 秒（文件缓存已热）。该测试未验证长时间运行或任意大图吞吐。
-
-`inference_threads` 控制单张图片的 CPU 模型推理线程数：默认 `1`，可指定 `2`、`4`，或 `0` 由 ONNX Runtime 自动选择。范围 `0–128`。这与 `max_concurrent_tasks` 独立，多请求仍在同一引擎中串行推理。修改配置后重新启动服务；Compose 使用 `docker compose up -d --force-recreate ocr`，避免继续使用替换前的配置挂载。多线程的提速幅度需在目标机器实测。

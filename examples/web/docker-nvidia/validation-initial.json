@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-29",
+  "server": "新广视-AI服务器",
+  "address": "http://10.100.5.250:7676/",
+  "deployment_dir": "/home/gemini/wxocr-4090-20261029/examples/web/docker-nvidia",
+  "image_id": "sha256:fb70359a2df06348865b41b08b06f8cbf55968fc986827fc222e043649127868",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "host_gpu_index": 1,
+  "gpu_uuid": "GPU-6588571c-ad16-6d6c-b753-622e2886b1e8",
+  "driver": "570.144",
+  "runtime": "ONNX Runtime 1.19.0 / CUDA 12.6 / cuDNN 9",
+  "container_user": "1000:1000",
+  "health": "healthy",
+  "restart_count": 0,
+  "page_status": 200,
+  "unauthenticated_status": 401,
+  "gpu_process_memory_mib_after_test": 956,
+  "profiling_enabled_in_final_service": false,
+  "profile_node_events": {
+    "detection": {
+      "CUDAExecutionProvider": 714,
+      "CPUExecutionProvider": 168
+    },
+    "recognition": {
+      "CUDAExecutionProvider": 5778,
+      "CPUExecutionProvider": 486
+    },
+    "paragraph": {
+      "CUDAExecutionProvider": 744
+    }
+  },
+  "comparison": [
+    {
+      "image": "chinese",
+      "gpu_ms": 697,
+      "cpu_ms": 661,
+      "lines": 3,
+      "text_and_order_equal": true,
+      "coordinate_max_abs_delta": 0
+    },
+    {
+      "image": "dense_invoice",
+      "gpu_ms": 1107,
+      "cpu_ms": 1098,
+      "lines": 12,
+      "text_and_order_equal": true,
+      "coordinate_max_abs_delta": 0
+    },
+    {
+      "image": "layout_two_columns",
+      "gpu_ms": 1093,
+      "cpu_ms": 1016,
+      "lines": 12,
+      "text_and_order_equal": true,
+      "coordinate_max_abs_delta": 0
+    }
+  ],
+  "timing_scope": "Second request per image; same compiled service and runtime, CPU baseline uses runtime directly without CUDA adapter. Small sample, no speedup established.",
+  "driver_workaround": "Compose prioritizes host injected /usr/lib/x86_64-linux-gnu libraries before ldconfig CUDA compat entries; no host driver change.",
+  "limitations": [
+    "Only three test images, two requests each; no load or long-duration test.",
+    "CUDA may fall back to CPU for unsupported operators."
+  ]
+}

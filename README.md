@@ -33,7 +33,6 @@ func main() {
         RecognitionModel: "models/recognition.onnx",
         ParagraphModel: "models/paragraph.onnx",
         CharsetFile: "models/charset_zh13562.txt",
-        InferenceThreads: 1, // 0 由 ONNX Runtime 自动选择；1 保持单线程
     })
     if err != nil { log.Fatal(err) }
     defer engine.Close()
@@ -45,7 +44,7 @@ func main() {
 
 其他本地 Go 项目使用 `require wxocr v0.0.0` 并通过 `replace wxocr => /你的项目路径` 引用。发布到仓库时应将模块路径改为实际仓库地址。
 
-`Config.InferenceThreads` 控制模型算子内部线程数，Go API 零值 `0` 由 ONNX Runtime 自动选择；Web 配置省略时默认 `1`。线程数在创建 Engine 时生效。同一个 Engine 的识别调用会串行执行，可复用至应用退出。`Close` 释放模型和运行时引用。支持 JPEG / PNG；JPEG 会应用 EXIF 方向，输出坐标以旋转后图片为准。置信度是长度归一化 CTC 模型分数，尚未校准为正确率。明确网格表格支持按行列排序，复杂无边框排版仍需进一步验证。
+同一个 Engine 的识别调用会串行执行，可复用至应用退出。`Close` 释放模型和运行时引用。支持 JPEG / PNG；JPEG 会应用 EXIF 方向，输出坐标以旋转后图片为准。置信度是长度归一化 CTC 模型分数，尚未校准为正确率。明确网格表格支持按行列排序，复杂无边框排版仍需进一步验证。
 
 ## Gin 网页示例
 
@@ -70,7 +69,6 @@ HTML、CSS 和 JavaScript 使用 `go:embed` 编译进可执行文件，无需部
 | `max_concurrent_tasks` | `1`，在读取上传前限制整个处理流程，繁忙立即返回 429，不排队；同一引擎串行推理，建议保持 1 |
 | `requests_per_minute` | `60`，全服务共享令牌桶、同数突发额度；0 关闭速率限制。仅通过鉴权且获得处理名额的 OCR 请求消耗额度 |
 | `models_dir` | `../../models` |
-| `inference_threads` | `1`；`0` 自动，`1–128` 指定单张图片的模型推理线程数 |
 | `model_resident` | `true`；`false` 为每次识别按需加载并释放 |
 | `runtime_library` | 空值按操作系统选择 `../../runtime` 下的动态库，Linux 需设置适配的 `.so` |
 | `log_enabled` / `debug` | 均为 `false`；启动配置或模型错误仍输出到标准错误并退出 |
@@ -115,6 +113,12 @@ docker compose up -d
 ## AMD GPU 实验部署（H255）
 
 `examples/web/docker-amd-gpu/` 提供独立 Docker Compose、运行库适配层和验证记录。服务主体复用 Linux amd64 Go 二进制，通过固定 ORT 1.19 / ROCm 6.3.1 后端推理。H255 的 Radeon 780M 需要 gfx1100 兼容目标及关闭 SDMA；修复后已通过三组图片的文字、顺序、坐标对照和三次容器重建，但未做长期压测。当前单任务性能与 CPU 接近，GPU 镜像约 4.4 GB，不建议据此默认替换 CPU 部署。具体限制见该目录 README 和 validation.json。
+
+## NVIDIA GPU 部署（RTX 4090）
+
+`examples/web/docker-nvidia/` 从当前源码构建 CUDA 镜像，通过 ONNX Runtime 1.19.0、CUDA 12.6 和 cuDNN 9 加速三个模型。构建时为识别模型增加 FP32 Softmax，将归一化留在 GPU；原始模型文件保持不变。修改该目录配置中的 Token 后执行 `docker compose up -d --build`。默认宿主 GPU 1、端口 7676；通过 `OCR_GPU_ID` 和 `OCR_PORT` 调整。宿主机需要 NVIDIA 驱动和 NVIDIA Container Toolkit。实测阶段耗时、CPU 对照及回归结果见该目录 `PERFORMANCE.md`。
+
+通过 `go run ./cmd/ocrbench -runtime /path/to/libonnxruntime.so -models models -runs 5 image.png` 测量各阶段耗时；`-cpuprofile cpu.pprof` 可采集 CPU 热点。Go 调用方可使用 `WithTimingObserver(ctx, callback)` 获取同样的分阶段计时，默认 API 响应保持原有格式。
 
 ## 测试
 

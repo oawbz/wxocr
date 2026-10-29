@@ -20,15 +20,15 @@ type config struct {
 	MaxConcurrentTasks int    `yaml:"max_concurrent_tasks"`
 	RequestsPerMinute  int    `yaml:"requests_per_minute"`
 	ModelsDir          string `yaml:"models_dir"`
-	InferenceThreads   int    `yaml:"inference_threads"`
 	ModelResident      bool   `yaml:"model_resident"`
+	StartupWarmup      bool   `yaml:"startup_warmup"`
 	RuntimeLibrary     string `yaml:"runtime_library"`
 	LogEnabled         bool   `yaml:"log_enabled"`
 	Debug              bool   `yaml:"debug"`
 }
 
 func defaultConfig() config {
-	return config{ListenAddress: "127.0.0.1", ListenPort: 7676, MaxConcurrentTasks: 1, RequestsPerMinute: 60, ModelsDir: "../../models", ModelResident: true, InferenceThreads: 1}
+	return config{ListenAddress: "127.0.0.1", ListenPort: 7676, MaxConcurrentTasks: 1, RequestsPerMinute: 60, ModelsDir: "../../models", ModelResident: true}
 }
 func loadConfig(path string) (config, error) {
 	cfg := defaultConfig()
@@ -69,9 +69,6 @@ func loadConfig(path string) (config, error) {
 	return cfg, nil
 }
 func (c config) validate() error {
-	if c.InferenceThreads < 0 || c.InferenceThreads > 128 {
-		return fmt.Errorf("inference_threads must be between 0 and 128")
-	}
 	if net.ParseIP(c.ListenAddress) == nil && c.ListenAddress != "localhost" {
 		return fmt.Errorf("listen_address must be an IP address or localhost")
 	}
@@ -86,6 +83,9 @@ func (c config) validate() error {
 	}
 	if c.RequestsPerMinute < 0 || c.RequestsPerMinute > 100000 {
 		return fmt.Errorf("requests_per_minute must be between 0 and 100000")
+	}
+	if c.StartupWarmup && !c.ModelResident {
+		return fmt.Errorf("startup_warmup requires model_resident: true")
 	}
 	if c.ModelsDir == "" {
 		return fmt.Errorf("models_dir must not be empty")
