@@ -1,0 +1,380 @@
+{
+  "input": "/Users/awbz/Downloads/20260713122533.jpg",
+  "baseline": "table refinement snapshot before numeric and performance changes",
+  "before_lines": 196,
+  "after_lines": 214,
+  "before_candidates": 34,
+  "after_candidates": 30,
+  "before_median_ms": 11050.876875,
+  "after_median_ms": 6568.643458,
+  "before_runs_ms": [
+    11757.005959,
+    11013.784291,
+    11050.876875
+  ],
+  "after_runs_ms": [
+    6585.700042,
+    6538.029334,
+    6568.643458
+  ],
+  "local_passes": 8,
+  "split_parents": 28,
+  "checks": {
+    "sequence": {
+      "expected": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "before": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "after": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "before_correct": 10,
+      "after_correct": 10
+    },
+    "name": {
+      "expected": [
+        "测试人员1",
+        "测试人员2",
+        "测试人员3",
+        "测试人员4",
+        "测试人员5",
+        "测试人员6",
+        "测试人员7",
+        "测试人员8",
+        "测试人员9",
+        "测试人员10"
+      ],
+      "before": [
+        "测试人员1",
+        "测试人员2",
+        "测试人员3",
+        "测试人员4",
+        "测试人员5",
+        "测试人员6",
+        "测试人员7",
+        "测试人员8",
+        "测试人员9",
+        "测试人员10"
+      ],
+      "after": [
+        "测试人员1",
+        "测试人员2",
+        "测试人员3",
+        "测试人员4",
+        "测试人员5",
+        "测试人员6",
+        "测试人员7",
+        "测试人员8",
+        "测试人员9",
+        "测试人员10"
+      ],
+      "before_correct": 10,
+      "after_correct": 10
+    },
+    "none": {
+      "expected": [
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无"
+      ],
+      "before": [
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无"
+      ],
+      "after": [
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无",
+        "无"
+      ],
+      "before_correct": 10,
+      "after_correct": 10
+    },
+    "birth": {
+      "expected": [
+        "19710101",
+        "19720101",
+        "19730101",
+        "19740101",
+        "19750101",
+        "19760101",
+        "19770101",
+        "19780101",
+        "19790101",
+        "19700101"
+      ],
+      "before": [
+        "1971-01-01",
+        "1972-01-01",
+        "1973-01-01",
+        "1974-01-01",
+        "1975-01-01",
+        "1976-01-01",
+        "1977-01-01",
+        "1978-01-01",
+        "1979-01-01",
+        "1970-01-01"
+      ],
+      "after": [
+        "1971-01-01",
+        "1972-01-01",
+        "1973-01-01",
+        "1974-01-01",
+        "1975-01-01",
+        "1976-01-01",
+        "1977-01-01",
+        "1978-01-01",
+        "1979-01-01",
+        "1970-01-01"
+      ],
+      "before_correct": 10,
+      "after_correct": 10
+    },
+    "work": {
+      "expected": [
+        "19910701",
+        "19920701",
+        "19930701",
+        "19940701",
+        "19950701",
+        "19960701",
+        "19970701",
+        "19980701",
+        "19990701",
+        "19900701"
+      ],
+      "before": [
+        "1991-07-01",
+        "1992-07-01",
+        "1993-07-01",
+        "1994-07-01",
+        "1995-07-01",
+        "1996-07-01",
+        "1997-07-01",
+        "1998-07-01",
+        "1999-07-01",
+        "1990-07-01"
+      ],
+      "after": [
+        "1991-07-01",
+        "1992-07-01",
+        "1993-07-01",
+        "1994-07-01",
+        "1995-07-01",
+        "1996-07-01",
+        "1997-07-01",
+        "1998-07-01",
+        "1999-07-01",
+        "1990-07-01"
+      ],
+      "before_correct": 10,
+      "after_correct": 10
+    },
+    "retirement": {
+      "expected": [
+        "20250201",
+        "20250301",
+        "20250401",
+        "20250501",
+        "20250601",
+        "20250701",
+        "20250801",
+        "20250901",
+        "20251001",
+        "20251101"
+      ],
+      "before": [
+        "2025-02-01",
+        "2025-03-01",
+        "2025-04-01",
+        "2025-0501",
+        "2025-06-01",
+        "2025-07-01",
+        "2025-08-01",
+        "2025-09-01",
+        "2025-10-01",
+        "2025-11-01"
+      ],
+      "after": [
+        "2025-0201",
+        "2025-03-01",
+        "2025-04-01",
+        "2025-0501",
+        "2025-06-01",
+        "2025-07-01",
+        "2025-08-01",
+        "2025-09-01",
+        "2025-10-01",
+        "2025-11-01"
+      ],
+      "before_correct": 10,
+      "after_correct": 10
+    }
+  },
+  "limitations": "Selected-field completeness only. Date digits ignore separators. Source IDs are 17-digit synthetic strings; obscured dates are not reconstructed.",
+  "numeric_fields": {
+    "expected_source_id_strings": [
+      "11010119701010001",
+      "11010119702010002",
+      "11010119703010003",
+      "11010119704010004",
+      "11010119705010005",
+      "11010119706010006",
+      "11010119707010007",
+      "11010119708010008",
+      "11010119709010009",
+      "11010119710010010",
+      "11010119712010012",
+      "11010119713010013",
+      "11010119714010014"
+    ],
+    "before": {
+      "source_id_digit_runs_present": 13,
+      "footer_independent_id_boxes": 0,
+      "footer_independent_id_texts": [],
+      "footer_account_months_correct": 0,
+      "review_fields": []
+    },
+    "after": {
+      "source_id_digit_runs_present": 13,
+      "footer_independent_id_boxes": 3,
+      "footer_independent_id_texts": [
+        "11010119712010012",
+        ":11010119713010013",
+        "11010119714010014"
+      ],
+      "footer_account_months_correct": 3,
+      "review_fields": [
+        {
+          "text": ":11010119713010013",
+          "reasons": [
+            "inferred_table_column",
+            "possible_boundary_fragment"
+          ]
+        },
+        {
+          "text": "1973-01-(",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "1993-07-(",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "1972-01-1",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "1992-07-1",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "1974-01-(",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "1994-07-",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "2025-03-0",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "2025-01-0",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        },
+        {
+          "text": "2025-02-0",
+          "reasons": [
+            "inferred_table_column",
+            "incomplete_or_ambiguous_date"
+          ]
+        }
+      ]
+    }
+  },
+  "diagnostic_reasons": {
+    "covered_by_local": 56,
+    "duplicate": 166,
+    "candidate": 30,
+    "split_parent": 28,
+    "empty_recognition": 16,
+    "accepted": 214,
+    "redundant_detection": 65
+  }
+}

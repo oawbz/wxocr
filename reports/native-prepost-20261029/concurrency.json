@@ -1,0 +1,2290 @@
+{
+  "tests": [
+    {
+      "mode": "before",
+      "workers": 1,
+      "clients": 1,
+      "count": 60,
+      "ready_ms": 5722.001280635595,
+      "wall_s": 14.65057828091085,
+      "requests_per_second": 4.095401481740672,
+      "p50_ms": 247.62984830886126,
+      "p95_ms": 291.84106923639774,
+      "idle": {
+        "time": 1793256557.730495,
+        "app_gpu_memory_mib": [
+          930
+        ],
+        "whole_gpu": "3, 0, 63.28, 14214",
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+          "ID": "b596bde2c9a5",
+          "MemPerc": "16.65%",
+          "MemUsage": "681.9MiB / 4GiB",
+          "Name": "determined_hertz",
+          "NetIO": "3.73kB / 27kB",
+          "PIDs": "16"
+        }
+      },
+      "samples": [
+        {
+          "time": 1793256559.741801,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "0, 0, 57.95, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "107.01%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.91%",
+            "MemUsage": "692.5MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "232kB / 39.6kB",
+            "PIDs": "20"
+          }
+        },
+        {
+          "time": 1793256561.750261,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "6, 0, 60.49, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "107.83%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.70%",
+            "MemUsage": "683.9MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "544kB / 60.3kB",
+            "PIDs": "20"
+          }
+        },
+        {
+          "time": 1793256563.7583652,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "6, 1, 61.23, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "107.87%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.82%",
+            "MemUsage": "689.1MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "887kB / 83.9kB",
+            "PIDs": "20"
+          }
+        },
+        {
+          "time": 1793256565.7674518,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "8, 0, 61.08, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "107.52%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "17.10%",
+            "MemUsage": "700.5MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "1.17MB / 106kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256567.7778132,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "6, 0, 61.11, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "107.77%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.93%",
+            "MemUsage": "693.5MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "1.52MB / 130kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256569.7866142,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "5, 0, 60.17, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "110.60%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.63%",
+            "MemUsage": "681.2MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "1.83MB / 150kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256571.7942123,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "4, 0, 58.80, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "108.22%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.85%",
+            "MemUsage": "690.3MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "2.14MB / 171kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256573.8040295,
+          "app_gpu_memory_mib": [
+            930
+          ],
+          "whole_gpu": "3, 0, 59.75, 14214",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "9.69%",
+            "Container": "b596bde2c9a56bc2e49e5eda59f401dc33499c5bca4d1b12f1de671d46c06cae",
+            "ID": "b596bde2c9a5",
+            "MemPerc": "16.89%",
+            "MemUsage": "691.8MiB / 4GiB",
+            "Name": "determined_hertz",
+            "NetIO": "2.29MB / 185kB",
+            "PIDs": "22"
+          }
+        }
+      ],
+      "pmon": "# gpu         pid   type     sm    mem    enc    dec    jpg    ofa     fb   ccpm    command \n# Idx           #    C/G      %      %      %      %      %      %     MB     MB    name \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     258766     C      0      0      -      -      -      -    930      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3        \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     258766     C      1      0      -      -      -      -    930      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3",
+      "results": [
+        {
+          "image": "chinese.png",
+          "wall_ms": 237.8128357231617,
+          "elapsed_ms": 231
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 290.4091514647007,
+          "elapsed_ms": 288
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 247.75220453739166,
+          "elapsed_ms": 245
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 223.7513419240713,
+          "elapsed_ms": 221
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 291.84106923639774,
+          "elapsed_ms": 289
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 242.42702312767506,
+          "elapsed_ms": 240
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 220.25984898209572,
+          "elapsed_ms": 218
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 297.98364266753197,
+          "elapsed_ms": 295
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 244.813846424222,
+          "elapsed_ms": 242
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 159.69708003103733,
+          "elapsed_ms": 158
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 289.15318101644516,
+          "elapsed_ms": 287
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 250.7559023797512,
+          "elapsed_ms": 248
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 221.1899682879448,
+          "elapsed_ms": 218
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 288.07008266448975,
+          "elapsed_ms": 285
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 264.5471189171076,
+          "elapsed_ms": 262
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 188.76710906624794,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 264.3625717610121,
+          "elapsed_ms": 262
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 245.1681699603796,
+          "elapsed_ms": 242
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 219.27889809012413,
+          "elapsed_ms": 217
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 282.57458098232746,
+          "elapsed_ms": 280
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 254.62719053030014,
+          "elapsed_ms": 252
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 224.7813604772091,
+          "elapsed_ms": 222
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 267.9655160754919,
+          "elapsed_ms": 265
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 261.7304679006338,
+          "elapsed_ms": 255
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 193.92259418964386,
+          "elapsed_ms": 191
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 284.69454124569893,
+          "elapsed_ms": 282
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 229.4354047626257,
+          "elapsed_ms": 226
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 188.2370039820671,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 276.18457935750484,
+          "elapsed_ms": 273
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 218.77912804484367,
+          "elapsed_ms": 216
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 186.9814768433571,
+          "elapsed_ms": 184
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 252.97601334750652,
+          "elapsed_ms": 249
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 250.60082226991653,
+          "elapsed_ms": 248
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 180.18350563943386,
+          "elapsed_ms": 178
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 264.1106303781271,
+          "elapsed_ms": 261
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 227.69689187407494,
+          "elapsed_ms": 225
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 214.89809826016426,
+          "elapsed_ms": 212
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 290.08375108242035,
+          "elapsed_ms": 286
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 241.36132188141346,
+          "elapsed_ms": 238
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 219.24911811947823,
+          "elapsed_ms": 217
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 271.96517027914524,
+          "elapsed_ms": 269
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 247.61788919568062,
+          "elapsed_ms": 245
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 227.68032364547253,
+          "elapsed_ms": 225
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 283.54653529822826,
+          "elapsed_ms": 280
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 262.79229670763016,
+          "elapsed_ms": 260
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 238.99300210177898,
+          "elapsed_ms": 236
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 295.11111974716187,
+          "elapsed_ms": 292
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 266.71682111918926,
+          "elapsed_ms": 264
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 240.43798632919788,
+          "elapsed_ms": 238
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 277.4067632853985,
+          "elapsed_ms": 275
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 208.73745530843735,
+          "elapsed_ms": 206
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 187.22862750291824,
+          "elapsed_ms": 185
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 242.13354103267193,
+          "elapsed_ms": 239
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 257.24358297884464,
+          "elapsed_ms": 255
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 174.03988167643547,
+          "elapsed_ms": 172
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 297.0973514020443,
+          "elapsed_ms": 294
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 256.42330572009087,
+          "elapsed_ms": 254
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 190.37590734660625,
+          "elapsed_ms": 188
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 261.16114668548107,
+          "elapsed_ms": 258
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 247.6418074220419,
+          "elapsed_ms": 245
+        }
+      ]
+    },
+    {
+      "mode": "native1",
+      "workers": 1,
+      "clients": 1,
+      "count": 60,
+      "ready_ms": 6304.592277854681,
+      "wall_s": 9.672262094914913,
+      "requests_per_second": 6.20330584626572,
+      "p50_ms": 172.88959212601185,
+      "p95_ms": 191.259840503335,
+      "idle": {
+        "time": 1793256582.935113,
+        "app_gpu_memory_mib": [
+          934
+        ],
+        "whole_gpu": "12, 1, 60.08, 14218",
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "7ad150e1b03c72ccf7e468d922adb16af648c21acf05638f852919fdc0a96b64",
+          "ID": "7ad150e1b03c",
+          "MemPerc": "16.64%",
+          "MemUsage": "681.6MiB / 4GiB",
+          "Name": "lucid_chatterjee",
+          "NetIO": "3.73kB / 27kB",
+          "PIDs": "17"
+        }
+      },
+      "samples": [
+        {
+          "time": 1793256584.9446237,
+          "app_gpu_memory_mib": [
+            934
+          ],
+          "whole_gpu": "0, 0, 56.72, 14218",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "111.71%",
+            "Container": "7ad150e1b03c72ccf7e468d922adb16af648c21acf05638f852919fdc0a96b64",
+            "ID": "7ad150e1b03c",
+            "MemPerc": "16.96%",
+            "MemUsage": "694.8MiB / 4GiB",
+            "Name": "lucid_chatterjee",
+            "NetIO": "375kB / 50.9kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256586.9534693,
+          "app_gpu_memory_mib": [
+            934
+          ],
+          "whole_gpu": "8, 0, 61.93, 14218",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "112.63%",
+            "Container": "7ad150e1b03c72ccf7e468d922adb16af648c21acf05638f852919fdc0a96b64",
+            "ID": "7ad150e1b03c",
+            "MemPerc": "16.79%",
+            "MemUsage": "687.7MiB / 4GiB",
+            "Name": "lucid_chatterjee",
+            "NetIO": "886kB / 84.1kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256588.9643981,
+          "app_gpu_memory_mib": [
+            934
+          ],
+          "whole_gpu": "5, 0, 62.12, 14218",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "111.36%",
+            "Container": "7ad150e1b03c72ccf7e468d922adb16af648c21acf05638f852919fdc0a96b64",
+            "ID": "7ad150e1b03c",
+            "MemPerc": "16.83%",
+            "MemUsage": "689.3MiB / 4GiB",
+            "Name": "lucid_chatterjee",
+            "NetIO": "1.34MB / 116kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256590.9739208,
+          "app_gpu_memory_mib": [
+            934
+          ],
+          "whole_gpu": "8, 0, 62.10, 14218",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "112.25%",
+            "Container": "7ad150e1b03c72ccf7e468d922adb16af648c21acf05638f852919fdc0a96b64",
+            "ID": "7ad150e1b03c",
+            "MemPerc": "16.87%",
+            "MemUsage": "690.9MiB / 4GiB",
+            "Name": "lucid_chatterjee",
+            "NetIO": "1.8MB / 147kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256592.9832704,
+          "app_gpu_memory_mib": [
+            934
+          ],
+          "whole_gpu": "6, 0, 62.03, 14218",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "113.26%",
+            "Container": "7ad150e1b03c72ccf7e468d922adb16af648c21acf05638f852919fdc0a96b64",
+            "ID": "7ad150e1b03c",
+            "MemPerc": "16.96%",
+            "MemUsage": "694.6MiB / 4GiB",
+            "Name": "lucid_chatterjee",
+            "NetIO": "2.29MB / 182kB",
+            "PIDs": "22"
+          }
+        }
+      ],
+      "pmon": "# gpu         pid   type     sm    mem    enc    dec    jpg    ofa     fb   ccpm    command \n# Idx           #    C/G      %      %      %      %      %      %     MB     MB    name \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     263912     C      0      0      -      -      -      -    934      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3        \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     263912     C      5      0      -      -      -      -    934      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3",
+      "results": [
+        {
+          "image": "chinese.png",
+          "wall_ms": 131.16616010665894,
+          "elapsed_ms": 126
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 154.6180434525013,
+          "elapsed_ms": 152
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 161.61647997796535,
+          "elapsed_ms": 159
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 129.07390482723713,
+          "elapsed_ms": 126
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 183.74702706933022,
+          "elapsed_ms": 181
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 177.77203768491745,
+          "elapsed_ms": 175
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 126.44830346107483,
+          "elapsed_ms": 124
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 195.10534591972828,
+          "elapsed_ms": 192
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 173.3619924634695,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 124.77381527423859,
+          "elapsed_ms": 122
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 188.9411136507988,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 166.9473834335804,
+          "elapsed_ms": 165
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 114.71062526106834,
+          "elapsed_ms": 113
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 190.6728744506836,
+          "elapsed_ms": 187
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 171.54476791620255,
+          "elapsed_ms": 169
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 122.31140397489071,
+          "elapsed_ms": 120
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 156.82442300021648,
+          "elapsed_ms": 154
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 163.77553902566433,
+          "elapsed_ms": 161
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 127.23894789814949,
+          "elapsed_ms": 125
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 186.912439763546,
+          "elapsed_ms": 184
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 178.06844972074032,
+          "elapsed_ms": 176
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 118.30858699977398,
+          "elapsed_ms": 116
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 181.93109519779682,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 185.941893607378,
+          "elapsed_ms": 183
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 126.16603448987007,
+          "elapsed_ms": 123
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 189.53152000904083,
+          "elapsed_ms": 187
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 181.9251086562872,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 119.60326693952084,
+          "elapsed_ms": 117
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 190.31459838151932,
+          "elapsed_ms": 187
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 174.38146099448204,
+          "elapsed_ms": 172
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 132.2312206029892,
+          "elapsed_ms": 130
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 183.33807587623596,
+          "elapsed_ms": 180
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 172.4171917885542,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 126.70332938432693,
+          "elapsed_ms": 124
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 191.259840503335,
+          "elapsed_ms": 188
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 173.74375648796558,
+          "elapsed_ms": 171
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 121.67593277990818,
+          "elapsed_ms": 119
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 189.86611999571323,
+          "elapsed_ms": 187
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 179.11860533058643,
+          "elapsed_ms": 176
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 127.47965939342976,
+          "elapsed_ms": 125
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 170.76456919312477,
+          "elapsed_ms": 168
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 176.2607879936695,
+          "elapsed_ms": 173
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 133.73092003166676,
+          "elapsed_ms": 131
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 197.6910810917616,
+          "elapsed_ms": 195
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 175.34960620105267,
+          "elapsed_ms": 173
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 127.07718461751938,
+          "elapsed_ms": 124
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 164.21799547970295,
+          "elapsed_ms": 161
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 178.60794812440872,
+          "elapsed_ms": 176
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 128.06054949760437,
+          "elapsed_ms": 125
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 185.52038073539734,
+          "elapsed_ms": 183
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 158.9919738471508,
+          "elapsed_ms": 156
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 108.83023217320442,
+          "elapsed_ms": 106
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 178.9816003292799,
+          "elapsed_ms": 176
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 180.645314976573,
+          "elapsed_ms": 178
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 129.87926229834557,
+          "elapsed_ms": 127
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 197.25987128913403,
+          "elapsed_ms": 194
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 184.21033956110477,
+          "elapsed_ms": 181
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 128.03194113075733,
+          "elapsed_ms": 125
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 181.62782862782478,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 181.3738103955984,
+          "elapsed_ms": 179
+        }
+      ]
+    },
+    {
+      "mode": "native1",
+      "workers": 1,
+      "clients": 2,
+      "count": 60,
+      "ready_ms": 8666.01437702775,
+      "wall_s": 8.776957267895341,
+      "requests_per_second": 6.836082046277026,
+      "p50_ms": 278.8114380091429,
+      "p95_ms": 333.09260569512844,
+      "idle": {
+        "time": 1793256604.2049403,
+        "app_gpu_memory_mib": [
+          922
+        ],
+        "whole_gpu": "0, 0, 61.84, 14206",
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.07%",
+          "Container": "614b46c164922110740787389a11737e474fbdc987ddb9227075209ce21c1e32",
+          "ID": "614b46c16492",
+          "MemPerc": "16.86%",
+          "MemUsage": "690.7MiB / 4GiB",
+          "Name": "cool_goldberg",
+          "NetIO": "3.57kB / 26.7kB",
+          "PIDs": "16"
+        }
+      },
+      "samples": [
+        {
+          "time": 1793256606.215524,
+          "app_gpu_memory_mib": [
+            922
+          ],
+          "whole_gpu": "0, 0, 57.45, 14206",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "119.62%",
+            "Container": "614b46c164922110740787389a11737e474fbdc987ddb9227075209ce21c1e32",
+            "ID": "614b46c16492",
+            "MemPerc": "17.02%",
+            "MemUsage": "697.1MiB / 4GiB",
+            "Name": "cool_goldberg",
+            "NetIO": "460kB / 52.7kB",
+            "PIDs": "19"
+          }
+        },
+        {
+          "time": 1793256608.2249918,
+          "app_gpu_memory_mib": [
+            922
+          ],
+          "whole_gpu": "4, 0, 63.26, 14206",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "120.96%",
+            "Container": "614b46c164922110740787389a11737e474fbdc987ddb9227075209ce21c1e32",
+            "ID": "614b46c16492",
+            "MemPerc": "17.29%",
+            "MemUsage": "708.2MiB / 4GiB",
+            "Name": "cool_goldberg",
+            "NetIO": "945kB / 87.3kB",
+            "PIDs": "20"
+          }
+        },
+        {
+          "time": 1793256610.234978,
+          "app_gpu_memory_mib": [
+            922
+          ],
+          "whole_gpu": "7, 0, 62.66, 14206",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "121.32%",
+            "Container": "614b46c164922110740787389a11737e474fbdc987ddb9227075209ce21c1e32",
+            "ID": "614b46c16492",
+            "MemPerc": "17.12%",
+            "MemUsage": "701.4MiB / 4GiB",
+            "Name": "cool_goldberg",
+            "NetIO": "1.49MB / 124kB",
+            "PIDs": "21"
+          }
+        },
+        {
+          "time": 1793256612.2430756,
+          "app_gpu_memory_mib": [
+            922
+          ],
+          "whole_gpu": "5, 1, 62.99, 14206",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "121.70%",
+            "Container": "614b46c164922110740787389a11737e474fbdc987ddb9227075209ce21c1e32",
+            "ID": "614b46c16492",
+            "MemPerc": "17.32%",
+            "MemUsage": "709.4MiB / 4GiB",
+            "Name": "cool_goldberg",
+            "NetIO": "2.03MB / 162kB",
+            "PIDs": "21"
+          }
+        },
+        {
+          "time": 1793256614.2521544,
+          "app_gpu_memory_mib": [
+            922
+          ],
+          "whole_gpu": "8, 0, 62.70, 14206",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "28.16%",
+            "Container": "614b46c164922110740787389a11737e474fbdc987ddb9227075209ce21c1e32",
+            "ID": "614b46c16492",
+            "MemPerc": "16.70%",
+            "MemUsage": "683.9MiB / 4GiB",
+            "Name": "cool_goldberg",
+            "NetIO": "2.29MB / 185kB",
+            "PIDs": "21"
+          }
+        }
+      ],
+      "pmon": "# gpu         pid   type     sm    mem    enc    dec    jpg    ofa     fb   ccpm    command \n# Idx           #    C/G      %      %      %      %      %      %     MB     MB    name \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     268269     C      0      0      -      -      -      -    922      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3        \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     268269     C      4      0      -      -      -      -    922      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3",
+      "results": [
+        {
+          "image": "chinese.png",
+          "wall_ms": 286.9943268597126,
+          "elapsed_ms": 282
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 189.8336447775364,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 257.5795277953148,
+          "elapsed_ms": 255
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 277.250899001956,
+          "elapsed_ms": 275
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 284.33530777692795,
+          "elapsed_ms": 282
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 314.5689480006695,
+          "elapsed_ms": 312
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 260.18618047237396,
+          "elapsed_ms": 258
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 277.6003200560808,
+          "elapsed_ms": 275
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 324.68430139124393,
+          "elapsed_ms": 322
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 278.8290586322546,
+          "elapsed_ms": 276
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 282.00180642306805,
+          "elapsed_ms": 279
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 327.64616794884205,
+          "elapsed_ms": 325
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 274.3802238255739,
+          "elapsed_ms": 272
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 277.37148106098175,
+          "elapsed_ms": 275
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 327.51916721463203,
+          "elapsed_ms": 325
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 283.1518556922674,
+          "elapsed_ms": 281
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 295.0632143765688,
+          "elapsed_ms": 292
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 333.09260569512844,
+          "elapsed_ms": 330
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 267.4448676407337,
+          "elapsed_ms": 265
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 267.1567536890507,
+          "elapsed_ms": 265
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 323.7038906663656,
+          "elapsed_ms": 321
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 268.01603473722935,
+          "elapsed_ms": 266
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 271.24491706490517,
+          "elapsed_ms": 268
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 330.40826953947544,
+          "elapsed_ms": 328
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 269.41860280930996,
+          "elapsed_ms": 267
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 278.77215668559074,
+          "elapsed_ms": 276
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 334.5018718391657,
+          "elapsed_ms": 332
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 278.28879840672016,
+          "elapsed_ms": 276
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 289.57416489720345,
+          "elapsed_ms": 287
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 327.15262472629547,
+          "elapsed_ms": 325
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 271.69576846063137,
+          "elapsed_ms": 269
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 290.3023660182953,
+          "elapsed_ms": 287
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 333.73667299747467,
+          "elapsed_ms": 331
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 271.0361909121275,
+          "elapsed_ms": 269
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 268.9284645020962,
+          "elapsed_ms": 267
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 316.26052781939507,
+          "elapsed_ms": 313
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 278.79381738603115,
+          "elapsed_ms": 276
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 282.6014868915081,
+          "elapsed_ms": 279
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 323.3297076076269,
+          "elapsed_ms": 320
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 271.56027033925056,
+          "elapsed_ms": 269
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 277.1708816289902,
+          "elapsed_ms": 274
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 327.6829216629267,
+          "elapsed_ms": 325
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 275.4791136831045,
+          "elapsed_ms": 273
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 287.50223480165005,
+          "elapsed_ms": 284
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 318.11281852424145,
+          "elapsed_ms": 315
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 264.2728332430124,
+          "elapsed_ms": 262
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 279.32436764240265,
+          "elapsed_ms": 277
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 322.44864851236343,
+          "elapsed_ms": 319
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 270.3749518841505,
+          "elapsed_ms": 268
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 274.86458607017994,
+          "elapsed_ms": 272
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 326.1865433305502,
+          "elapsed_ms": 323
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 278.03583815693855,
+          "elapsed_ms": 276
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 270.4905029386282,
+          "elapsed_ms": 268
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 311.47901341319084,
+          "elapsed_ms": 309
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 273.73081631958485,
+          "elapsed_ms": 271
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 259.68991965055466,
+          "elapsed_ms": 257
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 295.2693346887827,
+          "elapsed_ms": 293
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 264.46301862597466,
+          "elapsed_ms": 262
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 277.140723541379,
+          "elapsed_ms": 274
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 342.9866824299097,
+          "elapsed_ms": 340
+        }
+      ]
+    },
+    {
+      "mode": "native2",
+      "workers": 2,
+      "clients": 1,
+      "count": 60,
+      "ready_ms": 7125.303825363517,
+      "wall_s": 9.11815033853054,
+      "requests_per_second": 6.580281940127504,
+      "p50_ms": 159.2166405171156,
+      "p95_ms": 190.21904468536377,
+      "idle": {
+        "time": 1793256623.9594855,
+        "app_gpu_memory_mib": [
+          1476
+        ],
+        "whole_gpu": "11, 1, 64.22, 14760",
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "39f41a5276889c08c4eed40082508876a7d9bfbc168d21ce72f042c70e5aa36b",
+          "ID": "39f41a527688",
+          "MemPerc": "18.11%",
+          "MemUsage": "741.8MiB / 4GiB",
+          "Name": "pedantic_lalande",
+          "NetIO": "4.6kB / 27.4kB",
+          "PIDs": "17"
+        }
+      },
+      "samples": [
+        {
+          "time": 1793256625.9699125,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "0, 0, 56.27, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "119.54%",
+            "Container": "39f41a5276889c08c4eed40082508876a7d9bfbc168d21ce72f042c70e5aa36b",
+            "ID": "39f41a527688",
+            "MemPerc": "18.36%",
+            "MemUsage": "751.9MiB / 4GiB",
+            "Name": "pedantic_lalande",
+            "NetIO": "431kB / 53kB",
+            "PIDs": "20"
+          }
+        },
+        {
+          "time": 1793256627.9787247,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "7, 0, 62.31, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "113.06%",
+            "Container": "39f41a5276889c08c4eed40082508876a7d9bfbc168d21ce72f042c70e5aa36b",
+            "ID": "39f41a527688",
+            "MemPerc": "18.33%",
+            "MemUsage": "750.8MiB / 4GiB",
+            "Name": "pedantic_lalande",
+            "NetIO": "918kB / 87.5kB",
+            "PIDs": "20"
+          }
+        },
+        {
+          "time": 1793256629.987435,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "6, 1, 62.32, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "113.52%",
+            "Container": "39f41a5276889c08c4eed40082508876a7d9bfbc168d21ce72f042c70e5aa36b",
+            "ID": "39f41a527688",
+            "MemPerc": "18.39%",
+            "MemUsage": "753.4MiB / 4GiB",
+            "Name": "pedantic_lalande",
+            "NetIO": "1.4MB / 122kB",
+            "PIDs": "21"
+          }
+        },
+        {
+          "time": 1793256631.9972353,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "8, 0, 62.18, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "113.35%",
+            "Container": "39f41a5276889c08c4eed40082508876a7d9bfbc168d21ce72f042c70e5aa36b",
+            "ID": "39f41a527688",
+            "MemPerc": "18.33%",
+            "MemUsage": "750.8MiB / 4GiB",
+            "Name": "pedantic_lalande",
+            "NetIO": "1.91MB / 156kB",
+            "PIDs": "21"
+          }
+        },
+        {
+          "time": 1793256634.0057306,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "4, 0, 62.35, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "66.17%",
+            "Container": "39f41a5276889c08c4eed40082508876a7d9bfbc168d21ce72f042c70e5aa36b",
+            "ID": "39f41a527688",
+            "MemPerc": "18.10%",
+            "MemUsage": "741.2MiB / 4GiB",
+            "Name": "pedantic_lalande",
+            "NetIO": "2.29MB / 185kB",
+            "PIDs": "21"
+          }
+        }
+      ],
+      "pmon": "# gpu         pid   type     sm    mem    enc    dec    jpg    ofa     fb   ccpm    command \n# Idx           #    C/G      %      %      %      %      %      %     MB     MB    name \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     272905     C      0      0      -      -      -      -   1476      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3        \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     272905     C      5      0      -      -      -      -   1476      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3",
+      "results": [
+        {
+          "image": "chinese.png",
+          "wall_ms": 124.37469325959682,
+          "elapsed_ms": 120
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 181.63897842168808,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 158.10576826334,
+          "elapsed_ms": 156
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 89.87606316804886,
+          "elapsed_ms": 88
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 177.64681950211525,
+          "elapsed_ms": 175
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 164.1116514801979,
+          "elapsed_ms": 162
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 123.62078577280045,
+          "elapsed_ms": 121
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 150.93892067670822,
+          "elapsed_ms": 149
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 159.73491594195366,
+          "elapsed_ms": 157
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 98.1065183877945,
+          "elapsed_ms": 96
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 172.402149066329,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 133.2971639931202,
+          "elapsed_ms": 131
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 120.5582357943058,
+          "elapsed_ms": 118
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 180.5118154734373,
+          "elapsed_ms": 178
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 169.64899748563766,
+          "elapsed_ms": 167
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 139.4018605351448,
+          "elapsed_ms": 137
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 160.86483746767044,
+          "elapsed_ms": 158
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 183.15530009567738,
+          "elapsed_ms": 180
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 114.21837657690048,
+          "elapsed_ms": 112
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 177.551731467247,
+          "elapsed_ms": 175
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 141.48325100541115,
+          "elapsed_ms": 139
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 107.76683874428272,
+          "elapsed_ms": 105
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 185.80016121268272,
+          "elapsed_ms": 183
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 157.1603137999773,
+          "elapsed_ms": 154
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 114.44367282092571,
+          "elapsed_ms": 112
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 190.05953893065453,
+          "elapsed_ms": 187
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 158.06039981544018,
+          "elapsed_ms": 155
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 119.04173530638218,
+          "elapsed_ms": 117
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 160.89573130011559,
+          "elapsed_ms": 158
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 172.0221508294344,
+          "elapsed_ms": 169
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 94.4484043866396,
+          "elapsed_ms": 92
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 190.22317603230476,
+          "elapsed_ms": 188
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 173.96806180477142,
+          "elapsed_ms": 171
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 121.33162096142769,
+          "elapsed_ms": 119
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 180.92618323862553,
+          "elapsed_ms": 178
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 163.02202455699444,
+          "elapsed_ms": 161
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 125.07431395351887,
+          "elapsed_ms": 123
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 181.5723404288292,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 181.90687708556652,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 124.95207972824574,
+          "elapsed_ms": 122
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 179.31118607521057,
+          "elapsed_ms": 177
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 129.27155382931232,
+          "elapsed_ms": 127
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 124.75673668086529,
+          "elapsed_ms": 123
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 193.70343163609505,
+          "elapsed_ms": 191
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 185.804583132267,
+          "elapsed_ms": 183
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 114.28227461874485,
+          "elapsed_ms": 112
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 180.8635424822569,
+          "elapsed_ms": 179
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 172.25879430770874,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 119.32266503572464,
+          "elapsed_ms": 117
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 191.49989262223244,
+          "elapsed_ms": 189
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 157.42939710617065,
+          "elapsed_ms": 155
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 103.33459451794624,
+          "elapsed_ms": 101
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 178.30216325819492,
+          "elapsed_ms": 176
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 124.97401982545853,
+          "elapsed_ms": 123
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 122.56093695759773,
+          "elapsed_ms": 120
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 158.69836509227753,
+          "elapsed_ms": 156
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 171.94132879376411,
+          "elapsed_ms": 169
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 120.13610079884529,
+          "elapsed_ms": 118
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 190.21904468536377,
+          "elapsed_ms": 188
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 164.24936801195145,
+          "elapsed_ms": 162
+        }
+      ]
+    },
+    {
+      "mode": "native2",
+      "workers": 2,
+      "clients": 2,
+      "count": 60,
+      "ready_ms": 6055.858615785837,
+      "wall_s": 4.634780088439584,
+      "requests_per_second": 12.945598033800245,
+      "p50_ms": 163.8812143355608,
+      "p95_ms": 188.30780312418938,
+      "idle": {
+        "time": 1793256722.554325,
+        "app_gpu_memory_mib": [
+          1476
+        ],
+        "whole_gpu": "30, 0, 63.65, 14760",
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "110132f285d4c0c671749927b7fe7534fdee244427237fe48fbfc664c4fa1afe",
+          "ID": "110132f285d4",
+          "MemPerc": "18.12%",
+          "MemUsage": "742.3MiB / 4GiB",
+          "Name": "kind_kapitsa",
+          "NetIO": "4.53kB / 27.4kB",
+          "PIDs": "17"
+        }
+      },
+      "samples": [
+        {
+          "time": 1793256726.8553848,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "12, 0, 68.08, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "214.73%",
+            "Container": "110132f285d4c0c671749927b7fe7534fdee244427237fe48fbfc664c4fa1afe",
+            "ID": "110132f285d4",
+            "MemPerc": "18.69%",
+            "MemUsage": "765.5MiB / 4GiB",
+            "Name": "kind_kapitsa",
+            "NetIO": "4.7MB / 167kB",
+            "PIDs": "22"
+          }
+        },
+        {
+          "time": 1793256728.863383,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "16, 1, 68.80, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "216.45%",
+            "Container": "110132f285d4c0c671749927b7fe7534fdee244427237fe48fbfc664c4fa1afe",
+            "ID": "110132f285d4",
+            "MemPerc": "18.72%",
+            "MemUsage": "767MiB / 4GiB",
+            "Name": "kind_kapitsa",
+            "NetIO": "5.7MB / 235kB",
+            "PIDs": "23"
+          }
+        },
+        {
+          "time": 1793256730.8722456,
+          "app_gpu_memory_mib": [
+            1476
+          ],
+          "whole_gpu": "10, 1, 69.68, 14760",
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.12%",
+            "Container": "110132f285d4c0c671749927b7fe7534fdee244427237fe48fbfc664c4fa1afe",
+            "ID": "110132f285d4",
+            "MemPerc": "18.18%",
+            "MemUsage": "744.8MiB / 4GiB",
+            "Name": "kind_kapitsa",
+            "NetIO": "6.38MB / 288kB",
+            "PIDs": "23"
+          }
+        }
+      ],
+      "pmon": "# gpu         pid   type     sm    mem    enc    dec    jpg    ofa     fb   ccpm    command \n# Idx           #    C/G      %      %      %      %      %      %     MB     MB    name \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     288969     C     10      0      -      -      -      -   1476      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3        \n    1     143898     C      -      -      -      -      -      -    906      0    ocr-web        \n    1     288969     C     10      0      -      -      -      -   1476      0    ocr-web        \n    1     321497     C      -      -      -      -      -      -   3338      0    python3        \n    1     476513     C      -      -      -      -      -      -    384      0    python         \n    1     527439     C      -      -      -      -      -      -   3912      0    python         \n    1    1435199     C      -      -      -      -      -      -    848      0    python3        \n    1    2098714     C      -      -      -      -      -      -   3854      0    python3",
+      "results": [
+        {
+          "image": "chinese.png",
+          "wall_ms": 112.85108514130116,
+          "elapsed_ms": 110
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 173.47625084221363,
+          "elapsed_ms": 169
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 173.29763062298298,
+          "elapsed_ms": 171
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 121.62604555487633,
+          "elapsed_ms": 119
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 176.8174897879362,
+          "elapsed_ms": 174
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 165.78546725213528,
+          "elapsed_ms": 163
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 124.58067201077938,
+          "elapsed_ms": 121
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 179.1580729186535,
+          "elapsed_ms": 177
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 160.4100689291954,
+          "elapsed_ms": 158
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 122.44107201695442,
+          "elapsed_ms": 120
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 166.02963581681252,
+          "elapsed_ms": 163
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 157.6028075069189,
+          "elapsed_ms": 155
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 123.50668013095856,
+          "elapsed_ms": 121
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 178.79758775234222,
+          "elapsed_ms": 176
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 188.30780312418938,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 108.72708819806576,
+          "elapsed_ms": 106
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 175.5436211824417,
+          "elapsed_ms": 173
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 159.47200171649456,
+          "elapsed_ms": 157
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 124.15291555225849,
+          "elapsed_ms": 121
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 170.6491820514202,
+          "elapsed_ms": 167
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 172.80806601047516,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 121.3601641356945,
+          "elapsed_ms": 119
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 177.74368822574615,
+          "elapsed_ms": 175
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 162.25952841341496,
+          "elapsed_ms": 160
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 133.80765169858932,
+          "elapsed_ms": 131
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 172.3350491374731,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 162.6533456146717,
+          "elapsed_ms": 160
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 121.47136405110359,
+          "elapsed_ms": 119
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 191.654359921813,
+          "elapsed_ms": 189
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 188.65122646093369,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 127.38916650414467,
+          "elapsed_ms": 125
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 132.8888852149248,
+          "elapsed_ms": 131
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 179.7012723982334,
+          "elapsed_ms": 177
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 100.6241999566555,
+          "elapsed_ms": 98
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 175.98026059567928,
+          "elapsed_ms": 174
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 174.03817549347878,
+          "elapsed_ms": 171
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 108.02249796688557,
+          "elapsed_ms": 106
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 162.92370483279228,
+          "elapsed_ms": 160
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 157.85192884504795,
+          "elapsed_ms": 155
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 117.79040470719337,
+          "elapsed_ms": 115
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 188.7863092124462,
+          "elapsed_ms": 186
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 158.00397098064423,
+          "elapsed_ms": 155
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 123.90442937612534,
+          "elapsed_ms": 121
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 167.90253669023514,
+          "elapsed_ms": 165
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 170.10541260242462,
+          "elapsed_ms": 168
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 134.00223664939404,
+          "elapsed_ms": 131
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 167.9729651659727,
+          "elapsed_ms": 165
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 172.23719879984856,
+          "elapsed_ms": 170
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 109.07996445894241,
+          "elapsed_ms": 107
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 179.6303540468216,
+          "elapsed_ms": 177
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 170.72465270757675,
+          "elapsed_ms": 168
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 113.2134161889553,
+          "elapsed_ms": 111
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 173.6403163522482,
+          "elapsed_ms": 171
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 142.64849200844765,
+          "elapsed_ms": 140
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 119.32537704706192,
+          "elapsed_ms": 117
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 175.9983990341425,
+          "elapsed_ms": 173
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 169.83022168278694,
+          "elapsed_ms": 167
+        },
+        {
+          "image": "chinese.png",
+          "wall_ms": 126.14583969116211,
+          "elapsed_ms": 124
+        },
+        {
+          "image": "dense_invoice.png",
+          "wall_ms": 173.4484564512968,
+          "elapsed_ms": 171
+        },
+        {
+          "image": "layout_two_columns.png",
+          "wall_ms": 164.83872383832932,
+          "elapsed_ms": 162
+        }
+      ]
+    }
+  ],
+  "corpus": [
+    {
+      "image": "blank.png",
+      "wall_ms": 60.6808140873909,
+      "elapsed_ms": 57
+    },
+    {
+      "image": "chinese.png",
+      "wall_ms": 139.97460901737213,
+      "elapsed_ms": 136
+    },
+    {
+      "image": "chinese_ccw_180.png",
+      "wall_ms": 139.50644806027412,
+      "elapsed_ms": 137
+    },
+    {
+      "image": "chinese_ccw_270.png",
+      "wall_ms": 130.77527098357677,
+      "elapsed_ms": 128
+    },
+    {
+      "image": "chinese_ccw_90.png",
+      "wall_ms": 106.7377645522356,
+      "elapsed_ms": 104
+    },
+    {
+      "image": "dense_invoice.png",
+      "wall_ms": 178.7078157067299,
+      "elapsed_ms": 176
+    },
+    {
+      "image": "dense_invoice_ccw_180.png",
+      "wall_ms": 162.74083778262138,
+      "elapsed_ms": 160
+    },
+    {
+      "image": "dense_invoice_ccw_270.png",
+      "wall_ms": 175.46094581484795,
+      "elapsed_ms": 173
+    },
+    {
+      "image": "dense_invoice_ccw_90.png",
+      "wall_ms": 174.35256764292717,
+      "elapsed_ms": 172
+    },
+    {
+      "image": "layout_three_columns.png",
+      "wall_ms": 217.6036797463894,
+      "elapsed_ms": 215
+    },
+    {
+      "image": "layout_title_footer.png",
+      "wall_ms": 187.58290819823742,
+      "elapsed_ms": 185
+    },
+    {
+      "image": "layout_two_columns.png",
+      "wall_ms": 177.3886252194643,
+      "elapsed_ms": 175
+    },
+    {
+      "image": "layout_two_columns_ccw_270.png",
+      "wall_ms": 166.76602140069008,
+      "elapsed_ms": 165
+    },
+    {
+      "image": "layout_two_columns_ccw_90.png",
+      "wall_ms": 179.64131385087967,
+      "elapsed_ms": 177
+    },
+    {
+      "image": "long_line.png",
+      "wall_ms": 44.96524855494499,
+      "elapsed_ms": 43
+    },
+    {
+      "image": "rotated_-12.png",
+      "wall_ms": 125.11617131531239,
+      "elapsed_ms": 123
+    },
+    {
+      "image": "rotated_25.png",
+      "wall_ms": 101.31553933024406,
+      "elapsed_ms": 99
+    },
+    {
+      "image": "rotated_7.png",
+      "wall_ms": 131.98974914848804,
+      "elapsed_ms": 130
+    },
+    {
+      "image": "stress_blurred.png",
+      "wall_ms": 113.50855976343155,
+      "elapsed_ms": 111
+    },
+    {
+      "image": "stress_dark_background.png",
+      "wall_ms": 122.2515907138586,
+      "elapsed_ms": 119
+    },
+    {
+      "image": "stress_low_contrast.png",
+      "wall_ms": 84.6213810145855,
+      "elapsed_ms": 81
+    },
+    {
+      "image": "stress_small_text.png",
+      "wall_ms": 104.97288033366203,
+      "elapsed_ms": 102
+    },
+    {
+      "image": "stress_staggered_columns.png",
+      "wall_ms": 143.31552386283875,
+      "elapsed_ms": 141
+    },
+    {
+      "image": "stress_staggered_rotated.png",
+      "wall_ms": 180.87702989578247,
+      "elapsed_ms": 178
+    },
+    {
+      "image": "terminal.png",
+      "wall_ms": 765.378262847662,
+      "elapsed_ms": 762
+    },
+    {
+      "image": "webpage.png",
+      "wall_ms": 225.7763985544443,
+      "elapsed_ms": 223
+    },
+    {
+      "image": "webpage_ccw_180.png",
+      "wall_ms": 204.7570552676916,
+      "elapsed_ms": 202
+    },
+    {
+      "image": "webpage_ccw_270.png",
+      "wall_ms": 257.1884077042341,
+      "elapsed_ms": 254
+    },
+    {
+      "image": "webpage_ccw_90.png",
+      "wall_ms": 244.67587284743786,
+      "elapsed_ms": 242
+    }
+  ],
+  "note": "GPU utilization/power is whole GPU shared with other processes; GPU process memory and container CPU/RAM are application-specific. No TFLOPS estimate."
+}

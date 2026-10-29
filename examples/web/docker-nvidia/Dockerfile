@@ -5,7 +5,7 @@ COPY examples/web/docker-nvidia/prepare_models.py /prepare_models.py
 RUN python /prepare_models.py /models/recognition.onnx /optimized/recognition.onnx
 
 FROM golang:1.25-bookworm AS ort-download
-RUN curl -fsSL --retry 3 https://github.com/microsoft/onnxruntime/releases/download/v1.19.0/onnxruntime-linux-x64-gpu-1.19.0.tgz -o /tmp/ort.tgz && mkdir /out/ort && tar -xzf /tmp/ort.tgz -C /out/ort --strip-components=1
+RUN curl -fsSL --retry 3 https://github.com/microsoft/onnxruntime/releases/download/v1.19.0/onnxruntime-linux-x64-gpu-1.19.0.tgz -o /tmp/ort.tgz && mkdir -p /out/ort && tar -xzf /tmp/ort.tgz -C /out/ort --strip-components=1
 
 FROM golang:1.25-bookworm AS build
 WORKDIR /src

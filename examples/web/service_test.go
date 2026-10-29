@@ -169,6 +169,10 @@ func TestNoPreviewByDefaultAndInvalidOption(t *testing.T) {
 	if w.Code != 400 || e.called {
 		t.Fatal("invalid preview reached model")
 	}
+	w = authenticatedRequest(r, "POST", "/api/ocr?diagnostic_crops=invalid", cfg.Token, nil)
+	if w.Code != 400 || e.called || !strings.Contains(w.Body.String(), "invalid_diagnostic_crops") {
+		t.Fatal("invalid diagnostic option reached model", w.Code, w.Body.String())
+	}
 	data, err := os.ReadFile("../../testdata/native-cases/chinese.png")
 	if err != nil {
 		t.Fatal(err)

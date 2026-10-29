@@ -7,6 +7,7 @@ import (
 	"math"
 	"sort"
 	"strings"
+	"wxocr/internal/prepost"
 )
 
 // tensorRGB applies native detector preprocessing: OpenCV-style half-pixel
@@ -14,6 +15,9 @@ import (
 func tensorRGB(src image.Image, width, height int) ([]float32, float64) {
 	b := src.Bounds()
 	w, h, scale := scaledImageSize(b, width, height)
+	if out, ok := prepost.Resize(src, width, height, w, h); ok {
+		return out, scale
+	}
 	n := width * height
 	out := make([]float32, 3*n)
 	mean := [3]float32{0.485, 0.456, 0.406}
@@ -128,10 +132,13 @@ func recognitionTensor(src image.Image, left, top, right, bottom float64, dynami
 }
 
 func recognitionQuadTensor(src image.Image, q quadrilateral, dynamic bool) []float32 {
+	return recognitionAlignedTensor(src, q, dynamic, true)
+}
+func recognitionAlignedTensor(src image.Image, q quadrilateral, dynamic, rotateTall bool) []float32 {
 	iw := max(1, int(math.Hypot(float64(float32(q[1].x)-float32(q[0].x)), float64(float32(q[1].y)-float32(q[0].y)))))
 	ih := max(1, int(math.Hypot(float64(float32(q[3].x)-float32(q[0].x)), float64(float32(q[3].y)-float32(q[0].y)))))
 	// Native crop handling rotates tall boxes once after page orientation.
-	if float64(ih) >= 1.5*float64(iw) {
+	if rotateTall && float64(ih) >= 1.5*float64(iw) {
 		q = q.oriented(1)
 		iw, ih = ih, iw
 	}

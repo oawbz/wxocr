@@ -374,6 +374,14 @@ func orderRuledTables(result *Result, src image.Image, direction int) {
 		}
 
 	}
+	// A dominant full-page grid is one contiguous reading block. Paragraph
+	// projection can interleave its last rows with unruled continuation rows.
+	if min(result.Width, result.Height) >= 1600 && len(tables) == 1 {
+		table := tables[0]
+		if table.right-table.left > w*7/10 && table.rows[len(table.rows)-1]-table.rows[0] > h/2 {
+			order = gatherTablePageOrder(old, order, table, w, h, uw, uh, direction, result.Width, result.Height)
+		}
+	}
 	result.Paragraphs = nil
 	current := -1
 	for i, original := range order {
@@ -390,4 +398,49 @@ func orderRuledTables(result *Result, src image.Image, direction int) {
 		p.Bottom = max(p.Bottom, b.Bottom)
 		p.LineIndices = append(p.LineIndices, i)
 	}
+}
+
+func gatherTablePageOrder(lines []Line, order []int, t ruledTable, w, h, uw, uh, direction, width, height int) []int {
+	upright := func(i int) image.Rectangle {
+		l := lines[i]
+		return uprightRect(image.Rect(int(l.Left), int(l.Top), int(math.Ceil(float64(l.Right))), int(math.Ceil(float64(l.Bottom)))), direction, width, height)
+	}
+	var header, body, footer []int
+	for _, i := range order {
+		r := upright(i)
+		y := float64(r.Min.Y+r.Max.Y) * .5 * float64(h) / float64(uh)
+		if y < float64(t.rows[0]) {
+			header = append(header, i)
+		} else if y > float64(t.rows[len(t.rows)-1]) {
+			footer = append(footer, i)
+		} else {
+			body = append(body, i)
+		}
+	}
+	sortRows := func(indices []int) {
+		sort.SliceStable(indices, func(i, j int) bool {
+			a, b := upright(indices[i]), upright(indices[j])
+			if a.Min.Y != b.Min.Y {
+				return a.Min.Y < b.Min.Y
+			}
+			return a.Min.X < b.Min.X
+		})
+		for start := 0; start < len(indices); {
+			anchor := upright(indices[start])
+			end := start + 1
+			for end < len(indices) {
+				r := upright(indices[end])
+				overlap := min(anchor.Max.Y, r.Max.Y) - max(anchor.Min.Y, r.Min.Y)
+				if overlap*2 < min(anchor.Dy(), r.Dy()) {
+					break
+				}
+				end++
+			}
+			sort.SliceStable(indices[start:end], func(i, j int) bool { return upright(indices[start+i]).Min.X < upright(indices[start+j]).Min.X })
+			start = end
+		}
+	}
+	sortRows(header)
+	sortRows(footer)
+	return append(append(header, body...), footer...)
 }

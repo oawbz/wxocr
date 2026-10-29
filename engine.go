@@ -7,7 +7,6 @@ import (
 	"errors"
 	"fmt"
 	"image"
-	"math"
 	"os"
 	"reflect"
 	"strings"
@@ -35,10 +34,12 @@ type Line struct {
 	DetectionScore float32 `json:"detection_score"`
 }
 type Result struct {
-	Width      int         `json:"width"`
-	Height     int         `json:"height"`
-	Paragraphs []Paragraph `json:"paragraphs,omitempty"`
-	Lines      []Line      `json:"lines"`
+	Width       int          `json:"width"`
+	Height      int          `json:"height"`
+	Paragraphs  []Paragraph  `json:"paragraphs,omitempty"`
+	Lines       []Line       `json:"lines"`
+	Candidates  []Candidate  `json:"candidates,omitempty"`
+	Diagnostics []Diagnostic `json:"diagnostics,omitempty"`
 }
 
 // Engines own a reference-counted process-wide runtime environment. Applications
@@ -264,41 +265,38 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		return nil, errors.New("empty image")
 	}
 	bounds := src.Bounds()
-	dw, dh := detectorSize(bounds)
-	pixels, _ := tensorRGB(src, dw, dh)
-	rw, rh, _ := scaledImageSize(bounds, dw, dh)
-	scaleY := float64(rh) / float64(bounds.Dy())
-	scaleX := float64(rw) / float64(bounds.Dx())
-	timing.mark("detector_preprocess")
-	maps, _, err := e.detector.runAll(pixels, int64(dh), int64(dw))
+	regions, direction, diagnostics, err := e.detectPasses(ctx, src, &timing)
 	if err != nil {
 		return nil, err
 	}
-	timing.mark("detector_inference")
-	direction, _, err := pageOrientation(maps[2])
-	if err != nil {
-		return nil, err
-	}
-	regions, err := kernelRegions(maps[0], maps[1], dw, dh, 0.5)
-	if err != nil {
-		return nil, err
-	}
-	timing.mark("detector_postprocess")
-	result := &Result{Width: bounds.Dx(), Height: bounds.Dy(), Lines: make([]Line, 0, len(regions))}
+	result := &Result{Width: bounds.Dx(), Height: bounds.Dy(), Lines: make([]Line, 0, len(regions)), Diagnostics: diagnostics}
+	var pixels []float32
 	lineGeometry := make(map[Line]quadrilateral)
-	for _, region := range regions {
+	for _, regionIndex := range recognitionOrder(result.Diagnostics, min(bounds.Dx(), bounds.Dy()) >= 1600) {
+		region := regions[regionIndex]
 		if err = ctx.Err(); err != nil {
 			return nil, err
 		}
-		if region.score < 0.65 || region.area < 300 {
+		diagnostic := &result.Diagnostics[regionIndex]
+		if diagnostic.Reason == "split_parent" {
 			continue
 		}
-		q := region.quad
-		for i, p := range q {
-			q[i] = point{math.Max(0, math.Min(float64(bounds.Dx()-1), p.x/scaleX)), math.Max(0, math.Min(float64(bounds.Dy()-1), p.y/scaleY))}
+		if diagnostic.Pass == 0 && min(bounds.Dx(), bounds.Dy()) >= 1600 && coveredByAcceptedLocal(*diagnostic, result.Diagnostics) {
+			diagnostic.Reason = "covered_by_local"
+			continue
 		}
+		if diagnostic.Reason == "redundant_detection" {
+			if diagnostic.DuplicateOf != nil && result.Diagnostics[*diagnostic.DuplicateOf].Reason == "accepted" {
+				continue
+			}
+			// The preferred crop failed recognition; try the overlapping crop rather
+			// than losing content solely because of detector-stage deduplication.
+			diagnostic.Reason = ""
+		}
+		q := region.quad
 		left, top, right, bottom := q.bounds()
 		if right <= left || bottom <= top {
+			diagnostic.Reason = "invalid_geometry"
 			continue
 		}
 		for i := range q {
@@ -308,44 +306,87 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		for i := range q {
 			q[i] = point{float64(float32(q[i].x)), float64(float32(q[i].y))}
 		}
+		if region.score < 0.3 || region.area < 16 {
+			diagnostic.Reason = "below_candidate_floor"
+			continue
+		}
 		pixels = recognitionQuadTensor(src, q.oriented(direction), true)
+		diagnostic.CropWidth = len(pixels) / (3 * 32)
+		diagnostic.CropHeight = 32
+		if diagnosticCrops(ctx) {
+			diagnostic.CropPNG, err = tensorPNG(pixels)
+			if err != nil {
+				return nil, err
+			}
+		}
 		timing.mark("recognizer_preprocess")
 		prob, shape, err := e.recognizer.run(pixels)
 		if err != nil {
 			return nil, err
 		}
 		timing.mark("recognizer_inference")
-		if len(shape) != 3 || shape[0] != 1 || shape[1] < 1 {
-			return nil, errors.New("invalid recognition output shape")
-		}
-		var text string
-		var rate, evidence float32
-		if e.recognizer.compact {
-			if shape[2] != shape[1]+2 {
-				return nil, errors.New("invalid compact recognition output shape")
-			}
-			text, rate, evidence, err = recognitionCompactCTC(prob, int(shape[1]), e.charset)
-		} else {
-			if shape[2] != int64(len(e.charset)+1) {
-				return nil, errors.New("invalid recognition output shape")
-			}
-			if !e.recognizer.probabilities {
-				if err = recognitionProbabilities(prob, len(e.charset)+1); err != nil {
-					return nil, err
-				}
-			}
-			text, rate, evidence, err = recognitionCTC(prob, int(shape[1]), e.charset)
-		}
+		text, rate, evidence, err := e.decodeRecognition(prob, shape)
 		if err != nil {
 			return nil, err
+		}
+		if min(bounds.Dx(), bounds.Dy()) >= 1600 && region.score >= .7 && region.area < 1000 && evidence < .6 && narrowUprightCrop(q.oriented(direction)) {
+			retryQuad := padNarrowCrop(q.oriented(direction))
+			retryPixels := recognitionAlignedTensor(src, retryQuad, true, false)
+			timing.mark("recognizer_decode")
+			retryProb, retryShape, retryErr := e.recognizer.run(retryPixels)
+			if retryErr != nil {
+				return nil, retryErr
+			}
+			timing.mark("recognizer_inference")
+			retryText, retryRate, retryEvidence, retryErr := e.decodeRecognition(retryProb, retryShape)
+			if retryErr != nil {
+				return nil, retryErr
+			}
+			if retryText != "" && retryEvidence >= .8 && retryEvidence > evidence+.1 {
+				diagnostic.RetryOriginalText = text
+				diagnostic.RetryMethod = "upright_small_crop"
+				diagnostic.RecognitionQuad = make([][2]float64, 4)
+				for j, p := range retryQuad {
+					diagnostic.RecognitionQuad[j] = [2]float64{p.x - float64(bounds.Min.X), p.y - float64(bounds.Min.Y)}
+				}
+				text, rate, evidence = retryText, retryRate, retryEvidence
+				diagnostic.CropWidth = len(retryPixels) / (3 * 32)
+				if diagnosticCrops(ctx) {
+					diagnostic.CropPNG, err = tensorPNG(retryPixels)
+					if err != nil {
+						return nil, err
+					}
+				}
+			}
 		}
 		timing.mark("recognizer_decode")
 		// Candidate acceptance uses mean greedy emission evidence. The reported
 		// sequence confidence has different semantics and must not share its cutoff.
-		if text == "" || evidence <= 0.4 {
-			continue
+		diagnostic.Text, diagnostic.Evidence = text, evidence
+		if diagnostic.SplitMethod == "table_continuation" {
+			diagnostic.ReviewReasons = continuationReviewReasons(text)
 		}
 		block := Line{float32(left), float32(top), float32(right), float32(bottom), rate, text, region.score}
+		if text == "" {
+			diagnostic.Reason = "empty_recognition"
+			continue
+		}
+		areaForAcceptance := region.area
+		// Tiny, clear local glyphs (for example table row numbers) should not
+		// inherit the whole-page area cutoff after a high-resolution re-detection.
+		if diagnostic.Pass > 0 && region.score >= .75 && evidence >= .9 && region.area >= 64 {
+			areaForAcceptance = max(areaForAcceptance, 300)
+		}
+		reasons := candidateReasons(region.score, areaForAcceptance, evidence)
+		if touchesTileBoundary(*diagnostic, result.Width, result.Height) {
+			reasons = append(reasons, "tile_boundary")
+		}
+		if len(reasons) > 0 {
+			diagnostic.Reason = "candidate"
+			result.Candidates = append(result.Candidates, Candidate{Line: block, Reasons: reasons, Evidence: evidence})
+			continue
+		}
+		diagnostic.Reason = "accepted"
 		result.Lines = append(result.Lines, block)
 		for i := range q {
 			q[i].x -= float64(bounds.Min.X)
@@ -354,6 +395,7 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		lineGeometry[block] = q
 		timing.mark("line_assembly")
 	}
+	mergePassResults(result)
 	sortLines(result.Lines, direction)
 	timing.mark("line_order")
 	if len(result.Lines) > 0 {

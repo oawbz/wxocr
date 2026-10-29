@@ -1,7 +1,7 @@
 name: wxocr-4090
 services:
   ocr:
-    image: ${OCR_IMAGE:-wxocr-web:cuda-perf-20261029}
+    image: ${OCR_IMAGE:-wxocr-web:cuda-native-20261029}
     build:
       context: ../../..
       dockerfile: examples/web/docker-nvidia/Dockerfile

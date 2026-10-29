@@ -142,6 +142,11 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 			apiError(c, 400, "invalid_preview", "preview 必须为 true 或 false")
 			return
 		}
+		cropsRequested := c.Query("diagnostic_crops")
+		if cropsRequested != "" && cropsRequested != "true" && cropsRequested != "false" {
+			apiError(c, 400, "invalid_diagnostic_crops", "diagnostic_crops 必须为 true 或 false")
+			return
+		}
 		code, retry := gate.enter()
 		if code != "" {
 			c.Header("Retry-After", strconv.Itoa(retry))
@@ -161,6 +166,9 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 		start := time.Now()
 		requestContext, cancel := context.WithTimeout(c.Request.Context(), recognitionTimeout)
 		defer cancel()
+		if cropsRequested == "true" {
+			requestContext = ocr.WithDiagnosticCrops(requestContext)
+		}
 		c.Request = c.Request.WithContext(requestContext)
 		c.Request.Body = http.MaxBytesReader(c.Writer, c.Request.Body, maxUpload)
 		err := c.Request.ParseMultipartForm(1 << 20)

@@ -48,16 +48,7 @@ func paragraphRegions(prob []float32, w, h, rw, rh int, sx, sy float32) ([]parag
 		for _, v := range p {
 			box = box.Union(image.Rect(v.X, v.Y, v.X+1, v.Y+1))
 		}
-		var sum float64
-		count := 0
-		for y := box.Min.Y; y < box.Max.Y; y++ {
-			for x := box.Min.X; x < box.Max.X; x++ {
-				if polygonContains(p, x, y) {
-					sum += float64(prob[y*w+x])
-					count++
-				}
-			}
-		}
+		sum, count := polygonProbability(prob, w, p, box)
 		if count == 0 || float64(float32(sum/float64(count))) < .3 {
 			continue
 		}
@@ -355,4 +346,58 @@ func paragraphLineGap(a, b Line, direction int, geometry []map[Line]quadrilatera
 	}
 	gap := (distance(a0, b0, b1) + distance(a1, b0, b1) + distance(b0, a0, a1) + distance(b1, a0, a1)) * .25
 	return gap >= float64(float32((ha+hb)*.4))
+}
+
+// polygonProbability preserves the original row-major summation order while
+// replacing per-pixel edge traversal with exact scanline coverage. Boundary
+// lattice points are included separately, matching polygonContains.
+func polygonProbability(prob []float32, w int, p []image.Point, box image.Rectangle) (float64, int) {
+	row := make([]bool, box.Dx())
+	crossings := make([]float64, 0, len(p))
+	var sum float64
+	count := 0
+	mark := func(left, right int) {
+		left = max(left, box.Min.X)
+		right = min(right, box.Max.X-1)
+		for x := left; x <= right; x++ {
+			row[x-box.Min.X] = true
+		}
+	}
+	for y := box.Min.Y; y < box.Max.Y; y++ {
+		clear(row)
+		crossings = crossings[:0]
+		for i, a := range p {
+			b := p[(i+1)%len(p)]
+			if (a.Y > y) != (b.Y > y) {
+				crossings = append(crossings, float64(b.X-a.X)*float64(y-a.Y)/float64(b.Y-a.Y)+float64(a.X))
+			}
+		}
+		sort.Float64s(crossings)
+		for i := 0; i+1 < len(crossings); i += 2 {
+			mark(int(math.Ceil(crossings[i])), int(math.Ceil(crossings[i+1]))-1)
+		}
+		for i, a := range p {
+			b := p[(i+1)%len(p)]
+			if y < min(a.Y, b.Y) || y > max(a.Y, b.Y) {
+				continue
+			}
+			if a.Y == b.Y {
+				mark(min(a.X, b.X), max(a.X, b.X))
+				continue
+			}
+			numerator := int64(y-a.Y) * int64(b.X-a.X)
+			denominator := int64(b.Y - a.Y)
+			if numerator%denominator == 0 {
+				x := a.X + int(numerator/denominator)
+				mark(x, x)
+			}
+		}
+		for x, on := range row {
+			if on {
+				sum += float64(prob[y*w+box.Min.X+x])
+				count++
+			}
+		}
+	}
+	return sum, count
 }

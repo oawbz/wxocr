@@ -1,0 +1,315 @@
+{
+  "corpus": [
+    {
+      "image": "blank.png",
+      "status": 200,
+      "elapsed_ms": 56,
+      "wall_ms": 75.97682997584343,
+      "exact": true
+    },
+    {
+      "image": "chinese.png",
+      "status": 200,
+      "elapsed_ms": 127,
+      "wall_ms": 145.78212425112724,
+      "exact": true
+    },
+    {
+      "image": "chinese_ccw_180.png",
+      "status": 200,
+      "elapsed_ms": 123,
+      "wall_ms": 125.60552731156349,
+      "exact": true
+    },
+    {
+      "image": "chinese_ccw_270.png",
+      "status": 200,
+      "elapsed_ms": 127,
+      "wall_ms": 130.1389392465353,
+      "exact": true
+    },
+    {
+      "image": "chinese_ccw_90.png",
+      "status": 200,
+      "elapsed_ms": 125,
+      "wall_ms": 127.44537368416786,
+      "exact": true
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 200,
+      "elapsed_ms": 174,
+      "wall_ms": 175.99834501743317,
+      "exact": true
+    },
+    {
+      "image": "dense_invoice_ccw_180.png",
+      "status": 200,
+      "elapsed_ms": 153,
+      "wall_ms": 156.05881810188293,
+      "exact": true
+    },
+    {
+      "image": "dense_invoice_ccw_270.png",
+      "status": 200,
+      "elapsed_ms": 188,
+      "wall_ms": 190.30319713056087,
+      "exact": true
+    },
+    {
+      "image": "dense_invoice_ccw_90.png",
+      "status": 200,
+      "elapsed_ms": 198,
+      "wall_ms": 199.91235621273518,
+      "exact": true
+    },
+    {
+      "image": "layout_three_columns.png",
+      "status": 200,
+      "elapsed_ms": 221,
+      "wall_ms": 223.0615932494402,
+      "exact": true
+    },
+    {
+      "image": "layout_title_footer.png",
+      "status": 200,
+      "elapsed_ms": 177,
+      "wall_ms": 179.66707237064838,
+      "exact": true
+    },
+    {
+      "image": "layout_two_columns.png",
+      "status": 200,
+      "elapsed_ms": 215,
+      "wall_ms": 218.15676800906658,
+      "exact": true
+    },
+    {
+      "image": "layout_two_columns_ccw_270.png",
+      "status": 200,
+      "elapsed_ms": 224,
+      "wall_ms": 226.6636360436678,
+      "exact": true
+    },
+    {
+      "image": "layout_two_columns_ccw_90.png",
+      "status": 200,
+      "elapsed_ms": 179,
+      "wall_ms": 181.80943839251995,
+      "exact": true
+    },
+    {
+      "image": "long_line.png",
+      "status": 200,
+      "elapsed_ms": 62,
+      "wall_ms": 64.34828415513039,
+      "exact": true
+    },
+    {
+      "image": "rotated_-12.png",
+      "status": 200,
+      "elapsed_ms": 129,
+      "wall_ms": 131.4473394304514,
+      "exact": true
+    },
+    {
+      "image": "rotated_25.png",
+      "status": 200,
+      "elapsed_ms": 141,
+      "wall_ms": 143.90819892287254,
+      "exact": true
+    },
+    {
+      "image": "rotated_7.png",
+      "status": 200,
+      "elapsed_ms": 115,
+      "wall_ms": 117.25977808237076,
+      "exact": true
+    },
+    {
+      "image": "stress_blurred.png",
+      "status": 200,
+      "elapsed_ms": 96,
+      "wall_ms": 98.73473085463047,
+      "exact": true
+    },
+    {
+      "image": "stress_dark_background.png",
+      "status": 200,
+      "elapsed_ms": 95,
+      "wall_ms": 97.02871553599834,
+      "exact": true
+    },
+    {
+      "image": "stress_low_contrast.png",
+      "status": 200,
+      "elapsed_ms": 106,
+      "wall_ms": 108.41579921543598,
+      "exact": true
+    },
+    {
+      "image": "stress_small_text.png",
+      "status": 200,
+      "elapsed_ms": 109,
+      "wall_ms": 110.8268965035677,
+      "exact": true
+    },
+    {
+      "image": "stress_staggered_columns.png",
+      "status": 200,
+      "elapsed_ms": 178,
+      "wall_ms": 180.81843107938766,
+      "exact": true
+    },
+    {
+      "image": "stress_staggered_rotated.png",
+      "status": 200,
+      "elapsed_ms": 177,
+      "wall_ms": 179.57099713385105,
+      "exact": true
+    },
+    {
+      "image": "terminal.png",
+      "status": 200,
+      "elapsed_ms": 636,
+      "wall_ms": 638.8800013810396,
+      "exact": true
+    },
+    {
+      "image": "webpage.png",
+      "status": 200,
+      "elapsed_ms": 242,
+      "wall_ms": 249.1899859160185,
+      "exact": true
+    },
+    {
+      "image": "webpage_ccw_180.png",
+      "status": 200,
+      "elapsed_ms": 221,
+      "wall_ms": 223.6651498824358,
+      "exact": true
+    },
+    {
+      "image": "webpage_ccw_270.png",
+      "status": 200,
+      "elapsed_ms": 257,
+      "wall_ms": 259.71327535808086,
+      "exact": true
+    },
+    {
+      "image": "webpage_ccw_90.png",
+      "status": 200,
+      "elapsed_ms": 243,
+      "wall_ms": 246.3732659816742,
+      "exact": true
+    }
+  ],
+  "burst": [
+    {
+      "image": "dense_invoice.png",
+      "status": 429,
+      "error": {
+        "error": {
+          "code": "server_busy",
+          "message": "服务正在处理其他任务，请稍后重试"
+        }
+      },
+      "retry_after": "1"
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 429,
+      "error": {
+        "error": {
+          "code": "server_busy",
+          "message": "服务正在处理其他任务，请稍后重试"
+        }
+      },
+      "retry_after": "1"
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 429,
+      "error": {
+        "error": {
+          "code": "server_busy",
+          "message": "服务正在处理其他任务，请稍后重试"
+        }
+      },
+      "retry_after": "1"
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 200,
+      "elapsed_ms": 197,
+      "wall_ms": 200.23637637495995,
+      "exact": true
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 200,
+      "elapsed_ms": 195,
+      "wall_ms": 198.70505295693874,
+      "exact": true
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 429,
+      "error": {
+        "error": {
+          "code": "server_busy",
+          "message": "服务正在处理其他任务，请稍后重试"
+        }
+      },
+      "retry_after": "1"
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 429,
+      "error": {
+        "error": {
+          "code": "server_busy",
+          "message": "服务正在处理其他任务，请稍后重试"
+        }
+      },
+      "retry_after": "1"
+    },
+    {
+      "image": "dense_invoice.png",
+      "status": 429,
+      "error": {
+        "error": {
+          "code": "server_busy",
+          "message": "服务正在处理其他任务，请稍后重试"
+        }
+      },
+      "retry_after": "1"
+    }
+  ],
+  "page_status": 200,
+  "unauthenticated_status": 401,
+  "image_id": "sha256:dba6b9f53fe60296e8ea9dc35d1825ba21872d6b438413dec3b6d0493f0e17a1",
+  "image_tag": "wxocr-web:cuda-native-20261029",
+  "restarts": 0,
+  "gpu_memory_mib": [
+    1516
+  ],
+  "container": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.05%",
+    "Container": "wxocr-4090-ocr-1",
+    "ID": "db251bdbe0fc",
+    "MemPerc": "19.17%",
+    "MemUsage": "785.4MiB / 4GiB",
+    "Name": "wxocr-4090-ocr-1",
+    "NetIO": "4.43MB / 166kB",
+    "PIDs": "21"
+  },
+  "config": {
+    "engine_workers": "2",
+    "max_concurrent_tasks": "2",
+    "requests_per_minute": "60",
+    "model_resident": "true",
+    "startup_warmup": "true"
+  }
+}

@@ -90,37 +90,34 @@ func binaryContours(mask []bool, w, h int) [][]image.Point {
 }
 
 func opening3(mask []bool, w, h int) []bool {
-	eroded := make([]bool, len(mask))
-	out := make([]bool, len(mask))
+	// A rectangular 3x3 opening is separable. Replicated edge values are
+	// equivalent to the original ignored neighbors for boolean AND/OR.
+	a, b := make([]bool, len(mask)), make([]bool, len(mask))
 	for y := 0; y < h; y++ {
 		for x := 0; x < w; x++ {
-			value := true
-			for dy := -1; dy <= 1; dy++ {
-				for dx := -1; dx <= 1; dx++ {
-					nx, ny := x+dx, y+dy
-					if nx >= 0 && nx < w && ny >= 0 && ny < h && !mask[ny*w+nx] {
-						value = false
-					}
-				}
-			}
-			eroded[y*w+x] = value
+			i := y*w + x
+			a[i] = mask[y*w+max(0, x-1)] && mask[i] && mask[y*w+min(w-1, x+1)]
+		}
+	}
+	for y := 0; y < h; y++ {
+		up, down := max(0, y-1)*w, min(h-1, y+1)*w
+		for x := 0; x < w; x++ {
+			b[y*w+x] = a[up+x] && a[y*w+x] && a[down+x]
 		}
 	}
 	for y := 0; y < h; y++ {
 		for x := 0; x < w; x++ {
-			value := false
-			for dy := -1; dy <= 1; dy++ {
-				for dx := -1; dx <= 1; dx++ {
-					nx, ny := x+dx, y+dy
-					if nx >= 0 && nx < w && ny >= 0 && ny < h && eroded[ny*w+nx] {
-						value = true
-					}
-				}
-			}
-			out[y*w+x] = value
+			i := y*w + x
+			a[i] = b[y*w+max(0, x-1)] || b[i] || b[y*w+min(w-1, x+1)]
 		}
 	}
-	return out
+	for y := 0; y < h; y++ {
+		up, down := max(0, y-1)*w, min(h-1, y+1)*w
+		for x := 0; x < w; x++ {
+			b[y*w+x] = a[up+x] || a[y*w+x] || a[down+x]
+		}
+	}
+	return b
 }
 
 func polygonMetrics(p []image.Point) (float64, float64) {

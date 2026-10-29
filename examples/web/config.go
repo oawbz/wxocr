@@ -18,6 +18,7 @@ type config struct {
 	ListenPort         int    `yaml:"listen_port"`
 	Token              string `yaml:"token"`
 	MaxConcurrentTasks int    `yaml:"max_concurrent_tasks"`
+	EngineWorkers      int    `yaml:"engine_workers"`
 	RequestsPerMinute  int    `yaml:"requests_per_minute"`
 	ModelsDir          string `yaml:"models_dir"`
 	ModelResident      bool   `yaml:"model_resident"`
@@ -28,7 +29,7 @@ type config struct {
 }
 
 func defaultConfig() config {
-	return config{ListenAddress: "127.0.0.1", ListenPort: 7676, MaxConcurrentTasks: 1, RequestsPerMinute: 60, ModelsDir: "../../models", ModelResident: true}
+	return config{ListenAddress: "127.0.0.1", ListenPort: 7676, MaxConcurrentTasks: 1, EngineWorkers: 1, RequestsPerMinute: 60, ModelsDir: "../../models", ModelResident: true}
 }
 func loadConfig(path string) (config, error) {
 	cfg := defaultConfig()
@@ -80,6 +81,12 @@ func (c config) validate() error {
 	}
 	if c.MaxConcurrentTasks < 1 || c.MaxConcurrentTasks > 32 {
 		return fmt.Errorf("max_concurrent_tasks must be between 1 and 32")
+	}
+	if c.EngineWorkers < 1 || c.EngineWorkers > c.MaxConcurrentTasks {
+		return fmt.Errorf("engine_workers must be between 1 and max_concurrent_tasks")
+	}
+	if c.EngineWorkers > 1 && !c.ModelResident {
+		return fmt.Errorf("multiple engine_workers require model_resident: true")
 	}
 	if c.RequestsPerMinute < 0 || c.RequestsPerMinute > 100000 {
 		return fmt.Errorf("requests_per_minute must be between 0 and 100000")

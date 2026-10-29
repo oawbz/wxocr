@@ -1,0 +1,72 @@
+[
+  {
+    "text": ":11010119713010013",
+    "reasons": [
+      "inferred_table_column",
+      "possible_boundary_fragment"
+    ]
+  },
+  {
+    "text": "1973-01-(",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "1993-07-(",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "1972-01-1",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "1992-07-1",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "1974-01-(",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "1994-07-",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "2025-03-0",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "2025-01-0",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  },
+  {
+    "text": "2025-02-0",
+    "reasons": [
+      "inferred_table_column",
+      "incomplete_or_ambiguous_date"
+    ]
+  }
+]

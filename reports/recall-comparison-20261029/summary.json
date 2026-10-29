@@ -1,0 +1,31 @@
+{
+  "baseline_commit": "2cfde64",
+  "input": "/Users/awbz/Downloads/20260713122533.jpg",
+  "dimensions": [
+    2480,
+    3506
+  ],
+  "before_lines": 148,
+  "after_lines": 148,
+  "body_text_equal": true,
+  "after_candidates": 42,
+  "diagnostic_reasons": {
+    "accepted": 148,
+    "candidate": 42,
+    "empty_recognition": 4
+  },
+  "before_median_ms": 2544.752583,
+  "after_median_ms": 2772.787167,
+  "timing_change_percent": 8.960972690365466,
+  "before_runs_ms": [
+    2526.490375,
+    2546.722167,
+    2544.752583
+  ],
+  "after_runs_ms": [
+    2772.787167,
+    2737.144667,
+    2895.551417
+  ],
+  "packaged_http_status": 200
+}

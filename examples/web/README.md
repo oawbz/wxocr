@@ -7,3 +7,13 @@
 HTML 根据 OCR 文字和坐标匹配身份证正反面并提取字段，“识别类型”标签页在“纯文字”之前。普通图片仍显示全部文字。类型判断属于启发式模板，缺失字段提示核对；不判断证件真伪。下载 JSON 为原始 OCR 响应，不含网页模板字段。
 
 默认端口 7676、同时处理一个任务、关闭日志及 debug；Token、监听及限流在 config.yaml 配置。Docker Compose 见 docker/。
+
+### 漏识别核对
+
+识别结果额外包含 `result.candidates`（低分候选）和 `result.diagnostics`（逐检测框诊断）。网页可展开候选列表，橙色框对应待核对内容，JSON 保留过滤及合并原因。长图自动使用整图加重叠分块检测，并合并重复结果。
+
+API 可传 `diagnostic_crops=true` 返回每个已识别框的实际模型输入 PNG Base64，例如 `/api/ocr?preview=true&diagnostic_crops=true`。裁剪图默认关闭，开启后响应会变大。参数仅接受 `true` / `false`；非法值返回 HTTP 400 和 `invalid_diagnostic_crops`。
+
+短边至少 1600 像素的页面会自动使用二维重叠局部检测，并在原像素上拆分多行合框、跨表格线合框。高分辨率页面耗时会增加，数字内容仍需核对。诊断中的 `split_parent`、`parent_region`、`redundant_detection` 和 `duplicate_of` 可用于追踪拆分和推理去重。
+
+无框续行会根据主表重复列边界分开识别；JSON 中的 `review_reasons` 和网页“待核对字段”提示不完整日期或可能混入的边缘笔画。不会自动补全隐藏数字。高分辨率页面采用文字方向相关的重叠分块、几何覆盖回退和紧凑 logits 解码，减少重复工作。

@@ -1,0 +1,473 @@
+{
+  "date": "2026-10-29",
+  "server": "新广视-AI服务器",
+  "address": "http://10.100.5.250:7676/",
+  "method": "Sequential old/new GPU variants; same 3 images; 1 warmup then 7 measured requests per image; medians; CPU/ORT profilers disabled. Cold HTTP test creates a fresh container per variant/image. Other host services kept running.",
+  "variants": {
+    "before-gpu": {
+      "chinese.png": {
+        "runs": 7,
+        "median_ms": 237.213165,
+        "min_ms": 184.030796,
+        "max_ms": 244.651089,
+        "stages_ms": {
+          "decode": 7.897347,
+          "detector_inference": 12.534184,
+          "detector_postprocess": 13.868708,
+          "detector_preprocess": 56.922899,
+          "engine_wait": 0.000155,
+          "layout_order": 0.017902,
+          "line_assembly": 0.004326,
+          "line_order": 0.002742,
+          "paragraph_inference": 9.391885,
+          "paragraph_postprocess": 48.770681,
+          "paragraph_preprocess": 41.130551,
+          "recognizer_decode": 15.326758,
+          "recognizer_inference": 25.665407,
+          "recognizer_preprocess": 4.092624000000001
+        }
+      },
+      "dense_invoice.png": {
+        "runs": 7,
+        "median_ms": 471.430187,
+        "min_ms": 456.110086,
+        "max_ms": 506.455388,
+        "stages_ms": {
+          "decode": 7.12444,
+          "detector_inference": 11.920872,
+          "detector_postprocess": 13.405489,
+          "detector_preprocess": 39.421143,
+          "engine_wait": 0.000151,
+          "layout_order": 16.422925,
+          "line_assembly": 0.021928999999999994,
+          "line_order": 0.0043,
+          "paragraph_inference": 9.599258,
+          "paragraph_postprocess": 67.556875,
+          "paragraph_preprocess": 33.162763,
+          "recognizer_decode": 97.040711,
+          "recognizer_inference": 163.15737699999997,
+          "recognizer_preprocess": 19.175467
+        }
+      },
+      "layout_two_columns.png": {
+        "runs": 7,
+        "median_ms": 408.922568,
+        "min_ms": 404.784655,
+        "max_ms": 427.630675,
+        "stages_ms": {
+          "decode": 6.664205,
+          "detector_inference": 12.144087,
+          "detector_postprocess": 13.278983,
+          "detector_preprocess": 43.912353,
+          "engine_wait": 0.00015,
+          "layout_order": 15.914418,
+          "line_assembly": 0.021374,
+          "line_order": 0.005081,
+          "paragraph_inference": 9.133841,
+          "paragraph_postprocess": 45.406478,
+          "paragraph_preprocess": 33.119939,
+          "recognizer_decode": 85.53630299999999,
+          "recognizer_inference": 135.535389,
+          "recognizer_preprocess": 16.122407
+        }
+      }
+    },
+    "after-gpu": {
+      "chinese.png": {
+        "runs": 7,
+        "median_ms": 213.592876,
+        "min_ms": 161.751193,
+        "max_ms": 218.16573,
+        "stages_ms": {
+          "decode": 8.833123,
+          "detector_inference": 14.038537,
+          "detector_postprocess": 14.967087,
+          "detector_preprocess": 57.37622,
+          "engine_wait": 0.000361,
+          "layout_order": 0.016971,
+          "line_assembly": 0.003966,
+          "line_order": 0.00171,
+          "paragraph_inference": 8.917156,
+          "paragraph_postprocess": 45.066588,
+          "paragraph_preprocess": 42.702245,
+          "recognizer_decode": 0.409854,
+          "recognizer_inference": 12.837129000000001,
+          "recognizer_preprocess": 3.0693650000000003
+        }
+      },
+      "dense_invoice.png": {
+        "runs": 7,
+        "median_ms": 244.626285,
+        "min_ms": 205.844855,
+        "max_ms": 277.4478,
+        "stages_ms": {
+          "decode": 7.192311,
+          "detector_inference": 12.097916,
+          "detector_postprocess": 12.344462,
+          "detector_preprocess": 40.34427,
+          "engine_wait": 0.000308,
+          "layout_order": 16.736551,
+          "line_assembly": 0.015212,
+          "line_order": 0.002772,
+          "paragraph_inference": 8.422079,
+          "paragraph_postprocess": 66.614972,
+          "paragraph_preprocess": 28.615797,
+          "recognizer_decode": 3.351888,
+          "recognizer_inference": 48.439182,
+          "recognizer_preprocess": 18.689376000000003
+        }
+      },
+      "layout_two_columns.png": {
+        "runs": 7,
+        "median_ms": 216.075059,
+        "min_ms": 200.724025,
+        "max_ms": 248.673581,
+        "stages_ms": {
+          "decode": 6.779634,
+          "detector_inference": 10.757552,
+          "detector_postprocess": 12.115742,
+          "detector_preprocess": 40.505643,
+          "engine_wait": 0.000275,
+          "layout_order": 15.64639,
+          "line_assembly": 0.014033,
+          "line_order": 0.002217,
+          "paragraph_inference": 8.993431,
+          "paragraph_postprocess": 44.394231,
+          "paragraph_preprocess": 31.678543,
+          "recognizer_decode": 2.2885769999999996,
+          "recognizer_inference": 47.313351999999995,
+          "recognizer_preprocess": 16.519941
+        }
+      }
+    }
+  },
+  "corpus": {
+    "images": 29,
+    "text_order_mismatches": [],
+    "paragraph_mismatches": [],
+    "coordinate_max_abs_delta": 0,
+    "confidence_max_abs_delta": 0,
+    "cold_runs": 18,
+    "cold_result_mismatches": []
+  },
+  "cold_http": [
+    {
+      "image": "chinese",
+      "variant": "before",
+      "run": 0,
+      "ready_ms": 4287.993075326085,
+      "wall_ms": 902.0482711493969,
+      "elapsed_ms": 898
+    },
+    {
+      "image": "chinese",
+      "variant": "before",
+      "run": 1,
+      "ready_ms": 4287.993075326085,
+      "wall_ms": 216.3989134132862,
+      "elapsed_ms": 213
+    },
+    {
+      "image": "chinese",
+      "variant": "compact-cold",
+      "run": 0,
+      "ready_ms": 4993.101719766855,
+      "wall_ms": 899.6579237282276,
+      "elapsed_ms": 896
+    },
+    {
+      "image": "chinese",
+      "variant": "compact-cold",
+      "run": 1,
+      "ready_ms": 4993.101719766855,
+      "wall_ms": 196.11799344420433,
+      "elapsed_ms": 194
+    },
+    {
+      "image": "chinese",
+      "variant": "compact-warm",
+      "run": 0,
+      "ready_ms": 6178.603749722242,
+      "wall_ms": 230.692433193326,
+      "elapsed_ms": 228
+    },
+    {
+      "image": "chinese",
+      "variant": "compact-warm",
+      "run": 1,
+      "ready_ms": 6178.603749722242,
+      "wall_ms": 219.93383578956127,
+      "elapsed_ms": 217
+    },
+    {
+      "image": "dense_invoice",
+      "variant": "before",
+      "run": 0,
+      "ready_ms": 4748.645581305027,
+      "wall_ms": 1110.4457825422287,
+      "elapsed_ms": 1108
+    },
+    {
+      "image": "dense_invoice",
+      "variant": "before",
+      "run": 1,
+      "ready_ms": 4748.645581305027,
+      "wall_ms": 475.87111964821815,
+      "elapsed_ms": 473
+    },
+    {
+      "image": "dense_invoice",
+      "variant": "compact-cold",
+      "run": 0,
+      "ready_ms": 5317.751141265035,
+      "wall_ms": 955.0687558948994,
+      "elapsed_ms": 951
+    },
+    {
+      "image": "dense_invoice",
+      "variant": "compact-cold",
+      "run": 1,
+      "ready_ms": 5317.751141265035,
+      "wall_ms": 275.17154067754745,
+      "elapsed_ms": 273
+    },
+    {
+      "image": "dense_invoice",
+      "variant": "compact-warm",
+      "run": 0,
+      "ready_ms": 6205.739960074425,
+      "wall_ms": 293.9919177442789,
+      "elapsed_ms": 291
+    },
+    {
+      "image": "dense_invoice",
+      "variant": "compact-warm",
+      "run": 1,
+      "ready_ms": 6205.739960074425,
+      "wall_ms": 267.3363406211138,
+      "elapsed_ms": 265
+    },
+    {
+      "image": "layout_two_columns",
+      "variant": "before",
+      "run": 0,
+      "ready_ms": 4991.584233939648,
+      "wall_ms": 1122.8600721806288,
+      "elapsed_ms": 1120
+    },
+    {
+      "image": "layout_two_columns",
+      "variant": "before",
+      "run": 1,
+      "ready_ms": 4991.584233939648,
+      "wall_ms": 373.4690211713314,
+      "elapsed_ms": 371
+    },
+    {
+      "image": "layout_two_columns",
+      "variant": "compact-cold",
+      "run": 0,
+      "ready_ms": 5425.385508686304,
+      "wall_ms": 894.2552004009485,
+      "elapsed_ms": 891
+    },
+    {
+      "image": "layout_two_columns",
+      "variant": "compact-cold",
+      "run": 1,
+      "ready_ms": 5425.385508686304,
+      "wall_ms": 256.34440034627914,
+      "elapsed_ms": 254
+    },
+    {
+      "image": "layout_two_columns",
+      "variant": "compact-warm",
+      "run": 0,
+      "ready_ms": 6212.887328118086,
+      "wall_ms": 265.1964072138071,
+      "elapsed_ms": 262
+    },
+    {
+      "image": "layout_two_columns",
+      "variant": "compact-warm",
+      "run": 1,
+      "ready_ms": 6212.887328118086,
+      "wall_ms": 251.67177990078926,
+      "elapsed_ms": 249
+    }
+  ],
+  "warmup_logs": {
+    "startup-compact-warm-dense_invoice.log": "OCR startup warmup completed in 1.142s",
+    "startup-compact-warm-chinese.log": "OCR startup warmup completed in 1.057s",
+    "startup-compact-warm-layout_two_columns.log": "OCR startup warmup completed in 1.146s"
+  },
+  "operator_providers": {
+    "('Concat', 'CUDAExecutionProvider')": 32,
+    "('Gather', 'CUDAExecutionProvider')": 52,
+    "('Gather', 'CPUExecutionProvider')": 106,
+    "('Concat', 'CPUExecutionProvider')": 38,
+    "('Softmax', 'CUDAExecutionProvider')": 24,
+    "('TopK', 'CUDAExecutionProvider')": 24
+  },
+  "output_sizes": [
+    {
+      "steps": 128,
+      "full_bytes": 6944768,
+      "compact_bytes": 66560
+    },
+    {
+      "steps": 88,
+      "full_bytes": 4774528,
+      "compact_bytes": 31680
+    }
+  ],
+  "http": {
+    "page_status": 200,
+    "cases": [
+      {
+        "image": "chinese",
+        "run": 0,
+        "wall_ms": 224.69,
+        "elapsed_ms": 221,
+        "lines": 3,
+        "texts": [
+          "微信模型跨平台测试",
+          "中文识别2026",
+          "Hello OCR 123"
+        ]
+      },
+      {
+        "image": "chinese",
+        "run": 1,
+        "wall_ms": 193.91,
+        "elapsed_ms": 191,
+        "lines": 3,
+        "texts": [
+          "微信模型跨平台测试",
+          "中文识别2026",
+          "Hello OCR 123"
+        ]
+      },
+      {
+        "image": "dense_invoice",
+        "run": 0,
+        "wall_ms": 284.92,
+        "elapsed_ms": 282,
+        "lines": 12,
+        "texts": [
+          "订单编号AB-20261004-123456",
+          "客户名称:跨平台识别测试",
+          "合计金额:¥12345.67",
+          "短词 OCR 中文ABC 123",
+          "状态:已完成数量:100",
+          "日期2026-10-0411:30",
+          "地址:北京市朝阳区测试路88号",
+          "服务热线400-800-1234",
+          "电子邮箱 test@example.com",
+          "备注:中文English混合识别测试",
+          "左栏:名称数量金额",
+          "右栏:客户联系方式"
+        ]
+      },
+      {
+        "image": "dense_invoice",
+        "run": 1,
+        "wall_ms": 242.18,
+        "elapsed_ms": 239,
+        "lines": 12,
+        "texts": [
+          "订单编号AB-20261004-123456",
+          "客户名称:跨平台识别测试",
+          "合计金额:¥12345.67",
+          "短词 OCR 中文ABC 123",
+          "状态:已完成数量:100",
+          "日期2026-10-0411:30",
+          "地址:北京市朝阳区测试路88号",
+          "服务热线400-800-1234",
+          "电子邮箱 test@example.com",
+          "备注:中文English混合识别测试",
+          "左栏:名称数量金额",
+          "右栏:客户联系方式"
+        ]
+      },
+      {
+        "image": "layout_two_columns",
+        "run": 0,
+        "wall_ms": 214.27,
+        "elapsed_ms": 211,
+        "lines": 12,
+        "texts": [
+          "第1栏第1行:识别测试。",
+          "第1栏第2行:识别测试。",
+          "第1栏第3行:识别测试。",
+          "第1栏第4行:识别测试。",
+          "第1栏第5行:识别测试。",
+          "第1栏第6行:识别测试。",
+          "第2栏第1行:识别测试。",
+          "第2栏第2行:识别测试。",
+          "第2栏第3行:识别测试。",
+          "第2栏第4行:识别测试。",
+          "第2栏第5行:识别测试。",
+          "第2栏第6行:识别测试。"
+        ]
+      },
+      {
+        "image": "layout_two_columns",
+        "run": 1,
+        "wall_ms": 249.66,
+        "elapsed_ms": 247,
+        "lines": 12,
+        "texts": [
+          "第1栏第1行:识别测试。",
+          "第1栏第2行:识别测试。",
+          "第1栏第3行:识别测试。",
+          "第1栏第4行:识别测试。",
+          "第1栏第5行:识别测试。",
+          "第1栏第6行:识别测试。",
+          "第2栏第1行:识别测试。",
+          "第2栏第2行:识别测试。",
+          "第2栏第3行:识别测试。",
+          "第2栏第4行:识别测试。",
+          "第2栏第5行:识别测试。",
+          "第2栏第6行:识别测试。"
+        ]
+      }
+    ],
+    "unauthenticated_status": 401
+  },
+  "deployment": {
+    "image": "wxocr-web:cuda-compact-20261029",
+    "image_id": "sha256:3133e4383f3f25845f435ee9c42ff341529a14bfe591e602350ce8990c33943f",
+    "health": "healthy",
+    "restart_count": 0,
+    "user": "1000:1000",
+    "gpu_request": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "1"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "model_resident": true,
+    "startup_warmup": true,
+    "observed_gpu_memory_mib": 906
+  },
+  "validated_source_sha256": {
+    "engine.go": "61477c939a2b0a38fd98ee6dd8995a75dd6f3a04e9800ed3505d0920f2aa93bb",
+    "compact_ctc.go": "6fd06323e3a1d90295c2caa3f1e2c6c8eebcf6e7f94f11ca9e1ed31f3e4fdb6c",
+    "warmup.go": "ac36a4d8bd22c9c3e602871ab2190efaeab63d428bfb10dc6b91c223fbc95ba5",
+    "examples/web/main.go": "079c2b802add7de3eb3c9e716bb4de37f3424134cfe4e1c51c8088ed31162491",
+    "examples/web/model_lifecycle.go": "c7c9a048cd8c4b20e9d604559a18048dffdce3b9b05779d2b22e98d48ea3e03e",
+    "examples/web/docker-nvidia/prepare_models.py": "0715df66d8271bd93dffb2df6e0a4adc0c3e4b393c765d453daddc3d7851c3a6",
+    "examples/web/docker-nvidia/Dockerfile": "e2c8256ab0cac809a906a2e2e6e40d9594b3e4d3620edb496ba34d3db0b63077"
+  },
+  "source_scope": "Validated snapshot on server. Concurrent local recall/table/UI changes were not included in this image."
+}

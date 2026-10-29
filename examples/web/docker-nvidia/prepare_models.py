@@ -1,4 +1,4 @@
-"""Produce exact compact CTC scores on CUDA with FP32 Softmax / ArgMax / Gather; never overwrite source models."""
+"""Produce exact compact CTC scores on CUDA with FP32 Softmax / TopK / Gather; never overwrite source models."""
 import argparse
 from pathlib import Path
 import onnx
@@ -16,11 +16,12 @@ model = onnx.load(str(source))
 if len(model.graph.output) != 1 or model.graph.output[0].name != "logits":
     raise SystemExit("expected a single logits output")
 model.graph.node.append(helper.make_node("Softmax", ["logits"], ["probabilities"], axis=-1, name="wxocr_output_softmax"))
-# ArgMax chooses the first tied maximum, matching the Go greedy decoder.
-for name,values in [("wx_axis0",[0]),("wx_axis2",[2]),("wx_blank",[0])]:
+# TopK breaks equal values by the lowest class index, matching Go greedy CTC.
+for name,values in [("wx_axis0",[0]),("wx_axis2",[2]),("wx_blank",[0]),("wx_k1",[1])]:
     model.graph.initializer.append(helper.make_tensor(name, TensorProto.INT64, [1], values))
 model.graph.node.extend([
-    helper.make_node("ArgMax", ["probabilities"], ["wx_greedy"], axis=2, keepdims=0, select_last_index=0),
+    helper.make_node("TopK", ["probabilities","wx_k1"], ["wx_top_values","wx_top_indices"], axis=2, largest=1, sorted=1, name="wxocr_ctc_top1"),
+    helper.make_node("Squeeze", ["wx_top_indices","wx_axis2"], ["wx_greedy"]),
     helper.make_node("Squeeze", ["wx_greedy","wx_axis0"], ["wx_indices"]),
     helper.make_node("Gather", ["probabilities","wx_indices"], ["wx_selected"], axis=2),
     helper.make_node("Gather", ["probabilities","wx_blank"], ["wx_blank_prob"], axis=2),
