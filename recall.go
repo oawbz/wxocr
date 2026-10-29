@@ -159,7 +159,9 @@ func (e *Engine) detectPasses(ctx context.Context, src image.Image, timing *stag
 		timing.mark("detector_inference")
 		if pass == 0 {
 			direction, _, err = pageOrientation(maps[2])
-			tiles = detectionTiles(bounds, direction)
+			if HighResolutionEnabled(ctx) {
+				tiles = detectionTiles(bounds, direction)
+			}
 			if err != nil {
 				return nil, 0, nil, err
 			}
@@ -179,8 +181,10 @@ func (e *Engine) detectPasses(ctx context.Context, src image.Image, timing *stag
 		}
 		timing.mark("detector_postprocess")
 	}
-	all, diagnostics = splitDetectedRegions(ctx, src, all, diagnostics, direction)
-	pruneDetectionDuplicates(diagnostics, bounds.Dx(), bounds.Dy())
+	if HighResolutionEnabled(ctx) {
+		all, diagnostics = splitDetectedRegions(ctx, src, all, diagnostics, direction)
+		pruneDetectionDuplicates(diagnostics, bounds.Dx(), bounds.Dy())
+	}
 	return all, direction, diagnostics, ctx.Err()
 }
 

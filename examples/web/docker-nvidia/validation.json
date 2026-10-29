@@ -1,584 +1,1048 @@
 {
-  "performance": {
+  "date": "2026-10-29",
+  "server": "新广视-AI服务器",
+  "address": "http://10.100.5.250:7676/",
+  "snapshot_source": "/home/gemini/wxocr-accuracy-20261029",
+  "compose_directory": "/home/gemini/wxocr-4090-20261029/examples/web/docker-nvidia",
+  "source_sha256_manifest": "source-sha256.json",
+  "source_file_count": 314,
+  "variants": {
     "before": {
-      "chinese.png": {
-        "mean_ms": 189.02459614285715,
-        "stages_ms": {
-          "decode": 7.951829857142857,
-          "detector_inference": 12.475056285714286,
-          "detector_postprocess": 12.797770714285715,
-          "detector_preprocess": 52.78457971428571,
-          "engine_wait": 0.00021128571428571428,
-          "layout_order": 0.015904714285714286,
-          "line_assembly": 0.003403142857142857,
-          "line_order": 0.001539,
-          "paragraph_inference": 8.89437542857143,
-          "paragraph_postprocess": 40.525098285714286,
-          "paragraph_preprocess": 39.098615,
-          "recognizer_decode": 0.358931,
-          "recognizer_inference": 11.300922285714286,
-          "recognizer_preprocess": 2.798355857142857
-        }
+      "median_elapsed_ms": 845,
+      "sample_metrics": {
+        "lines": 148,
+        "candidates": 0,
+        "diagnostics": 0,
+        "local_passes": 0,
+        "checks": {
+          "sequence": {
+            "complete": 0,
+            "texts": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "name": {
+            "complete": 5,
+            "texts": [
+              "测试人",
+              "测试人员2",
+              "测试人",
+              "测试人",
+              "测试人员5",
+              "测试人员6",
+              "员7",
+              "测试人员8",
+              "测试人",
+              "测试人员10"
+            ]
+          },
+          "birth": {
+            "complete": 8,
+            "texts": [
+              "1971-01-01",
+              "1972-",
+              "1973-01-01",
+              "1974-01-01",
+              "1975-01-01",
+              "1976-",
+              "1977-01-01",
+              "1978-01-01",
+              "1979-01-01",
+              "1970-01-01"
+            ]
+          },
+          "work": {
+            "complete": 3,
+            "texts": [
+              "1991-",
+              "992-",
+              "993-07-01",
+              "1994-07-01",
+              "1995-",
+              "1996",
+              "1997-07-01",
+              "998-",
+              "999-",
+              "1990-07-01"
+            ]
+          },
+          "none": {
+            "complete": 1,
+            "texts": [
+              "",
+              "",
+              "",
+              "无",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "retirement": {
+            "complete": 0,
+            "texts": [
+              "2025-02-",
+              "2025-03-",
+              "2025-04-",
+              "2025-05",
+              "2025-06-",
+              "2025-07",
+              "2025-08-",
+              "2025-09-",
+              "2025-10-",
+              "2025-11-"
+            ]
+          }
+        },
+        "source_id_strings_present": 11,
+        "footer_independent_ids": 0,
+        "footer_account_correct": 0,
+        "review_fields": []
       },
-      "dense_invoice.png": {
-        "mean_ms": 272.1612492857143,
-        "stages_ms": {
-          "decode": 7.326567571428572,
-          "detector_inference": 13.309932285714286,
-          "detector_postprocess": 12.777937857142858,
-          "detector_preprocess": 39.691274,
-          "engine_wait": 0.00024142857142857145,
-          "layout_order": 15.092670714285713,
-          "line_assembly": 0.014667857142857142,
-          "line_order": 0.003387285714285714,
-          "paragraph_inference": 9.097875571428572,
-          "paragraph_postprocess": 67.86543542857143,
-          "paragraph_preprocess": 33.24009785714286,
-          "recognizer_decode": 3.401756857142857,
-          "recognizer_inference": 50.165485999999994,
-          "recognizer_preprocess": 20.134937857142855
-        }
+      "image_tag": "wxocr-web:cuda-native-20261029",
+      "image_id": "sha256:dba6b9f53fe60296e8ea9dc35d1825ba21872d6b438413dec3b6d0493f0e17a1",
+      "restarts": 0,
+      "gpu_memory_mib": [
+        1480
+      ],
+      "container": {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "0.05%",
+        "Container": "60d1f35f80600bbcf261f7cc42afd6d38983a31d85a72908c27072d5ce815f85",
+        "ID": "60d1f35f8060",
+        "MemPerc": "19.42%",
+        "MemUsage": "795.6MiB / 4GiB",
+        "Name": "kind_hoover",
+        "NetIO": "5.55MB / 169kB",
+        "PIDs": "19"
       },
-      "layout_two_columns.png": {
-        "mean_ms": 226.042583,
-        "stages_ms": {
-          "decode": 5.743939571428571,
-          "detector_inference": 13.014110714285714,
-          "detector_postprocess": 12.603105,
-          "detector_preprocess": 40.578493,
-          "engine_wait": 0.00021328571428571428,
-          "layout_order": 10.980680571428572,
-          "line_assembly": 0.01620157142857143,
-          "line_order": 0.0030729999999999998,
-          "paragraph_inference": 7.907843714285714,
-          "paragraph_postprocess": 39.09693357142857,
-          "paragraph_preprocess": 30.761288,
-          "recognizer_decode": 2.5723838571428574,
-          "recognizer_inference": 46.528369285714284,
-          "recognizer_preprocess": 16.161226285714285
-        }
-      }
+      "sample_elapsed_ms": [
+        772,
+        871,
+        845
+      ],
+      "corpus": [],
+      "parallel_sample_ms": []
     },
-    "after": {
-      "chinese.png": {
-        "mean_ms": 108.64128214285714,
-        "stages_ms": {
-          "decode": 10.417696428571428,
-          "detector_inference": 13.848075142857143,
-          "detector_postprocess": 13.598834,
-          "detector_preprocess": 17.408019285714285,
-          "engine_wait": 0.00025828571428571426,
-          "layout_order": 0.02043642857142857,
-          "line_assembly": 0.003969857142857143,
-          "line_order": 0.0021237142857142856,
-          "paragraph_inference": 8.361346285714285,
-          "paragraph_postprocess": 17.23035,
-          "paragraph_preprocess": 10.169577,
-          "recognizer_decode": 0.398786,
-          "recognizer_inference": 13.238555714285715,
-          "recognizer_preprocess": 3.9228225714285716
+    "candidate": {
+      "median_elapsed_ms": 2352,
+      "sample_metrics": {
+        "lines": 214,
+        "candidates": 30,
+        "diagnostics": 575,
+        "local_passes": 8,
+        "checks": {
+          "sequence": {
+            "complete": 10,
+            "texts": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ]
+          },
+          "name": {
+            "complete": 10,
+            "texts": [
+              "测试人员1",
+              "测试人员2",
+              "测试人员3",
+              "测试人员4",
+              "测试人员5",
+              "测试人员6",
+              "测试人员7",
+              "测试人员8",
+              "测试人员9",
+              "测试人员10"
+            ]
+          },
+          "birth": {
+            "complete": 10,
+            "texts": [
+              "1971-01-01",
+              "1972-01-01",
+              "1973-01-01",
+              "1974-01-01",
+              "1975-01-01",
+              "1976-01-01",
+              "1977-01-01",
+              "1978-01-01",
+              "1979-01-01",
+              "1970-01-01"
+            ]
+          },
+          "work": {
+            "complete": 10,
+            "texts": [
+              "1991-07-01",
+              "1992-07-01",
+              "1993-07-01",
+              "1994-07-01",
+              "1995-07-01",
+              "1996-07-01",
+              "1997-07-01",
+              "1998-07-01",
+              "1999-07-01",
+              "1990-07-01"
+            ]
+          },
+          "none": {
+            "complete": 10,
+            "texts": [
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无"
+            ]
+          },
+          "retirement": {
+            "complete": 10,
+            "texts": [
+              "2025-0201",
+              "2025-03-01",
+              "2025-04-01",
+              "2025-0501",
+              "2025-06-01",
+              "2025-07-01",
+              "2025-08-01",
+              "2025-09-01",
+              "2025-10-01",
+              "2025-11-01"
+            ]
+          }
+        },
+        "source_id_strings_present": 13,
+        "footer_independent_ids": 3,
+        "footer_account_correct": 3,
+        "review_fields": [
+          {
+            "text": ":11010119713010013",
+            "reasons": [
+              "inferred_table_column",
+              "possible_boundary_fragment"
+            ]
+          },
+          {
+            "text": "1973-01-(",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1993-07-(",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1972-01-1",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1992-07-1",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1974-01-(",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1994-07-",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "2025-03-0",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "2025-01-0",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "2025-02-0",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          }
+        ]
+      },
+      "image_tag": "wxocr-web:cuda-accuracy-20261029",
+      "image_id": "sha256:1ff79f7fc368d558eee34ae6eee1270c042400534889388f672481eb26dcd614",
+      "restarts": 0,
+      "gpu_memory_mib": [
+        1538
+      ],
+      "container": {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "0.05%",
+        "Container": "3374b1d5ec5cb80ae23092c513641b41a105357d36c4fb429373798c7b317ffd",
+        "ID": "3374b1d5ec5c",
+        "MemPerc": "21.55%",
+        "MemUsage": "882.6MiB / 4GiB",
+        "Name": "blissful_goldberg",
+        "NetIO": "12.4MB / 1.8MB",
+        "PIDs": "22"
+      },
+      "sample_elapsed_ms": [
+        2514,
+        2317,
+        2352
+      ],
+      "corpus": [
+        {
+          "image": "blank.png",
+          "elapsed_ms": 49,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese.png",
+          "elapsed_ms": 114,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese_ccw_180.png",
+          "elapsed_ms": 123,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese_ccw_270.png",
+          "elapsed_ms": 114,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese_ccw_90.png",
+          "elapsed_ms": 130,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice.png",
+          "elapsed_ms": 164,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice_ccw_180.png",
+          "elapsed_ms": 147,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice_ccw_270.png",
+          "elapsed_ms": 161,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice_ccw_90.png",
+          "elapsed_ms": 165,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_three_columns.png",
+          "elapsed_ms": 209,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_title_footer.png",
+          "elapsed_ms": 184,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_two_columns.png",
+          "elapsed_ms": 144,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_two_columns_ccw_270.png",
+          "elapsed_ms": 138,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_two_columns_ccw_90.png",
+          "elapsed_ms": 185,
+          "main_result_exact": true
+        },
+        {
+          "image": "long_line.png",
+          "elapsed_ms": 155,
+          "main_result_exact": true
+        },
+        {
+          "image": "rotated_-12.png",
+          "elapsed_ms": 123,
+          "main_result_exact": true
+        },
+        {
+          "image": "rotated_25.png",
+          "elapsed_ms": 146,
+          "main_result_exact": true
+        },
+        {
+          "image": "rotated_7.png",
+          "elapsed_ms": 127,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_blurred.png",
+          "elapsed_ms": 115,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_dark_background.png",
+          "elapsed_ms": 100,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_low_contrast.png",
+          "elapsed_ms": 113,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_small_text.png",
+          "elapsed_ms": 117,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_staggered_columns.png",
+          "elapsed_ms": 190,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_staggered_rotated.png",
+          "elapsed_ms": 157,
+          "main_result_exact": true
+        },
+        {
+          "image": "terminal.png",
+          "elapsed_ms": 757,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage.png",
+          "elapsed_ms": 224,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage_ccw_180.png",
+          "elapsed_ms": 249,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage_ccw_270.png",
+          "elapsed_ms": 253,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage_ccw_90.png",
+          "elapsed_ms": 262,
+          "main_result_exact": true
         }
+      ],
+      "parallel_sample_ms": [
+        2463,
+        2447
+      ]
+    },
+    "deployed": {
+      "median_elapsed_ms": 2451,
+      "sample_metrics": {
+        "lines": 214,
+        "candidates": 30,
+        "diagnostics": 575,
+        "local_passes": 8,
+        "checks": {
+          "sequence": {
+            "complete": 10,
+            "texts": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ]
+          },
+          "name": {
+            "complete": 10,
+            "texts": [
+              "测试人员1",
+              "测试人员2",
+              "测试人员3",
+              "测试人员4",
+              "测试人员5",
+              "测试人员6",
+              "测试人员7",
+              "测试人员8",
+              "测试人员9",
+              "测试人员10"
+            ]
+          },
+          "birth": {
+            "complete": 10,
+            "texts": [
+              "1971-01-01",
+              "1972-01-01",
+              "1973-01-01",
+              "1974-01-01",
+              "1975-01-01",
+              "1976-01-01",
+              "1977-01-01",
+              "1978-01-01",
+              "1979-01-01",
+              "1970-01-01"
+            ]
+          },
+          "work": {
+            "complete": 10,
+            "texts": [
+              "1991-07-01",
+              "1992-07-01",
+              "1993-07-01",
+              "1994-07-01",
+              "1995-07-01",
+              "1996-07-01",
+              "1997-07-01",
+              "1998-07-01",
+              "1999-07-01",
+              "1990-07-01"
+            ]
+          },
+          "none": {
+            "complete": 10,
+            "texts": [
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无",
+              "无"
+            ]
+          },
+          "retirement": {
+            "complete": 10,
+            "texts": [
+              "2025-0201",
+              "2025-03-01",
+              "2025-04-01",
+              "2025-0501",
+              "2025-06-01",
+              "2025-07-01",
+              "2025-08-01",
+              "2025-09-01",
+              "2025-10-01",
+              "2025-11-01"
+            ]
+          }
+        },
+        "source_id_strings_present": 13,
+        "footer_independent_ids": 3,
+        "footer_account_correct": 3,
+        "review_fields": [
+          {
+            "text": ":11010119713010013",
+            "reasons": [
+              "inferred_table_column",
+              "possible_boundary_fragment"
+            ]
+          },
+          {
+            "text": "1973-01-(",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1993-07-(",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1972-01-1",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1992-07-1",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1974-01-(",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "1994-07-",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "2025-03-0",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "2025-01-0",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          },
+          {
+            "text": "2025-02-0",
+            "reasons": [
+              "inferred_table_column",
+              "incomplete_or_ambiguous_date"
+            ]
+          }
+        ]
       },
-      "dense_invoice.png": {
-        "mean_ms": 171.07001628571427,
-        "stages_ms": {
-          "decode": 6.7140191428571425,
-          "detector_inference": 11.414004,
-          "detector_postprocess": 13.657158142857144,
-          "detector_preprocess": 14.689440285714285,
-          "engine_wait": 0.00019571428571428572,
-          "layout_order": 13.205663571428572,
-          "line_assembly": 0.019499285714285716,
-          "line_order": 0.0030405714285714285,
-          "paragraph_inference": 8.576229142857143,
-          "paragraph_postprocess": 14.936822857142857,
-          "paragraph_preprocess": 11.811043,
-          "recognizer_decode": 4.013590428571428,
-          "recognizer_inference": 51.92574285714285,
-          "recognizer_preprocess": 20.066497
+      "image_tag": "wxocr-web:cuda-accuracy-20261029",
+      "image_id": "sha256:1ff79f7fc368d558eee34ae6eee1270c042400534889388f672481eb26dcd614",
+      "restarts": 0,
+      "gpu_memory_mib": [
+        1472
+      ],
+      "container": {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "0.05%",
+        "Container": "wxocr-4090-ocr-1",
+        "ID": "ec7d7aa2861b",
+        "MemPerc": "21.74%",
+        "MemUsage": "890.4MiB / 4GiB",
+        "Name": "wxocr-4090-ocr-1",
+        "NetIO": "12.4MB / 1.8MB",
+        "PIDs": "21"
+      },
+      "sample_elapsed_ms": [
+        2466,
+        2451,
+        2368
+      ],
+      "corpus": [
+        {
+          "image": "blank.png",
+          "elapsed_ms": 42,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese.png",
+          "elapsed_ms": 116,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese_ccw_180.png",
+          "elapsed_ms": 117,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese_ccw_270.png",
+          "elapsed_ms": 134,
+          "main_result_exact": true
+        },
+        {
+          "image": "chinese_ccw_90.png",
+          "elapsed_ms": 119,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice.png",
+          "elapsed_ms": 187,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice_ccw_180.png",
+          "elapsed_ms": 174,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice_ccw_270.png",
+          "elapsed_ms": 171,
+          "main_result_exact": true
+        },
+        {
+          "image": "dense_invoice_ccw_90.png",
+          "elapsed_ms": 182,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_three_columns.png",
+          "elapsed_ms": 188,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_title_footer.png",
+          "elapsed_ms": 182,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_two_columns.png",
+          "elapsed_ms": 161,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_two_columns_ccw_270.png",
+          "elapsed_ms": 186,
+          "main_result_exact": true
+        },
+        {
+          "image": "layout_two_columns_ccw_90.png",
+          "elapsed_ms": 170,
+          "main_result_exact": true
+        },
+        {
+          "image": "long_line.png",
+          "elapsed_ms": 143,
+          "main_result_exact": true
+        },
+        {
+          "image": "rotated_-12.png",
+          "elapsed_ms": 136,
+          "main_result_exact": true
+        },
+        {
+          "image": "rotated_25.png",
+          "elapsed_ms": 127,
+          "main_result_exact": true
+        },
+        {
+          "image": "rotated_7.png",
+          "elapsed_ms": 150,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_blurred.png",
+          "elapsed_ms": 105,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_dark_background.png",
+          "elapsed_ms": 105,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_low_contrast.png",
+          "elapsed_ms": 112,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_small_text.png",
+          "elapsed_ms": 97,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_staggered_columns.png",
+          "elapsed_ms": 164,
+          "main_result_exact": true
+        },
+        {
+          "image": "stress_staggered_rotated.png",
+          "elapsed_ms": 177,
+          "main_result_exact": true
+        },
+        {
+          "image": "terminal.png",
+          "elapsed_ms": 665,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage.png",
+          "elapsed_ms": 246,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage_ccw_180.png",
+          "elapsed_ms": 263,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage_ccw_270.png",
+          "elapsed_ms": 241,
+          "main_result_exact": true
+        },
+        {
+          "image": "webpage_ccw_90.png",
+          "elapsed_ms": 251,
+          "main_result_exact": true
         }
-      },
-      "layout_two_columns.png": {
-        "mean_ms": 173.1829827142857,
-        "stages_ms": {
-          "decode": 6.844022428571429,
-          "detector_inference": 12.280401571428571,
-          "detector_postprocess": 13.876123285714286,
-          "detector_preprocess": 15.749229285714286,
-          "engine_wait": 0.00022742857142857143,
-          "layout_order": 13.720387142857144,
-          "line_assembly": 0.014165,
-          "line_order": 0.0034054285714285714,
-          "paragraph_inference": 8.925638142857142,
-          "paragraph_postprocess": 16.40152642857143,
-          "paragraph_preprocess": 12.447623714285713,
-          "recognizer_decode": 2.393485857142857,
-          "recognizer_inference": 52.479693857142856,
-          "recognizer_preprocess": 18.00786385714286
-        }
-      }
-    },
-    "corpus": {
-      "count": 29,
-      "exact": true,
-      "mismatches": []
-    },
-    "date": "2026-10-29",
-    "server": "新广视-AI服务器",
-    "address": "http://10.100.5.250:7676/",
-    "image": "wxocr-web:cuda-native-20261029",
-    "image_id": "sha256:dba6b9f53fe60296e8ea9dc35d1825ba21872d6b438413dec3b6d0493f0e17a1",
-    "method": "Hot stages: 1 warmup + 7 requests per image, arithmetic means; HTTP: 60 mixed requests per case, preview omitted, temporary rate=0/max_tasks=2, all full results checked. Same GPU1, other host services kept running.",
-    "source_sha256": {
-      "engine.go": "61477c939a2b0a38fd98ee6dd8995a75dd6f3a04e9800ed3505d0920f2aa93bb",
-      "preprocess.go": "68abe7efd4f430cfa80e8c234792e755eeb85290257ab13ea10b8002dc76e38f",
-      "paragraph.go": "992acab28177f68cae0e996ddf1617a40d558a2c21e01a76bbfb676f2b1c8193",
-      "contours.go": "0a570839b81f4dec6cd43cb205eac6ec853312b9c25f6dcfed7c406c417c7b8c",
-      "compact_ctc.go": "6fd06323e3a1d90295c2caa3f1e2c6c8eebcf6e7f94f11ca9e1ed31f3e4fdb6c",
-      "examples/web/main.go": "079c2b802add7de3eb3c9e716bb4de37f3424134cfe4e1c51c8088ed31162491",
-      "examples/web/config.go": "5047d09ec5d620563df69092f0029e9ab14bd635f3178b3c05a86e056d04a6b9",
-      "examples/web/model_lifecycle.go": "4876a96893314c4bdbd9e5d02e99f8a414084b23a218df5ee773c4a1538a55ef",
-      "examples/web/engine_pool.go": "82178e4f13541fadae5be63e8518c6db6793e01350462d4f7f4fb01c89e49e23",
-      "examples/web/docker-nvidia/prepare_models.py": "0715df66d8271bd93dffb2df6e0a4adc0c3e4b393c765d453daddc3d7851c3a6",
-      "examples/web/docker-nvidia/Dockerfile": "e2c8256ab0cac809a906a2e2e6e40d9594b3e4d3620edb496ba34d3db0b63077",
-      "internal/prepost/resize.c": "f3be1e6bd3d9bfeded4b96162667e1d709ca12d870c9f22aee2ca6552d67f280",
-      "internal/prepost/resize.h": "499663c327826073a9459d6f8fa56801af98c30bb8baf059fd20ae35fecaf192",
-      "internal/prepost/resize.go": "a09e4f6f38947481e747c2cc21262a7497ab8e11ad7b6b92d734ac51b4d31e71"
-    },
-    "concurrency": [
-      {
-        "mode": "before",
-        "workers": 1,
-        "clients": 1,
-        "count": 60,
-        "ready_ms": 5722.001280635595,
-        "requests_per_second": 4.095401481740672,
-        "p50_ms": 247.62984830886126,
-        "p95_ms": 291.84106923639774,
-        "observed_app_gpu_peak_mib": 930,
-        "observed_container_cpu_peak_percent": 110.6,
-        "container_memory_samples": [
-          "692.5MiB / 4GiB",
-          "683.9MiB / 4GiB",
-          "689.1MiB / 4GiB",
-          "700.5MiB / 4GiB",
-          "693.5MiB / 4GiB",
-          "681.2MiB / 4GiB",
-          "690.3MiB / 4GiB",
-          "691.8MiB / 4GiB"
-        ],
-        "app_sm_percent_samples": [
-          0,
-          1
-        ]
-      },
-      {
-        "mode": "native1",
-        "workers": 1,
-        "clients": 1,
-        "count": 60,
-        "ready_ms": 6304.592277854681,
-        "requests_per_second": 6.20330584626572,
-        "p50_ms": 172.88959212601185,
-        "p95_ms": 191.259840503335,
-        "observed_app_gpu_peak_mib": 934,
-        "observed_container_cpu_peak_percent": 113.26,
-        "container_memory_samples": [
-          "694.8MiB / 4GiB",
-          "687.7MiB / 4GiB",
-          "689.3MiB / 4GiB",
-          "690.9MiB / 4GiB",
-          "694.6MiB / 4GiB"
-        ],
-        "app_sm_percent_samples": [
-          0,
-          5
-        ]
-      },
-      {
-        "mode": "native1",
-        "workers": 1,
-        "clients": 2,
-        "count": 60,
-        "ready_ms": 8666.01437702775,
-        "requests_per_second": 6.836082046277026,
-        "p50_ms": 278.8114380091429,
-        "p95_ms": 333.09260569512844,
-        "observed_app_gpu_peak_mib": 922,
-        "observed_container_cpu_peak_percent": 121.7,
-        "container_memory_samples": [
-          "697.1MiB / 4GiB",
-          "708.2MiB / 4GiB",
-          "701.4MiB / 4GiB",
-          "709.4MiB / 4GiB",
-          "683.9MiB / 4GiB"
-        ],
-        "app_sm_percent_samples": [
-          0,
-          4
-        ]
-      },
-      {
-        "mode": "native2",
-        "workers": 2,
-        "clients": 1,
-        "count": 60,
-        "ready_ms": 7125.303825363517,
-        "requests_per_second": 6.580281940127504,
-        "p50_ms": 159.2166405171156,
-        "p95_ms": 190.21904468536377,
-        "observed_app_gpu_peak_mib": 1476,
-        "observed_container_cpu_peak_percent": 119.54,
-        "container_memory_samples": [
-          "751.9MiB / 4GiB",
-          "750.8MiB / 4GiB",
-          "753.4MiB / 4GiB",
-          "750.8MiB / 4GiB",
-          "741.2MiB / 4GiB"
-        ],
-        "app_sm_percent_samples": [
-          0,
-          5
-        ]
-      },
-      {
-        "mode": "native2",
-        "workers": 2,
-        "clients": 2,
-        "count": 60,
-        "ready_ms": 6055.858615785837,
-        "requests_per_second": 12.945598033800245,
-        "p50_ms": 163.8812143355608,
-        "p95_ms": 188.30780312418938,
-        "observed_app_gpu_peak_mib": 1476,
-        "observed_container_cpu_peak_percent": 216.45,
-        "container_memory_samples": [
-          "765.5MiB / 4GiB",
-          "767MiB / 4GiB",
-          "744.8MiB / 4GiB"
-        ],
-        "app_sm_percent_samples": [
-          10,
-          10
-        ]
-      }
-    ],
-    "http_corpus_exact": 29,
-    "resources_note": "Per-process SM percent sampled twice during active pressure, not theoretical TFLOPS; memory is per process, CPU/RAM per container. Whole-GPU utilization and power in raw data are shared with other services."
+      ],
+      "parallel_sample_ms": [
+        2784,
+        2869
+      ]
+    }
   },
-  "deployment": {
-    "corpus": [
-      {
-        "image": "blank.png",
-        "status": 200,
-        "elapsed_ms": 56,
-        "wall_ms": 75.97682997584343,
-        "exact": true
-      },
-      {
-        "image": "chinese.png",
-        "status": 200,
-        "elapsed_ms": 127,
-        "wall_ms": 145.78212425112724,
-        "exact": true
-      },
-      {
-        "image": "chinese_ccw_180.png",
-        "status": 200,
-        "elapsed_ms": 123,
-        "wall_ms": 125.60552731156349,
-        "exact": true
-      },
-      {
-        "image": "chinese_ccw_270.png",
-        "status": 200,
-        "elapsed_ms": 127,
-        "wall_ms": 130.1389392465353,
-        "exact": true
-      },
-      {
-        "image": "chinese_ccw_90.png",
-        "status": 200,
-        "elapsed_ms": 125,
-        "wall_ms": 127.44537368416786,
-        "exact": true
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 200,
-        "elapsed_ms": 174,
-        "wall_ms": 175.99834501743317,
-        "exact": true
-      },
-      {
-        "image": "dense_invoice_ccw_180.png",
-        "status": 200,
-        "elapsed_ms": 153,
-        "wall_ms": 156.05881810188293,
-        "exact": true
-      },
-      {
-        "image": "dense_invoice_ccw_270.png",
-        "status": 200,
-        "elapsed_ms": 188,
-        "wall_ms": 190.30319713056087,
-        "exact": true
-      },
-      {
-        "image": "dense_invoice_ccw_90.png",
-        "status": 200,
-        "elapsed_ms": 198,
-        "wall_ms": 199.91235621273518,
-        "exact": true
-      },
-      {
-        "image": "layout_three_columns.png",
-        "status": 200,
-        "elapsed_ms": 221,
-        "wall_ms": 223.0615932494402,
-        "exact": true
-      },
-      {
-        "image": "layout_title_footer.png",
-        "status": 200,
-        "elapsed_ms": 177,
-        "wall_ms": 179.66707237064838,
-        "exact": true
-      },
-      {
-        "image": "layout_two_columns.png",
-        "status": 200,
-        "elapsed_ms": 215,
-        "wall_ms": 218.15676800906658,
-        "exact": true
-      },
-      {
-        "image": "layout_two_columns_ccw_270.png",
-        "status": 200,
-        "elapsed_ms": 224,
-        "wall_ms": 226.6636360436678,
-        "exact": true
-      },
-      {
-        "image": "layout_two_columns_ccw_90.png",
-        "status": 200,
-        "elapsed_ms": 179,
-        "wall_ms": 181.80943839251995,
-        "exact": true
-      },
-      {
-        "image": "long_line.png",
-        "status": 200,
-        "elapsed_ms": 62,
-        "wall_ms": 64.34828415513039,
-        "exact": true
-      },
-      {
-        "image": "rotated_-12.png",
-        "status": 200,
-        "elapsed_ms": 129,
-        "wall_ms": 131.4473394304514,
-        "exact": true
-      },
-      {
-        "image": "rotated_25.png",
-        "status": 200,
-        "elapsed_ms": 141,
-        "wall_ms": 143.90819892287254,
-        "exact": true
-      },
-      {
-        "image": "rotated_7.png",
-        "status": 200,
-        "elapsed_ms": 115,
-        "wall_ms": 117.25977808237076,
-        "exact": true
-      },
-      {
-        "image": "stress_blurred.png",
-        "status": 200,
-        "elapsed_ms": 96,
-        "wall_ms": 98.73473085463047,
-        "exact": true
-      },
-      {
-        "image": "stress_dark_background.png",
-        "status": 200,
-        "elapsed_ms": 95,
-        "wall_ms": 97.02871553599834,
-        "exact": true
-      },
-      {
-        "image": "stress_low_contrast.png",
-        "status": 200,
-        "elapsed_ms": 106,
-        "wall_ms": 108.41579921543598,
-        "exact": true
-      },
-      {
-        "image": "stress_small_text.png",
-        "status": 200,
-        "elapsed_ms": 109,
-        "wall_ms": 110.8268965035677,
-        "exact": true
-      },
-      {
-        "image": "stress_staggered_columns.png",
-        "status": 200,
-        "elapsed_ms": 178,
-        "wall_ms": 180.81843107938766,
-        "exact": true
-      },
-      {
-        "image": "stress_staggered_rotated.png",
-        "status": 200,
-        "elapsed_ms": 177,
-        "wall_ms": 179.57099713385105,
-        "exact": true
-      },
-      {
-        "image": "terminal.png",
-        "status": 200,
-        "elapsed_ms": 636,
-        "wall_ms": 638.8800013810396,
-        "exact": true
-      },
-      {
-        "image": "webpage.png",
-        "status": 200,
-        "elapsed_ms": 242,
-        "wall_ms": 249.1899859160185,
-        "exact": true
-      },
-      {
-        "image": "webpage_ccw_180.png",
-        "status": 200,
-        "elapsed_ms": 221,
-        "wall_ms": 223.6651498824358,
-        "exact": true
-      },
-      {
-        "image": "webpage_ccw_270.png",
-        "status": 200,
-        "elapsed_ms": 257,
-        "wall_ms": 259.71327535808086,
-        "exact": true
-      },
-      {
-        "image": "webpage_ccw_90.png",
-        "status": 200,
-        "elapsed_ms": 243,
-        "wall_ms": 246.3732659816742,
-        "exact": true
-      }
-    ],
-    "burst": [
-      {
-        "image": "dense_invoice.png",
-        "status": 429,
-        "error": {
-          "error": {
-            "code": "server_busy",
-            "message": "服务正在处理其他任务，请稍后重试"
-          }
-        },
-        "retry_after": "1"
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 429,
-        "error": {
-          "error": {
-            "code": "server_busy",
-            "message": "服务正在处理其他任务，请稍后重试"
-          }
-        },
-        "retry_after": "1"
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 429,
-        "error": {
-          "error": {
-            "code": "server_busy",
-            "message": "服务正在处理其他任务，请稍后重试"
-          }
-        },
-        "retry_after": "1"
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 200,
-        "elapsed_ms": 197,
-        "wall_ms": 200.23637637495995,
-        "exact": true
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 200,
-        "elapsed_ms": 195,
-        "wall_ms": 198.70505295693874,
-        "exact": true
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 429,
-        "error": {
-          "error": {
-            "code": "server_busy",
-            "message": "服务正在处理其他任务，请稍后重试"
-          }
-        },
-        "retry_after": "1"
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 429,
-        "error": {
-          "error": {
-            "code": "server_busy",
-            "message": "服务正在处理其他任务，请稍后重试"
-          }
-        },
-        "retry_after": "1"
-      },
-      {
-        "image": "dense_invoice.png",
-        "status": 429,
-        "error": {
-          "error": {
-            "code": "server_busy",
-            "message": "服务正在处理其他任务，请稍后重试"
-          }
-        },
-        "retry_after": "1"
-      }
-    ],
+  "smoke": {
     "page_status": 200,
+    "page_sha256": "ec8617f5f4d66fa1066d426a2d12997001cb374870f2f5d0389f16acb8d3e14b",
     "unauthenticated_status": 401,
-    "image_id": "sha256:dba6b9f53fe60296e8ea9dc35d1825ba21872d6b438413dec3b6d0493f0e17a1",
-    "image_tag": "wxocr-web:cuda-native-20261029",
-    "restarts": 0,
-    "gpu_memory_mib": [
-      1516
-    ],
-    "container": {
-      "BlockIO": "0B / 0B",
-      "CPUPerc": "0.05%",
-      "Container": "wxocr-4090-ocr-1",
-      "ID": "db251bdbe0fc",
-      "MemPerc": "19.17%",
-      "MemUsage": "785.4MiB / 4GiB",
-      "Name": "wxocr-4090-ocr-1",
-      "NetIO": "4.43MB / 166kB",
-      "PIDs": "21"
-    },
     "config": {
       "engine_workers": "2",
       "max_concurrent_tasks": "2",
       "requests_per_minute": "60",
       "model_resident": "true",
       "startup_warmup": "true"
+    },
+    "container": "wxocr-web:cuda-accuracy-20261029 healthy 0"
+  },
+  "tests": {
+    "local_core_unit": "pass",
+    "local_web_race_vet_template": "pass",
+    "server_core_web_race_vet": "pass",
+    "real_model_lifecycle": "pass",
+    "real_long_image_recall": "pass",
+    "candidate_gpu_corpus_exact_to_previous_gpu": 29,
+    "deployed_gpu_corpus_exact_to_previous_gpu": 29,
+    "deployed_sample_exact_to_candidate": true,
+    "native_reference_suite": "legacy reference differs on dense_invoice/terminal/webpage_ccw_180; same differences already present in previous deployed GPU results, not introduced by this update"
+  },
+  "legacy_reference_differences": {
+    "dense_invoice": {
+      "previous_gpu_texts": [
+        "订单编号AB-20261004-123456",
+        "客户名称:跨平台识别测试",
+        "合计金额:¥12345.67",
+        "短词 OCR 中文ABC 123",
+        "状态:已完成数量:100",
+        "日期2026-10-0411:30",
+        "地址:北京市朝阳区测试路88号",
+        "服务热线400-800-1234",
+        "电子邮箱 test@example.com",
+        "备注:中文English混合识别测试",
+        "左栏:名称数量金额",
+        "右栏:客户联系方式"
+      ],
+      "native_reference_texts": [
+        "订单编号AB-20261004-123456",
+        "客户名称:跨平台识别测试",
+        "合计金额:¥12345.67",
+        "短词 OCR 中文ABC 123",
+        "状态:已完成数量:100",
+        "日期2026-10-0411:30",
+        "服务热线400-800-1234",
+        "电子邮箱 test@example.com",
+        "地址:北京市朝阳区测试路88号",
+        "备注:中文English混合识别测试",
+        "左栏:名称数量金额",
+        "右栏:客户联系方式"
+      ],
+      "same_text_multiset": true
+    },
+    "terminal": {
+      "previous_gpu_texts": [
+        "xungeng@ubvm:~/work/wechat-ocr/python$ python3 test.py",
+        "{'imgpath':",
+        "./demo5/testl哈.png', 'errcode': 0, ‘width': 1484, ‘height1: 1081, 'ocr_response': [{'text':",
+        "895.7222900390625, 'bottom: 190.92465209960938, 'rate': 0.98280125856399543, f'text1: 1日', '1eft': 970.1",
+        "'bottom': 262.94622802734375, 'rate': 0.3581617772579193}, {'text': '百/度",
+        "left': 1043.4375, 'top': 229",
+        "75, 'rate' : 0.9752352833747864}, {text1: 我的注', left1: 69.5625, top' : 445.1999816894531, 'right1: 162",
+        " 荐, '1eft1: 153.03749084472656, top': 445.1999816894531, 'right1 : 213.3249969482422, 'bottom': 470.7",
+        "国，美国31个州货币独立，耶伦:不承诺向',‘Left1:71.8812484741211,‘top':489.2562255859375",
+        ", 'right': 762.8687",
+        "text': 1中国', '1eft': 67.24374389648438, 'top': 526.356201171875, 'right1: 178.5437469482422, ‘bottom1:",
+        "5562133789062, top1: 447.51873779296875, 'right1: 1064.30615234375, 'bottom1: 470.70623779296875, rate': 0",
+        "971.5562133789062, 'top':484.6187438964844",
+        " 'right1: 1312.4124755859375, 'bottom': 507.8062438964844, 'r",
+        "1eft1: 969.1661376953125, 1top1: 528.5319213867188, 1right1 : 1296.2879638671875, 'bottom1: 556.570861816406",
+        "7578125, top' : 447.51873779296875, 'right1: 1435.30615234375, 'bottom1: 470.70623779296875, 1rate' : 0.689503",
+        "918701171875, top': 575.0499877929688, 1right1: 1326.324951171875, 'bottom: 600.5562133789062, 1rate1 : 0.9",
+        "52075195312, 'top': 618.9552612304688, 1right1: 1242.9573974609375, 'bottom1: 646.3233032226562",
+        "'rate':0.99!",
+        "1171875, 'top' : 665.481201171875, 'right': 1208.0687255859375, 'bottom1: 688.668701171875, 'rate1: 0.95416444",
+        "4877929688, 1top1: 709.5374755859375, 1r1ght': 1305. 4561767578125, 1bottom1: 735.043701171875, 'rate1: 6.9947",
+        "211, top': 739.6812133789062, 1right1: 259.6999816894531, 'bottom1: 755.9124755859375, rate1 : 0.98782759904",
+        "359375, 'right1 : 236.5124969482422, 'bottom1: 925.1812133789062, 1rate1: 0.345917880535125731, {1text1: ",
+        "right 1: 554.1812133789062, 'bottom': 837.0687255859375, 'rate1: 0.9933297634124756}, f1text1: 热点 球时报",
+        "'rate':0.9624710083007812},{'text':'4》 播报','Left':",
+        "t': 537.9498901367188, 'bottom': 950.6874389648438,",
+        "om1: 760.5499877929688, rate1 : 0.7506828308105469}, {text1: )播1, 11eft1: 709.5374755859375, top' : 929.",
+        "rate1:0.9136305451393127},[text1:16 男子梦到家中有黄金挖40米深洞摔死, ‘Left1:966.918701171875, 1top1:",
+        "9375,‘rate':0.9798642992973328},{text1: 17 代驾狂飙130 不顾车主提醒结束订单1, 'Left1:971.5562133789062",
+        "49145507812,‘rate':0.98418128490448},[text1:18 公安查车追车致车辆撞人?,‘1eft1:966.7831420898438, ‘top",
+        "56054688, rate':0.9921199083328247},[text:19 泰国一巴士侧翻 17名中国游客受伤 1eft1: 966.918701171875",
+        "5874633789062, 'rate1: 0.9828636646270752}, {'text1: 1人民共[', 'left':",
+        "199.41249084472656,",
+        "'top':1029.524!",
+        "1:0.885657012462616},{text:乌克兰请求中国参与和谈?中方回应,‘1eft1:322.3062438964844,‘top':1006.33",
+        "rate': 0.9958624243736267}]}",
+        "xungeng@ubvm:~/work/wechat-ocr/python$ cd../build/",
+        "xungeng@ubvm:-/work/wechat-ocr/builds ./test_cli /opt/wechat/wxocr /opt/wechat/ ../demo5/testlAs. png",
+        "0CR errcode=0",
+        "[609.41,100.36,895.72,190.92] r=0.983 Bai百度",
+        "[970.17,218.89,1017.93,262.95] r=0.358 日",
+        "1043.44,229.56,1140.82,257.38] r=0.975 百度下",
+        "[69.56,445.20,162.31,468.39] r=1.000 我的关注",
+        "[153.04,445.20,213.32,470.71] r=0.998 推荐",
+        "[71.88,489.26,762.87,519.40]r=0.9971241吨黄金运抵中国，美国31个州货币独立，耶伦:不承诺向",
+        "[67.24,526.36,178.54,556.50] r=0.999 中国还债"
+      ],
+      "native_reference_texts": [
+        "xungeng@ubvm:~/work/wechat-ocr/python$ python3 test.py",
+        "{'imgpath':",
+        "./demo5/testl哈.png', 'errcode': 0, ‘width': 1484, ‘height1: 1081, 'ocr_response': [{'text':",
+        "895.7222900390625, 'bottom: 190.92465209960938, 'rate': 0.98280125856399543, f'text1: 1日', '1eft': 970.1",
+        "'bottom1: 262.94622802734375, 'rate': 0.3581617772579193}, {'text': '百/度",
+        "left': 1043.4375, 'top': 229",
+        "75, 'rate' : 0.9752352833747864}, {text1: 我的注', left1: 69.5625, top' : 445.1999816894531, 'right1: 162",
+        " 荐, '1eft1: 153.03749084472656, top': 445.1999816894531, 'right1 : 213.3249969482422, 'bottom': 470.7",
+        "国，美国31个州货币独立，耶伦:不承诺向',‘Left1:71.8812484741211,‘top':489.2562255859375",
+        ", 'right': 762.8687",
+        "text': 1中国', '1eft': 67.24374389648438, 'top': 526.356201171875, 'right1: 178.5437469482422, ‘bottom1:",
+        "5562133789062, top1: 447.51873779296875, 'right1: 1064.30615234375, 'bottom1: 470.70623779296875, rate': 0",
+        "971.5562133789062, 'top':484.6187438964844",
+        " 'right1: 1312.4124755859375, 'bottom': 507.8062438964844, 'r",
+        "1eft1: 969.1661376953125, 1top1: 528.5319213867188, 1right1 : 1296.2879638671875, 'bottom1: 556.570861816406",
+        "7578125, top' : 447.51873779296875, 'right1: 1435.30615234375, 'bottom1: 470.70623779296875, 1rate' : 0.689503",
+        "918701171875, top': 575.0499877929688, 1right1: 1326.324951171875, 'bottom: 600.5562133789062, 1rate1 : 0.9",
+        "52075195312, 'top': 618.9552612304688, 1right1: 1242.9573974609375, 'bottom1: 646.3233032226562",
+        "'rate':0.99!",
+        "1171875, 'top' : 665.481201171875, 'right': 1208.0687255859375, 'bottom1: 688.668701171875, 'rate1: 0.95416444",
+        "4877929688, 1top1: 709.5374755859375, 1r1ght': 1305. 4561767578125, 1bottom1: 735.043701171875, 'rate1: 6.9947",
+        "211, top': 739.6812133789062, 1right1: 259.6999816894531, 'bottom1: 755.9124755859375, rate1 : 0.98782759904",
+        "359375, 'right1 : 236.5124969482422, 'bottom1: 925.1812133789062, 1rate1: 0.345917880535125731, {1text1: ",
+        "right 1: 554.1812133789062, 'bottom': 837.0687255859375, 'rate1: 0.9933297634124756}, f1text1: 热点 球时报",
+        "'rate':0.9624710083007812},{'text':'4》 播报','Left':",
+        "t': 537.9498901367188, 'bottom': 950.6874389648438,",
+        "om1: 760.5499877929688, rate1 : 0.7506828308105469}, {text1: )播1, 11eft1: 709.5374755859375, top' : 929.",
+        "rate1:0.9136305451393127},[text1:16 男子梦到家中有黄金挖40米深洞摔死, ‘Left1:966.918701171875, 1top1:",
+        "9375,‘rate':0.9798642992973328},{text1: 17 代驾狂飙130 不顾车主提醒结束订单1, 'Left1:971.5562133789062",
+        "49145507812,‘rate':0.98418128490448},[text1:18 公安查车追车致车辆撞人?,‘1eft1:966.7831420898438, ‘top",
+        "56054688, rate':0.9921199083328247},[text:19 泰国一巴士侧翻 17名中国游客受伤 1eft1: 966.918701171875",
+        "5874633789062, 'rate1: 0.9828636646270752}, {'text1: 1人民共[', 'left':",
+        "199.41249084472656,",
+        "'top':1029.524!",
+        "1:0.885657012462616},{text:乌克兰请求中国参与和谈?中方回应,‘1eft1:322.3062438964844,‘top':1006.33",
+        "rate': 0.9958624243736267}]}",
+        "xungeng@ubvm:~/work/wechat-ocr/python$ cd../build/",
+        "xungeng@ubvm:-/work/wechat-ocr/builds ./test_cli /opt/wechat/wxocr /opt/wechat/ ../demo5/testlAs. png",
+        "0CR errcode=0",
+        "[609.41,100.36,895.72,190.92] r=0.983 Bai百度",
+        "[970.17,218.89,1017.93,262.95] r=0.358 日",
+        "1043.44,229.56,1140.82,257.38] r=0.975 百度下",
+        "[69.56,445.20,162.31,468.39] r=1.000 我的关注",
+        "[153.04,445.20,213.32,470.71] r=0.998 推荐",
+        "[71.88,489.26,762.87,519.40]r=0.9971241吨黄金运抵中国，美国31个州货币独立，耶伦:不承诺向",
+        "[67.24,526.36,178.54,556.50] r=0.999 中国还债"
+      ],
+      "same_text_multiset": false
+    },
+    "webpage_ccw_180": {
+      "previous_gpu_texts": [
+        "新闻",
+        "hao123",
+        "地图",
+        "贴吧",
+        "视频",
+        "图片",
+        "网盘",
+        "文库 更多",
+        "Bai1百度",
+        "i0S17体验",
+        "0月6日两二·黄虹年四月",
+        "07:00",
+        "我的关注推荐",
+        "iOS17.5来袭:iPhone应用分身功能，开辟双重智能空间!",
+        "居蛊匀敌S 05-16 10:24",
+        "小播报",
+        "俄军发动猛攻，乌军官称顶不住，布林肯急访基辅"
+      ],
+      "native_reference_texts": [
+        "新闻",
+        "hao123",
+        "地图",
+        "贴吧",
+        "视频",
+        "图片",
+        "网盘",
+        "文库 更多",
+        "Bai1百度",
+        "我的关注推荐",
+        "iOS17.5来袭:iPhone应用分身功能，开辟双重智能空间!",
+        "i0S17体验",
+        "0月6日两二·黄虹年四月",
+        "07:00",
+        "居蛊匀敌S 05-16 10:24",
+        "小播报",
+        "俄军发动猛攻，乌军官称顶不住，布林肯急访基辅"
+      ],
+      "same_text_multiset": true
     }
-  }
+  },
+  "model_sha256": {
+    "models/charset_zh13562.txt": "e61c2b740d4f09263cdd3495825c1b17d69bd073e4bf99272ac2c075e4c5bbc8",
+    "models/._detection.onnx": "4de055792ef259bed21e5e3fd66f4371c1c6e2dfc1adfdcbb7dec962114f68a3",
+    "models/._manifest.json": "4de055792ef259bed21e5e3fd66f4371c1c6e2dfc1adfdcbb7dec962114f68a3",
+    "models/._paragraph.onnx": "4de055792ef259bed21e5e3fd66f4371c1c6e2dfc1adfdcbb7dec962114f68a3",
+    "models/detection.onnx": "c6785de94c978d4163beabc72bc9df56e1c0a8cd9db53962aeb6a3f2e245d38c",
+    "models/recognition.onnx": "ff748cc58b0299076e6da2d0d6d85ba2ae9b17d7c1a7e8635379975fa51167a9",
+    "models/paragraph.onnx": "5fca3d058db3c87896452e3a667a71931bd5e12fc7c94f8477f8cfc0c883c69c",
+    "models/manifest.json": "afb90b4c463aa44f719ec80cffdaf30dfe10f7f9d869a0cc8e985c01e2c83297",
+    "models/._recognition.onnx": "4de055792ef259bed21e5e3fd66f4371c1c6e2dfc1adfdcbb7dec962114f68a3",
+    "models/._charset_zh13562.txt": "4de055792ef259bed21e5e3fd66f4371c1c6e2dfc1adfdcbb7dec962114f68a3"
+  },
+  "limitations": "Sample six groups are selected-field completeness, not whole-image character accuracy; dates checked ignoring separators. Source ID strings are synthetic 17-digit values. Ten ambiguous footer fields remain flagged; no hidden characters reconstructed. High-resolution extra passes increase latency."
 }

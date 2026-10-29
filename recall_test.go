@@ -111,7 +111,7 @@ func TestRealLongImageRecall(t *testing.T) {
 		r := image.Rect(7, 11+i*960, 967, 11+(i+1)*960)
 		draw.Draw(long, r, src, src.Bounds().Min, draw.Src)
 	}
-	result, err := e.Recognize(WithDiagnosticCrops(context.Background()), long)
+	result, err := e.Recognize(WithHighResolution(WithDiagnosticCrops(context.Background()), true), long)
 	if err != nil {
 		t.Fatal(err)
 	}

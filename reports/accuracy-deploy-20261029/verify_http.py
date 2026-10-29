@@ -35,6 +35,9 @@ def metrics(result):
  ids=[x['text'] for x in footer if re.fullmatch(r'[:：\s]*[0-9]{15,20}[Xx]?',x['text'])]
  return {'lines':len(texts),'candidates':len(result.get('candidates',[])),'diagnostics':len(result.get('diagnostics',[])),'local_passes':max([x['pass'] for x in result.get('diagnostics',[])],default=0),'checks':checks,'source_id_strings_present':sum(x in observed for x in reference['ids']),'footer_independent_ids':len(ids),'footer_account_correct':sum(t=='2005-01' for t in account),'review_fields':[{'text':x.get('text'),'reasons':x['review_reasons']} for x in result.get('diagnostics',[]) if x['reason']=='accepted' and any(r!='inferred_table_column' for r in x.get('review_reasons',[]))]}
 report={'mode':mode};cid=None
+if mode=='deployed':
+ assert subprocess.check_output(['docker','inspect','-f','{{.Config.Image}}','wxocr-4090-ocr-1'],text=True).strip()=='wxocr-web:cuda-accuracy-20261029'
+ with urllib.request.urlopen('http://127.0.0.1:7676/',timeout=5) as response:assert response.read()==(root/'examples/web/index.html').read_bytes(),'wrong deployed web UI'
 try:
  if mode!='deployed':
   cfg=out/(mode+'-config.yaml');cfg.write_text(source);cfg.chmod(0o600)

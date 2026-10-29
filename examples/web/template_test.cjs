@@ -12,5 +12,5 @@ for(const texts of [[],['人员名单','姓名张三','联系电话123456789'],[
 doc=context.classifyDocument({lines:[{text:'姓名',left:10,right:50,top:10,bottom:30},{text:'张三',left:65,right:100,top:11,bottom:31},{text:'性别男民族汉',left:0,right:200,top:40,bottom:60},{text:'住址北京市朝阳区',left:10,right:200,top:70,bottom:90},{text:'幸福路一号',left:65,right:160,top:100,bottom:120},{text:'公民身份号码110101199001020011',left:0,right:200,top:140,bottom:160}]});
 assert.equal(doc.fields.name,'张三');assert.equal(doc.fields.address,'北京市朝阳区幸福路一号');assert.equal(doc.needs_review,true);
 assert(page.indexOf('id="tab-document"')<page.indexOf('id="tab-text"'));
-assert(!script.includes('data.document'));assert(script.includes("fetch('./api/ocr?preview=true'"));
+assert(!script.includes('data.document'));assert(script.includes("fetch('./api/ocr?preview=true&mode='"));assert(page.includes('<option value="fast" selected>'));assert(script.includes("encodeURIComponent($('recognition-mode').value)"));
 console.log('HTML classifier: front, back, ordinary, separate boxes, missing fields, tab order and script syntax passed');

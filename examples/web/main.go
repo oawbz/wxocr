@@ -137,6 +137,14 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 		c.Next()
 	})
 	api.POST("/ocr", func(c *gin.Context) {
+		mode := c.Query("mode")
+		if mode == "" {
+			mode = "fast"
+		}
+		if mode != "fast" && mode != "high_resolution" {
+			apiError(c, 400, "invalid_mode", "mode 必须为 fast 或 high_resolution")
+			return
+		}
 		previewRequested := c.Query("preview")
 		if previewRequested != "" && previewRequested != "true" && previewRequested != "false" {
 			apiError(c, 400, "invalid_preview", "preview 必须为 true 或 false")
@@ -165,6 +173,7 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 		defer gate.leave()
 		start := time.Now()
 		requestContext, cancel := context.WithTimeout(c.Request.Context(), recognitionTimeout)
+		requestContext = ocr.WithHighResolution(requestContext, mode == "high_resolution")
 		defer cancel()
 		if cropsRequested == "true" {
 			requestContext = ocr.WithDiagnosticCrops(requestContext)
@@ -219,7 +228,7 @@ func router(engine recognizer, cfg config, gate *admission, logger *log.Logger) 
 		if requestCanceled(c) {
 			return
 		}
-		response := gin.H{"result": result, "elapsed_ms": time.Since(start).Milliseconds()}
+		response := gin.H{"result": result, "elapsed_ms": time.Since(start).Milliseconds(), "mode": mode}
 		// API clients can omit preview to save PNG encoding and response traffic.
 		if previewRequested == "true" {
 			var preview bytes.Buffer

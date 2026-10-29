@@ -265,6 +265,7 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		return nil, errors.New("empty image")
 	}
 	bounds := src.Bounds()
+	enhanced := HighResolutionEnabled(ctx) && min(bounds.Dx(), bounds.Dy()) >= 1600
 	regions, direction, diagnostics, err := e.detectPasses(ctx, src, &timing)
 	if err != nil {
 		return nil, err
@@ -272,7 +273,7 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 	result := &Result{Width: bounds.Dx(), Height: bounds.Dy(), Lines: make([]Line, 0, len(regions)), Diagnostics: diagnostics}
 	var pixels []float32
 	lineGeometry := make(map[Line]quadrilateral)
-	for _, regionIndex := range recognitionOrder(result.Diagnostics, min(bounds.Dx(), bounds.Dy()) >= 1600) {
+	for _, regionIndex := range recognitionOrder(result.Diagnostics, enhanced) {
 		region := regions[regionIndex]
 		if err = ctx.Err(); err != nil {
 			return nil, err
@@ -281,7 +282,7 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		if diagnostic.Reason == "split_parent" {
 			continue
 		}
-		if diagnostic.Pass == 0 && min(bounds.Dx(), bounds.Dy()) >= 1600 && coveredByAcceptedLocal(*diagnostic, result.Diagnostics) {
+		if diagnostic.Pass == 0 && enhanced && coveredByAcceptedLocal(*diagnostic, result.Diagnostics) {
 			diagnostic.Reason = "covered_by_local"
 			continue
 		}
@@ -329,7 +330,7 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		if err != nil {
 			return nil, err
 		}
-		if min(bounds.Dx(), bounds.Dy()) >= 1600 && region.score >= .7 && region.area < 1000 && evidence < .6 && narrowUprightCrop(q.oriented(direction)) {
+		if enhanced && region.score >= .7 && region.area < 1000 && evidence < .6 && narrowUprightCrop(q.oriented(direction)) {
 			retryQuad := padNarrowCrop(q.oriented(direction))
 			retryPixels := recognitionAlignedTensor(src, retryQuad, true, false)
 			timing.mark("recognizer_decode")
