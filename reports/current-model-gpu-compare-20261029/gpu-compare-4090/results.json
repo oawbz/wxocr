@@ -1,0 +1,3358 @@
+{
+  "image_tag": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+  "duration_target_s": 30,
+  "method": "One resident engine, one client, one CPU core quota and GOMAXPROCS1, selected RTX GPU; no previews; 30-second closed-loop workloads plus drain; accuracy each image/mode repeated3 times; production unchanged.",
+  "tests": [
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "small_fast",
+      "mode": "fast",
+      "requests": 213,
+      "success": 213,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.154831549152732,
+      "requests_per_second": 7.063544681150265,
+      "p50_ms": 140.81221632659435,
+      "p95_ms": 183.15419368445873,
+      "max_ms": 212.8953244537115,
+      "samples": [
+        {
+          "time": 1793273372.0068667,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.60%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "16.90%",
+            "MemUsage": "692.4MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "17.5MB / 2.33MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "8, 62.82, 18008"
+        },
+        {
+          "time": 1793273374.0347679,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.54%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.09%",
+            "MemUsage": "699.9MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "18.1MB / 2.41MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 62.39, 18008"
+        },
+        {
+          "time": 1793273376.0078776,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.78%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.00%",
+            "MemUsage": "696.2MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "18.7MB / 2.48MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "7, 62.77, 18008"
+        },
+        {
+          "time": 1793273378.0158281,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.09%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.06%",
+            "MemUsage": "698.7MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "19.2MB / 2.56MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 62.87, 18008"
+        },
+        {
+          "time": 1793273380.041207,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.44%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.01%",
+            "MemUsage": "696.7MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "19.7MB / 2.63MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 62.26, 18008"
+        },
+        {
+          "time": 1793273382.0727515,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.12%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.21%",
+            "MemUsage": "704.7MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "20.2MB / 2.7MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "5, 62.79, 18008"
+        },
+        {
+          "time": 1793273384.0632095,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.10%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "16.81%",
+            "MemUsage": "688.4MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "20.7MB / 2.78MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 63.00, 18008"
+        },
+        {
+          "time": 1793273386.108638,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.73%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.12%",
+            "MemUsage": "701.4MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "21.3MB / 2.86MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "7, 63.11, 18008"
+        },
+        {
+          "time": 1793273388.0956059,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.16%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.11%",
+            "MemUsage": "700.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "21.9MB / 2.94MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "7, 62.15, 18008"
+        },
+        {
+          "time": 1793273390.1247568,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.88%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.23%",
+            "MemUsage": "705.7MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "22.5MB / 3.02MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "5, 61.78, 18008"
+        },
+        {
+          "time": 1793273392.134544,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.93%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "16.92%",
+            "MemUsage": "692.9MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "23MB / 3.09MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "3, 61.65, 18008"
+        },
+        {
+          "time": 1793273394.1230097,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.49%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.14%",
+            "MemUsage": "702.1MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "23.5MB / 3.16MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "7, 62.16, 18008"
+        },
+        {
+          "time": 1793273396.1534793,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.14%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.19%",
+            "MemUsage": "704.2MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "24.1MB / 3.24MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 62.26, 18008"
+        },
+        {
+          "time": 1793273398.1751268,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.25%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "16.90%",
+            "MemUsage": "692MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "24.6MB / 3.31MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 61.66, 18008"
+        },
+        {
+          "time": 1793273400.165609,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.56%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.20%",
+            "MemUsage": "704.6MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "25.1MB / 3.38MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 62.30, 18008"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 92.69157983362675,
+          "elapsed_ms": 90,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 161.46636940538883,
+          "elapsed_ms": 158,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 169.54133845865726,
+          "elapsed_ms": 166,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 86.78261376917362,
+          "elapsed_ms": 84,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 142.71989278495312,
+          "elapsed_ms": 140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 148.5066208988428,
+          "elapsed_ms": 145,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 103.63828204572201,
+          "elapsed_ms": 100,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 146.39130793511868,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 134.1754924505949,
+          "elapsed_ms": 131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 101.40939988195896,
+          "elapsed_ms": 99,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 147.5830338895321,
+          "elapsed_ms": 144,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.84054689109325,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 104.4136043637991,
+          "elapsed_ms": 101,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 140.26218466460705,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 143.20910349488258,
+          "elapsed_ms": 140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.9930181056261,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 133.87621752917767,
+          "elapsed_ms": 131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 158.33952464163303,
+          "elapsed_ms": 155,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 92.67167933285236,
+          "elapsed_ms": 90,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 123.06629307568073,
+          "elapsed_ms": 120,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.7366679906845,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.69572004675865,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 149.42541904747486,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 172.60971665382385,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 127.20450758934021,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 159.83114950358868,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 179.47524599730968,
+          "elapsed_ms": 176,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 107.9604160040617,
+          "elapsed_ms": 106,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 179.43363264203072,
+          "elapsed_ms": 176,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 182.98450112342834,
+          "elapsed_ms": 180,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 131.50065764784813,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 175.22593773901463,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 179.40826155245304,
+          "elapsed_ms": 176,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 125.28890371322632,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 125.28087198734283,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 172.23262041807175,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 84.66453664004803,
+          "elapsed_ms": 82,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 177.9104694724083,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 124.37750585377216,
+          "elapsed_ms": 121,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 125.28957799077034,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 181.94440193474293,
+          "elapsed_ms": 178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.11593322455883,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 110.22144369781017,
+          "elapsed_ms": 108,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 172.38855734467506,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 137.52645067870617,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 121.5143296867609,
+          "elapsed_ms": 118,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 167.55069978535175,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 160.6196891516447,
+          "elapsed_ms": 157,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 119.5923238992691,
+          "elapsed_ms": 117,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 151.20921656489372,
+          "elapsed_ms": 147,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 162.05282881855965,
+          "elapsed_ms": 158,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 113.44839446246624,
+          "elapsed_ms": 111,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 146.74712717533112,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 137.2530795633793,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 134.22373309731483,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.1916080415249,
+          "elapsed_ms": 166,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 183.388514444232,
+          "elapsed_ms": 180,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 126.8774252384901,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 175.3244437277317,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 172.1262689679861,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 118.61603707075119,
+          "elapsed_ms": 116,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 179.94077131152153,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 173.09221625328064,
+          "elapsed_ms": 170,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.27082647383213,
+          "elapsed_ms": 109,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 165.50815477967262,
+          "elapsed_ms": 162,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 183.15419368445873,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 116.13302491605282,
+          "elapsed_ms": 113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 174.4667049497366,
+          "elapsed_ms": 171,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 169.95886340737343,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.70400032401085,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 187.80441768467426,
+          "elapsed_ms": 184,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 164.79975543916225,
+          "elapsed_ms": 161,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 110.7760090380907,
+          "elapsed_ms": 108,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 134.88153740763664,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 198.59727658331394,
+          "elapsed_ms": 195,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 94.20120157301426,
+          "elapsed_ms": 91,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 167.55727119743824,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 161.1364521086216,
+          "elapsed_ms": 158,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 106.10208660364151,
+          "elapsed_ms": 103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.49364899098873,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 170.34110240638256,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 131.08475133776665,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 152.44249999523163,
+          "elapsed_ms": 149,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 181.363545358181,
+          "elapsed_ms": 178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 96.498291939497,
+          "elapsed_ms": 94,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 149.62784573435783,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 167.8976807743311,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 106.14319704473019,
+          "elapsed_ms": 103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 141.8323740363121,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 133.91180150210857,
+          "elapsed_ms": 131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 103.03568467497826,
+          "elapsed_ms": 100,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 152.4624601006508,
+          "elapsed_ms": 149,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.59789265692234,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 101.40188969671726,
+          "elapsed_ms": 99,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 147.44599908590317,
+          "elapsed_ms": 144,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 143.6854675412178,
+          "elapsed_ms": 140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 99.86551105976105,
+          "elapsed_ms": 97,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 160.88319569826126,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 150.96106193959713,
+          "elapsed_ms": 147,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 100.12310743331909,
+          "elapsed_ms": 98,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 151.12959779798985,
+          "elapsed_ms": 148,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 128.86427156627178,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 113.11949416995049,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 134.98983345925808,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 161.19430027902126,
+          "elapsed_ms": 158,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 103.41628454625607,
+          "elapsed_ms": 101,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 134.26594249904156,
+          "elapsed_ms": 131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 153.49149890244007,
+          "elapsed_ms": 150,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 100.7220596075058,
+          "elapsed_ms": 98,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 137.83406279981136,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 149.69992265105247,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 104.57559116184711,
+          "elapsed_ms": 102,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 156.00658394396305,
+          "elapsed_ms": 153,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 152.7556199580431,
+          "elapsed_ms": 139,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 105.31052574515343,
+          "elapsed_ms": 102,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 171.31157033145428,
+          "elapsed_ms": 168,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.78008542954922,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 104.76471669971943,
+          "elapsed_ms": 102,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 133.20069201290607,
+          "elapsed_ms": 130,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 149.41337704658508,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 103.5478487610817,
+          "elapsed_ms": 101,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 165.75883515179157,
+          "elapsed_ms": 150,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 138.3648943156004,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.20774799585342,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 166.71298071742058,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 120.26306800544262,
+          "elapsed_ms": 117,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 88.33901397883892,
+          "elapsed_ms": 86,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 138.57018016278744,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 146.53816260397434,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 94.21856328845024,
+          "elapsed_ms": 92,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 140.13926312327385,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.5134877115488,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 116.52717553079128,
+          "elapsed_ms": 114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 164.60570879280567,
+          "elapsed_ms": 160,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 174.67625997960567,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 101.9646730273962,
+          "elapsed_ms": 99,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 177.81767807900906,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 124.2948118597269,
+          "elapsed_ms": 121,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 113.29744197428226,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 125.07211975753307,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 182.5993563979864,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 108.22352021932602,
+          "elapsed_ms": 105,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 164.97685573995113,
+          "elapsed_ms": 161,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.97457247972488,
+          "elapsed_ms": 130,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.34701506793499,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 166.38205759227276,
+          "elapsed_ms": 163,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 165.45103676617146,
+          "elapsed_ms": 162,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 88.67240697145462,
+          "elapsed_ms": 86,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 149.2605935782194,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 191.72242656350136,
+          "elapsed_ms": 188,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 141.05846919119358,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 192.8131114691496,
+          "elapsed_ms": 189,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 162.4885220080614,
+          "elapsed_ms": 159,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 127.97371111810207,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 170.12298107147217,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 164.06762227416039,
+          "elapsed_ms": 160,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.61391162872314,
+          "elapsed_ms": 114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 156.1171729117632,
+          "elapsed_ms": 153,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 182.54557065665722,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.98500686883926,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 182.08705820143223,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 133.44600424170494,
+          "elapsed_ms": 130,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 140.81221632659435,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 150.21753311157227,
+          "elapsed_ms": 147,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 148.29359576106071,
+          "elapsed_ms": 145,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 99.00904074311256,
+          "elapsed_ms": 96,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 131.20930269360542,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.05482065677643,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 118.04086714982986,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 175.42525939643383,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 159.6336755901575,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.62125045061111,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 137.33182474970818,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 148.26515316963196,
+          "elapsed_ms": 145,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 102.96548530459404,
+          "elapsed_ms": 100,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 150.8935373276472,
+          "elapsed_ms": 148,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 149.25295300781727,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 109.28991064429283,
+          "elapsed_ms": 106,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 180.63277751207352,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 126.99377909302711,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.73766867816448,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 184.41359885036945,
+          "elapsed_ms": 181,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 141.7362466454506,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.66471154987812,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 141.65444299578667,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 182.70075134932995,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 104.68634590506554,
+          "elapsed_ms": 102,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 182.0114478468895,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 136.33249513804913,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 81.80440403521061,
+          "elapsed_ms": 79,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 131.3546933233738,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 212.8953244537115,
+          "elapsed_ms": 209,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 144.997488707304,
+          "elapsed_ms": 142,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 135.83030924201012,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 183.71421098709106,
+          "elapsed_ms": 180,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.54824511706829,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 195.62595337629318,
+          "elapsed_ms": 192,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 196.4080836623907,
+          "elapsed_ms": 193,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.79793061316013,
+          "elapsed_ms": 120,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 184.40229631960392,
+          "elapsed_ms": 181,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 172.52713441848755,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 121.38936668634415,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 161.30403615534306,
+          "elapsed_ms": 158,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 139.4786350429058,
+          "elapsed_ms": 136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 119.08620409667492,
+          "elapsed_ms": 116,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 165.54758697748184,
+          "elapsed_ms": 162,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 162.32618317008018,
+          "elapsed_ms": 159,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 110.99286749958992,
+          "elapsed_ms": 108,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.20509172976017,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 152.08969451487064,
+          "elapsed_ms": 149,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 92.42446906864643,
+          "elapsed_ms": 88,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 137.40288093686104,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 168.48523542284966,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_fast",
+      "mode": "fast",
+      "requests": 27,
+      "success": 27,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.30977658368647,
+      "requests_per_second": 0.8908016832605793,
+      "p50_ms": 1116.3273509591818,
+      "p95_ms": 1243.7336705625057,
+      "max_ms": 1258.7461154907942,
+      "samples": [
+        {
+          "time": 1793273402.1897771,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.85%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.46%",
+            "MemUsage": "756.1MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "28.1MB / 3.53MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "14, 65.78, 18008"
+        },
+        {
+          "time": 1793273404.2005448,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.26%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.42%",
+            "MemUsage": "754.4MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "30.8MB / 3.77MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 65.38, 18008"
+        },
+        {
+          "time": 1793273406.1862454,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.99%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.08%",
+            "MemUsage": "740.6MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "32.2MB / 3.88MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 64.72, 18008"
+        },
+        {
+          "time": 1793273408.2000291,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.35%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.75%",
+            "MemUsage": "768.1MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "35MB / 4.12MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 64.52, 18008"
+        },
+        {
+          "time": 1793273410.207622,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.59%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "17.96%",
+            "MemUsage": "735.6MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "37.8MB / 4.35MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 64.79, 18008"
+        },
+        {
+          "time": 1793273412.2347145,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.96%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "19.23%",
+            "MemUsage": "787.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "40.5MB / 4.58MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 65.12, 18008"
+        },
+        {
+          "time": 1793273414.2621772,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "101.05%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.82%",
+            "MemUsage": "770.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "41.9MB / 4.69MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 64.25, 18008"
+        },
+        {
+          "time": 1793273416.232542,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.97%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.03%",
+            "MemUsage": "738.4MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "44.7MB / 4.92MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 66.03, 18008"
+        },
+        {
+          "time": 1793273418.2718008,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.73%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.29%",
+            "MemUsage": "749.1MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "47.5MB / 5.16MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 65.53, 18008"
+        },
+        {
+          "time": 1793273420.2913806,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.56%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "19.02%",
+            "MemUsage": "779.2MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "50.3MB / 5.39MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 65.17, 18008"
+        },
+        {
+          "time": 1793273422.284026,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.36%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.33%",
+            "MemUsage": "750.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "51.6MB / 5.5MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 65.74, 18008"
+        },
+        {
+          "time": 1793273424.2896893,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.41%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.42%",
+            "MemUsage": "754.5MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "54.4MB / 5.74MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 65.96, 18008"
+        },
+        {
+          "time": 1793273426.2962694,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.20%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.90%",
+            "MemUsage": "774.2MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "57.2MB / 5.97MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 64.98, 18008"
+        },
+        {
+          "time": 1793273428.3035407,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.59%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.01%",
+            "MemUsage": "737.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "60MB / 6.2MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 63.73, 18008"
+        },
+        {
+          "time": 1793273430.2938967,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.87%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.34%",
+            "MemUsage": "751.4MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "62.7MB / 6.43MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 65.50, 18008"
+        },
+        {
+          "time": 1793273432.308735,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "0.06%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.11%",
+            "MemUsage": "741.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "62.7MB / 6.54MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 56.14, 18008"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1108.6195167154074,
+          "elapsed_ms": 1091,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1081.2571831047535,
+          "elapsed_ms": 1067,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1031.617010012269,
+          "elapsed_ms": 1016,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1151.6360249370337,
+          "elapsed_ms": 1136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1102.1642368286848,
+          "elapsed_ms": 1086,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1005.9155896306038,
+          "elapsed_ms": 991,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1107.0313062518835,
+          "elapsed_ms": 1090,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1243.7336705625057,
+          "elapsed_ms": 1227,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1211.547862738371,
+          "elapsed_ms": 1194,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1112.5557851046324,
+          "elapsed_ms": 1097,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1092.1828374266624,
+          "elapsed_ms": 1077,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1119.633849710226,
+          "elapsed_ms": 1104,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1149.335628375411,
+          "elapsed_ms": 1137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1258.7461154907942,
+          "elapsed_ms": 1244,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1059.0951032936573,
+          "elapsed_ms": 1043,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1155.6053757667542,
+          "elapsed_ms": 1138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1119.6582559496164,
+          "elapsed_ms": 1103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1140.8105809241533,
+          "elapsed_ms": 1128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1120.497863739729,
+          "elapsed_ms": 1101,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1090.522551909089,
+          "elapsed_ms": 1075,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1087.0709139853716,
+          "elapsed_ms": 1070,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1124.7387528419495,
+          "elapsed_ms": 1109,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1103.3983416855335,
+          "elapsed_ms": 1087,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1128.5446230322123,
+          "elapsed_ms": 1113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1247.5714050233364,
+          "elapsed_ms": 1233,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1035.2081786841154,
+          "elapsed_ms": 1018,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1116.3273509591818,
+          "elapsed_ms": 1100,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_high_resolution",
+      "mode": "high_resolution",
+      "requests": 12,
+      "success": 12,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 31.280159540474415,
+      "requests_per_second": 0.38362975689023615,
+      "p50_ms": 2588.530531153083,
+      "p95_ms": 2741.08943156898,
+      "max_ms": 2797.3028775304556,
+      "samples": [
+        {
+          "time": 1793273434.3258348,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.01%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.63%",
+            "MemUsage": "763.2MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "64.1MB / 6.54MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 68.00, 18008"
+        },
+        {
+          "time": 1793273436.3344386,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.23%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.47%",
+            "MemUsage": "756.5MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "65.5MB / 6.8MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 62.51, 18008"
+        },
+        {
+          "time": 1793273438.3234956,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "97.86%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.59%",
+            "MemUsage": "761.3MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "66.9MB / 7.05MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "3, 63.32, 18008"
+        },
+        {
+          "time": 1793273440.3746305,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.06%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.10%",
+            "MemUsage": "741.5MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "66.9MB / 7.05MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "4, 67.86, 18008"
+        },
+        {
+          "time": 1793273442.3538823,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.28%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.85%",
+            "MemUsage": "772.1MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "68.3MB / 7.31MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 68.23, 18008"
+        },
+        {
+          "time": 1793273444.3530977,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 11,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.23%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.71%",
+            "MemUsage": "766.5MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "69.7MB / 7.56MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "14, 64.66, 18008"
+        },
+        {
+          "time": 1793273446.3943145,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "97.97%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "19.03%",
+            "MemUsage": "779.5MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "71.1MB / 7.81MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "14, 60.54, 18008"
+        },
+        {
+          "time": 1793273448.3909314,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.17%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.82%",
+            "MemUsage": "770.7MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "71.1MB / 7.81MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "8, 64.89, 18008"
+        },
+        {
+          "time": 1793273450.396336,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.90%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.72%",
+            "MemUsage": "766.9MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "72.4MB / 8.07MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "15, 68.33, 18008"
+        },
+        {
+          "time": 1793273452.401699,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.25%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.71%",
+            "MemUsage": "766.3MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "73.8MB / 8.32MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 65.61, 18008"
+        },
+        {
+          "time": 1793273454.4344106,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.26%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "19.03%",
+            "MemUsage": "779.6MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "75.2MB / 8.58MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 61.54, 18008"
+        },
+        {
+          "time": 1793273456.438676,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.80%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.73%",
+            "MemUsage": "767.3MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "75.2MB / 8.83MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 64.21, 18008"
+        },
+        {
+          "time": 1793273458.466596,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.18%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.81%",
+            "MemUsage": "770.6MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "76.6MB / 8.83MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 68.49, 18008"
+        },
+        {
+          "time": 1793273460.4147065,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.38%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.85%",
+            "MemUsage": "772.1MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "78MB / 9.09MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 69.05, 18008"
+        },
+        {
+          "time": 1793273462.4638088,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 11,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "101.34%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "19.09%",
+            "MemUsage": "781.8MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "79.4MB / 9.34MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 64.24, 18008"
+        },
+        {
+          "time": 1793273464.4789712,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "67.75%",
+            "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+            "ID": "7bde74216fb4",
+            "MemPerc": "18.78%",
+            "MemUsage": "769.2MiB / 4GiB",
+            "Name": "amazing_galileo",
+            "NetIO": "79.4MB / 9.59MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 59.87, 18008"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2625.499865040183,
+          "elapsed_ms": 2600,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2797.3028775304556,
+          "elapsed_ms": 2771,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2568.9062140882015,
+          "elapsed_ms": 2545,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2537.402307614684,
+          "elapsed_ms": 2512,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2608.154848217964,
+          "elapsed_ms": 2578,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2503.863103687763,
+          "elapsed_ms": 2479,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2675.341820344329,
+          "elapsed_ms": 2651,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2703.299108892679,
+          "elapsed_ms": 2677,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2535.597424954176,
+          "elapsed_ms": 2509,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2508.489103987813,
+          "elapsed_ms": 2484,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2470.369877293706,
+          "elapsed_ms": 2447,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2741.08943156898,
+          "elapsed_ms": 2717,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    }
+  ],
+  "startup": [
+    {
+      "workers": 1,
+      "ready_ms": 13644.818050786853,
+      "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+      "idle": {
+        "time": 1793273335.0271726,
+        "app_gpu_memory_mib": [
+          906
+        ],
+        "app_sm_percent": 6,
+        "app_memory_util_percent": 0,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "7bde74216fb4903e1510b64f7b4b1a35c662d5c21149ad186ce420496d729425",
+          "ID": "7bde74216fb4",
+          "MemPerc": "16.86%",
+          "MemUsage": "690.7MiB / 4GiB",
+          "Name": "amazing_galileo",
+          "NetIO": "5.9kB / 30.4kB",
+          "PIDs": "10"
+        },
+        "whole_gpu_util_power_memory": "0, 57.07, 18008"
+      }
+    }
+  ],
+  "gpu_index": 1,
+  "device_visible_in_container": "GPU-6588571c-ad16-6d6c-b753-622e2886b1e8, NVIDIA GeForce RTX 4090",
+  "runtime_config_sha256": "67ade5562d484e9208cc82be9d9c810a81214d3b6b7269e3df638b7693ce45a9",
+  "final_states": [
+    {
+      "workers": 1,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1719185,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-29T11:28:43.567426175Z",
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-29T19:28:56.761434917+08:00",
+              "End": "2026-10-29T19:28:56.864746846+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:29:26.866621623+08:00",
+              "End": "2026-10-29T19:29:26.960499759+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:29:56.96145589+08:00",
+              "End": "2026-10-29T19:29:57.066102644+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:30:27.067489799+08:00",
+              "End": "2026-10-29T19:30:27.167098597+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:30:57.168443119+08:00",
+              "End": "2026-10-29T19:30:57.255686963+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            }
+          ]
+        }
+      },
+      "restart_count": 0
+    }
+  ],
+  "production_state": "wxocr-web:cuda-fragment-20261029 healthy 0"
+}

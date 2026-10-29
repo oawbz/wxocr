@@ -1,0 +1,92 @@
+[
+  {
+    "file": "PP-LCNet_x1_0_doc_ori/.cache/huggingface/trees/d3b95a6dff5fe8a94f2748e12b61cb26818a0df8.json",
+    "bytes": 837,
+    "sha256": "f13a0cf1083eb12e5a1c460625cd26071e9d5f1eb4d8cc6caf82f1b16f587b2d"
+  },
+  {
+    "file": "PP-LCNet_x1_0_doc_ori/config.json",
+    "bytes": 2561,
+    "sha256": "e49f6be2fe4034232b05fb80d983a7b9bde4592d4a52812129c9a348057d3147"
+  },
+  {
+    "file": "PP-LCNet_x1_0_doc_ori/inference.json",
+    "bytes": 104441,
+    "sha256": "3580978602f309c3554508dd85d4fe09b73a7e0d80d7f9e63258f5b72c390c69"
+  },
+  {
+    "file": "PP-LCNet_x1_0_doc_ori/inference.pdiparams",
+    "bytes": 6754166,
+    "sha256": "e8d6e7c5d264507e40e58a655779059d616b20d7441ea22047d829eb3931989c"
+  },
+  {
+    "file": "PP-LCNet_x1_0_doc_ori/inference.yml",
+    "bytes": 766,
+    "sha256": "9e195eb729a8173588cd0e8a852c8b373aa606e79e77b4ac7d8346f5426caf26"
+  },
+  {
+    "file": "PP-LCNet_x1_0_textline_ori/.cache/huggingface/trees/cd237a44b0e359d4fe38310a416203cf7403faa5.json",
+    "bytes": 837,
+    "sha256": "917b0a39da002b79d233b76eda3d740624390ed6e5ab4dc4615050d5217f4c00"
+  },
+  {
+    "file": "PP-LCNet_x1_0_textline_ori/config.json",
+    "bytes": 2487,
+    "sha256": "c1a2576f9713adabdc4a58d9d654fcc9ea93b6efd0e2d3581d5aab409a33f14f"
+  },
+  {
+    "file": "PP-LCNet_x1_0_textline_ori/inference.json",
+    "bytes": 104399,
+    "sha256": "b81929eeaff8e52db0fafb49c9fbfc5bc0572f81641fe0179cc52096323fb4d4"
+  },
+  {
+    "file": "PP-LCNet_x1_0_textline_ori/inference.pdiparams",
+    "bytes": 6743918,
+    "sha256": "0de2bcf996cf553e2b848dd7b1769dafffc6917b1ccdf55c1d8efe7909fbf743"
+  },
+  {
+    "file": "PP-LCNet_x1_0_textline_ori/inference.yml",
+    "bytes": 735,
+    "sha256": "8d5120d0e1a30a9df7ed46aa9119da3796ed066777089d1c1d705f132d5e90f9"
+  },
+  {
+    "file": "PP-OCRv6_medium_det/.cache/huggingface/trees/8e0f56fb2ef86b461d99cfc7ac5c137738985f61.json",
+    "bytes": 742,
+    "sha256": "d6dec43ad472c585bdf253f8b7ce1b6be1bf8a134b54e638e87e7976cabf08e6"
+  },
+  {
+    "file": "PP-OCRv6_medium_det/inference.json",
+    "bytes": 312150,
+    "sha256": "0f1a7ec35da36173529c7a60238b7f7919e3831929c3f700ad90ad4896adecd5"
+  },
+  {
+    "file": "PP-OCRv6_medium_det/inference.pdiparams",
+    "bytes": 61960476,
+    "sha256": "85218d2e3d98f5a21c58b4220627be923a97aee5db3cc71f39536ab31ac53960"
+  },
+  {
+    "file": "PP-OCRv6_medium_det/inference.yml",
+    "bytes": 886,
+    "sha256": "7298d5ead546584af2504d03355f881ac7a7bc0eb1e282d3e159277c1d0af871"
+  },
+  {
+    "file": "PP-OCRv6_medium_rec/.cache/huggingface/trees/e5a92bcbc5cc1b494628e458d267778f0704fd7c.json",
+    "bytes": 745,
+    "sha256": "473ee72e5ab2239159c446b85a8be9cdba977911dcd8879ba04c9c34b25a473c"
+  },
+  {
+    "file": "PP-OCRv6_medium_rec/inference.json",
+    "bytes": 221814,
+    "sha256": "0b2e25e990bd072f1bf77d59d67d508bce6c4bd44af6624e0fb27d6da2cd00e8"
+  },
+  {
+    "file": "PP-OCRv6_medium_rec/inference.pdiparams",
+    "bytes": 76465087,
+    "sha256": "1b01c79a914587933f615569e75de54f2e638ebb5d3f3b3c1b38c24ede8c7319"
+  },
+  {
+    "file": "PP-OCRv6_medium_rec/inference.yml",
+    "bytes": 150580,
+    "sha256": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129"
+  }
+]

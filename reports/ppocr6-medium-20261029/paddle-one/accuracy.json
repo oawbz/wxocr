@@ -1,0 +1,3992 @@
+{
+  "blank.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "blank.png",
+        "mode": "default",
+        "wall_ms": 140.03285579383373,
+        "elapsed_ms": 119.82356011867523,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "blank.png",
+        "mode": "default",
+        "wall_ms": 49.59544166922569,
+        "elapsed_ms": 43.67182403802872,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "blank.png",
+        "mode": "default",
+        "wall_ms": 48.34814555943012,
+        "elapsed_ms": 42.63664595782757,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 640,
+      "height": 480,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": []
+    }
+  },
+  "chinese.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "chinese.png",
+        "mode": "default",
+        "wall_ms": 95.69930657744408,
+        "elapsed_ms": 88.87377008795738,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese.png",
+        "mode": "default",
+        "wall_ms": 84.76897701621056,
+        "elapsed_ms": 77.95275188982487,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese.png",
+        "mode": "default",
+        "wall_ms": 87.81617507338524,
+        "elapsed_ms": 81.22543431818485,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 960,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999300837516785,
+          "left": 68.0,
+          "top": 97.0,
+          "right": 429.0,
+          "bottom": 142.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9912519454956055,
+          "left": 69.0,
+          "top": 195.0,
+          "right": 332.0,
+          "bottom": 243.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.999862790107727,
+          "left": 67.0,
+          "top": 296.0,
+          "right": 345.0,
+          "bottom": 337.0
+        }
+      ]
+    }
+  },
+  "chinese_ccw_180.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "chinese_ccw_180.png",
+        "mode": "default",
+        "wall_ms": 100.88502988219261,
+        "elapsed_ms": 94.27557326853275,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese_ccw_180.png",
+        "mode": "default",
+        "wall_ms": 84.23558063805103,
+        "elapsed_ms": 77.68252678215504,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese_ccw_180.png",
+        "mode": "default",
+        "wall_ms": 77.60894671082497,
+        "elapsed_ms": 71.09779864549637,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 960,
+      "doc_angle": 180,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999206066131592,
+          "left": 69.0,
+          "top": 99.0,
+          "right": 430.0,
+          "bottom": 143.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9915201663970947,
+          "left": 70.0,
+          "top": 196.0,
+          "right": 332.0,
+          "bottom": 244.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.9998424053192139,
+          "left": 67.0,
+          "top": 295.0,
+          "right": 346.0,
+          "bottom": 339.0
+        }
+      ]
+    }
+  },
+  "chinese_ccw_270.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "chinese_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 85.1635243743658,
+        "elapsed_ms": 78.69443483650684,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 80.45021258294582,
+        "elapsed_ms": 75.26735588908195,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 77.95913144946098,
+        "elapsed_ms": 71.91518321633339,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 960,
+      "doc_angle": 90,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999206066131592,
+          "left": 68.0,
+          "top": 99.0,
+          "right": 429.0,
+          "bottom": 143.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9913452863693237,
+          "left": 69.0,
+          "top": 196.0,
+          "right": 332.0,
+          "bottom": 244.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.9998424053192139,
+          "left": 66.0,
+          "top": 295.0,
+          "right": 345.0,
+          "bottom": 339.0
+        }
+      ]
+    }
+  },
+  "chinese_ccw_90.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "chinese_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 84.67119559645653,
+        "elapsed_ms": 78.89688014984131,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 82.90655352175236,
+        "elapsed_ms": 76.43592730164528,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "chinese_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 80.90693689882755,
+        "elapsed_ms": 74.66071285307407,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 960,
+      "doc_angle": 270,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999300837516785,
+          "left": 69.0,
+          "top": 97.0,
+          "right": 430.0,
+          "bottom": 142.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9913570880889893,
+          "left": 70.0,
+          "top": 195.0,
+          "right": 332.0,
+          "bottom": 243.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.999862790107727,
+          "left": 68.0,
+          "top": 296.0,
+          "right": 346.0,
+          "bottom": 337.0
+        }
+      ]
+    }
+  },
+  "dense_invoice.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "dense_invoice.png",
+        "mode": "default",
+        "wall_ms": 207.00531639158726,
+        "elapsed_ms": 197.66755029559135,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice.png",
+        "mode": "default",
+        "wall_ms": 160.6997475028038,
+        "elapsed_ms": 149.8609520494938,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice.png",
+        "mode": "default",
+        "wall_ms": 154.66701611876488,
+        "elapsed_ms": 145.66039107739925,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 660,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "订单编号 AB-20261004-123456",
+          "confidence": 0.9947693943977356,
+          "left": 30.0,
+          "top": 23.0,
+          "right": 366.0,
+          "bottom": 50.0
+        },
+        {
+          "text": "客户名称：跨平台识别测试",
+          "confidence": 0.999760627746582,
+          "left": 32.0,
+          "top": 65.0,
+          "right": 320.0,
+          "bottom": 88.0
+        },
+        {
+          "text": "合计金额：￥12345.67",
+          "confidence": 0.9847061038017273,
+          "left": 31.0,
+          "top": 104.0,
+          "right": 276.0,
+          "bottom": 131.0
+        },
+        {
+          "text": "短词 OCR 中文 ABC 123",
+          "confidence": 0.9613508582115173,
+          "left": 32.0,
+          "top": 145.0,
+          "right": 297.0,
+          "bottom": 169.0
+        },
+        {
+          "text": "状态：已完成数量：100",
+          "confidence": 0.9994928240776062,
+          "left": 31.0,
+          "top": 185.0,
+          "right": 301.0,
+          "bottom": 208.0
+        },
+        {
+          "text": "日期 2026-10-04 11:30",
+          "confidence": 0.9841364026069641,
+          "left": 33.0,
+          "top": 226.0,
+          "right": 273.0,
+          "bottom": 249.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9997988939285278,
+          "left": 32.0,
+          "top": 265.0,
+          "right": 369.0,
+          "bottom": 289.0
+        },
+        {
+          "text": "备注：中文English混合识别测试",
+          "confidence": 0.9997238516807556,
+          "left": 31.0,
+          "top": 304.0,
+          "right": 373.0,
+          "bottom": 331.0
+        },
+        {
+          "text": "服务热线400-800-1234",
+          "confidence": 0.9999826550483704,
+          "left": 32.0,
+          "top": 346.0,
+          "right": 281.0,
+          "bottom": 369.0
+        },
+        {
+          "text": "电子邮箱 test@example.com",
+          "confidence": 0.9991940259933472,
+          "left": 31.0,
+          "top": 384.0,
+          "right": 340.0,
+          "bottom": 413.0
+        },
+        {
+          "text": "左栏：名称数量金额",
+          "confidence": 0.9994776248931885,
+          "left": 32.0,
+          "top": 480.0,
+          "right": 261.0,
+          "bottom": 504.0
+        },
+        {
+          "text": "右栏：客户联系方式",
+          "confidence": 0.999884843826294,
+          "left": 510.0,
+          "top": 480.0,
+          "right": 733.0,
+          "bottom": 504.0
+        }
+      ]
+    }
+  },
+  "dense_invoice_ccw_180.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_180.png",
+        "mode": "default",
+        "wall_ms": 160.62483564019203,
+        "elapsed_ms": 155.70610761642456,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_180.png",
+        "mode": "default",
+        "wall_ms": 154.8831183463335,
+        "elapsed_ms": 147.22768403589725,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_180.png",
+        "mode": "default",
+        "wall_ms": 158.40240567922592,
+        "elapsed_ms": 150.9481966495514,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 660,
+      "doc_angle": 180,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "订单编号 AB-20261004-123456",
+          "confidence": 0.9862295389175415,
+          "left": 32.0,
+          "top": 25.0,
+          "right": 367.0,
+          "bottom": 51.0
+        },
+        {
+          "text": "客户名称：跨平台识别测试",
+          "confidence": 0.9997655749320984,
+          "left": 33.0,
+          "top": 66.0,
+          "right": 321.0,
+          "bottom": 89.0
+        },
+        {
+          "text": "合计金额：￥12345.67",
+          "confidence": 0.989613950252533,
+          "left": 33.0,
+          "top": 106.0,
+          "right": 275.0,
+          "bottom": 130.0
+        },
+        {
+          "text": "短词 OCR 中文 ABC 123",
+          "confidence": 0.9682601690292358,
+          "left": 33.0,
+          "top": 146.0,
+          "right": 298.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "状态：已完成数量：100",
+          "confidence": 0.9997647404670715,
+          "left": 30.0,
+          "top": 183.0,
+          "right": 302.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "日期 2026-10-04 11:30",
+          "confidence": 0.9841364026069641,
+          "left": 34.0,
+          "top": 227.0,
+          "right": 274.0,
+          "bottom": 250.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9997885823249817,
+          "left": 34.0,
+          "top": 266.0,
+          "right": 370.0,
+          "bottom": 290.0
+        },
+        {
+          "text": "备注：中文English混合识别测试",
+          "confidence": 0.9997469782829285,
+          "left": 32.0,
+          "top": 305.0,
+          "right": 374.0,
+          "bottom": 332.0
+        },
+        {
+          "text": "服务热线 400-800-1234",
+          "confidence": 0.9775801301002502,
+          "left": 33.0,
+          "top": 346.0,
+          "right": 281.0,
+          "bottom": 369.0
+        },
+        {
+          "text": "电子邮箱 test@example.com",
+          "confidence": 0.9991940259933472,
+          "left": 32.0,
+          "top": 385.0,
+          "right": 341.0,
+          "bottom": 414.0
+        },
+        {
+          "text": "左栏：名称数量金额",
+          "confidence": 0.9994776248931885,
+          "left": 33.0,
+          "top": 481.0,
+          "right": 262.0,
+          "bottom": 505.0
+        },
+        {
+          "text": "右栏：客户联系方式",
+          "confidence": 0.9997711181640625,
+          "left": 512.0,
+          "top": 481.0,
+          "right": 734.0,
+          "bottom": 505.0
+        }
+      ]
+    }
+  },
+  "dense_invoice_ccw_270.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 155.71151673793793,
+        "elapsed_ms": 146.82667888700962,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 155.33622913062572,
+        "elapsed_ms": 147.91464433073997,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 169.34327594935894,
+        "elapsed_ms": 159.94259156286716,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 660,
+      "height": 960,
+      "doc_angle": 90,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "订单编号 AB-20261004-123456",
+          "confidence": 0.9895061254501343,
+          "left": 30.0,
+          "top": 25.0,
+          "right": 366.0,
+          "bottom": 51.0
+        },
+        {
+          "text": "客户名称：跨平台识别测试",
+          "confidence": 0.9997413754463196,
+          "left": 32.0,
+          "top": 66.0,
+          "right": 319.0,
+          "bottom": 89.0
+        },
+        {
+          "text": "合计金额：￥12345.67",
+          "confidence": 0.9847061038017273,
+          "left": 31.0,
+          "top": 105.0,
+          "right": 276.0,
+          "bottom": 132.0
+        },
+        {
+          "text": "短词 OCR 中文 ABC 123",
+          "confidence": 0.9613508582115173,
+          "left": 32.0,
+          "top": 146.0,
+          "right": 297.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "状态：已完成数量：100",
+          "confidence": 0.999733030796051,
+          "left": 29.0,
+          "top": 183.0,
+          "right": 301.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "日期 2026-10-04 11:30",
+          "confidence": 0.9841364026069641,
+          "left": 33.0,
+          "top": 227.0,
+          "right": 273.0,
+          "bottom": 250.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9997988939285278,
+          "left": 32.0,
+          "top": 266.0,
+          "right": 369.0,
+          "bottom": 290.0
+        },
+        {
+          "text": "备注：中文English混合识别测试",
+          "confidence": 0.9997238516807556,
+          "left": 31.0,
+          "top": 305.0,
+          "right": 373.0,
+          "bottom": 332.0
+        },
+        {
+          "text": "服务热线 400-800-1234",
+          "confidence": 0.9775801301002502,
+          "left": 32.0,
+          "top": 346.0,
+          "right": 280.0,
+          "bottom": 369.0
+        },
+        {
+          "text": "电子邮箱 test@example.com",
+          "confidence": 0.9991940259933472,
+          "left": 31.0,
+          "top": 385.0,
+          "right": 340.0,
+          "bottom": 414.0
+        },
+        {
+          "text": "左栏：名称数量金额",
+          "confidence": 0.9994776248931885,
+          "left": 32.0,
+          "top": 481.0,
+          "right": 261.0,
+          "bottom": 505.0
+        },
+        {
+          "text": "右栏：客户联系方式",
+          "confidence": 0.999884843826294,
+          "left": 510.0,
+          "top": 481.0,
+          "right": 733.0,
+          "bottom": 505.0
+        }
+      ]
+    }
+  },
+  "dense_invoice_ccw_90.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 159.6604771912098,
+        "elapsed_ms": 150.3714621067047,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 159.70585495233536,
+        "elapsed_ms": 150.19905380904675,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "dense_invoice_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 158.57482887804508,
+        "elapsed_ms": 149.21553805470467,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 660,
+      "height": 960,
+      "doc_angle": 270,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "订单编号 AB-20261004-123456",
+          "confidence": 0.9862613081932068,
+          "left": 32.0,
+          "top": 24.0,
+          "right": 367.0,
+          "bottom": 50.0
+        },
+        {
+          "text": "客户名称：跨平台识别测试",
+          "confidence": 0.999760627746582,
+          "left": 33.0,
+          "top": 65.0,
+          "right": 321.0,
+          "bottom": 88.0
+        },
+        {
+          "text": "合计金额：￥12345.67",
+          "confidence": 0.9847061038017273,
+          "left": 32.0,
+          "top": 104.0,
+          "right": 277.0,
+          "bottom": 131.0
+        },
+        {
+          "text": "短词 OCR 中文 ABC 123",
+          "confidence": 0.9610552191734314,
+          "left": 33.0,
+          "top": 144.0,
+          "right": 297.0,
+          "bottom": 168.0
+        },
+        {
+          "text": "状态：已完成数量：100",
+          "confidence": 0.9996799826622009,
+          "left": 31.0,
+          "top": 182.0,
+          "right": 303.0,
+          "bottom": 210.0
+        },
+        {
+          "text": "日期 2026-10-04 11:30",
+          "confidence": 0.9841364026069641,
+          "left": 34.0,
+          "top": 226.0,
+          "right": 274.0,
+          "bottom": 249.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9997988939285278,
+          "left": 33.0,
+          "top": 265.0,
+          "right": 370.0,
+          "bottom": 289.0
+        },
+        {
+          "text": "备注：中文English混合识别测试",
+          "confidence": 0.9997238516807556,
+          "left": 32.0,
+          "top": 304.0,
+          "right": 374.0,
+          "bottom": 331.0
+        },
+        {
+          "text": "服务热线 400-800-1234",
+          "confidence": 0.9775801301002502,
+          "left": 33.0,
+          "top": 345.0,
+          "right": 281.0,
+          "bottom": 368.0
+        },
+        {
+          "text": "电子邮箱 test@example.com",
+          "confidence": 0.9991940259933472,
+          "left": 32.0,
+          "top": 384.0,
+          "right": 341.0,
+          "bottom": 413.0
+        },
+        {
+          "text": "左栏：名称数量金额",
+          "confidence": 0.9994776248931885,
+          "left": 33.0,
+          "top": 480.0,
+          "right": 262.0,
+          "bottom": 504.0
+        },
+        {
+          "text": "右栏：客户联系方式",
+          "confidence": 0.9997711181640625,
+          "left": 512.0,
+          "top": 480.0,
+          "right": 734.0,
+          "bottom": 504.0
+        }
+      ]
+    }
+  },
+  "layout_three_columns.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "layout_three_columns.png",
+        "mode": "default",
+        "wall_ms": 232.64097794890404,
+        "elapsed_ms": 221.43707610666752,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_three_columns.png",
+        "mode": "default",
+        "wall_ms": 198.9411562681198,
+        "elapsed_ms": 189.2727706581354,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_three_columns.png",
+        "mode": "default",
+        "wall_ms": 204.95518296957016,
+        "elapsed_ms": 195.67907601594925,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 660,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "第1栏第1行：识别测试。",
+          "confidence": 0.9991008639335632,
+          "left": 31.0,
+          "top": 103.0,
+          "right": 289.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第2栏第1行：识别测试。",
+          "confidence": 0.9995374083518982,
+          "left": 332.0,
+          "top": 118.0,
+          "right": 589.0,
+          "bottom": 142.0
+        },
+        {
+          "text": "第3栏第1行：识别测试。",
+          "confidence": 0.9974986910820007,
+          "left": 632.0,
+          "top": 134.0,
+          "right": 888.0,
+          "bottom": 156.0
+        },
+        {
+          "text": "第1栏第2行：识别测试。",
+          "confidence": 0.9994273781776428,
+          "left": 32.0,
+          "top": 146.0,
+          "right": 287.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第2栏第2行：识别测试。",
+          "confidence": 0.9994922280311584,
+          "left": 331.0,
+          "top": 160.0,
+          "right": 586.0,
+          "bottom": 185.0
+        },
+        {
+          "text": "第3栏第2行：识别测试。",
+          "confidence": 0.9993410110473633,
+          "left": 631.0,
+          "top": 175.0,
+          "right": 889.0,
+          "bottom": 199.0
+        },
+        {
+          "text": "第1栏第3行：识别测试。",
+          "confidence": 0.9993445873260498,
+          "left": 31.0,
+          "top": 187.0,
+          "right": 287.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第2栏第3行：识别测试。",
+          "confidence": 0.9994465708732605,
+          "left": 331.0,
+          "top": 202.0,
+          "right": 587.0,
+          "bottom": 227.0
+        },
+        {
+          "text": "第3栏第3行：识别测试。",
+          "confidence": 0.9993272423744202,
+          "left": 631.0,
+          "top": 217.0,
+          "right": 890.0,
+          "bottom": 242.0
+        },
+        {
+          "text": "第1栏第4行：识别测试。",
+          "confidence": 0.9995195269584656,
+          "left": 32.0,
+          "top": 231.0,
+          "right": 288.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第2栏第4行：识别测试。",
+          "confidence": 0.9993792176246643,
+          "left": 332.0,
+          "top": 246.0,
+          "right": 586.0,
+          "bottom": 268.0
+        },
+        {
+          "text": "第3栏第4行：识别测试。",
+          "confidence": 0.9996621012687683,
+          "left": 632.0,
+          "top": 260.0,
+          "right": 888.0,
+          "bottom": 284.0
+        },
+        {
+          "text": "第1栏第5行：识别测试。",
+          "confidence": 0.9992992877960205,
+          "left": 31.0,
+          "top": 271.0,
+          "right": 287.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第2栏第5行：识别测试。",
+          "confidence": 0.9992887377738953,
+          "left": 332.0,
+          "top": 288.0,
+          "right": 585.0,
+          "bottom": 310.0
+        },
+        {
+          "text": "第3栏第5行：识别测试。",
+          "confidence": 0.9967284798622131,
+          "left": 631.0,
+          "top": 302.0,
+          "right": 887.0,
+          "bottom": 324.0
+        },
+        {
+          "text": "第1栏第6行：识别测试。",
+          "confidence": 0.99943608045578,
+          "left": 32.0,
+          "top": 314.0,
+          "right": 287.0,
+          "bottom": 337.0
+        },
+        {
+          "text": "第2栏第6行：识别测试。",
+          "confidence": 0.9994714260101318,
+          "left": 332.0,
+          "top": 328.0,
+          "right": 587.0,
+          "bottom": 353.0
+        },
+        {
+          "text": "第3栏第6行：识别测试。",
+          "confidence": 0.9977787137031555,
+          "left": 632.0,
+          "top": 344.0,
+          "right": 890.0,
+          "bottom": 366.0
+        }
+      ]
+    }
+  },
+  "layout_title_footer.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "layout_title_footer.png",
+        "mode": "default",
+        "wall_ms": 188.86570818722248,
+        "elapsed_ms": 180.6863397359848,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_title_footer.png",
+        "mode": "default",
+        "wall_ms": 172.58276790380478,
+        "elapsed_ms": 162.8104094415903,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_title_footer.png",
+        "mode": "default",
+        "wall_ms": 177.5860283523798,
+        "elapsed_ms": 166.58595390617847,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 660,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "跨平台模型对照：多栏文档阅读顺序",
+          "confidence": 0.9998003244400024,
+          "left": 32.0,
+          "top": 28.0,
+          "right": 414.0,
+          "bottom": 51.0
+        },
+        {
+          "text": "第1栏第1行：识别测试。",
+          "confidence": 0.9991292953491211,
+          "left": 31.0,
+          "top": 103.0,
+          "right": 291.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第2栏第1行：识别测试。",
+          "confidence": 0.9994326233863831,
+          "left": 482.0,
+          "top": 103.0,
+          "right": 741.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第1栏第2行：识别测试。",
+          "confidence": 0.999413013458252,
+          "left": 32.0,
+          "top": 146.0,
+          "right": 288.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第2栏第2行：识别测试。",
+          "confidence": 0.9996628761291504,
+          "left": 482.0,
+          "top": 146.0,
+          "right": 737.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第1栏第3行：识别测试。",
+          "confidence": 0.9994867444038391,
+          "left": 32.0,
+          "top": 189.0,
+          "right": 288.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第2栏第3行：识别测试。",
+          "confidence": 0.9995884895324707,
+          "left": 483.0,
+          "top": 189.0,
+          "right": 737.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第1栏第4行：识别测试。",
+          "confidence": 0.9995372891426086,
+          "left": 32.0,
+          "top": 231.0,
+          "right": 289.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第2栏第4行：识别测试。",
+          "confidence": 0.9996514320373535,
+          "left": 482.0,
+          "top": 231.0,
+          "right": 738.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第1栏第5行：识别测试。",
+          "confidence": 0.9992199540138245,
+          "left": 31.0,
+          "top": 271.0,
+          "right": 288.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第2栏第5行：识别测试。",
+          "confidence": 0.9994859099388123,
+          "left": 482.0,
+          "top": 273.0,
+          "right": 737.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第1栏第6行：识别测试。",
+          "confidence": 0.999413788318634,
+          "left": 32.0,
+          "top": 314.0,
+          "right": 288.0,
+          "bottom": 337.0
+        },
+        {
+          "text": "第2栏第6行：识别测试。",
+          "confidence": 0.9994380474090576,
+          "left": 481.0,
+          "top": 313.0,
+          "right": 737.0,
+          "bottom": 338.0
+        },
+        {
+          "text": "文档结束：Go调用与原引擎对照验证。",
+          "confidence": 0.9978408813476562,
+          "left": 32.0,
+          "top": 523.0,
+          "right": 447.0,
+          "bottom": 546.0
+        }
+      ]
+    }
+  },
+  "layout_two_columns.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "layout_two_columns.png",
+        "mode": "default",
+        "wall_ms": 149.0877140313387,
+        "elapsed_ms": 139.3169779330492,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_two_columns.png",
+        "mode": "default",
+        "wall_ms": 145.9711194038391,
+        "elapsed_ms": 136.90230809152126,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_two_columns.png",
+        "mode": "default",
+        "wall_ms": 149.13304895162582,
+        "elapsed_ms": 140.19138738512993,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 960,
+      "height": 660,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "第1栏第1行：识别测试。",
+          "confidence": 0.9994110465049744,
+          "left": 33.0,
+          "top": 104.0,
+          "right": 289.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第2栏第1行：识别测试。",
+          "confidence": 0.9994363188743591,
+          "left": 482.0,
+          "top": 103.0,
+          "right": 740.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第1栏第2行：识别测试。",
+          "confidence": 0.9994273781776428,
+          "left": 32.0,
+          "top": 146.0,
+          "right": 287.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第2栏第2行：识别测试。",
+          "confidence": 0.999688446521759,
+          "left": 482.0,
+          "top": 146.0,
+          "right": 736.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第1栏第3行：识别测试。",
+          "confidence": 0.9994887709617615,
+          "left": 32.0,
+          "top": 189.0,
+          "right": 288.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第2栏第3行：识别测试。",
+          "confidence": 0.9995258450508118,
+          "left": 481.0,
+          "top": 189.0,
+          "right": 736.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第1栏第4行：识别测试。",
+          "confidence": 0.9992973208427429,
+          "left": 32.0,
+          "top": 231.0,
+          "right": 287.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第2栏第4行：识别测试。",
+          "confidence": 0.9996005892753601,
+          "left": 483.0,
+          "top": 231.0,
+          "right": 737.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第1栏第5行：识别测试。",
+          "confidence": 0.999347984790802,
+          "left": 31.0,
+          "top": 271.0,
+          "right": 287.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第2栏第5行：识别测试。",
+          "confidence": 0.9994900822639465,
+          "left": 482.0,
+          "top": 273.0,
+          "right": 737.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第1栏第6行：识别测试。",
+          "confidence": 0.9992649555206299,
+          "left": 31.0,
+          "top": 313.0,
+          "right": 287.0,
+          "bottom": 338.0
+        },
+        {
+          "text": "第2栏第6行：识别测试。",
+          "confidence": 0.9994451403617859,
+          "left": 481.0,
+          "top": 313.0,
+          "right": 736.0,
+          "bottom": 338.0
+        }
+      ]
+    }
+  },
+  "layout_two_columns_ccw_270.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "layout_two_columns_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 152.75488421320915,
+        "elapsed_ms": 144.73487064242363,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_two_columns_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 151.1862762272358,
+        "elapsed_ms": 141.83728396892548,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_two_columns_ccw_270.png",
+        "mode": "default",
+        "wall_ms": 151.66703797876835,
+        "elapsed_ms": 142.76260137557983,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 660,
+      "height": 960,
+      "doc_angle": 90,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "第1栏第1行：识别测试。",
+          "confidence": 0.9994980692863464,
+          "left": 32.0,
+          "top": 104.0,
+          "right": 289.0,
+          "bottom": 129.0
+        },
+        {
+          "text": "第2栏第1行：识别测试。",
+          "confidence": 0.9994533061981201,
+          "left": 482.0,
+          "top": 104.0,
+          "right": 739.0,
+          "bottom": 129.0
+        },
+        {
+          "text": "第1栏第2行：识别测试。",
+          "confidence": 0.9994273781776428,
+          "left": 32.0,
+          "top": 147.0,
+          "right": 287.0,
+          "bottom": 171.0
+        },
+        {
+          "text": "第2栏第2行：识别测试。",
+          "confidence": 0.9983043670654297,
+          "left": 482.0,
+          "top": 147.0,
+          "right": 737.0,
+          "bottom": 171.0
+        },
+        {
+          "text": "第1栏第3行：识别测试。",
+          "confidence": 0.999251127243042,
+          "left": 33.0,
+          "top": 190.0,
+          "right": 285.0,
+          "bottom": 212.0
+        },
+        {
+          "text": "第2栏第3行：识别测试。",
+          "confidence": 0.9995706081390381,
+          "left": 483.0,
+          "top": 190.0,
+          "right": 736.0,
+          "bottom": 213.0
+        },
+        {
+          "text": "第1栏第4行：识别测试。",
+          "confidence": 0.9995372891426086,
+          "left": 32.0,
+          "top": 232.0,
+          "right": 289.0,
+          "bottom": 254.0
+        },
+        {
+          "text": "第2栏第4行：识别测试。",
+          "confidence": 0.9993428587913513,
+          "left": 482.0,
+          "top": 232.0,
+          "right": 737.0,
+          "bottom": 254.0
+        },
+        {
+          "text": "第1栏第5行：识别测试。",
+          "confidence": 0.999347984790802,
+          "left": 31.0,
+          "top": 272.0,
+          "right": 287.0,
+          "bottom": 297.0
+        },
+        {
+          "text": "第2栏第5行：识别测试。",
+          "confidence": 0.9994900822639465,
+          "left": 482.0,
+          "top": 274.0,
+          "right": 737.0,
+          "bottom": 297.0
+        },
+        {
+          "text": "第1栏第6行：识别测试。",
+          "confidence": 0.9992496967315674,
+          "left": 31.0,
+          "top": 314.0,
+          "right": 287.0,
+          "bottom": 339.0
+        },
+        {
+          "text": "第2栏第6行：识别测试。",
+          "confidence": 0.9994714260101318,
+          "left": 482.0,
+          "top": 314.0,
+          "right": 737.0,
+          "bottom": 339.0
+        }
+      ]
+    }
+  },
+  "layout_two_columns_ccw_90.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "layout_two_columns_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 166.61787405610085,
+        "elapsed_ms": 157.9772438853979,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_two_columns_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 155.15347756445408,
+        "elapsed_ms": 146.97438292205334,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "layout_two_columns_ccw_90.png",
+        "mode": "default",
+        "wall_ms": 151.16083808243275,
+        "elapsed_ms": 142.17792265117168,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 660,
+      "height": 960,
+      "doc_angle": 270,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "第1栏第1行：识别测试。",
+          "confidence": 0.9991061091423035,
+          "left": 32.0,
+          "top": 103.0,
+          "right": 290.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第2栏第1行：识别测试。",
+          "confidence": 0.999471127986908,
+          "left": 483.0,
+          "top": 103.0,
+          "right": 739.0,
+          "bottom": 128.0
+        },
+        {
+          "text": "第1栏第2行：识别测试。",
+          "confidence": 0.9994273781776428,
+          "left": 33.0,
+          "top": 146.0,
+          "right": 288.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第2栏第2行：识别测试。",
+          "confidence": 0.9996504783630371,
+          "left": 484.0,
+          "top": 146.0,
+          "right": 737.0,
+          "bottom": 170.0
+        },
+        {
+          "text": "第1栏第3行：识别测试。",
+          "confidence": 0.9992799758911133,
+          "left": 33.0,
+          "top": 189.0,
+          "right": 287.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第2栏第3行：识别测试。",
+          "confidence": 0.9995747208595276,
+          "left": 484.0,
+          "top": 189.0,
+          "right": 736.0,
+          "bottom": 211.0
+        },
+        {
+          "text": "第1栏第4行：识别测试。",
+          "confidence": 0.9992970824241638,
+          "left": 33.0,
+          "top": 231.0,
+          "right": 288.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第2栏第4行：识别测试。",
+          "confidence": 0.9996090531349182,
+          "left": 484.0,
+          "top": 231.0,
+          "right": 737.0,
+          "bottom": 253.0
+        },
+        {
+          "text": "第1栏第5行：识别测试。",
+          "confidence": 0.999347984790802,
+          "left": 32.0,
+          "top": 271.0,
+          "right": 288.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第2栏第5行：识别测试。",
+          "confidence": 0.999474048614502,
+          "left": 483.0,
+          "top": 273.0,
+          "right": 737.0,
+          "bottom": 296.0
+        },
+        {
+          "text": "第1栏第6行：识别测试。",
+          "confidence": 0.9992336630821228,
+          "left": 32.0,
+          "top": 313.0,
+          "right": 288.0,
+          "bottom": 338.0
+        },
+        {
+          "text": "第2栏第6行：识别测试。",
+          "confidence": 0.9994633793830872,
+          "left": 483.0,
+          "top": 313.0,
+          "right": 736.0,
+          "bottom": 338.0
+        }
+      ]
+    }
+  },
+  "long_line.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "long_line.png",
+        "mode": "default",
+        "wall_ms": 100.14319606125355,
+        "elapsed_ms": 95.58218531310558,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "long_line.png",
+        "mode": "default",
+        "wall_ms": 62.53947503864765,
+        "elapsed_ms": 56.8891167640686,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "long_line.png",
+        "mode": "default",
+        "wall_ms": 63.3199755102396,
+        "elapsed_ms": 57.52262845635414,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 1800,
+      "height": 220,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "长行测试：ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 中文模型跨平台 Go OCR 原引擎对照验证，长度超过常规识别宽度。",
+          "confidence": 0.996802806854248,
+          "left": 20.0,
+          "top": 44.0,
+          "right": 1436.0,
+          "bottom": 74.0
+        }
+      ]
+    }
+  },
+  "rotated_-12.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "rotated_-12.png",
+        "mode": "default",
+        "wall_ms": 123.85327182710171,
+        "elapsed_ms": 117.31797643005848,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "rotated_-12.png",
+        "mode": "default",
+        "wall_ms": 90.41573852300644,
+        "elapsed_ms": 84.2224583029747,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "rotated_-12.png",
+        "mode": "default",
+        "wall_ms": 94.29332613945007,
+        "elapsed_ms": 88.28657120466232,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 1140,
+      "height": 1140,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999446868896484,
+          "left": 234.0,
+          "top": 108.0,
+          "right": 602.0,
+          "bottom": 231.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9909642338752747,
+          "left": 216.0,
+          "top": 206.0,
+          "right": 484.0,
+          "bottom": 306.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.972045361995697,
+          "left": 193.0,
+          "top": 302.0,
+          "right": 478.0,
+          "bottom": 404.0
+        }
+      ]
+    }
+  },
+  "rotated_25.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "rotated_25.png",
+        "mode": "default",
+        "wall_ms": 133.50450061261654,
+        "elapsed_ms": 127.54626385867596,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "rotated_25.png",
+        "mode": "default",
+        "wall_ms": 113.79265785217285,
+        "elapsed_ms": 107.19212889671326,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "rotated_25.png",
+        "mode": "default",
+        "wall_ms": 111.37771606445312,
+        "elapsed_ms": 104.83170673251152,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 1276,
+      "height": 1276,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999654293060303,
+          "left": 99.0,
+          "top": 309.0,
+          "right": 453.0,
+          "bottom": 507.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9766637086868286,
+          "left": 142.0,
+          "top": 439.0,
+          "right": 404.0,
+          "bottom": 598.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.9998111724853516,
+          "left": 180.0,
+          "top": 524.0,
+          "right": 459.0,
+          "bottom": 687.0
+        }
+      ]
+    }
+  },
+  "rotated_7.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "rotated_7.png",
+        "mode": "default",
+        "wall_ms": 107.1216557174921,
+        "elapsed_ms": 100.66056624054909,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "rotated_7.png",
+        "mode": "default",
+        "wall_ms": 87.19463646411896,
+        "elapsed_ms": 80.68907633423805,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "rotated_7.png",
+        "mode": "default",
+        "wall_ms": 86.65277250111103,
+        "elapsed_ms": 80.1057443022728,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 1070,
+      "height": 1070,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "微信模型跨平台测试",
+          "confidence": 0.9999310374259949,
+          "left": 77.0,
+          "top": 158.0,
+          "right": 446.0,
+          "bottom": 251.0
+        },
+        {
+          "text": "中文识别 2026",
+          "confidence": 0.9913696646690369,
+          "left": 91.0,
+          "top": 267.0,
+          "right": 360.0,
+          "bottom": 351.0
+        },
+        {
+          "text": "Hello OCR 123",
+          "confidence": 0.9955968260765076,
+          "left": 101.0,
+          "top": 366.0,
+          "right": 385.0,
+          "bottom": 445.0
+        }
+      ]
+    }
+  },
+  "stress_blurred.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "stress_blurred.png",
+        "mode": "default",
+        "wall_ms": 130.11503592133522,
+        "elapsed_ms": 122.67682701349258,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_blurred.png",
+        "mode": "default",
+        "wall_ms": 91.65265038609505,
+        "elapsed_ms": 84.68988165259361,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_blurred.png",
+        "mode": "default",
+        "wall_ms": 89.4419327378273,
+        "elapsed_ms": 82.21647515892982,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 880,
+      "height": 420,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "中文小字与英文 Mixed text 2026",
+          "confidence": 0.9995678663253784,
+          "left": 24.0,
+          "top": 26.0,
+          "right": 369.0,
+          "bottom": 55.0
+        },
+        {
+          "text": "订单号 AB-123456 金额 1234.56",
+          "confidence": 0.9758003354072571,
+          "left": 24.0,
+          "top": 92.0,
+          "right": 371.0,
+          "bottom": 119.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9998046159744263,
+          "left": 25.0,
+          "top": 155.0,
+          "right": 361.0,
+          "bottom": 183.0
+        },
+        {
+          "text": "识别结果需要逐行对照原引擎。",
+          "confidence": 0.9998803734779358,
+          "left": 24.0,
+          "top": 221.0,
+          "right": 349.0,
+          "bottom": 248.0
+        },
+        {
+          "text": "Repeated letters AAABB CCC 001122",
+          "confidence": 0.9999335408210754,
+          "left": 23.0,
+          "top": 285.0,
+          "right": 430.0,
+          "bottom": 317.0
+        }
+      ]
+    }
+  },
+  "stress_dark_background.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "stress_dark_background.png",
+        "mode": "default",
+        "wall_ms": 109.92836765944958,
+        "elapsed_ms": 102.89989784359932,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_dark_background.png",
+        "mode": "default",
+        "wall_ms": 96.67253494262695,
+        "elapsed_ms": 89.88806046545506,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_dark_background.png",
+        "mode": "default",
+        "wall_ms": 94.94947083294392,
+        "elapsed_ms": 89.33906443417072,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 880,
+      "height": 420,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "中文小字与英文 Mixed text 2026",
+          "confidence": 0.9919893741607666,
+          "left": 26.0,
+          "top": 29.0,
+          "right": 368.0,
+          "bottom": 52.0
+        },
+        {
+          "text": "订单号 AB-123456 金额 1234.56",
+          "confidence": 0.9883742332458496,
+          "left": 25.0,
+          "top": 94.0,
+          "right": 370.0,
+          "bottom": 117.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9996113181114197,
+          "left": 25.0,
+          "top": 159.0,
+          "right": 361.0,
+          "bottom": 182.0
+        },
+        {
+          "text": "识别结果需要逐行对照原引擎。",
+          "confidence": 0.9998676180839539,
+          "left": 25.0,
+          "top": 224.0,
+          "right": 347.0,
+          "bottom": 247.0
+        },
+        {
+          "text": "Repeated letters AAABB CCC 001122",
+          "confidence": 0.9998037219047546,
+          "left": 25.0,
+          "top": 291.0,
+          "right": 429.0,
+          "bottom": 314.0
+        }
+      ]
+    }
+  },
+  "stress_low_contrast.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "stress_low_contrast.png",
+        "mode": "default",
+        "wall_ms": 108.96868258714676,
+        "elapsed_ms": 101.95184499025345,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_low_contrast.png",
+        "mode": "default",
+        "wall_ms": 102.02736407518387,
+        "elapsed_ms": 96.33637592196465,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_low_contrast.png",
+        "mode": "default",
+        "wall_ms": 97.52305783331394,
+        "elapsed_ms": 90.64178355038166,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 880,
+      "height": 420,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "中文小字与英文 Mixed text 2026",
+          "confidence": 0.9855754971504211,
+          "left": 27.0,
+          "top": 28.0,
+          "right": 367.0,
+          "bottom": 51.0
+        },
+        {
+          "text": "订单号AB-123456 金额1234.56",
+          "confidence": 0.9803539514541626,
+          "left": 25.0,
+          "top": 94.0,
+          "right": 369.0,
+          "bottom": 118.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9979874491691589,
+          "left": 25.0,
+          "top": 159.0,
+          "right": 361.0,
+          "bottom": 182.0
+        },
+        {
+          "text": "识别结果需要逐行对照原引擎。",
+          "confidence": 0.9998394846916199,
+          "left": 25.0,
+          "top": 224.0,
+          "right": 348.0,
+          "bottom": 247.0
+        },
+        {
+          "text": "Repeated letters AAABB CCC 001122",
+          "confidence": 0.9961624145507812,
+          "left": 24.0,
+          "top": 289.0,
+          "right": 429.0,
+          "bottom": 315.0
+        }
+      ]
+    }
+  },
+  "stress_small_text.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "stress_small_text.png",
+        "mode": "default",
+        "wall_ms": 126.08654238283634,
+        "elapsed_ms": 119.8875866830349,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_small_text.png",
+        "mode": "default",
+        "wall_ms": 100.76038725674152,
+        "elapsed_ms": 93.60778518021107,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_small_text.png",
+        "mode": "default",
+        "wall_ms": 96.89066372811794,
+        "elapsed_ms": 89.82662111520767,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 880,
+      "height": 420,
+      "doc_angle": 90,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "Repeated letters AAABB CCC 001122",
+          "confidence": 0.9955402612686157,
+          "left": 287.0,
+          "top": 614.0,
+          "right": 304.0,
+          "bottom": 856.0
+        },
+        {
+          "text": "中文小字与英文 Mixed text 2026",
+          "confidence": 0.9853693246841431,
+          "left": 25.0,
+          "top": 651.0,
+          "right": 42.0,
+          "bottom": 855.0
+        },
+        {
+          "text": "订单号 AB-123456 金额 1234.56",
+          "confidence": 0.9929997324943542,
+          "left": 91.0,
+          "top": 649.0,
+          "right": 108.0,
+          "bottom": 855.0
+        },
+        {
+          "text": "地址：北京市朝阳区测试路88号",
+          "confidence": 0.9996131658554077,
+          "left": 158.0,
+          "top": 658.0,
+          "right": 172.0,
+          "bottom": 855.0
+        },
+        {
+          "text": "识别结果需要逐行对照原引擎。",
+          "confidence": 0.9993739724159241,
+          "left": 222.0,
+          "top": 668.0,
+          "right": 236.0,
+          "bottom": 855.0
+        }
+      ]
+    }
+  },
+  "stress_staggered_columns.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "stress_staggered_columns.png",
+        "mode": "default",
+        "wall_ms": 166.98927246034145,
+        "elapsed_ms": 157.9754278063774,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_staggered_columns.png",
+        "mode": "default",
+        "wall_ms": 135.6346607208252,
+        "elapsed_ms": 126.54564343392849,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_staggered_columns.png",
+        "mode": "default",
+        "wall_ms": 127.35631503164768,
+        "elapsed_ms": 118.36648918688297,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 1000,
+      "height": 700,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "跨列标题：复杂排版测试",
+          "confidence": 0.9998682141304016,
+          "left": 29.0,
+          "top": 25.0,
+          "right": 292.0,
+          "bottom": 48.0
+        },
+        {
+          "text": "左栏1：中文测试。",
+          "confidence": 0.9994280338287354,
+          "left": 29.0,
+          "top": 92.0,
+          "right": 230.0,
+          "bottom": 119.0
+        },
+        {
+          "text": "右栏 1：English 1.",
+          "confidence": 0.9800867438316345,
+          "left": 540.0,
+          "top": 123.0,
+          "right": 737.0,
+          "bottom": 151.0
+        },
+        {
+          "text": "左栏2：中文测试。",
+          "confidence": 0.9997180104255676,
+          "left": 29.0,
+          "top": 163.0,
+          "right": 229.0,
+          "bottom": 190.0
+        },
+        {
+          "text": "右栏2：English 2.",
+          "confidence": 0.9908965826034546,
+          "left": 538.0,
+          "top": 181.0,
+          "right": 737.0,
+          "bottom": 213.0
+        },
+        {
+          "text": "左栏3：中文测试。",
+          "confidence": 0.9992793202400208,
+          "left": 29.0,
+          "top": 233.0,
+          "right": 230.0,
+          "bottom": 260.0
+        },
+        {
+          "text": "右栏3：English 3.",
+          "confidence": 0.9496918320655823,
+          "left": 540.0,
+          "top": 244.0,
+          "right": 736.0,
+          "bottom": 271.0
+        },
+        {
+          "text": "左栏4：中文测试。",
+          "confidence": 0.999328076839447,
+          "left": 30.0,
+          "top": 304.0,
+          "right": 229.0,
+          "bottom": 328.0
+        },
+        {
+          "text": "右栏4：English 4.",
+          "confidence": 0.9795819520950317,
+          "left": 538.0,
+          "top": 300.0,
+          "right": 737.0,
+          "bottom": 333.0
+        },
+        {
+          "text": "右栏5：English 5.",
+          "confidence": 0.9894338846206665,
+          "left": 538.0,
+          "top": 361.0,
+          "right": 737.0,
+          "bottom": 393.0
+        },
+        {
+          "text": "左栏5：中文测试。",
+          "confidence": 0.9993359446525574,
+          "left": 29.0,
+          "top": 373.0,
+          "right": 229.0,
+          "bottom": 400.0
+        },
+        {
+          "text": "跨列页脚：全部内容结束。",
+          "confidence": 0.9996665120124817,
+          "left": 30.0,
+          "top": 605.0,
+          "right": 306.0,
+          "bottom": 628.0
+        }
+      ]
+    }
+  },
+  "stress_staggered_rotated.png@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "stress_staggered_rotated.png",
+        "mode": "default",
+        "wall_ms": 175.44546723365784,
+        "elapsed_ms": 167.74629428982735,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_staggered_rotated.png",
+        "mode": "default",
+        "wall_ms": 133.0875139683485,
+        "elapsed_ms": 124.00362640619278,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "stress_staggered_rotated.png",
+        "mode": "default",
+        "wall_ms": 138.52858170866966,
+        "elapsed_ms": 129.43619675934315,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 1116,
+      "height": 878,
+      "doc_angle": 0,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "跨列标题：复杂排版测试",
+          "confidence": 0.9998945593833923,
+          "left": 34.0,
+          "top": 157.0,
+          "right": 297.0,
+          "bottom": 233.0
+        },
+        {
+          "text": "右栏 1：English 1.",
+          "confidence": 0.9338499903678894,
+          "left": 554.0,
+          "top": 171.0,
+          "right": 753.0,
+          "bottom": 235.0
+        },
+        {
+          "text": "左栏1：中文测试。",
+          "confidence": 0.9994111657142639,
+          "left": 45.0,
+          "top": 237.0,
+          "right": 249.0,
+          "bottom": 302.0
+        },
+        {
+          "text": "右栏2：English 2.",
+          "confidence": 0.9853612780570984,
+          "left": 564.0,
+          "top": 230.0,
+          "right": 764.0,
+          "bottom": 294.0
+        },
+        {
+          "text": "右栏3：English 3.",
+          "confidence": 0.9545236825942993,
+          "left": 576.0,
+          "top": 289.0,
+          "right": 775.0,
+          "bottom": 353.0
+        },
+        {
+          "text": "左栏2：中文测试。",
+          "confidence": 0.9997491836547852,
+          "left": 59.0,
+          "top": 305.0,
+          "right": 262.0,
+          "bottom": 371.0
+        },
+        {
+          "text": "右栏4：English 4.",
+          "confidence": 0.9803768992424011,
+          "left": 587.0,
+          "top": 348.0,
+          "right": 786.0,
+          "bottom": 412.0
+        },
+        {
+          "text": "左栏3：中文测试。",
+          "confidence": 0.9990636110305786,
+          "left": 72.0,
+          "top": 375.0,
+          "right": 274.0,
+          "bottom": 439.0
+        },
+        {
+          "text": "右栏 5：English 5.",
+          "confidence": 0.9538953304290771,
+          "left": 599.0,
+          "top": 407.0,
+          "right": 798.0,
+          "bottom": 471.0
+        },
+        {
+          "text": "左栏4：中文测试。",
+          "confidence": 0.9992907047271729,
+          "left": 85.0,
+          "top": 444.0,
+          "right": 287.0,
+          "bottom": 508.0
+        },
+        {
+          "text": "左栏5：中文测试。",
+          "confidence": 0.9997740983963013,
+          "left": 99.0,
+          "top": 512.0,
+          "right": 302.0,
+          "bottom": 578.0
+        },
+        {
+          "text": "跨列页脚：全部内容结束。",
+          "confidence": 0.9997797608375549,
+          "left": 142.0,
+          "top": 724.0,
+          "right": 418.0,
+          "bottom": 802.0
+        }
+      ]
+    }
+  },
+  "accuracy-sample.jpg@default": {
+    "trials": [
+      {
+        "status": 200,
+        "image": "accuracy-sample.jpg",
+        "mode": "default",
+        "wall_ms": 1500.2927873283625,
+        "elapsed_ms": 1461.9984813034534,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "accuracy-sample.jpg",
+        "mode": "default",
+        "wall_ms": 1748.454574495554,
+        "elapsed_ms": 1713.5880291461945,
+        "exact": true,
+        "mismatch": null
+      },
+      {
+        "status": 200,
+        "image": "accuracy-sample.jpg",
+        "mode": "default",
+        "wall_ms": 1750.6153173744678,
+        "elapsed_ms": 1712.6013152301311,
+        "exact": true,
+        "mismatch": null
+      }
+    ],
+    "result": {
+      "width": 2480,
+      "height": 3506,
+      "doc_angle": 90,
+      "coordinate_space": "document_oriented",
+      "lines": [
+        {
+          "text": "参加基本养老保险人员正常退休审核名册",
+          "confidence": 0.9998936057090759,
+          "left": 1206.0,
+          "top": 244.0,
+          "right": 2877.0,
+          "bottom": 352.0
+        },
+        {
+          "text": "填报单位：",
+          "confidence": 0.937314510345459,
+          "left": 108.0,
+          "top": 443.0,
+          "right": 286.0,
+          "bottom": 495.0
+        },
+        {
+          "text": "填表时间：",
+          "confidence": 0.9999364614486694,
+          "left": 2690.0,
+          "top": 438.0,
+          "right": 2877.0,
+          "bottom": 488.0
+        },
+        {
+          "text": "延迟法定退休年龄人",
+          "confidence": 0.9998803734779358,
+          "left": 438.0,
+          "top": 505.0,
+          "right": 889.0,
+          "bottom": 559.0
+        },
+        {
+          "text": "档案出",
+          "confidence": 0.9999902844429016,
+          "left": 1397.0,
+          "top": 500.0,
+          "right": 1557.0,
+          "bottom": 561.0
+        },
+        {
+          "text": "参加工",
+          "confidence": 0.9998466968536377,
+          "left": 1597.0,
+          "top": 499.0,
+          "right": 1758.0,
+          "bottom": 560.0
+        },
+        {
+          "text": "建立账户",
+          "confidence": 0.9946235418319702,
+          "left": 1785.0,
+          "top": 499.0,
+          "right": 1988.0,
+          "bottom": 559.0
+        },
+        {
+          "text": "原法定退",
+          "confidence": 0.9999492168426514,
+          "left": 2694.0,
+          "top": 499.0,
+          "right": 2900.0,
+          "bottom": 558.0
+        },
+        {
+          "text": "序号",
+          "confidence": 0.9999958276748657,
+          "left": 87.0,
+          "top": 527.0,
+          "right": 206.0,
+          "bottom": 600.0
+        },
+        {
+          "text": "姓名",
+          "confidence": 0.9999901652336121,
+          "left": 255.0,
+          "top": 528.0,
+          "right": 396.0,
+          "bottom": 598.0
+        },
+        {
+          "text": "岗位",
+          "confidence": 0.9999799728393555,
+          "left": 2517.0,
+          "top": 520.0,
+          "right": 2635.0,
+          "bottom": 595.0
+        },
+        {
+          "text": "视同缴费中断情况",
+          "confidence": 0.999725878238678,
+          "left": 2030.0,
+          "top": 529.0,
+          "right": 2432.0,
+          "bottom": 585.0
+        },
+        {
+          "text": "备注",
+          "confidence": 0.9999603629112244,
+          "left": 3105.0,
+          "top": 521.0,
+          "right": 3222.0,
+          "bottom": 596.0
+        },
+        {
+          "text": "身份证号码",
+          "confidence": 0.9999765157699585,
+          "left": 1015.0,
+          "top": 531.0,
+          "right": 1268.0,
+          "bottom": 589.0
+        },
+        {
+          "text": "员类别",
+          "confidence": 0.9997827410697937,
+          "left": 587.0,
+          "top": 561.0,
+          "right": 742.0,
+          "bottom": 622.0
+        },
+        {
+          "text": "生日期",
+          "confidence": 0.9999942183494568,
+          "left": 1396.0,
+          "top": 558.0,
+          "right": 1558.0,
+          "bottom": 619.0
+        },
+        {
+          "text": "作日期",
+          "confidence": 0.9999842643737793,
+          "left": 1596.0,
+          "top": 559.0,
+          "right": 1758.0,
+          "bottom": 620.0
+        },
+        {
+          "text": "年月",
+          "confidence": 0.9999926686286926,
+          "left": 1829.0,
+          "top": 554.0,
+          "right": 1944.0,
+          "bottom": 623.0
+        },
+        {
+          "text": "休时间",
+          "confidence": 0.9998381733894348,
+          "left": 2717.0,
+          "top": 559.0,
+          "right": 2878.0,
+          "bottom": 617.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999316334724426,
+          "left": 246.0,
+          "top": 622.0,
+          "right": 408.0,
+          "bottom": 687.0
+        },
+        {
+          "text": "原法定退休年龄50周",
+          "confidence": 0.9998239278793335,
+          "left": 438.0,
+          "top": 625.0,
+          "right": 888.0,
+          "bottom": 681.0
+        },
+        {
+          "text": "1971-",
+          "confidence": 0.999960720539093,
+          "left": 1411.0,
+          "top": 627.0,
+          "right": 1549.0,
+          "bottom": 678.0
+        },
+        {
+          "text": "1991-",
+          "confidence": 0.9999645352363586,
+          "left": 1612.0,
+          "top": 627.0,
+          "right": 1747.0,
+          "bottom": 678.0
+        },
+        {
+          "text": "2025-02-",
+          "confidence": 0.9999597668647766,
+          "left": 2693.0,
+          "top": 625.0,
+          "right": 2901.0,
+          "bottom": 676.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999899864196777,
+          "left": 2195.0,
+          "top": 643.0,
+          "right": 2270.0,
+          "bottom": 716.0
+        },
+        {
+          "text": "1",
+          "confidence": 0.9999275207519531,
+          "left": 127.0,
+          "top": 658.0,
+          "right": 163.0,
+          "bottom": 711.0
+        },
+        {
+          "text": "11010119701010001",
+          "confidence": 0.999963641166687,
+          "left": 929.0,
+          "top": 658.0,
+          "right": 1352.0,
+          "bottom": 705.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9575257301330566,
+          "left": 1797.0,
+          "top": 653.0,
+          "right": 1978.0,
+          "bottom": 708.0
+        },
+        {
+          "text": "管理岗位",
+          "confidence": 0.9999570846557617,
+          "left": 2473.0,
+          "top": 650.0,
+          "right": 2677.0,
+          "bottom": 710.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999767541885376,
+          "left": 3061.0,
+          "top": 649.0,
+          "right": 3265.0,
+          "bottom": 709.0
+        },
+        {
+          "text": "员1",
+          "confidence": 0.9998412132263184,
+          "left": 285.0,
+          "top": 681.0,
+          "right": 373.0,
+          "bottom": 745.0
+        },
+        {
+          "text": "岁女职工",
+          "confidence": 0.9998103976249695,
+          "left": 564.0,
+          "top": 685.0,
+          "right": 767.0,
+          "bottom": 740.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.999970555305481,
+          "left": 1408.0,
+          "top": 685.0,
+          "right": 1545.0,
+          "bottom": 738.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999685287475586,
+          "left": 1610.0,
+          "top": 685.0,
+          "right": 1744.0,
+          "bottom": 738.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999722242355347,
+          "left": 2767.0,
+          "top": 684.0,
+          "right": 2827.0,
+          "bottom": 737.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999520778656006,
+          "left": 246.0,
+          "top": 743.0,
+          "right": 407.0,
+          "bottom": 804.0
+        },
+        {
+          "text": "原法定退休年龄60周",
+          "confidence": 0.9995394945144653,
+          "left": 439.0,
+          "top": 747.0,
+          "right": 887.0,
+          "bottom": 801.0
+        },
+        {
+          "text": "1972-",
+          "confidence": 0.9999182820320129,
+          "left": 1411.0,
+          "top": 746.0,
+          "right": 1549.0,
+          "bottom": 800.0
+        },
+        {
+          "text": "1992-",
+          "confidence": 0.999927818775177,
+          "left": 1613.0,
+          "top": 747.0,
+          "right": 1746.0,
+          "bottom": 798.0
+        },
+        {
+          "text": "2025-03-",
+          "confidence": 0.9999765753746033,
+          "left": 2695.0,
+          "top": 746.0,
+          "right": 2901.0,
+          "bottom": 795.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999853372573853,
+          "left": 2196.0,
+          "top": 763.0,
+          "right": 2269.0,
+          "bottom": 839.0
+        },
+        {
+          "text": "2",
+          "confidence": 0.9999979734420776,
+          "left": 126.0,
+          "top": 776.0,
+          "right": 167.0,
+          "bottom": 835.0
+        },
+        {
+          "text": "11010119702010002",
+          "confidence": 0.9999868869781494,
+          "left": 928.0,
+          "top": 777.0,
+          "right": 1357.0,
+          "bottom": 828.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999943375587463,
+          "left": 1797.0,
+          "top": 774.0,
+          "right": 1979.0,
+          "bottom": 830.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.9999785423278809,
+          "left": 2471.0,
+          "top": 768.0,
+          "right": 2681.0,
+          "bottom": 834.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999771118164062,
+          "left": 3062.0,
+          "top": 771.0,
+          "right": 3266.0,
+          "bottom": 831.0
+        },
+        {
+          "text": "员2",
+          "confidence": 0.9999113082885742,
+          "left": 288.0,
+          "top": 803.0,
+          "right": 376.0,
+          "bottom": 863.0
+        },
+        {
+          "text": "岁男职工",
+          "confidence": 0.9997298717498779,
+          "left": 563.0,
+          "top": 805.0,
+          "right": 767.0,
+          "bottom": 860.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999338984489441,
+          "left": 1409.0,
+          "top": 806.0,
+          "right": 1546.0,
+          "bottom": 859.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999858140945435,
+          "left": 1611.0,
+          "top": 807.0,
+          "right": 1744.0,
+          "bottom": 857.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.999930739402771,
+          "left": 2766.0,
+          "top": 803.0,
+          "right": 2829.0,
+          "bottom": 859.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999733567237854,
+          "left": 248.0,
+          "top": 864.0,
+          "right": 408.0,
+          "bottom": 926.0
+        },
+        {
+          "text": "原法定退休年龄50周",
+          "confidence": 0.9995077252388,
+          "left": 439.0,
+          "top": 867.0,
+          "right": 889.0,
+          "bottom": 921.0
+        },
+        {
+          "text": "1973-",
+          "confidence": 0.9999706149101257,
+          "left": 1411.0,
+          "top": 865.0,
+          "right": 1550.0,
+          "bottom": 920.0
+        },
+        {
+          "text": "1993-",
+          "confidence": 0.9999665021896362,
+          "left": 1612.0,
+          "top": 866.0,
+          "right": 1748.0,
+          "bottom": 920.0
+        },
+        {
+          "text": "2025-04-",
+          "confidence": 0.9999717473983765,
+          "left": 2696.0,
+          "top": 867.0,
+          "right": 2901.0,
+          "bottom": 916.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999669790267944,
+          "left": 2197.0,
+          "top": 883.0,
+          "right": 2270.0,
+          "bottom": 960.0
+        },
+        {
+          "text": "3",
+          "confidence": 0.9999972581863403,
+          "left": 126.0,
+          "top": 897.0,
+          "right": 168.0,
+          "bottom": 954.0
+        },
+        {
+          "text": "11010119703010003",
+          "confidence": 0.9999801516532898,
+          "left": 928.0,
+          "top": 896.0,
+          "right": 1357.0,
+          "bottom": 949.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.999995768070221,
+          "left": 1799.0,
+          "top": 896.0,
+          "right": 1979.0,
+          "bottom": 949.0
+        },
+        {
+          "text": "管理岗位",
+          "confidence": 0.9999796152114868,
+          "left": 2473.0,
+          "top": 890.0,
+          "right": 2681.0,
+          "bottom": 954.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999796748161316,
+          "left": 3063.0,
+          "top": 891.0,
+          "right": 3266.0,
+          "bottom": 952.0
+        },
+        {
+          "text": "员3",
+          "confidence": 0.9998908042907715,
+          "left": 288.0,
+          "top": 923.0,
+          "right": 376.0,
+          "bottom": 988.0
+        },
+        {
+          "text": "岁女职工",
+          "confidence": 0.9997984766960144,
+          "left": 565.0,
+          "top": 927.0,
+          "right": 770.0,
+          "bottom": 983.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999566078186035,
+          "left": 1411.0,
+          "top": 928.0,
+          "right": 1546.0,
+          "bottom": 982.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999881982803345,
+          "left": 1612.0,
+          "top": 927.0,
+          "right": 1746.0,
+          "bottom": 982.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999942779541016,
+          "left": 2767.0,
+          "top": 925.0,
+          "right": 2831.0,
+          "bottom": 982.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999514222145081,
+          "left": 248.0,
+          "top": 986.0,
+          "right": 410.0,
+          "bottom": 1050.0
+        },
+        {
+          "text": "原法定退休年龄60周",
+          "confidence": 0.9994163513183594,
+          "left": 441.0,
+          "top": 990.0,
+          "right": 890.0,
+          "bottom": 1044.0
+        },
+        {
+          "text": "1974-",
+          "confidence": 0.9998704791069031,
+          "left": 1414.0,
+          "top": 989.0,
+          "right": 1550.0,
+          "bottom": 1043.0
+        },
+        {
+          "text": "1994-",
+          "confidence": 0.9999473690986633,
+          "left": 1614.0,
+          "top": 991.0,
+          "right": 1747.0,
+          "bottom": 1041.0
+        },
+        {
+          "text": "2025-05-",
+          "confidence": 0.9642996788024902,
+          "left": 2695.0,
+          "top": 989.0,
+          "right": 2885.0,
+          "bottom": 1040.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999662637710571,
+          "left": 2196.0,
+          "top": 1006.0,
+          "right": 2273.0,
+          "bottom": 1082.0
+        },
+        {
+          "text": "4",
+          "confidence": 0.9999887943267822,
+          "left": 126.0,
+          "top": 1020.0,
+          "right": 171.0,
+          "bottom": 1079.0
+        },
+        {
+          "text": "11010119704010004",
+          "confidence": 0.9999794960021973,
+          "left": 930.0,
+          "top": 1021.0,
+          "right": 1358.0,
+          "bottom": 1069.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999947547912598,
+          "left": 1800.0,
+          "top": 1018.0,
+          "right": 1980.0,
+          "bottom": 1071.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.9999845027923584,
+          "left": 2473.0,
+          "top": 1012.0,
+          "right": 2682.0,
+          "bottom": 1075.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999686479568481,
+          "left": 3062.0,
+          "top": 1012.0,
+          "right": 3269.0,
+          "bottom": 1075.0
+        },
+        {
+          "text": "员4",
+          "confidence": 0.9998412132263184,
+          "left": 287.0,
+          "top": 1043.0,
+          "right": 379.0,
+          "bottom": 1110.0
+        },
+        {
+          "text": "岁男职工",
+          "confidence": 0.9998159408569336,
+          "left": 565.0,
+          "top": 1048.0,
+          "right": 770.0,
+          "bottom": 1104.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999483227729797,
+          "left": 1412.0,
+          "top": 1050.0,
+          "right": 1546.0,
+          "bottom": 1101.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999874234199524,
+          "left": 1612.0,
+          "top": 1048.0,
+          "right": 1747.0,
+          "bottom": 1102.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999867677688599,
+          "left": 2769.0,
+          "top": 1048.0,
+          "right": 2830.0,
+          "bottom": 1101.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999545216560364,
+          "left": 249.0,
+          "top": 1106.0,
+          "right": 409.0,
+          "bottom": 1167.0
+        },
+        {
+          "text": "原法定退休年龄50周",
+          "confidence": 0.9998451471328735,
+          "left": 442.0,
+          "top": 1110.0,
+          "right": 891.0,
+          "bottom": 1164.0
+        },
+        {
+          "text": "1975-",
+          "confidence": 0.99992436170578,
+          "left": 1414.0,
+          "top": 1110.0,
+          "right": 1551.0,
+          "bottom": 1163.0
+        },
+        {
+          "text": "1995-",
+          "confidence": 0.9999732971191406,
+          "left": 1615.0,
+          "top": 1111.0,
+          "right": 1747.0,
+          "bottom": 1162.0
+        },
+        {
+          "text": "2025-06-",
+          "confidence": 0.9997484683990479,
+          "left": 2697.0,
+          "top": 1111.0,
+          "right": 2898.0,
+          "bottom": 1160.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999810457229614,
+          "left": 2197.0,
+          "top": 1126.0,
+          "right": 2272.0,
+          "bottom": 1201.0
+        },
+        {
+          "text": "5",
+          "confidence": 0.9999898672103882,
+          "left": 129.0,
+          "top": 1141.0,
+          "right": 169.0,
+          "bottom": 1195.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999924302101135,
+          "left": 1800.0,
+          "top": 1137.0,
+          "right": 1982.0,
+          "bottom": 1192.0
+        },
+        {
+          "text": "管理岗位",
+          "confidence": 0.9999591708183289,
+          "left": 2473.0,
+          "top": 1132.0,
+          "right": 2682.0,
+          "bottom": 1194.0
+        },
+        {
+          "text": "11010119705010005",
+          "confidence": 0.9999904632568359,
+          "left": 930.0,
+          "top": 1142.0,
+          "right": 1358.0,
+          "bottom": 1189.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.999984622001648,
+          "left": 3064.0,
+          "top": 1134.0,
+          "right": 3268.0,
+          "bottom": 1194.0
+        },
+        {
+          "text": "员5",
+          "confidence": 0.9998024106025696,
+          "left": 289.0,
+          "top": 1164.0,
+          "right": 379.0,
+          "bottom": 1228.0
+        },
+        {
+          "text": "岁女职工",
+          "confidence": 0.999859094619751,
+          "left": 567.0,
+          "top": 1169.0,
+          "right": 770.0,
+          "bottom": 1222.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999553561210632,
+          "left": 1413.0,
+          "top": 1168.0,
+          "right": 1548.0,
+          "bottom": 1222.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999839067459106,
+          "left": 1613.0,
+          "top": 1168.0,
+          "right": 1747.0,
+          "bottom": 1222.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999748468399048,
+          "left": 2768.0,
+          "top": 1166.0,
+          "right": 2832.0,
+          "bottom": 1223.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999756813049316,
+          "left": 251.0,
+          "top": 1227.0,
+          "right": 411.0,
+          "bottom": 1289.0
+        },
+        {
+          "text": "原法定退休年龄60周",
+          "confidence": 0.9995819926261902,
+          "left": 442.0,
+          "top": 1230.0,
+          "right": 892.0,
+          "bottom": 1285.0
+        },
+        {
+          "text": "1976-",
+          "confidence": 0.9998475909233093,
+          "left": 1416.0,
+          "top": 1232.0,
+          "right": 1551.0,
+          "bottom": 1283.0
+        },
+        {
+          "text": "1996-",
+          "confidence": 0.9999273419380188,
+          "left": 1614.0,
+          "top": 1230.0,
+          "right": 1749.0,
+          "bottom": 1283.0
+        },
+        {
+          "text": "2025-07-",
+          "confidence": 0.9999821186065674,
+          "left": 2698.0,
+          "top": 1231.0,
+          "right": 2905.0,
+          "bottom": 1280.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999943971633911,
+          "left": 1801.0,
+          "top": 1258.0,
+          "right": 1982.0,
+          "bottom": 1314.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999816417694092,
+          "left": 2196.0,
+          "top": 1245.0,
+          "right": 2274.0,
+          "bottom": 1324.0
+        },
+        {
+          "text": "6",
+          "confidence": 0.99998939037323,
+          "left": 129.0,
+          "top": 1260.0,
+          "right": 169.0,
+          "bottom": 1317.0
+        },
+        {
+          "text": "11010119706010006",
+          "confidence": 0.9999814033508301,
+          "left": 931.0,
+          "top": 1261.0,
+          "right": 1360.0,
+          "bottom": 1312.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.9999801516532898,
+          "left": 2475.0,
+          "top": 1254.0,
+          "right": 2684.0,
+          "bottom": 1317.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999724626541138,
+          "left": 3063.0,
+          "top": 1252.0,
+          "right": 3270.0,
+          "bottom": 1318.0
+        },
+        {
+          "text": "员6",
+          "confidence": 0.9998488426208496,
+          "left": 290.0,
+          "top": 1286.0,
+          "right": 378.0,
+          "bottom": 1351.0
+        },
+        {
+          "text": "岁男职工",
+          "confidence": 0.9996585845947266,
+          "left": 568.0,
+          "top": 1290.0,
+          "right": 771.0,
+          "bottom": 1346.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999534487724304,
+          "left": 1414.0,
+          "top": 1290.0,
+          "right": 1549.0,
+          "bottom": 1344.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.99998939037323,
+          "left": 1613.0,
+          "top": 1289.0,
+          "right": 1748.0,
+          "bottom": 1343.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.999956488609314,
+          "left": 2769.0,
+          "top": 1288.0,
+          "right": 2832.0,
+          "bottom": 1344.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999344944953918,
+          "left": 251.0,
+          "top": 1348.0,
+          "right": 412.0,
+          "bottom": 1413.0
+        },
+        {
+          "text": "原法定退休年龄50周",
+          "confidence": 0.9997320175170898,
+          "left": 443.0,
+          "top": 1352.0,
+          "right": 891.0,
+          "bottom": 1407.0
+        },
+        {
+          "text": "1977-",
+          "confidence": 0.9999516606330872,
+          "left": 1416.0,
+          "top": 1352.0,
+          "right": 1552.0,
+          "bottom": 1406.0
+        },
+        {
+          "text": "1997-",
+          "confidence": 0.9999680519104004,
+          "left": 1616.0,
+          "top": 1352.0,
+          "right": 1752.0,
+          "bottom": 1406.0
+        },
+        {
+          "text": "2025-08-",
+          "confidence": 0.9999948740005493,
+          "left": 2697.0,
+          "top": 1350.0,
+          "right": 2908.0,
+          "bottom": 1404.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999812841415405,
+          "left": 2200.0,
+          "top": 1371.0,
+          "right": 2273.0,
+          "bottom": 1446.0
+        },
+        {
+          "text": "7",
+          "confidence": 0.9999874830245972,
+          "left": 129.0,
+          "top": 1385.0,
+          "right": 169.0,
+          "bottom": 1441.0
+        },
+        {
+          "text": "11010119707010007",
+          "confidence": 0.9999730587005615,
+          "left": 931.0,
+          "top": 1383.0,
+          "right": 1358.0,
+          "bottom": 1435.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999943971633911,
+          "left": 1801.0,
+          "top": 1381.0,
+          "right": 1983.0,
+          "bottom": 1437.0
+        },
+        {
+          "text": "管理岗位",
+          "confidence": 0.9999728202819824,
+          "left": 2475.0,
+          "top": 1375.0,
+          "right": 2685.0,
+          "bottom": 1441.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999539852142334,
+          "left": 3064.0,
+          "top": 1376.0,
+          "right": 3271.0,
+          "bottom": 1439.0
+        },
+        {
+          "text": "员7",
+          "confidence": 0.9999223351478577,
+          "left": 292.0,
+          "top": 1410.0,
+          "right": 378.0,
+          "bottom": 1472.0
+        },
+        {
+          "text": "岁女职工",
+          "confidence": 0.9998165965080261,
+          "left": 569.0,
+          "top": 1412.0,
+          "right": 773.0,
+          "bottom": 1468.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.999956488609314,
+          "left": 1413.0,
+          "top": 1412.0,
+          "right": 1548.0,
+          "bottom": 1466.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999781847000122,
+          "left": 1614.0,
+          "top": 1413.0,
+          "right": 1748.0,
+          "bottom": 1467.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999890327453613,
+          "left": 2769.0,
+          "top": 1411.0,
+          "right": 2833.0,
+          "bottom": 1467.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999602437019348,
+          "left": 252.0,
+          "top": 1472.0,
+          "right": 412.0,
+          "bottom": 1534.0
+        },
+        {
+          "text": "原法定退休年龄60周",
+          "confidence": 0.9998080134391785,
+          "left": 444.0,
+          "top": 1474.0,
+          "right": 893.0,
+          "bottom": 1529.0
+        },
+        {
+          "text": "1978-",
+          "confidence": 0.9999489784240723,
+          "left": 1416.0,
+          "top": 1475.0,
+          "right": 1553.0,
+          "bottom": 1529.0
+        },
+        {
+          "text": "1998-",
+          "confidence": 0.9999328851699829,
+          "left": 1616.0,
+          "top": 1475.0,
+          "right": 1751.0,
+          "bottom": 1529.0
+        },
+        {
+          "text": "2025-09-",
+          "confidence": 0.9999899864196777,
+          "left": 2699.0,
+          "top": 1473.0,
+          "right": 2906.0,
+          "bottom": 1525.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999816417694092,
+          "left": 2199.0,
+          "top": 1492.0,
+          "right": 2274.0,
+          "bottom": 1567.0
+        },
+        {
+          "text": "8",
+          "confidence": 0.9999959468841553,
+          "left": 130.0,
+          "top": 1506.0,
+          "right": 171.0,
+          "bottom": 1560.0
+        },
+        {
+          "text": "11010119708010008",
+          "confidence": 0.999984860420227,
+          "left": 933.0,
+          "top": 1507.0,
+          "right": 1360.0,
+          "bottom": 1555.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999914765357971,
+          "left": 1802.0,
+          "top": 1502.0,
+          "right": 1983.0,
+          "bottom": 1558.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.999984622001648,
+          "left": 2476.0,
+          "top": 1498.0,
+          "right": 2685.0,
+          "bottom": 1561.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999740123748779,
+          "left": 3066.0,
+          "top": 1499.0,
+          "right": 3270.0,
+          "bottom": 1559.0
+        },
+        {
+          "text": "员8",
+          "confidence": 0.999934196472168,
+          "left": 292.0,
+          "top": 1531.0,
+          "right": 379.0,
+          "bottom": 1593.0
+        },
+        {
+          "text": "岁男职工",
+          "confidence": 0.9997451305389404,
+          "left": 569.0,
+          "top": 1534.0,
+          "right": 774.0,
+          "bottom": 1590.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999780654907227,
+          "left": 1415.0,
+          "top": 1535.0,
+          "right": 1551.0,
+          "bottom": 1589.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.999987006187439,
+          "left": 1615.0,
+          "top": 1535.0,
+          "right": 1750.0,
+          "bottom": 1589.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999902248382568,
+          "left": 2770.0,
+          "top": 1533.0,
+          "right": 2834.0,
+          "bottom": 1589.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999486804008484,
+          "left": 253.0,
+          "top": 1594.0,
+          "right": 413.0,
+          "bottom": 1654.0
+        },
+        {
+          "text": "原法定退休年龄50周",
+          "confidence": 0.9997448921203613,
+          "left": 445.0,
+          "top": 1596.0,
+          "right": 893.0,
+          "bottom": 1650.0
+        },
+        {
+          "text": "1979-",
+          "confidence": 0.9999574422836304,
+          "left": 1418.0,
+          "top": 1598.0,
+          "right": 1552.0,
+          "bottom": 1648.0
+        },
+        {
+          "text": "1999-",
+          "confidence": 0.9999839663505554,
+          "left": 1619.0,
+          "top": 1598.0,
+          "right": 1752.0,
+          "bottom": 1647.0
+        },
+        {
+          "text": "2025-10-",
+          "confidence": 0.9999216794967651,
+          "left": 2700.0,
+          "top": 1597.0,
+          "right": 2905.0,
+          "bottom": 1645.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999867677688599,
+          "left": 2201.0,
+          "top": 1613.0,
+          "right": 2275.0,
+          "bottom": 1687.0
+        },
+        {
+          "text": "9",
+          "confidence": 0.9999700784683228,
+          "left": 131.0,
+          "top": 1626.0,
+          "right": 171.0,
+          "bottom": 1681.0
+        },
+        {
+          "text": "11010119709010009",
+          "confidence": 0.9999927282333374,
+          "left": 934.0,
+          "top": 1628.0,
+          "right": 1361.0,
+          "bottom": 1675.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999917149543762,
+          "left": 1803.0,
+          "top": 1625.0,
+          "right": 1983.0,
+          "bottom": 1677.0
+        },
+        {
+          "text": "管理岗位",
+          "confidence": 0.999953031539917,
+          "left": 2477.0,
+          "top": 1619.0,
+          "right": 2684.0,
+          "bottom": 1681.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.9999814033508301,
+          "left": 3067.0,
+          "top": 1620.0,
+          "right": 3271.0,
+          "bottom": 1680.0
+        },
+        {
+          "text": "员9",
+          "confidence": 0.9999421238899231,
+          "left": 293.0,
+          "top": 1651.0,
+          "right": 379.0,
+          "bottom": 1712.0
+        },
+        {
+          "text": "岁女职工",
+          "confidence": 0.9998373985290527,
+          "left": 570.0,
+          "top": 1655.0,
+          "right": 771.0,
+          "bottom": 1708.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999621510505676,
+          "left": 1417.0,
+          "top": 1656.0,
+          "right": 1550.0,
+          "bottom": 1707.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999748468399048,
+          "left": 1616.0,
+          "top": 1656.0,
+          "right": 1749.0,
+          "bottom": 1706.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999065399169922,
+          "left": 2771.0,
+          "top": 1654.0,
+          "right": 2833.0,
+          "bottom": 1706.0
+        },
+        {
+          "text": "测试人",
+          "confidence": 0.9999726414680481,
+          "left": 254.0,
+          "top": 1713.0,
+          "right": 413.0,
+          "bottom": 1775.0
+        },
+        {
+          "text": "原法定退休年龄60周",
+          "confidence": 0.999823272228241,
+          "left": 445.0,
+          "top": 1716.0,
+          "right": 894.0,
+          "bottom": 1770.0
+        },
+        {
+          "text": "1970-",
+          "confidence": 0.999894917011261,
+          "left": 1418.0,
+          "top": 1716.0,
+          "right": 1554.0,
+          "bottom": 1770.0
+        },
+        {
+          "text": "1990-",
+          "confidence": 0.9998857378959656,
+          "left": 1618.0,
+          "top": 1716.0,
+          "right": 1754.0,
+          "bottom": 1770.0
+        },
+        {
+          "text": "2025-11-",
+          "confidence": 0.9999869465827942,
+          "left": 2701.0,
+          "top": 1717.0,
+          "right": 2908.0,
+          "bottom": 1766.0
+        },
+        {
+          "text": "10",
+          "confidence": 0.9999962449073792,
+          "left": 120.0,
+          "top": 1742.0,
+          "right": 187.0,
+          "bottom": 1806.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.999975323677063,
+          "left": 2201.0,
+          "top": 1733.0,
+          "right": 2275.0,
+          "bottom": 1808.0
+        },
+        {
+          "text": "11010119710010010",
+          "confidence": 0.9995362758636475,
+          "left": 934.0,
+          "top": 1747.0,
+          "right": 1363.0,
+          "bottom": 1797.0
+        },
+        {
+          "text": "2005-01",
+          "confidence": 0.9999942779541016,
+          "left": 1804.0,
+          "top": 1746.0,
+          "right": 1984.0,
+          "bottom": 1798.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.9999798536300659,
+          "left": 2477.0,
+          "top": 1740.0,
+          "right": 2686.0,
+          "bottom": 1802.0
+        },
+        {
+          "text": "测试数据",
+          "confidence": 0.999982476234436,
+          "left": 3067.0,
+          "top": 1741.0,
+          "right": 3271.0,
+          "bottom": 1801.0
+        },
+        {
+          "text": "员10",
+          "confidence": 0.9999661445617676,
+          "left": 280.0,
+          "top": 1773.0,
+          "right": 393.0,
+          "bottom": 1834.0
+        },
+        {
+          "text": "岁男职工",
+          "confidence": 0.9997429847717285,
+          "left": 570.0,
+          "top": 1775.0,
+          "right": 775.0,
+          "bottom": 1831.0
+        },
+        {
+          "text": "01-01",
+          "confidence": 0.9999042749404907,
+          "left": 1416.0,
+          "top": 1776.0,
+          "right": 1552.0,
+          "bottom": 1830.0
+        },
+        {
+          "text": "07-01",
+          "confidence": 0.9999915957450867,
+          "left": 1616.0,
+          "top": 1776.0,
+          "right": 1750.0,
+          "bottom": 1830.0
+        },
+        {
+          "text": "01",
+          "confidence": 0.9999507069587708,
+          "left": 2771.0,
+          "top": 1774.0,
+          "right": 2836.0,
+          "bottom": 1830.0
+        },
+        {
+          "text": "11",
+          "confidence": 0.9901572465896606,
+          "left": 696.0,
+          "top": 2015.0,
+          "right": 760.0,
+          "bottom": 2073.0
+        },
+        {
+          "text": "1971-01-01",
+          "confidence": 0.9999920725822449,
+          "left": 2283.0,
+          "top": 2019.0,
+          "right": 2529.0,
+          "bottom": 2064.0
+        },
+        {
+          "text": "12 测试人员 原法定退休年龄60周岁11010119712010012",
+          "confidence": 0.9778692722320557,
+          "left": 180.0,
+          "top": 2253.0,
+          "right": 1315.0,
+          "bottom": 2306.0
+        },
+        {
+          "text": "1972-01-11992-07-12005-01",
+          "confidence": 0.9947689175605774,
+          "left": 1394.0,
+          "top": 2254.0,
+          "right": 1955.0,
+          "bottom": 2301.0
+        },
+        {
+          "text": "无",
+          "confidence": 0.9999732971191406,
+          "left": 2013.0,
+          "top": 2252.0,
+          "right": 2067.0,
+          "bottom": 2312.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.9999752640724182,
+          "left": 2478.0,
+          "top": 2249.0,
+          "right": 2671.0,
+          "bottom": 2305.0
+        },
+        {
+          "text": "2025-01-0 测试数据",
+          "confidence": 0.9757562279701233,
+          "left": 2696.0,
+          "top": 2252.0,
+          "right": 3108.0,
+          "bottom": 2300.0
+        },
+        {
+          "text": "无无",
+          "confidence": 0.9981475472450256,
+          "left": 2011.0,
+          "top": 2304.0,
+          "right": 2071.0,
+          "bottom": 2426.0
+        },
+        {
+          "text": "13 测试人员 原法定退休年龄50周岁11010119713010013",
+          "confidence": 0.9806919097900391,
+          "left": 180.0,
+          "top": 2315.0,
+          "right": 1316.0,
+          "bottom": 2366.0
+        },
+        {
+          "text": "1973-01-11993-07-12005-01",
+          "confidence": 0.9816386699676514,
+          "left": 1396.0,
+          "top": 2317.0,
+          "right": 1955.0,
+          "bottom": 2361.0
+        },
+        {
+          "text": "管理岗位",
+          "confidence": 0.9999608993530273,
+          "left": 2479.0,
+          "top": 2310.0,
+          "right": 2671.0,
+          "bottom": 2366.0
+        },
+        {
+          "text": "2025-02-0 测试数据",
+          "confidence": 0.9887639284133911,
+          "left": 2697.0,
+          "top": 2311.0,
+          "right": 3110.0,
+          "bottom": 2362.0
+        },
+        {
+          "text": "14 测试人员 原法定退休年龄60周岁 11010119714010014",
+          "confidence": 0.9778158068656921,
+          "left": 181.0,
+          "top": 2373.0,
+          "right": 1317.0,
+          "bottom": 2422.0
+        },
+        {
+          "text": "1974-01-11994-07-12005-01",
+          "confidence": 0.9825407266616821,
+          "left": 1395.0,
+          "top": 2375.0,
+          "right": 1956.0,
+          "bottom": 2418.0
+        },
+        {
+          "text": "技术岗位",
+          "confidence": 0.9999871253967285,
+          "left": 2480.0,
+          "top": 2369.0,
+          "right": 2672.0,
+          "bottom": 2421.0
+        },
+        {
+          "text": "2025-03-0 测试数据",
+          "confidence": 0.9815903902053833,
+          "left": 2697.0,
+          "top": 2369.0,
+          "right": 3112.0,
+          "bottom": 2419.0
+        }
+      ]
+    }
+  }
+}

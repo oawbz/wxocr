@@ -1,0 +1,3441 @@
+{
+  "image_tag": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+  "duration_target_s": 30,
+  "method": "One resident engine, one client, one CPU core quota and GOMAXPROCS1, selected RTX GPU; no previews; 30-second closed-loop workloads plus drain; accuracy each image/mode repeated3 times; production unchanged.",
+  "tests": [
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "small_fast",
+      "mode": "fast",
+      "requests": 220,
+      "success": 220,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.010161923244596,
+      "requests_per_second": 7.330850148782348,
+      "p50_ms": 133.74848291277885,
+      "p95_ms": 179.86910417675972,
+      "max_ms": 213.21992948651314,
+      "samples": [
+        {
+          "time": 1793273224.0280876,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.09%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.82%",
+            "MemUsage": "689.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "17.5MB / 2.33MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.30, 893"
+        },
+        {
+          "time": 1793273226.037185,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.96%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.64%",
+            "MemUsage": "681.5MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "18.2MB / 2.42MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.02, 893"
+        },
+        {
+          "time": 1793273228.0738533,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "101.09%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.93%",
+            "MemUsage": "693.6MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "18.7MB / 2.49MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 41.22, 893"
+        },
+        {
+          "time": 1793273230.1179562,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.47%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.82%",
+            "MemUsage": "688.8MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "19.3MB / 2.57MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "8, 42.38, 893"
+        },
+        {
+          "time": 1793273232.1452932,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.20%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.82%",
+            "MemUsage": "688.8MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "19.9MB / 2.65MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "7, 41.50, 893"
+        },
+        {
+          "time": 1793273234.115275,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.69%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.63%",
+            "MemUsage": "681MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "20.4MB / 2.73MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "5, 41.03, 893"
+        },
+        {
+          "time": 1793273236.1237066,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.75%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.79%",
+            "MemUsage": "687.7MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "20.9MB / 2.8MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 41.28, 893"
+        },
+        {
+          "time": 1793273238.152813,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.25%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.56%",
+            "MemUsage": "678.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "21.5MB / 2.88MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "7, 41.59, 893"
+        },
+        {
+          "time": 1793273240.1632614,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.94%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.73%",
+            "MemUsage": "685.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "22MB / 2.96MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "8, 41.57, 893"
+        },
+        {
+          "time": 1793273242.1694329,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.79%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.73%",
+            "MemUsage": "685.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "22.5MB / 3.03MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 41.27, 893"
+        },
+        {
+          "time": 1793273244.162033,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.90%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.64%",
+            "MemUsage": "681.5MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "23.1MB / 3.1MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 41.88, 893"
+        },
+        {
+          "time": 1793273246.189905,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.67%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.78%",
+            "MemUsage": "687.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "23.7MB / 3.19MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.55, 893"
+        },
+        {
+          "time": 1793273248.2318604,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.99%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.71%",
+            "MemUsage": "684.6MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "24.3MB / 3.27MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 41.87, 893"
+        },
+        {
+          "time": 1793273250.2401597,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.12%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.65%",
+            "MemUsage": "681.9MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "24.8MB / 3.34MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.27, 893"
+        },
+        {
+          "time": 1793273252.2532532,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.46%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "16.61%",
+            "MemUsage": "680.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "25.4MB / 3.43MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "4, 41.91, 893"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 113.5115996003151,
+          "elapsed_ms": 111,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 142.16881804168224,
+          "elapsed_ms": 139,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 140.4467523097992,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 90.9434761852026,
+          "elapsed_ms": 88,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 123.41389991343021,
+          "elapsed_ms": 120,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 155.90469539165497,
+          "elapsed_ms": 153,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 99.8676996678114,
+          "elapsed_ms": 97,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 178.11568267643452,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 138.20257224142551,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 89.52373079955578,
+          "elapsed_ms": 87,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 136.05187833309174,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 128.52605432271957,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 104.9827728420496,
+          "elapsed_ms": 102,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 143.9536064863205,
+          "elapsed_ms": 141,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 129.9497913569212,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.70089760422707,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 124.96738135814667,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 141.7102236300707,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 93.01702119410038,
+          "elapsed_ms": 90,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 133.51954892277718,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.19551473855972,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 94.89680081605911,
+          "elapsed_ms": 92,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 128.0774213373661,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 152.0505454391241,
+          "elapsed_ms": 149,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 90.30487574636936,
+          "elapsed_ms": 88,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 130.057442933321,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 178.1399194151163,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 99.91500712931156,
+          "elapsed_ms": 97,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 125.92082470655441,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 179.07067574560642,
+          "elapsed_ms": 176,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 91.56910330057144,
+          "elapsed_ms": 89,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 127.79295817017555,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 180.12593314051628,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 105.94395361840725,
+          "elapsed_ms": 103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 178.8029745221138,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 154.66191805899143,
+          "elapsed_ms": 151,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 114.75509963929653,
+          "elapsed_ms": 112,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 184.13576483726501,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 180.21655455231667,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 120.67686766386032,
+          "elapsed_ms": 118,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 153.5581424832344,
+          "elapsed_ms": 151,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 173.6335139721632,
+          "elapsed_ms": 171,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 86.63763664662838,
+          "elapsed_ms": 84,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 129.13043051958084,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 150.4374984651804,
+          "elapsed_ms": 147,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 121.30838446319103,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 169.82105001807213,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 128.90511751174927,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 127.9735304415226,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 154.6595562249422,
+          "elapsed_ms": 152,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 144.1283281892538,
+          "elapsed_ms": 141,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 95.03216110169888,
+          "elapsed_ms": 92,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 126.25693529844284,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 144.66923102736473,
+          "elapsed_ms": 141,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.3916444927454,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 133.40701535344124,
+          "elapsed_ms": 130,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.23626245558262,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.6964645087719,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 126.51153281331062,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 159.56292115151882,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 115.23498594760895,
+          "elapsed_ms": 113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 178.01044508814812,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 138.30962590873241,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 115.99837057292461,
+          "elapsed_ms": 113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 145.10099776089191,
+          "elapsed_ms": 142,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 167.27350279688835,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 92.80383586883545,
+          "elapsed_ms": 90,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 138.2325440645218,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 168.63532178103924,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 93.56467239558697,
+          "elapsed_ms": 91,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 139.2029020935297,
+          "elapsed_ms": 136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 150.93627758324146,
+          "elapsed_ms": 148,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 132.16166384518147,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 176.5681877732277,
+          "elapsed_ms": 173,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 139.19763267040253,
+          "elapsed_ms": 136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.15074524283409,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 181.27917498350143,
+          "elapsed_ms": 178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 152.52327173948288,
+          "elapsed_ms": 149,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 88.53480033576488,
+          "elapsed_ms": 86,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 121.94319441914558,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 167.24965907633305,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 119.46075595915318,
+          "elapsed_ms": 117,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.88035275042057,
+          "elapsed_ms": 166,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 134.75796952843666,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 131.98624923825264,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 169.9217800050974,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 147.43890799582005,
+          "elapsed_ms": 144,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 124.17553178966045,
+          "elapsed_ms": 121,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 179.86910417675972,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.7626310735941,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 114.96908776462078,
+          "elapsed_ms": 112,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 176.8626943230629,
+          "elapsed_ms": 174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 129.18439134955406,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 86.40238456428051,
+          "elapsed_ms": 84,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 186.8261881172657,
+          "elapsed_ms": 183,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 128.68617288768291,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 138.01338337361813,
+          "elapsed_ms": 136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 167.92235150933266,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 170.4786829650402,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 106.11440613865852,
+          "elapsed_ms": 104,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 180.72615563869476,
+          "elapsed_ms": 178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 128.44114564359188,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 106.47206008434296,
+          "elapsed_ms": 104,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 144.69345845282078,
+          "elapsed_ms": 141,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 146.09820768237114,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 128.15687991678715,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 144.9766717851162,
+          "elapsed_ms": 142,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 173.0394084006548,
+          "elapsed_ms": 170,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 94.18761171400547,
+          "elapsed_ms": 91,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 121.93278409540653,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 184.7209297120571,
+          "elapsed_ms": 182,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.51537315547466,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 178.41674201190472,
+          "elapsed_ms": 174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 175.53577572107315,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 96.10701352357864,
+          "elapsed_ms": 93,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 138.8970296829939,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 168.5360185801983,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.20658838748932,
+          "elapsed_ms": 114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 155.03036230802536,
+          "elapsed_ms": 152,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 172.77230694890022,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 89.68918398022652,
+          "elapsed_ms": 87,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 127.29679606854916,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 153.27602066099644,
+          "elapsed_ms": 150,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 89.49707634747028,
+          "elapsed_ms": 87,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 133.97741690278053,
+          "elapsed_ms": 131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 121.25834636390209,
+          "elapsed_ms": 118,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.68313579261303,
+          "elapsed_ms": 120,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 177.77604795992374,
+          "elapsed_ms": 175,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 184.3730341643095,
+          "elapsed_ms": 181,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 118.05078946053982,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 177.49454639852047,
+          "elapsed_ms": 174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 148.79830740392208,
+          "elapsed_ms": 145,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 135.19346341490746,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 173.5028587281704,
+          "elapsed_ms": 170,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 157.15467557311058,
+          "elapsed_ms": 154,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 118.00502799451351,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 182.22102709114552,
+          "elapsed_ms": 179,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 174.75844733417034,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 124.69401769340038,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 176.74783244729042,
+          "elapsed_ms": 174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 131.5720323473215,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 125.08158013224602,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.79351623356342,
+          "elapsed_ms": 166,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 156.34470619261265,
+          "elapsed_ms": 153,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 115.47046527266502,
+          "elapsed_ms": 113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 183.92091430723667,
+          "elapsed_ms": 180,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 155.63103929162025,
+          "elapsed_ms": 152,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 126.11359916627407,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 156.3623957335949,
+          "elapsed_ms": 153,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.64416870474815,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 131.12539984285831,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 157.19529055058956,
+          "elapsed_ms": 154,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 129.08203154802322,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 96.43087722361088,
+          "elapsed_ms": 93,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 146.16673067212105,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.52085041999817,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 110.5741374194622,
+          "elapsed_ms": 108,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 173.24227094650269,
+          "elapsed_ms": 170,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.46730868518353,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 131.8052764981985,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 152.2647812962532,
+          "elapsed_ms": 149,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 126.0699424892664,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 98.3207244426012,
+          "elapsed_ms": 96,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 145.80782130360603,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 125.33681094646454,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 93.95919553935528,
+          "elapsed_ms": 92,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 138.4611874818802,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 140.22796042263508,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 98.32999296486378,
+          "elapsed_ms": 96,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 141.32833294570446,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.79341824352741,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 85.91180481016636,
+          "elapsed_ms": 83,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 140.99497348070145,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 140.104865655303,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 95.77974118292332,
+          "elapsed_ms": 93,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 167.77470149099827,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.32789528369904,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 103.68485189974308,
+          "elapsed_ms": 101,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 173.11101593077183,
+          "elapsed_ms": 170,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 135.3438701480627,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 124.64596889913082,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 167.18290001153946,
+          "elapsed_ms": 160,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 146.55956998467445,
+          "elapsed_ms": 143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.4307819455862,
+          "elapsed_ms": 115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 127.8495118021965,
+          "elapsed_ms": 125,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.19785131514072,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 99.1399809718132,
+          "elapsed_ms": 97,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 153.21507304906845,
+          "elapsed_ms": 150,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 213.21992948651314,
+          "elapsed_ms": 210,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 95.00336833298206,
+          "elapsed_ms": 92,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 172.81502857804298,
+          "elapsed_ms": 169,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 158.86511839926243,
+          "elapsed_ms": 155,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 103.56721840798855,
+          "elapsed_ms": 101,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 135.98141632974148,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 130.93099556863308,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 112.28997260332108,
+          "elapsed_ms": 110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.2891994714737,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 151.42782032489777,
+          "elapsed_ms": 148,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 134.87523049116135,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 154.01939675211906,
+          "elapsed_ms": 151,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 161.72600537538528,
+          "elapsed_ms": 159,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 94.63226608932018,
+          "elapsed_ms": 92,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 125.40141120553017,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 138.08036409318447,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 93.56768801808357,
+          "elapsed_ms": 91,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 139.84873704612255,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 125.66181644797325,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 102.34083980321884,
+          "elapsed_ms": 100,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 128.88861261308193,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 148.1789369136095,
+          "elapsed_ms": 145,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 87.91519328951836,
+          "elapsed_ms": 85,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 175.94623193144798,
+          "elapsed_ms": 173,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 135.44479571282864,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.98245914280415,
+          "elapsed_ms": 120,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 138.53880763053894,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 144.35258880257607,
+          "elapsed_ms": 141,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.99998253583908,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 134.07065346837044,
+          "elapsed_ms": 131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 166.6912529617548,
+          "elapsed_ms": 163,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.80347719788551,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_fast",
+      "mode": "fast",
+      "requests": 27,
+      "success": 27,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.466647615656257,
+      "requests_per_second": 0.8862149961692927,
+      "p50_ms": 1120.0239788740873,
+      "p95_ms": 1207.3436323553324,
+      "max_ms": 1278.549375012517,
+      "samples": [
+        {
+          "time": 1793273254.2410278,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.28%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.85%",
+            "MemUsage": "731.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "28.3MB / 3.57MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 41.76, 893"
+        },
+        {
+          "time": 1793273256.287928,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.94%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.49%",
+            "MemUsage": "757.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "31.1MB / 3.8MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 41.88, 893"
+        },
+        {
+          "time": 1793273258.295814,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.86%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.14%",
+            "MemUsage": "743.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "33.9MB / 4.03MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 41.82, 893"
+        },
+        {
+          "time": 1793273260.311641,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.01%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.78%",
+            "MemUsage": "728.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "35.2MB / 4.15MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 42.08, 893"
+        },
+        {
+          "time": 1793273262.3045151,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.85%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.80%",
+            "MemUsage": "770.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "38MB / 4.38MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "4, 41.77, 893"
+        },
+        {
+          "time": 1793273264.292929,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.68%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.67%",
+            "MemUsage": "723.9MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "40.8MB / 4.61MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.07, 893"
+        },
+        {
+          "time": 1793273266.319678,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.73%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.58%",
+            "MemUsage": "761.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "43.6MB / 4.84MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 41.73, 893"
+        },
+        {
+          "time": 1793273268.3089228,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.66%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.75%",
+            "MemUsage": "727.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "45MB / 4.96MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 42.22, 893"
+        },
+        {
+          "time": 1793273270.3557591,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.97%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.56%",
+            "MemUsage": "760.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "47.7MB / 5.19MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "3, 42.15, 893"
+        },
+        {
+          "time": 1793273272.3717477,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.62%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.39%",
+            "MemUsage": "753.5MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "50.5MB / 5.42MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 41.91, 893"
+        },
+        {
+          "time": 1793273274.3640642,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.16%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.10%",
+            "MemUsage": "741.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "53.3MB / 5.65MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 42.36, 893"
+        },
+        {
+          "time": 1793273276.3732293,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.63%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.41%",
+            "MemUsage": "754.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "54.7MB / 5.77MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 42.33, 893"
+        },
+        {
+          "time": 1793273278.377762,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.73%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.61%",
+            "MemUsage": "721.5MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "57.4MB / 6MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "2, 42.07, 893"
+        },
+        {
+          "time": 1793273280.3895547,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.94%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.52%",
+            "MemUsage": "758.4MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "60.2MB / 6.23MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.21, 893"
+        },
+        {
+          "time": 1793273282.3933976,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.35%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.68%",
+            "MemUsage": "724MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "63MB / 6.46MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 42.51, 893"
+        },
+        {
+          "time": 1793273284.428049,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "0.05%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.73%",
+            "MemUsage": "726.4MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "63MB / 6.58MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 35.95, 893"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1037.1540151536465,
+          "elapsed_ms": 1021,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1117.5026521086693,
+          "elapsed_ms": 1103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1079.018771648407,
+          "elapsed_ms": 1063,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1087.7223517745733,
+          "elapsed_ms": 1071,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1051.7714507877827,
+          "elapsed_ms": 1035,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1071.7007517814636,
+          "elapsed_ms": 1055,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1087.9980325698853,
+          "elapsed_ms": 1072,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1177.0988088101149,
+          "elapsed_ms": 1161,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1123.5309094190598,
+          "elapsed_ms": 1107,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1111.6921100765467,
+          "elapsed_ms": 1096,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1278.549375012517,
+          "elapsed_ms": 1263,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1209.5642313361168,
+          "elapsed_ms": 1194,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1127.0522307604551,
+          "elapsed_ms": 1110,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1200.6910871714354,
+          "elapsed_ms": 1186,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1182.6359443366528,
+          "elapsed_ms": 1172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1100.7208209484816,
+          "elapsed_ms": 1086,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1145.1386064291,
+          "elapsed_ms": 1131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1198.356505483389,
+          "elapsed_ms": 1183,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1103.861179202795,
+          "elapsed_ms": 1088,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1207.3436323553324,
+          "elapsed_ms": 1191,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1108.5334736853838,
+          "elapsed_ms": 1093,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1111.3573629409075,
+          "elapsed_ms": 1093,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1120.0239788740873,
+          "elapsed_ms": 1103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1027.5623761117458,
+          "elapsed_ms": 1011,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1139.9594489485025,
+          "elapsed_ms": 1124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1123.1732219457626,
+          "elapsed_ms": 1106,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1132.3572229593992,
+          "elapsed_ms": 1114,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_high_resolution",
+      "mode": "high_resolution",
+      "requests": 12,
+      "success": 12,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 32.44874296709895,
+      "requests_per_second": 0.36981401751578696,
+      "p50_ms": 2693.273696117103,
+      "p95_ms": 2834.151918068528,
+      "max_ms": 2862.1268682181835,
+      "samples": [
+        {
+          "time": 1793273286.3974156,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.25%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.21%",
+            "MemUsage": "745.9MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "64.4MB / 6.58MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 44.09, 893"
+        },
+        {
+          "time": 1793273288.4268649,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.14%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.45%",
+            "MemUsage": "755.8MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "65.8MB / 6.84MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "9, 42.24, 893"
+        },
+        {
+          "time": 1793273290.4291394,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.49%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.44%",
+            "MemUsage": "755.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "65.8MB / 6.84MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 42.76, 893"
+        },
+        {
+          "time": 1793273292.4437406,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.29%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.63%",
+            "MemUsage": "763.2MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "67.1MB / 7.09MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 43.87, 893"
+        },
+        {
+          "time": 1793273294.4479356,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "101.07%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "19.04%",
+            "MemUsage": "779.8MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "68.5MB / 7.34MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 41.97, 893"
+        },
+        {
+          "time": 1793273296.4413693,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "97.62%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.70%",
+            "MemUsage": "766MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "69.9MB / 7.6MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 40.61, 893"
+        },
+        {
+          "time": 1793273298.4509397,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.39%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.59%",
+            "MemUsage": "761.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "69.9MB / 7.6MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 42.23, 893"
+        },
+        {
+          "time": 1793273300.4785535,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.08%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.41%",
+            "MemUsage": "754MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "71.3MB / 7.85MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "8, 44.08, 893"
+        },
+        {
+          "time": 1793273302.5134652,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.52%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.82%",
+            "MemUsage": "771MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "72.7MB / 8.11MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 44.19, 893"
+        },
+        {
+          "time": 1793273304.495861,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.33%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.81%",
+            "MemUsage": "770.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "74.1MB / 8.36MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 43.41, 893"
+        },
+        {
+          "time": 1793273306.492157,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.45%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.41%",
+            "MemUsage": "754MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "74.1MB / 8.61MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 41.35, 893"
+        },
+        {
+          "time": 1793273308.4966962,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.36%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.69%",
+            "MemUsage": "765.5MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "75.5MB / 8.62MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "6, 43.30, 893"
+        },
+        {
+          "time": 1793273310.5029147,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.93%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.67%",
+            "MemUsage": "764.8MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "76.9MB / 8.87MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 43.96, 893"
+        },
+        {
+          "time": 1793273312.5562928,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.15%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.22%",
+            "MemUsage": "746.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "78.2MB / 9.13MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 40.88, 893"
+        },
+        {
+          "time": 1793273314.5228224,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.15%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "17.78%",
+            "MemUsage": "728.3MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "78.2MB / 9.13MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 42.35, 893"
+        },
+        {
+          "time": 1793273316.5371027,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.42%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.39%",
+            "MemUsage": "753.4MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "79.6MB / 9.38MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 44.00, 893"
+        },
+        {
+          "time": 1793273318.5484774,
+          "app_gpu_memory_mib": [
+            728
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "0.06%",
+            "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+            "ID": "f844c22f86a8",
+            "MemPerc": "18.27%",
+            "MemUsage": "748.1MiB / 4GiB",
+            "Name": "serene_elbakyan",
+            "NetIO": "79.6MB / 9.63MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 36.02, 893"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2800.8020613342524,
+          "elapsed_ms": 2770,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2774.9238405376673,
+          "elapsed_ms": 2754,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2834.151918068528,
+          "elapsed_ms": 2808,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2703.82677949965,
+          "elapsed_ms": 2678,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2475.8318811655045,
+          "elapsed_ms": 2449,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2579.148044809699,
+          "elapsed_ms": 2554,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2648.768436163664,
+          "elapsed_ms": 2624,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2682.720612734556,
+          "elapsed_ms": 2657,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2672.3826248198748,
+          "elapsed_ms": 2648,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2862.1268682181835,
+          "elapsed_ms": 2845,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2668.872185051441,
+          "elapsed_ms": 2644,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2740.403624251485,
+          "elapsed_ms": 2716,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    }
+  ],
+  "startup": [
+    {
+      "workers": 1,
+      "ready_ms": 12818.898612633348,
+      "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+      "idle": {
+        "time": 1793273188.2718546,
+        "app_gpu_memory_mib": [
+          728
+        ],
+        "app_sm_percent": 6,
+        "app_memory_util_percent": 0,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "f844c22f86a83743d826c310ddd2121766695f93c4c0cde89bfc7aa400a30277",
+          "ID": "f844c22f86a8",
+          "MemPerc": "16.63%",
+          "MemUsage": "681MiB / 4GiB",
+          "Name": "serene_elbakyan",
+          "NetIO": "6.02kB / 30.5kB",
+          "PIDs": "10"
+        },
+        "whole_gpu_util_power_memory": "0, 33.61, 893"
+      }
+    }
+  ],
+  "gpu_index": 0,
+  "device_visible_in_container": "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5, NVIDIA GeForce RTX 4070 Ti",
+  "runtime_config_sha256": "67ade5562d484e9208cc82be9d9c810a81214d3b6b7269e3df638b7693ce45a9",
+  "final_states": [
+    {
+      "workers": 1,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1706578,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-29T11:26:16.489974877Z",
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-29T19:26:27.74272705+08:00",
+              "End": "2026-10-29T19:26:27.812250211+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:26:57.814115532+08:00",
+              "End": "2026-10-29T19:26:57.879511344+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:27:27.881069662+08:00",
+              "End": "2026-10-29T19:27:27.961206103+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:27:57.9625203+08:00",
+              "End": "2026-10-29T19:27:58.048175821+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:28:28.049678442+08:00",
+              "End": "2026-10-29T19:28:28.142970098+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            }
+          ]
+        }
+      },
+      "restart_count": 0
+    }
+  ],
+  "production_state": "wxocr-web:cuda-fragment-20261029 healthy 0"
+}

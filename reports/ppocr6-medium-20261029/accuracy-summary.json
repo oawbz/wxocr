@@ -1,0 +1,2131 @@
+{
+  "current_fast": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 9,
+      "exact_lines": 180,
+      "reference_lines": 182,
+      "observed_lines": 183,
+      "line_matching_cer": 0.0036525974025974025,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 1,
+        "line_matching_cer": 0.013888888888888888,
+        "exact_lines": 0,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": [
+          {
+            "expected": "长行测试：ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 中文模型跨平台 Go OCR 原引擎对照验证，长度超过常规识别宽度。",
+            "observed": "长行测试:ABCDEFGHJKLMNOPQRSTUVWXYZ0123456789中文模型跨平台Go OCR原引擎对照验证，长度超过常规识别宽度。",
+            "edit_distance": 1
+          }
+        ]
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 8,
+        "line_matching_cer": 0.06015037593984962,
+        "exact_lines": 11,
+        "reference_lines": 12,
+        "observed_lines": 13,
+        "differences": [
+          {
+            "expected": "跨列页脚：全部内容结束。",
+            "observed": ":全部内容结束。",
+            "edit_distance": 4
+          },
+          {
+            "expected": "",
+            "observed": "跨列页脚",
+            "edit_distance": 4
+          }
+        ]
+      }
+    }
+  },
+  "current_high": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 9,
+      "exact_lines": 180,
+      "reference_lines": 182,
+      "observed_lines": 183,
+      "line_matching_cer": 0.0036525974025974025,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 1,
+        "line_matching_cer": 0.013888888888888888,
+        "exact_lines": 0,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": [
+          {
+            "expected": "长行测试：ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 中文模型跨平台 Go OCR 原引擎对照验证，长度超过常规识别宽度。",
+            "observed": "长行测试:ABCDEFGHJKLMNOPQRSTUVWXYZ0123456789中文模型跨平台Go OCR原引擎对照验证，长度超过常规识别宽度。",
+            "edit_distance": 1
+          }
+        ]
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 8,
+        "line_matching_cer": 0.06015037593984962,
+        "exact_lines": 11,
+        "reference_lines": 12,
+        "observed_lines": 13,
+        "differences": [
+          {
+            "expected": "跨列页脚：全部内容结束。",
+            "observed": ":全部内容结束。",
+            "edit_distance": 4
+          },
+          {
+            "expected": "",
+            "observed": "跨列页脚",
+            "edit_distance": 4
+          }
+        ]
+      }
+    }
+  },
+  "ppocr6_medium_single": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 0,
+      "exact_lines": 182,
+      "reference_lines": 182,
+      "observed_lines": 182,
+      "line_matching_cer": 0.0,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 1,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": []
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      }
+    }
+  },
+  "ppocr6_medium": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 0,
+      "exact_lines": 182,
+      "reference_lines": 182,
+      "observed_lines": 182,
+      "line_matching_cer": 0.0,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 1,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": []
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      }
+    }
+  },
+  "ppocr6_medium_1280": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 0,
+      "exact_lines": 182,
+      "reference_lines": 182,
+      "observed_lines": 182,
+      "line_matching_cer": 0.0,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 1,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": []
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      }
+    }
+  },
+  "current_fast_single": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 9,
+      "exact_lines": 180,
+      "reference_lines": 182,
+      "observed_lines": 183,
+      "line_matching_cer": 0.0036525974025974025,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 1,
+        "line_matching_cer": 0.013888888888888888,
+        "exact_lines": 0,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": [
+          {
+            "expected": "长行测试：ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 中文模型跨平台 Go OCR 原引擎对照验证，长度超过常规识别宽度。",
+            "observed": "长行测试:ABCDEFGHJKLMNOPQRSTUVWXYZ0123456789中文模型跨平台Go OCR原引擎对照验证，长度超过常规识别宽度。",
+            "edit_distance": 1
+          }
+        ]
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 8,
+        "line_matching_cer": 0.06015037593984962,
+        "exact_lines": 11,
+        "reference_lines": 12,
+        "observed_lines": 13,
+        "differences": [
+          {
+            "expected": "跨列页脚：全部内容结束。",
+            "observed": ":全部内容结束。",
+            "edit_distance": 4
+          },
+          {
+            "expected": "",
+            "observed": "跨列页脚",
+            "edit_distance": 4
+          }
+        ]
+      }
+    }
+  },
+  "current_high_single": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 9,
+      "exact_lines": 180,
+      "reference_lines": 182,
+      "observed_lines": 183,
+      "line_matching_cer": 0.0036525974025974025,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 1,
+        "line_matching_cer": 0.013888888888888888,
+        "exact_lines": 0,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": [
+          {
+            "expected": "长行测试：ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 中文模型跨平台 Go OCR 原引擎对照验证，长度超过常规识别宽度。",
+            "observed": "长行测试:ABCDEFGHJKLMNOPQRSTUVWXYZ0123456789中文模型跨平台Go OCR原引擎对照验证，长度超过常规识别宽度。",
+            "edit_distance": 1
+          }
+        ]
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 8,
+        "line_matching_cer": 0.06015037593984962,
+        "exact_lines": 11,
+        "reference_lines": 12,
+        "observed_lines": 13,
+        "differences": [
+          {
+            "expected": "跨列页脚：全部内容结束。",
+            "observed": ":全部内容结束。",
+            "edit_distance": 4
+          },
+          {
+            "expected": "",
+            "observed": "跨列页脚",
+            "edit_distance": 4
+          }
+        ]
+      }
+    }
+  },
+  "ppocr6_single_default": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 0,
+      "exact_lines": 182,
+      "reference_lines": 182,
+      "observed_lines": 182,
+      "line_matching_cer": 0.0,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 1,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": []
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      }
+    }
+  },
+  "ppocr6_single_1280": {
+    "totals": {
+      "reference_characters": 2464,
+      "character_errors": 0,
+      "exact_lines": 182,
+      "reference_lines": 182,
+      "observed_lines": 182,
+      "line_matching_cer": 0.0,
+      "case_errors": 0
+    },
+    "cases": {
+      "blank.png": {
+        "reference_characters": 0,
+        "character_errors": 0,
+        "line_matching_cer": null,
+        "exact_lines": 0,
+        "reference_lines": 0,
+        "observed_lines": 0,
+        "differences": []
+      },
+      "chinese.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_180.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_270.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "chinese_ccw_90.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "dense_invoice.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_180.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_270.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "dense_invoice_ccw_90.png": {
+        "reference_characters": 177,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_three_columns.png": {
+        "reference_characters": 216,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 18,
+        "reference_lines": 18,
+        "observed_lines": 18,
+        "differences": []
+      },
+      "layout_title_footer.png": {
+        "reference_characters": 178,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 14,
+        "reference_lines": 14,
+        "observed_lines": 14,
+        "differences": []
+      },
+      "layout_two_columns.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_270.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "layout_two_columns_ccw_90.png": {
+        "reference_characters": 144,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "long_line.png": {
+        "reference_characters": 72,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 1,
+        "reference_lines": 1,
+        "observed_lines": 1,
+        "differences": []
+      },
+      "rotated_-12.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_25.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "rotated_7.png": {
+        "reference_characters": 28,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 3,
+        "reference_lines": 3,
+        "observed_lines": 3,
+        "differences": []
+      },
+      "stress_blurred.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_dark_background.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_low_contrast.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_small_text.png": {
+        "reference_characters": 99,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 5,
+        "reference_lines": 5,
+        "observed_lines": 5,
+        "differences": []
+      },
+      "stress_staggered_columns.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      },
+      "stress_staggered_rotated.png": {
+        "reference_characters": 133,
+        "character_errors": 0,
+        "line_matching_cer": 0.0,
+        "exact_lines": 12,
+        "reference_lines": 12,
+        "observed_lines": 12,
+        "differences": []
+      }
+    }
+  }
+}

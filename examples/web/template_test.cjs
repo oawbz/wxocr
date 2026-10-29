@@ -14,3 +14,14 @@ assert.equal(doc.fields.name,'张三');assert.equal(doc.fields.address,'北京�
 assert(page.indexOf('id="tab-document"')<page.indexOf('id="tab-text"'));
 assert(!script.includes('data.document'));assert(script.includes("fetch('./api/ocr?preview=true&mode='"));assert(page.includes('<option value="fast" selected>'));assert(script.includes("encodeURIComponent($('recognition-mode').value)"));
 console.log('HTML classifier: front, back, ordinary, separate boxes, missing fields, tab order and script syntax passed');
+// Draw every recognized box with the same style and score; leave OCR data intact.
+const drawSource=script.slice(script.indexOf('function displayLines('),script.indexOf("$('boxes').onchange"));
+const strokes=[],labels=[],mockContext={strokeStyle:'',fillStyle:'',strokeRect(...rect){strokes.push({color:this.strokeStyle,rect});},fillText(text){labels.push(text);}};
+const mockCanvas={getContext(){return mockContext;}};
+const drawContext=vm.createContext({canvas:mockCanvas,$:()=>({checked:true})});vm.runInContext(drawSource,drawContext);
+const sample={width:200,height:100,lines:[{text:'accepted',confidence:.96,left:1,top:20,right:30,bottom:40}],candidates:[{text:'low score',confidence:.23,left:50,top:20,right:80,bottom:40}]};
+const before=JSON.stringify(sample);drawContext.draw(sample);
+assert.equal(strokes.length,2);assert.equal(new Set(strokes.map(x=>x.color)).size,1);assert.deepEqual(labels,['1 · 0.96','2 · 0.23']);assert.equal(JSON.stringify(sample),before);
+assert.equal(drawContext.confidenceText(NaN),'—');assert.equal(drawContext.displayLines({}).length,0);
+assert(!page.includes('id="recall-summary"'));assert(!page.includes('低分候选与诊断'));assert(page.includes('>文字框数</span>'));assert(page.includes('>文字框与分数</button>'));
+console.log('Unified frame style, score labels, full box list and immutable OCR data passed');

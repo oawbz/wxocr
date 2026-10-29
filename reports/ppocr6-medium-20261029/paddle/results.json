@@ -1,0 +1,2696 @@
+{
+  "image_tag": "ppocr6-medium:test-20261029",
+  "duration_target_s": 30,
+  "method": "Exploratory: one process, eight resident independent PaddleOCR pipelines, eight closed-loop clients, default native-size detection, CPU threads not yet normalized across OpenCV/BLAS; RAM12GiB, Paddle allocator6000MiB; 30s plus drain. Large requests include allocator-limit errors. Not the later single-core configuration.",
+  "tests": [
+    {
+      "workers": 8,
+      "clients": 8,
+      "workload": "small_default",
+      "requests": 209,
+      "success": 209,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.529942989349365,
+      "requests_per_second": 6.845738299377482,
+      "p50_ms": 1126.0436922311783,
+      "p95_ms": 2534.0836700052023,
+      "samples": [
+        {
+          "time": 1793271884.2723863,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "186.98%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "12.86%",
+            "MemUsage": "1.543GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "7.75MB / 470kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "15, 84.12, 23638"
+        },
+        {
+          "time": 1793271886.6329825,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "214.32%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.14%",
+            "MemUsage": "1.697GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "7.96MB / 497kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "15, 90.18, 23638"
+        },
+        {
+          "time": 1793271889.1470344,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 13,
+          "app_memory_util_percent": 2,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "183.84%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.53%",
+            "MemUsage": "1.743GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "8.36MB / 545kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "8, 85.47, 23638"
+        },
+        {
+          "time": 1793271891.4712777,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 13,
+          "app_memory_util_percent": 2,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "210.41%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.44%",
+            "MemUsage": "1.733GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "8.78MB / 589kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "4, 73.96, 23638"
+        },
+        {
+          "time": 1793271893.8057592,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "175.84%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.55%",
+            "MemUsage": "1.746GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "9.24MB / 639kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 83.89, 23638"
+        },
+        {
+          "time": 1793271896.2096329,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 17,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "161.64%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.20%",
+            "MemUsage": "1.704GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "9.9MB / 708kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "32, 91.60, 23638"
+        },
+        {
+          "time": 1793271898.5382812,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 13,
+          "app_memory_util_percent": 2,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "186.98%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.12%",
+            "MemUsage": "1.694GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "10.5MB / 775kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "16, 107.33, 23638"
+        },
+        {
+          "time": 1793271900.868026,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "188.84%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.41%",
+            "MemUsage": "1.729GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "11.3MB / 854kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "18, 109.34, 23638"
+        },
+        {
+          "time": 1793271903.1786647,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 22,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "186.28%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.70%",
+            "MemUsage": "1.764GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "12.1MB / 944kB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "17, 107.87, 23638"
+        },
+        {
+          "time": 1793271905.5261412,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "191.00%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.42%",
+            "MemUsage": "1.731GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "12.8MB / 1.02MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "22, 106.62, 23638"
+        },
+        {
+          "time": 1793271907.8987594,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "185.02%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.15%",
+            "MemUsage": "1.698GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "13.6MB / 1.11MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "30, 107.59, 23638"
+        },
+        {
+          "time": 1793271910.258586,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "181.77%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.25%",
+            "MemUsage": "1.711GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "14.3MB / 1.19MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "32, 107.29, 23638"
+        },
+        {
+          "time": 1793271912.5450127,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 4,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "185.28%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.41%",
+            "MemUsage": "1.729GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "15.1MB / 1.27MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "13, 109.10, 23638"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 740.8718038350344,
+          "elapsed_ms": 719.7731360793114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2772.903287783265,
+          "elapsed_ms": 2762.3415794223547,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1283.095821738243,
+          "elapsed_ms": 1273.4512072056532,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1509.4152875244617,
+          "elapsed_ms": 1500.9919237345457,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1909.5024541020393,
+          "elapsed_ms": 1898.3057886362076,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1887.4977249652147,
+          "elapsed_ms": 1859.6449866890907,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1037.868095561862,
+          "elapsed_ms": 962.5731743872166,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1257.0471167564392,
+          "elapsed_ms": 1216.1946780979633,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1448.4321288764477,
+          "elapsed_ms": 1438.2932670414448,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 961.1961971968412,
+          "elapsed_ms": 876.7983932048082,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1083.2660794258118,
+          "elapsed_ms": 1059.0330678969622,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1161.8226524442434,
+          "elapsed_ms": 1131.8529285490513,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 547.3933219909668,
+          "elapsed_ms": 537.6580245792866,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1248.6725822091103,
+          "elapsed_ms": 1232.309702783823,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1075.352692976594,
+          "elapsed_ms": 1032.2757344692945,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 552.4032860994339,
+          "elapsed_ms": 511.7986910045147,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1245.6105258315802,
+          "elapsed_ms": 1234.8638866096735,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1241.7762838304043,
+          "elapsed_ms": 1224.402965977788,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 380.0118286162615,
+          "elapsed_ms": 335.46970039606094,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1197.6527087390423,
+          "elapsed_ms": 1182.6112568378448,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1225.3415770828724,
+          "elapsed_ms": 1185.8294680714607,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 424.9009061604738,
+          "elapsed_ms": 417.19014197587967,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1193.2253185659647,
+          "elapsed_ms": 1159.538622945547,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1173.1407660990953,
+          "elapsed_ms": 1160.472258925438,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 425.1816514879465,
+          "elapsed_ms": 410.5010274797678,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1137.4317519366741,
+          "elapsed_ms": 1096.371628344059,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1117.895869538188,
+          "elapsed_ms": 1101.573271676898,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2717.0817479491234,
+          "elapsed_ms": 2705.9534322470427,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 363.1154764443636,
+          "elapsed_ms": 336.59934625029564,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2764.063708484173,
+          "elapsed_ms": 2754.89504262805,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2487.6703713089228,
+          "elapsed_ms": 2465.4923416674137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 491.0835660994053,
+          "elapsed_ms": 472.3407123237848,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1642.7541598677635,
+          "elapsed_ms": 1620.7647193223238,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1241.0657983273268,
+          "elapsed_ms": 1224.0043878555298,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 694.0854303538799,
+          "elapsed_ms": 685.3864882141352,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1553.4985736012459,
+          "elapsed_ms": 1544.1422872245312,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1249.7824784368277,
+          "elapsed_ms": 1201.5901990234852,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 438.73441964387894,
+          "elapsed_ms": 427.72173322737217,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1168.6100382357836,
+          "elapsed_ms": 1157.6592568308115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1082.0366833359003,
+          "elapsed_ms": 1052.915919572115,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 375.6050057709217,
+          "elapsed_ms": 335.61800606548786,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1249.2587380111217,
+          "elapsed_ms": 1198.806719854474,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1074.195759370923,
+          "elapsed_ms": 1051.0950479656458,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 467.1368096023798,
+          "elapsed_ms": 445.53638249635696,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1243.5646951198578,
+          "elapsed_ms": 1224.5582956820726,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1127.882456406951,
+          "elapsed_ms": 1109.5851752907038,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 463.35314586758614,
+          "elapsed_ms": 448.3071640133858,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1141.8208666145802,
+          "elapsed_ms": 1123.4324406832457,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1045.4761758446693,
+          "elapsed_ms": 1033.9660998433828,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 506.81482069194317,
+          "elapsed_ms": 500.12773275375366,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1031.2997121363878,
+          "elapsed_ms": 1021.0323259234428,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1005.9359651058912,
+          "elapsed_ms": 995.264071971178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 479.6816557645798,
+          "elapsed_ms": 445.71293517947197,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2780.7001061737537,
+          "elapsed_ms": 2762.70480081439,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 961.3080825656652,
+          "elapsed_ms": 952.7008756995201,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2557.9301938414574,
+          "elapsed_ms": 2484.0665347874165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1525.70416405797,
+          "elapsed_ms": 1511.2800393253565,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1388.9095075428486,
+          "elapsed_ms": 1376.8050987273455,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1863.5303936898708,
+          "elapsed_ms": 1745.9591198712587,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 969.7180446237326,
+          "elapsed_ms": 960.7877992093563,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 543.8013821840286,
+          "elapsed_ms": 536.3081153482199,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2091.022200882435,
+          "elapsed_ms": 2032.2019215673208,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1172.7394815534353,
+          "elapsed_ms": 1147.768396884203,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 476.00525990128517,
+          "elapsed_ms": 445.42522355914116,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1273.967444896698,
+          "elapsed_ms": 1265.9047432243824,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1039.7488065063953,
+          "elapsed_ms": 1028.4492243081331,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 470.95690853893757,
+          "elapsed_ms": 450.7037531584501,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1133.961658924818,
+          "elapsed_ms": 1102.9421500861645,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1040.4282975941896,
+          "elapsed_ms": 1022.8847842663527,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 552.4593070149422,
+          "elapsed_ms": 523.8499511033297,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1234.3726959079504,
+          "elapsed_ms": 1215.0906212627888,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1066.1318749189377,
+          "elapsed_ms": 1036.1246764659882,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 467.8232315927744,
+          "elapsed_ms": 425.08660815656185,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1239.892166107893,
+          "elapsed_ms": 1200.7830291986465,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1232.0893295109272,
+          "elapsed_ms": 1222.3012913018465,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 454.8965096473694,
+          "elapsed_ms": 445.22652588784695,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1265.8508345484734,
+          "elapsed_ms": 1224.5988138020039,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1099.3073899298906,
+          "elapsed_ms": 1078.33431661129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 389.72960971295834,
+          "elapsed_ms": 381.52495212852955,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 736.5518677979708,
+          "elapsed_ms": 718.6526041477919,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 3073.8868098706007,
+          "elapsed_ms": 3049.5726820081472,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2373.171541839838,
+          "elapsed_ms": 2330.9944551438093,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 562.5299662351608,
+          "elapsed_ms": 494.14791725575924,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1944.8773451149464,
+          "elapsed_ms": 1923.9595048129559,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1471.763949841261,
+          "elapsed_ms": 1455.665908753872,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1021.2315768003464,
+          "elapsed_ms": 1012.1466387063265,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1254.508275538683,
+          "elapsed_ms": 1244.883680716157,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1464.6921306848526,
+          "elapsed_ms": 1456.675661727786,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 858.9355442672968,
+          "elapsed_ms": 846.1491577327251,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1118.8572961837053,
+          "elapsed_ms": 1048.6573688685894,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1070.9597449749708,
+          "elapsed_ms": 1017.094299197197,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 453.7203833460808,
+          "elapsed_ms": 426.2388329952955,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1012.3772751539946,
+          "elapsed_ms": 947.1761770546436,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1144.6345951408148,
+          "elapsed_ms": 1135.1917274296284,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 519.1095285117626,
+          "elapsed_ms": 511.01899705827236,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1100.610863417387,
+          "elapsed_ms": 1088.5455533862114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1106.4658090472221,
+          "elapsed_ms": 1097.09738381207,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 504.72624227404594,
+          "elapsed_ms": 466.80209413170815,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1173.8695222884417,
+          "elapsed_ms": 1094.4814644753933,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1115.8312633633614,
+          "elapsed_ms": 1108.286079019308,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 517.8060010075569,
+          "elapsed_ms": 508.7742079049349,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1229.2659990489483,
+          "elapsed_ms": 1215.7236840575933,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1178.696984425187,
+          "elapsed_ms": 1076.5707604587078,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 410.37433966994286,
+          "elapsed_ms": 377.60983034968376,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1127.8481278568506,
+          "elapsed_ms": 1089.6096024662256,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 951.3494782149792,
+          "elapsed_ms": 904.826745390892,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2534.0836700052023,
+          "elapsed_ms": 2511.9956228882074,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2578.7301287055016,
+          "elapsed_ms": 2548.8173998892307,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1414.837734773755,
+          "elapsed_ms": 1358.3421166986227,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2798.2170693576336,
+          "elapsed_ms": 2755.1339399069548,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1713.901374489069,
+          "elapsed_ms": 1703.9045505225658,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 440.7886005938053,
+          "elapsed_ms": 399.5275553315878,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1276.6646686941385,
+          "elapsed_ms": 1228.6295592784882,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1786.893930286169,
+          "elapsed_ms": 1748.607099056244,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 503.92294488847256,
+          "elapsed_ms": 483.44359546899796,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1178.5838268697262,
+          "elapsed_ms": 1139.611765742302,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1124.7624978423119,
+          "elapsed_ms": 1094.134621322155,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 430.9419374912977,
+          "elapsed_ms": 401.1873584240675,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1110.6101647019386,
+          "elapsed_ms": 1049.1675920784473,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1097.6913049817085,
+          "elapsed_ms": 1087.9616010934114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 449.1764362901449,
+          "elapsed_ms": 380.4762735962868,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1403.524225577712,
+          "elapsed_ms": 1352.809788659215,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1104.3762564659119,
+          "elapsed_ms": 1082.0531193166971,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 402.06756070256233,
+          "elapsed_ms": 393.3562710881233,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1144.162230193615,
+          "elapsed_ms": 1122.0805905759335,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1346.7120882123709,
+          "elapsed_ms": 1267.9233849048615,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 458.0572061240673,
+          "elapsed_ms": 432.70039930939674,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1088.2597882300615,
+          "elapsed_ms": 1040.6017396599054,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1189.5353272557259,
+          "elapsed_ms": 1180.0913512706757,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 438.6831000447273,
+          "elapsed_ms": 429.7503586858511,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1194.6244798600674,
+          "elapsed_ms": 1178.840259090066,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2536.4426616579294,
+          "elapsed_ms": 2516.1680672317743,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1074.0017239004374,
+          "elapsed_ms": 1004.052072763443,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2376.732924953103,
+          "elapsed_ms": 2342.7984435111284,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1785.280043259263,
+          "elapsed_ms": 1322.659371420741,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 974.5098520070314,
+          "elapsed_ms": 868.7177766114473,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1964.7007584571838,
+          "elapsed_ms": 1885.1624503731728,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1237.8141470253468,
+          "elapsed_ms": 1221.2075628340244,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 454.5404464006424,
+          "elapsed_ms": 438.5946374386549,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1587.5720530748367,
+          "elapsed_ms": 1542.3101391643286,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1516.1254648119211,
+          "elapsed_ms": 1168.1845542043447,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 504.05927561223507,
+          "elapsed_ms": 473.0356354266405,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1191.719964146614,
+          "elapsed_ms": 1134.7835082560778,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1021.9461563974619,
+          "elapsed_ms": 1005.3749475628138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 434.57755632698536,
+          "elapsed_ms": 427.34360322356224,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1181.2494341284037,
+          "elapsed_ms": 1171.4555267244577,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1080.192832276225,
+          "elapsed_ms": 1046.5404950082302,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 374.7414331883192,
+          "elapsed_ms": 368.49827505648136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1312.0732512325048,
+          "elapsed_ms": 1298.5921949148178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1251.7971396446228,
+          "elapsed_ms": 1213.0068745464087,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 527.2513069212437,
+          "elapsed_ms": 510.6126703321934,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1197.2875948995352,
+          "elapsed_ms": 1147.4494989961386,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1210.90854331851,
+          "elapsed_ms": 1164.0939433127642,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 591.0093896090984,
+          "elapsed_ms": 494.1364359110594,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1129.4755823910236,
+          "elapsed_ms": 1062.372786924243,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1106.1866357922554,
+          "elapsed_ms": 1067.1321135014296,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 487.96701803803444,
+          "elapsed_ms": 478.7406027317047,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 929.373374208808,
+          "elapsed_ms": 890.6089942902327,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2786.4713948220015,
+          "elapsed_ms": 2748.7127147614956,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2257.8024435788393,
+          "elapsed_ms": 2198.1525514274836,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 708.0581784248352,
+          "elapsed_ms": 525.7863532751799,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2882.332907989621,
+          "elapsed_ms": 2800.9850680828094,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1738.4535353630781,
+          "elapsed_ms": 1690.7171439379454,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 452.4247068911791,
+          "elapsed_ms": 444.76713985204697,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1802.5434017181396,
+          "elapsed_ms": 1784.0778846293688,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1638.2059715688229,
+          "elapsed_ms": 1596.7267528176308,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 512.0843909680843,
+          "elapsed_ms": 481.3844095915556,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1117.4392588436604,
+          "elapsed_ms": 1105.0092726945877,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1124.5803199708462,
+          "elapsed_ms": 1104.3406631797552,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 437.1720254421234,
+          "elapsed_ms": 415.31084664165974,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1131.444476544857,
+          "elapsed_ms": 1090.3710275888443,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1114.8915104568005,
+          "elapsed_ms": 1089.4478168338537,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 537.2527092695236,
+          "elapsed_ms": 512.8468461334705,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1193.4159807860851,
+          "elapsed_ms": 1164.9291198700666,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1253.0864793807268,
+          "elapsed_ms": 1191.9624656438828,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 422.80679754912853,
+          "elapsed_ms": 416.2094835191965,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1154.8018585890532,
+          "elapsed_ms": 1063.9283377677202,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1187.955206260085,
+          "elapsed_ms": 1179.5246303081512,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 495.1269365847111,
+          "elapsed_ms": 451.95054821670055,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1073.1317475438118,
+          "elapsed_ms": 1061.2551383674145,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1281.0753639787436,
+          "elapsed_ms": 1263.8397049158812,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 560.3669937700033,
+          "elapsed_ms": 552.365368232131,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 734.827408567071,
+          "elapsed_ms": 725.2813391387463,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2049.8079620301723,
+          "elapsed_ms": 2028.9089307188988,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2144.8083836585283,
+          "elapsed_ms": 2095.780022442341,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 1106.3962168991566,
+          "elapsed_ms": 1086.1437991261482,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 2090.1006888598204,
+          "elapsed_ms": 2080.44608309865,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 2398.605417460203,
+          "elapsed_ms": 2379.44183498621,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 872.3559435456991,
+          "elapsed_ms": 862.6394998282194,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1321.3113471865654,
+          "elapsed_ms": 1251.5044678002596,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1390.5393816530704,
+          "elapsed_ms": 1356.0449704527855,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 537.621658295393,
+          "elapsed_ms": 531.1347153037786,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1515.0623228400946,
+          "elapsed_ms": 1500.006563961506,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1216.8470304459333,
+          "elapsed_ms": 1181.6671155393124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 524.5247539132833,
+          "elapsed_ms": 516.6352428495884,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1035.7524864375591,
+          "elapsed_ms": 1010.758051648736,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1005.6267119944096,
+          "elapsed_ms": 982.6192613691092,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 472.8855509310961,
+          "elapsed_ms": 439.8456308990717,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1214.1608372330666,
+          "elapsed_ms": 1111.0310181975365,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1104.1980683803558,
+          "elapsed_ms": 1078.7837654352188,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 611.9324900209904,
+          "elapsed_ms": 525.6742294877768,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1246.8505706638098,
+          "elapsed_ms": 1178.1018506735563,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1126.0436922311783,
+          "elapsed_ms": 1112.093348056078,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 423.56662452220917,
+          "elapsed_ms": 395.6021200865507,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1237.2310813516378,
+          "elapsed_ms": 1181.9226313382387,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1189.5298585295677,
+          "elapsed_ms": 1179.5331370085478,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "default",
+          "wall_ms": 384.7712930291891,
+          "elapsed_ms": 375.346127897501,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "default",
+          "wall_ms": 1166.2102080881596,
+          "elapsed_ms": 1156.5618105232716,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "default",
+          "wall_ms": 1107.4309349060059,
+          "elapsed_ms": 1081.9992069154978,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 8,
+      "clients": 8,
+      "workload": "large_default",
+      "requests": 9,
+      "success": 6,
+      "failures": 3,
+      "result_mismatches": 0,
+      "wall_s": 46.98830381594598,
+      "requests_per_second": 0.1276913510966922,
+      "p50_ms": 46589.82043992728,
+      "p95_ms": 46893.90807412565,
+      "samples": [
+        {
+          "time": 1793271916.8631368,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 17,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "639.56%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "19.60%",
+            "MemUsage": "2.352GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 56.17, 23638"
+        },
+        {
+          "time": 1793271919.209792,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "569.44%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "27.94%",
+            "MemUsage": "3.353GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 81.32, 23638"
+        },
+        {
+          "time": 1793271921.5354571,
+          "app_gpu_memory_mib": [
+            6536
+          ],
+          "app_sm_percent": 11,
+          "app_memory_util_percent": 9,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "336.73%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "33.57%",
+            "MemUsage": "4.028GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "12, 149.12, 22862"
+        },
+        {
+          "time": 1793271923.7915468,
+          "app_gpu_memory_mib": [
+            5760
+          ],
+          "app_sm_percent": 4,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.95%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "33.56%",
+            "MemUsage": "4.028GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 61.64, 22862"
+        },
+        {
+          "time": 1793271926.0892272,
+          "app_gpu_memory_mib": [
+            5760
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.97%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "33.56%",
+            "MemUsage": "4.027GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.69, 22862"
+        },
+        {
+          "time": 1793271928.3123724,
+          "app_gpu_memory_mib": [
+            5760
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.93%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "33.56%",
+            "MemUsage": "4.027GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.78, 22862"
+        },
+        {
+          "time": 1793271930.5920405,
+          "app_gpu_memory_mib": [
+            5760
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.95%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "33.56%",
+            "MemUsage": "4.027GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.87, 22862"
+        },
+        {
+          "time": 1793271932.8709567,
+          "app_gpu_memory_mib": [
+            5760
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "55.52%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "32.47%",
+            "MemUsage": "3.896GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 57.24, 23400"
+        },
+        {
+          "time": 1793271935.1710036,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.88%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "32.46%",
+            "MemUsage": "3.896GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.91, 23400"
+        },
+        {
+          "time": 1793271937.4231594,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "4.02%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "32.46%",
+            "MemUsage": "3.896GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.76, 23400"
+        },
+        {
+          "time": 1793271939.6757324,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.98%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "32.46%",
+            "MemUsage": "3.896GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.69, 23400"
+        },
+        {
+          "time": 1793271941.9150717,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.87%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "32.46%",
+            "MemUsage": "3.896GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.70, 23400"
+        },
+        {
+          "time": 1793271944.2039099,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 1,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "156.64%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "16.66%",
+            "MemUsage": "2GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.7MB / 1.4MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "21, 80.25, 23400"
+        },
+        {
+          "time": 1793271946.5524137,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "158.98%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "18.54%",
+            "MemUsage": "2.225GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.45MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "11, 68.43, 23400"
+        },
+        {
+          "time": 1793271948.8271906,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 4,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "2.92%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "19.40%",
+            "MemUsage": "2.328GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.45MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.76, 23400"
+        },
+        {
+          "time": 1793271951.1571636,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "2.98%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "19.40%",
+            "MemUsage": "2.328GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.45MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.78, 23400"
+        },
+        {
+          "time": 1793271953.421134,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "3.37%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "19.40%",
+            "MemUsage": "2.328GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.45MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.96, 23400"
+        },
+        {
+          "time": 1793271955.650136,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "2.90%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "19.40%",
+            "MemUsage": "2.328GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.45MB",
+            "PIDs": "83"
+          },
+          "whole_gpu_util_power_memory": "0, 54.80, 23400"
+        },
+        {
+          "time": 1793271957.902133,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 0,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "86.53%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "19.39%",
+            "MemUsage": "2.327GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.45MB",
+            "PIDs": "81"
+          },
+          "whole_gpu_util_power_memory": "14, 70.83, 23400"
+        },
+        {
+          "time": 1793271960.225808,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 13,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "139.56%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "16.44%",
+            "MemUsage": "1.973GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.51MB",
+            "PIDs": "81"
+          },
+          "whole_gpu_util_power_memory": "22, 99.55, 23400"
+        },
+        {
+          "time": 1793271962.525616,
+          "app_gpu_memory_mib": [
+            6298
+          ],
+          "app_sm_percent": 22,
+          "app_memory_util_percent": 2,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "147.33%",
+            "Container": "ppocr6-medium-test",
+            "ID": "2fb8d54448ac",
+            "MemPerc": "14.91%",
+            "MemUsage": "1.789GiB / 12GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "29.1MB / 1.66MB",
+            "PIDs": "81"
+          },
+          "whole_gpu_util_power_memory": "0, 81.72, 23400"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "default",
+          "wall_ms": 46987.36844398081,
+          "elapsed_ms": 46915.37746973336,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "default",
+          "wall_ms": 29667.707908898592,
+          "elapsed_ms": 29588.38195167482,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 500,
+          "wall_ms": 12106.095680966973,
+          "error": "Internal Server Error"
+        },
+        {
+          "status": 500,
+          "wall_ms": 27035.50721332431,
+          "error": "Internal Server Error"
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "default",
+          "wall_ms": 46893.90807412565,
+          "elapsed_ms": 46813.86596336961,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 500,
+          "wall_ms": 27123.324712738395,
+          "error": "Internal Server Error"
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "default",
+          "wall_ms": 46871.62694334984,
+          "elapsed_ms": 46770.50841227174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "default",
+          "wall_ms": 46308.01393650472,
+          "elapsed_ms": 46225.06023198366,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "default",
+          "wall_ms": 43555.09515851736,
+          "elapsed_ms": 43477.25227661431,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    }
+  ],
+  "startup": [
+    {
+      "workers": 8,
+      "idle": {
+        "time": 1793271881.9761398,
+        "app_gpu_memory_mib": [
+          6536
+        ],
+        "app_sm_percent": 25,
+        "app_memory_util_percent": 9,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.23%",
+          "Container": "ppocr6-medium-test",
+          "ID": "2fb8d54448ac",
+          "MemPerc": "10.48%",
+          "MemUsage": "1.258GiB / 12GiB",
+          "Name": "ppocr6-medium-test",
+          "NetIO": "7.13MB / 442kB",
+          "PIDs": "76"
+        },
+        "whole_gpu_util_power_memory": "0, 73.38, 23638"
+      }
+    }
+  ]
+}

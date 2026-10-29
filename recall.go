@@ -313,7 +313,7 @@ func mergePassResults(r *Result) {
 	for _, c := range r.Candidates {
 		duplicate := false
 		for _, line := range kept {
-			if duplicateLine(c.Line, line) || sameTextLocation(c.Line, line) {
+			if duplicateLine(c.Line, line) || sameTextLocation(c.Line, line) || candidateFragment(c.Line, line) {
 				duplicate = true
 				break
 			}
@@ -536,4 +536,22 @@ func cropImage(src image.Image, rect image.Rectangle) image.Image {
 		return im.SubImage(rect)
 	}
 	return imageView{src, rect}
+}
+
+// Whole-page detections can split a word that a local pass already recognized
+// completely. Suppress only strict text fragments spatially covered by body
+// text; keep the observation in Diagnostics. A wider coarse detection may have
+// up to 40% padding outside the accurate local box, but its center must be inside.
+func candidateFragment(fragment, complete Line) bool {
+	area := lineArea(fragment)
+	if area <= 0 || area >= lineArea(complete)*.85 || lineIntersection(fragment, complete) < area*.6 {
+		return false
+	}
+	cx, cy := (fragment.Left+fragment.Right)/2, (fragment.Top+fragment.Bottom)/2
+	if cx < complete.Left || cx >= complete.Right || cy < complete.Top || cy >= complete.Bottom {
+		return false
+	}
+	compact := func(s string) string { return strings.Join(strings.Fields(s), "") }
+	a, b := compact(fragment.Text), compact(complete.Text)
+	return a != "" && a != b && strings.Contains(b, a)
 }

@@ -1,0 +1,1 @@
+{"total_gpu_memory_mib": 24009, "threshold": 23800, "action": "stop only ppocr6-medium-test"}

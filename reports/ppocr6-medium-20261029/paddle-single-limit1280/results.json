@@ -1,0 +1,1625 @@
+{
+  "image_tag": "ppocr6-medium:test-20261029",
+  "duration_target_s": 15,
+  "method": "One resident PaddleOCR pipeline, one client, one CPU core quota; Paddle/OpenCV/OpenBLAS/OMP/MKL threads1; GPU4090 with Paddle allocator6000MiB; container RAM4GiB; default native detection and generic max long edge1280 evaluated separately; 15 seconds plus drain. Production unchanged.",
+  "tests": [
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "small_limit1280",
+      "requests": 131,
+      "success": 131,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 15.065310571342707,
+      "requests_per_second": 8.695472913063519,
+      "p50_ms": 131.36840611696243,
+      "p95_ms": 137.36496306955814,
+      "samples": [
+        {
+          "time": 1793272589.089573,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.45%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "30.34%",
+            "MemUsage": "1.213GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "7.67MB / 494kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "26, 108.35, 18804"
+        },
+        {
+          "time": 1793272591.319565,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.48%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.45%",
+            "MemUsage": "1.178GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "8.42MB / 579kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "22, 108.83, 18804"
+        },
+        {
+          "time": 1793272593.5699985,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.43%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.46%",
+            "MemUsage": "1.178GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "9.19MB / 662kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "27, 107.20, 18804"
+        },
+        {
+          "time": 1793272595.8716776,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.21%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.46%",
+            "MemUsage": "1.178GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "9.96MB / 745kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "18, 108.66, 18804"
+        },
+        {
+          "time": 1793272598.1411343,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 22,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.50%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.45%",
+            "MemUsage": "1.178GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "10.7MB / 825kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "29, 110.47, 18804"
+        },
+        {
+          "time": 1793272600.3876233,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.21%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.46%",
+            "MemUsage": "1.178GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "11.5MB / 913kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "27, 109.54, 18804"
+        },
+        {
+          "time": 1793272602.6848547,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 21,
+          "app_memory_util_percent": 3,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.51%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.80%",
+            "MemUsage": "1.192GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "12.2MB / 988kB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "26, 90.36, 18804"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.67883825302124,
+          "elapsed_ms": 68.83423216640949,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 134.97635535895824,
+          "elapsed_ms": 126.18584930896759,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 132.04791583120823,
+          "elapsed_ms": 122.82760441303253,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.45496490597725,
+          "elapsed_ms": 67.23882630467415,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.45311444997787,
+          "elapsed_ms": 127.08130106329918,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 132.7687483280897,
+          "elapsed_ms": 123.59397672116756,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 77.00823992490768,
+          "elapsed_ms": 69.8690190911293,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.4192215949297,
+          "elapsed_ms": 126.87894701957703,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 132.1941465139389,
+          "elapsed_ms": 122.52732552587986,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.85707646608353,
+          "elapsed_ms": 66.96075946092606,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.784431964159,
+          "elapsed_ms": 123.94954077899456,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 133.47236812114716,
+          "elapsed_ms": 123.6528567969799,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.11892323195934,
+          "elapsed_ms": 65.88515266776085,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 137.36496306955814,
+          "elapsed_ms": 127.77385115623474,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 136.46080531179905,
+          "elapsed_ms": 127.21526063978672,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.69645887613297,
+          "elapsed_ms": 68.16712394356728,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 134.3798153102398,
+          "elapsed_ms": 125.04352629184723,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 129.47189807891846,
+          "elapsed_ms": 119.89318393170834,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.0799717605114,
+          "elapsed_ms": 67.24078394472599,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.80421172082424,
+          "elapsed_ms": 126.26476585865021,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 136.89923286437988,
+          "elapsed_ms": 127.52355821430683,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 78.50640825927258,
+          "elapsed_ms": 71.43761403858662,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.2036390453577,
+          "elapsed_ms": 125.49841962754726,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 130.31058385968208,
+          "elapsed_ms": 120.71446888148785,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.5142882913351,
+          "elapsed_ms": 66.6268840432167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 132.14334659278393,
+          "elapsed_ms": 122.6567979902029,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 130.4301992058754,
+          "elapsed_ms": 120.8877693861723,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.81630332767963,
+          "elapsed_ms": 67.58123822510242,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 143.33789609372616,
+          "elapsed_ms": 133.31956043839455,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.4285770058632,
+          "elapsed_ms": 122.625932097435,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 75.74350014328957,
+          "elapsed_ms": 68.5725249350071,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 132.79678113758564,
+          "elapsed_ms": 123.08697775006294,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 130.3433794528246,
+          "elapsed_ms": 120.9496520459652,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.31840507686138,
+          "elapsed_ms": 66.0606287419796,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.40273313224316,
+          "elapsed_ms": 123.67232143878937,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 133.86289030313492,
+          "elapsed_ms": 124.10899810492992,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.73726011812687,
+          "elapsed_ms": 67.89387203752995,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 138.41752335429192,
+          "elapsed_ms": 128.7898924201727,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.20746798813343,
+          "elapsed_ms": 122.09692038595676,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 77.78837718069553,
+          "elapsed_ms": 70.80278359353542,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.09842211008072,
+          "elapsed_ms": 126.43783539533615,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 136.88915967941284,
+          "elapsed_ms": 127.61850841343403,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 78.48354056477547,
+          "elapsed_ms": 71.47069647908211,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 142.19933561980724,
+          "elapsed_ms": 132.99565017223358,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 135.11445187032223,
+          "elapsed_ms": 126.16823241114616,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.04318435490131,
+          "elapsed_ms": 66.57521240413189,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.83233733475208,
+          "elapsed_ms": 125.40513835847378,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.73442520201206,
+          "elapsed_ms": 122.4767193198204,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.54085519909859,
+          "elapsed_ms": 66.35359302163124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.44113528728485,
+          "elapsed_ms": 123.73224273324013,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 136.61056570708752,
+          "elapsed_ms": 127.42687202990055,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 75.86170919239521,
+          "elapsed_ms": 68.55824030935764,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.58954153954983,
+          "elapsed_ms": 123.87913092970848,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.36840611696243,
+          "elapsed_ms": 121.55934795737267,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.31240379810333,
+          "elapsed_ms": 67.0719314366579,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.2182553857565,
+          "elapsed_ms": 126.50002725422382,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 136.32427528500557,
+          "elapsed_ms": 127.66064703464508,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 79.29062284529209,
+          "elapsed_ms": 70.7922000437975,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.2357996404171,
+          "elapsed_ms": 125.2460852265358,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 127.33972072601318,
+          "elapsed_ms": 121.6683927923441,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 87.02835813164711,
+          "elapsed_ms": 81.67520351707935,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 160.28437204658985,
+          "elapsed_ms": 150.34506656229496,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 130.49938715994358,
+          "elapsed_ms": 120.64303830265999,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.72291758656502,
+          "elapsed_ms": 66.59288704395294,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.7804648578167,
+          "elapsed_ms": 126.2537743896246,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 133.24235193431377,
+          "elapsed_ms": 123.75814467668533,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.86581599712372,
+          "elapsed_ms": 66.75539165735245,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.52317768335342,
+          "elapsed_ms": 126.09225511550903,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 128.09410691261292,
+          "elapsed_ms": 118.79514344036579,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.92777316272259,
+          "elapsed_ms": 66.81166030466557,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 134.4338972121477,
+          "elapsed_ms": 124.9141525477171,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 129.24998626112938,
+          "elapsed_ms": 119.85766887664795,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 71.53677754104137,
+          "elapsed_ms": 64.87690657377243,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.07944871485233,
+          "elapsed_ms": 123.47083911299706,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.30339980125427,
+          "elapsed_ms": 121.50113470852375,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 76.3199832290411,
+          "elapsed_ms": 69.11643221974373,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.20001401007175,
+          "elapsed_ms": 123.1271717697382,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 128.4091603010893,
+          "elapsed_ms": 118.70761029422283,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.25889356434345,
+          "elapsed_ms": 66.06628745794296,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.73439621925354,
+          "elapsed_ms": 127.03515775501728,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 135.27997955679893,
+          "elapsed_ms": 126.29757821559906,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 72.49525561928749,
+          "elapsed_ms": 65.34222885966301,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.17462292313576,
+          "elapsed_ms": 126.44563056528568,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 128.33309918642044,
+          "elapsed_ms": 119.17098052799702,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 72.21999578177929,
+          "elapsed_ms": 65.70868194103241,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 134.0414434671402,
+          "elapsed_ms": 124.30895492434502,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 130.01116923987865,
+          "elapsed_ms": 120.44797651469707,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 71.8185156583786,
+          "elapsed_ms": 65.50434045493603,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 131.28257915377617,
+          "elapsed_ms": 121.78749032318592,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 134.9353827536106,
+          "elapsed_ms": 125.36080367863178,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.11728037893772,
+          "elapsed_ms": 66.0035815089941,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 134.89899598062038,
+          "elapsed_ms": 125.24193525314331,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 132.1307271718979,
+          "elapsed_ms": 122.31024354696274,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 77.56536453962326,
+          "elapsed_ms": 70.41101343929768,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 136.74617186188698,
+          "elapsed_ms": 126.95626728236675,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 137.03468069434166,
+          "elapsed_ms": 127.6825238019228,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 72.25420884788036,
+          "elapsed_ms": 66.76513142883778,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 130.61738200485706,
+          "elapsed_ms": 121.75337225198746,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 127.14098766446114,
+          "elapsed_ms": 117.99291335046291,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.85191151499748,
+          "elapsed_ms": 67.92430952191353,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 137.31114380061626,
+          "elapsed_ms": 127.7061440050602,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 134.11961495876312,
+          "elapsed_ms": 125.9997971355915,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 72.3959431052208,
+          "elapsed_ms": 66.27914868295193,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.75198128819466,
+          "elapsed_ms": 125.94651617109776,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 129.58697974681854,
+          "elapsed_ms": 120.01675926148891,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.3699949234724,
+          "elapsed_ms": 67.21103563904762,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 129.18615899980068,
+          "elapsed_ms": 119.49417367577553,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 133.1384778022766,
+          "elapsed_ms": 123.42188507318497,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.04415123164654,
+          "elapsed_ms": 66.83536060154438,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 131.24625012278557,
+          "elapsed_ms": 121.37976288795471,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.46835193037987,
+          "elapsed_ms": 121.713662520051,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.22020083665848,
+          "elapsed_ms": 65.9574419260025,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 134.69812832772732,
+          "elapsed_ms": 124.80471655726433,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.81709311902523,
+          "elapsed_ms": 122.11563065648079,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 72.76195287704468,
+          "elapsed_ms": 65.54947979748249,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.9929047971964,
+          "elapsed_ms": 124.4844812899828,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 130.56388311088085,
+          "elapsed_ms": 120.82477658987045,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 73.648227378726,
+          "elapsed_ms": 66.85939989984035,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 133.4491167217493,
+          "elapsed_ms": 123.64672869443893,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 133.91187228262424,
+          "elapsed_ms": 124.07508306205273,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 74.97630454599857,
+          "elapsed_ms": 67.80153512954712,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 137.2999455779791,
+          "elapsed_ms": 127.39975191652775,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 131.24368898570538,
+          "elapsed_ms": 121.54617346823215,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 70.23044489324093,
+          "elapsed_ms": 64.70196321606636,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 170.11958733201027,
+          "elapsed_ms": 162.31714561581612,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 171.93296551704407,
+          "elapsed_ms": 162.3502764850855,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 92.9307509213686,
+          "elapsed_ms": 85.82400158047676,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 166.160823777318,
+          "elapsed_ms": 156.53294883668423,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "limit1280",
+          "wall_ms": 136.28847897052765,
+          "elapsed_ms": 127.19609774649143,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "limit1280",
+          "wall_ms": 75.47404989600182,
+          "elapsed_ms": 68.47149692475796,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "limit1280",
+          "wall_ms": 135.41103526949883,
+          "elapsed_ms": 125.90664066374302,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_limit1280",
+      "requests": 11,
+      "success": 11,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 15.201689671725035,
+      "requests_per_second": 0.7236037728397964,
+      "p50_ms": 1367.9396491497755,
+      "p95_ms": 1418.8538528978825,
+      "samples": [
+        {
+          "time": 1793272605.8167386,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 19,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.22%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "31.60%",
+            "MemUsage": "1.264GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "15MB / 1.06MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "30, 95.68, 18804"
+        },
+        {
+          "time": 1793272608.0566506,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 17,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.72%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "30.51%",
+            "MemUsage": "1.22GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "17.8MB / 1.17MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "16, 86.10, 18804"
+        },
+        {
+          "time": 1793272610.286378,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 14,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.67%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.83%",
+            "MemUsage": "1.193GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "20.6MB / 1.28MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "21, 86.99, 18804"
+        },
+        {
+          "time": 1793272612.5529356,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 18,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.58%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "30.52%",
+            "MemUsage": "1.221GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "21.9MB / 1.33MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "28, 87.44, 18804"
+        },
+        {
+          "time": 1793272614.831307,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 16,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.76%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "30.42%",
+            "MemUsage": "1.217GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "24.7MB / 1.44MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "16, 86.77, 18804"
+        },
+        {
+          "time": 1793272617.099187,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 16,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.71%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "29.49%",
+            "MemUsage": "1.18GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "27.5MB / 1.55MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "30, 87.34, 18804"
+        },
+        {
+          "time": 1793272619.3642223,
+          "app_gpu_memory_mib": [
+            1702
+          ],
+          "app_sm_percent": 19,
+          "app_memory_util_percent": 1,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.89%",
+            "Container": "ppocr6-medium-test",
+            "ID": "3512ca8fbc48",
+            "MemPerc": "30.52%",
+            "MemUsage": "1.221GiB / 4GiB",
+            "Name": "ppocr6-medium-test",
+            "NetIO": "28.9MB / 1.61MB",
+            "PIDs": "5"
+          },
+          "whole_gpu_util_power_memory": "20, 94.23, 18804"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1369.82611566782,
+          "elapsed_ms": 1330.778080970049,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1368.4579767286777,
+          "elapsed_ms": 1332.571404054761,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1354.4772174209356,
+          "elapsed_ms": 1317.115556448698,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1375.8398350328207,
+          "elapsed_ms": 1337.7551902085543,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1517.986722290516,
+          "elapsed_ms": 1478.0179969966412,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1353.4620068967342,
+          "elapsed_ms": 1316.342892125249,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1359.4243936240673,
+          "elapsed_ms": 1322.7002676576376,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1354.722848162055,
+          "elapsed_ms": 1316.5892008692026,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1367.9396491497755,
+          "elapsed_ms": 1329.723907634616,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1356.6884864121675,
+          "elapsed_ms": 1320.7632433623075,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "limit1280",
+          "wall_ms": 1418.8538528978825,
+          "elapsed_ms": 1381.2096677720547,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    }
+  ],
+  "startup": [
+    {
+      "workers": 1,
+      "idle": {
+        "time": 1793272586.9031396,
+        "app_gpu_memory_mib": [
+          1702
+        ],
+        "app_sm_percent": 19,
+        "app_memory_util_percent": 1,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.23%",
+          "Container": "ppocr6-medium-test",
+          "ID": "3512ca8fbc48",
+          "MemPerc": "29.45%",
+          "MemUsage": "1.178GiB / 4GiB",
+          "Name": "ppocr6-medium-test",
+          "NetIO": "7.13MB / 441kB",
+          "PIDs": "5"
+        },
+        "whole_gpu_util_power_memory": "0, 62.76, 18804"
+      }
+    }
+  ],
+  "profile": "limit1280"
+}

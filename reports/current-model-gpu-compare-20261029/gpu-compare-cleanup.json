@@ -1,0 +1,11 @@
+{
+  "production": {
+    "image_tag": "wxocr-web:cuda-fragment-20261029",
+    "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+    "pid": 1218640,
+    "health": "healthy",
+    "restarts": 0
+  },
+  "remaining_test_containers": "",
+  "gpu_state": "0, NVIDIA GeForce RTX 4070 Ti, GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5, 12282 MiB, 160 MiB, 0 %, 570.144\n1, NVIDIA GeForce RTX 4090, GPU-6588571c-ad16-6d6c-b753-622e2886b1e8, 24564 MiB, 17096 MiB, 0 %, 570.144"
+}

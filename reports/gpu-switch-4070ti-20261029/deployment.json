@@ -1,0 +1,123 @@
+{
+  "before": {
+    "image_tag": "wxocr-web:cuda-fragment-20261029",
+    "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+    "pid": 1218640,
+    "health": "healthy",
+    "running": true,
+    "restarts": 0,
+    "devices": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "1"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "nano_cpus": 0,
+    "memory_limit_bytes": 4294967296
+  },
+  "target_gpu_uuid": "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5",
+  "status": "deployed",
+  "env_existed": false,
+  "config_sha256_before": "2047217ab3a962eea6c367af0a41ddc45bc70a3f7b79afe45151265c2818b3a4",
+  "compose_output": "Container wxocr-4090-ocr-1  Recreate\n Container wxocr-4090-ocr-1  Recreated\n Container wxocr-4090-ocr-1  Starting\n Container wxocr-4090-ocr-1  Started",
+  "after": {
+    "image_tag": "wxocr-web:cuda-fragment-20261029",
+    "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+    "pid": 1746738,
+    "health": "healthy",
+    "running": true,
+    "restarts": 0,
+    "devices": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "nano_cpus": 0,
+    "memory_limit_bytes": 4294967296
+  },
+  "visible_device": "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5, NVIDIA GeForce RTX 4070 Ti",
+  "settings": {
+    "engine_workers": 8,
+    "max_concurrent_tasks": 8,
+    "requests_per_minute": 0
+  },
+  "acceptance_requests": [
+    {
+      "image": "chinese.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 205.80260269343853,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "dense_invoice.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 285.3122502565384,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "layout_two_columns.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 298.7738884985447,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "accuracy-sample.jpg",
+      "mode": "high_resolution",
+      "http_status": 200,
+      "wall_ms": 2659.721804782748,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "chinese.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 198.95771890878677,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "dense_invoice.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 273.4886594116688,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "layout_two_columns.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 229.80328276753426,
+      "accepted_text_multiset_matches_4070_reference": true
+    },
+    {
+      "image": "accuracy-sample.jpg",
+      "mode": "high_resolution",
+      "http_status": 200,
+      "wall_ms": 2610.367715358734,
+      "accepted_text_multiset_matches_4070_reference": true
+    }
+  ],
+  "gpu_state": "0, NVIDIA GeForce RTX 4070 Ti, 4781 MiB, 12282 MiB, 0 %\n1, NVIDIA GeForce RTX 4090, 12367 MiB, 24564 MiB, 0 %",
+  "config_sha256_after": "2047217ab3a962eea6c367af0a41ddc45bc70a3f7b79afe45151265c2818b3a4"
+}

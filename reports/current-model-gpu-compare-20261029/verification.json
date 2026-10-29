@@ -1,0 +1,11 @@
+{
+  "matched_image_and_config_hashes": true,
+  "cases_each_card": 50,
+  "repeats_each_case": 3,
+  "all_repetitions_successful_and_stable": true,
+  "all_load_requests_successful": true,
+  "accepted_text_multiset_equal_cases": 50,
+  "accepted_box_coordinate_max_difference": 0,
+  "test_containers_removed": true,
+  "production_pid_unchanged": 1218640
+}

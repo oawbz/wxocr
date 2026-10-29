@@ -1,0 +1,16 @@
+{
+  "ppocr6-medium-test": {
+    "running": false,
+    "pid": 0,
+    "image": "ppocr6-medium:test-20261029",
+    "restarts": 0,
+    "health": null
+  },
+  "wxocr-4090-ocr-1": {
+    "running": true,
+    "pid": 1218640,
+    "image": "wxocr-web:cuda-fragment-20261029",
+    "restarts": 0,
+    "health": "healthy"
+  }
+}

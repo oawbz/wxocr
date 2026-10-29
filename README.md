@@ -167,3 +167,11 @@ go vet ./...
 普通 logits 模型使用原生 C 紧凑 CTC 证据计算：保留同样的完整字表、贪心标签、blank 概率和序列置信度所需概率，用 double 累加 softmax，不裁剪字符候选、不修改模型。随机 logits、重复标签、空白、并列值及非有限值均与 Go 完整概率参考路径测试比较，置信度允许浮点末位差异。具体模型输出文本仍需以实图回归验证。
 
 对于检测分数较高、识别证据不足的窄小框，会有限次重试：沿文字基线补充相当于字高 15% 的左右边距，并保持页面方向，避免单字被当作竖排旋转。仅当新识别证据至少 0.8 且比原值高 0.1 才替换；`retry_method`、`retry_original_text`、`recognition_quad` 记录重试和实际采样区域。没有根据字符内容选定裁剪或补写字符。
+
+### 识别模式
+
+默认使用快速（通用）模式，仅整图识别。高分辨率模式保留额外分块、区域拆分和窄框重试，适合密集小字与表格，但耗时更长。网页默认选择快速，可在上传区切换。
+
+HTTP：`POST /api/ocr?mode=fast`（可省略）或 `POST /api/ocr?mode=high_resolution`，仍以 multipart 字段 `image` 上传。成功响应新增顶层 `mode`；无效模式返回 HTTP 400 / `invalid_mode`。模式按请求生效，支持并发混用，不重载模型。
+
+Go：`engine.Recognize(ocr.WithHighResolution(ctx, true), img)` 开启高分辨率；不设置时默认快速。

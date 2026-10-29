@@ -1,0 +1,174 @@
+{
+  "4070ti_fast": {
+    "fields": {
+      "sequence": {
+        "correct": 0,
+        "total": 10
+      },
+      "name": {
+        "correct": 5,
+        "total": 10
+      },
+      "birth": {
+        "correct": 8,
+        "total": 10
+      },
+      "work": {
+        "correct": 4,
+        "total": 10
+      },
+      "none": {
+        "correct": 1,
+        "total": 10
+      },
+      "retirement": {
+        "correct": 0,
+        "total": 10
+      },
+      "job": {
+        "correct": 8,
+        "total": 10
+      },
+      "source_numeric_strings": {
+        "correct": 11,
+        "total": 13
+      }
+    },
+    "selected_cells_correct": 26,
+    "selected_cells_total": 70,
+    "accepted_lines": 149,
+    "scored_lines": 149,
+    "candidate_lines": 33,
+    "doc_angle": null,
+    "coordinate_space": "original"
+  },
+  "4070ti_high": {
+    "fields": {
+      "sequence": {
+        "correct": 10,
+        "total": 10
+      },
+      "name": {
+        "correct": 10,
+        "total": 10
+      },
+      "birth": {
+        "correct": 10,
+        "total": 10
+      },
+      "work": {
+        "correct": 10,
+        "total": 10
+      },
+      "none": {
+        "correct": 10,
+        "total": 10
+      },
+      "retirement": {
+        "correct": 10,
+        "total": 10
+      },
+      "job": {
+        "correct": 10,
+        "total": 10
+      },
+      "source_numeric_strings": {
+        "correct": 13,
+        "total": 13
+      }
+    },
+    "selected_cells_correct": 70,
+    "selected_cells_total": 70,
+    "accepted_lines": 214,
+    "scored_lines": 214,
+    "candidate_lines": 12,
+    "doc_angle": null,
+    "coordinate_space": "original"
+  },
+  "4090_fast": {
+    "fields": {
+      "sequence": {
+        "correct": 0,
+        "total": 10
+      },
+      "name": {
+        "correct": 5,
+        "total": 10
+      },
+      "birth": {
+        "correct": 8,
+        "total": 10
+      },
+      "work": {
+        "correct": 4,
+        "total": 10
+      },
+      "none": {
+        "correct": 1,
+        "total": 10
+      },
+      "retirement": {
+        "correct": 0,
+        "total": 10
+      },
+      "job": {
+        "correct": 8,
+        "total": 10
+      },
+      "source_numeric_strings": {
+        "correct": 11,
+        "total": 13
+      }
+    },
+    "selected_cells_correct": 26,
+    "selected_cells_total": 70,
+    "accepted_lines": 149,
+    "scored_lines": 149,
+    "candidate_lines": 33,
+    "doc_angle": null,
+    "coordinate_space": "original"
+  },
+  "4090_high": {
+    "fields": {
+      "sequence": {
+        "correct": 10,
+        "total": 10
+      },
+      "name": {
+        "correct": 10,
+        "total": 10
+      },
+      "birth": {
+        "correct": 10,
+        "total": 10
+      },
+      "work": {
+        "correct": 10,
+        "total": 10
+      },
+      "none": {
+        "correct": 10,
+        "total": 10
+      },
+      "retirement": {
+        "correct": 10,
+        "total": 10
+      },
+      "job": {
+        "correct": 10,
+        "total": 10
+      },
+      "source_numeric_strings": {
+        "correct": 13,
+        "total": 13
+      }
+    },
+    "selected_cells_correct": 70,
+    "selected_cells_total": 70,
+    "accepted_lines": 214,
+    "scored_lines": 214,
+    "candidate_lines": 12,
+    "doc_angle": null,
+    "coordinate_space": "original"
+  }
+}

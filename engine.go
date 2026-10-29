@@ -397,6 +397,11 @@ func (e *Engine) Recognize(ctx context.Context, src image.Image) (*Result, error
 		timing.mark("line_assembly")
 	}
 	mergePassResults(result)
+	if changed, joinErr := e.joinRecognizedFragments(ctx, src, result, direction, lineGeometry, &timing); joinErr != nil {
+		return nil, joinErr
+	} else if changed {
+		mergePassResults(result)
+	}
 	sortLines(result.Lines, direction)
 	timing.mark("line_order")
 	if len(result.Lines) > 0 {

@@ -1,0 +1,1 @@
+{"paddlepaddle-gpu": "3.3.0", "paddleocr": "3.7.0", "paddlex": "3.7.2", "numpy": "2.2.6", "opencv-contrib-python": "4.10.0.84", "fastapi": "0.162.0", "uvicorn": "0.54.0"}

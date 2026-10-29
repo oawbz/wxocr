@@ -33,7 +33,7 @@ CUDA 依赖对应关系见 [ONNX Runtime 官方文档](https://onnxruntime.ai/do
 
 ## 当前识别率优化与双实例部署
 
-默认镜像为 `wxocr-web:cuda-accuracy-20261029`，识别候选筛选和概率收集在 CUDA 上执行，减少结果回传及 CPU CTC 扫描。`startup_warmup: true` 在监听前预热全部模型尺寸，要求 `model_resident: true`；按需加载模式需关闭启动预热。
+默认镜像为 `wxocr-web:cuda-fragment-20261029`，识别候选筛选和概率收集在 CUDA 上执行，减少结果回传及 CPU CTC 扫描。`startup_warmup: true` 在监听前预热全部模型尺寸，要求 `model_resident: true`；按需加载模式需关闭启动预热。
 
 29 张图片的文字、顺序、坐标、段落及置信度与上一版完全一致。热请求对照、首请求对照、阶段耗时和回退方法见 [COMPACT_CTC.md](COMPACT_CTC.md)。
 当前记录为 `validation.json`，上一轮紧凑 CTC 记录为 `validation-compact.json`，更早记录为 `validation-perf.json`，首次部署记录为 `validation-initial.json`。
@@ -43,3 +43,15 @@ CUDA 依赖对应关系见 [ONNX Runtime 官方文档](https://onnxruntime.ai/do
 最新耗时、双路压测、应用显存/CPU/内存和回退说明见 [NATIVE_PREPOST.md](NATIVE_PREPOST.md)。
 
 最新识别率改动已上线，包括高分辨率分块、表格续行拆分、候选与待核对提示。原有 29 张语料正文与旧 GPU 版一致，表格样图前 10 行六组字段完整度均为 10/10；该大图部署后约 2.45 秒，原版约 0.85 秒。完整验证、已知参考差异和回退见 [上线记录](../../../reports/accuracy-deploy-20261029/RESULT.md)。`validation.json` 为本次记录，上一版性能记录在 `validation-native.json`。
+
+## 快速 / 高分辨率开关
+
+当前镜像 `wxocr-web:cuda-modes-20261029`。网页默认快速（通用）；接口默认 `mode=fast`，显式 `mode=high_resolution` 开启上一版增强识别。响应新增 `mode`，非法值返回 400 / `invalid_mode`。支持同一双实例服务并发混用模式，保留原 Token、预热及限速。实测和回退见 [模式上线记录](../../../reports/modes-20261029/RESULT.md)。`validation.json` 为当前记录，上一识别率版本为 `validation-accuracy.json`。
+
+## 当前并发与资源上限
+
+线上已配置 8 个独立常驻引擎、最多 8 个并发任务，`requests_per_minute: 0` 关闭每分钟限速；默认快速模式不变。CPU 没有容器配额或绑核，GPU 没有算力百分比配额。`mem_limit: 4g` 指系统内存 RAM，不含 GPU 显存；8 路压测内存最大采样约 1.80 GiB，暂保留此上限。CUDA 的 `gpu_mem_limit` 是每模型会话 2 GiB 的内存池设置，不是整个应用的显存硬上限；8 路应用显存实测约 4.68 GiB。完整压测见 [8 路记录](../../../reports/concurrency8-20261029/RESULT.md)。
+
+## 当前通用片段处理与分数展示
+
+镜像为 `wxocr-web:cuda-fragment-20261029`。按文本包含、相对几何和分隔线做通用去重及原像素重识别，不含图像专用坐标、词表或字段值修正。网页统一框线和分数展示；原始观察保留在诊断中。默认快速、8 路不限速配置保持。测试、限制及回退见 [通用片段记录](../../../reports/fragment-20261029/RESULT.md)。

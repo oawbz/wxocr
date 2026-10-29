@@ -1,0 +1,18 @@
+{
+  "name": "wxocr-4090-ocr-1",
+  "image_tag": "wxocr-web:cuda-fragment-20261029",
+  "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Pid": 1218640,
+    "ExitCode": 0,
+    "OOMKilled": false,
+    "StartedAt": "2026-10-29T10:16:59.577821363Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "restart_count": 0,
+  "memory_limit_bytes": 4294967296,
+  "nano_cpus": 0,
+  "health_status": "healthy"
+}

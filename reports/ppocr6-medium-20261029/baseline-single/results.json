@@ -1,0 +1,1719 @@
+{
+  "image_tag": "wxocr-web:cuda-fragment-20261029",
+  "duration_target_s": 15,
+  "method": "One resident engine, one client, one CPU core quota and GOMAXPROCS1, RTX4090 GPU; no previews; 15-second closed-loop workloads plus drain; accuracy each image/mode repeated3 times; production unchanged.",
+  "tests": [
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "small_fast",
+      "mode": "fast",
+      "requests": 102,
+      "success": 102,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 15.027690012007952,
+      "requests_per_second": 6.78747032434768,
+      "p50_ms": 144.7068816050887,
+      "p95_ms": 187.26577050983906,
+      "max_ms": 194.20462660491467,
+      "samples": [
+        {
+          "time": 1793272444.1876976,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 10,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.62%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "16.97%",
+            "MemUsage": "695.2MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "17.5MB / 2.32MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "6, 63.05, 18008"
+        },
+        {
+          "time": 1793272446.2374938,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.22%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "17.10%",
+            "MemUsage": "700.4MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "18MB / 2.4MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "6, 62.93, 18008"
+        },
+        {
+          "time": 1793272448.2874725,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "101.07%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "16.96%",
+            "MemUsage": "694.8MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "18.5MB / 2.47MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "5, 62.62, 18008"
+        },
+        {
+          "time": 1793272450.3090582,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.43%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "16.95%",
+            "MemUsage": "694.1MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "19MB / 2.54MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "6, 62.63, 18008"
+        },
+        {
+          "time": 1793272452.2897909,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.52%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "17.00%",
+            "MemUsage": "696.2MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "19.6MB / 2.61MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "4, 62.76, 18008"
+        },
+        {
+          "time": 1793272454.2865965,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.51%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "17.07%",
+            "MemUsage": "699.2MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "20.1MB / 2.68MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "6, 62.29, 18008"
+        },
+        {
+          "time": 1793272456.2911994,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 5,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.42%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "16.73%",
+            "MemUsage": "685.3MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "20.6MB / 2.76MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "8, 62.77, 18008"
+        },
+        {
+          "time": 1793272458.3017592,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 6,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "71.79%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "17.07%",
+            "MemUsage": "699.4MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "21.1MB / 2.83MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "0, 58.74, 18008"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 102.70275734364986,
+          "elapsed_ms": 100,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 149.22336675226688,
+          "elapsed_ms": 146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 126.83249451220036,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 105.77174462378025,
+          "elapsed_ms": 102,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 170.23259960114956,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 125.78616477549076,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 120.77127024531364,
+          "elapsed_ms": 118,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 169.43839937448502,
+          "elapsed_ms": 166,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 143.86899955570698,
+          "elapsed_ms": 140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.6302795112133,
+          "elapsed_ms": 120,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 189.67300467193127,
+          "elapsed_ms": 186,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 160.1831577718258,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 132.78804533183575,
+          "elapsed_ms": 130,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 187.03269585967064,
+          "elapsed_ms": 183,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 131.43637962639332,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 117.38144420087337,
+          "elapsed_ms": 114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 189.29146975278854,
+          "elapsed_ms": 186,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.4723307043314,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 141.02304726839066,
+          "elapsed_ms": 138,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.02163235843182,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 139.05834779143333,
+          "elapsed_ms": 136,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 115.42398482561111,
+          "elapsed_ms": 113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 137.74176873266697,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 184.14220958948135,
+          "elapsed_ms": 181,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 97.52119146287441,
+          "elapsed_ms": 95,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 188.72515857219696,
+          "elapsed_ms": 185,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.08957493305206,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 146.3384348899126,
+          "elapsed_ms": 144,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 184.62473154067993,
+          "elapsed_ms": 181,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 164.58410769701004,
+          "elapsed_ms": 161,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 131.59460201859474,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 165.19207134842873,
+          "elapsed_ms": 162,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 175.0570833683014,
+          "elapsed_ms": 172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 108.95735211670399,
+          "elapsed_ms": 106,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 186.01823039352894,
+          "elapsed_ms": 183,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 176.23114585876465,
+          "elapsed_ms": 173,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 116.40373803675175,
+          "elapsed_ms": 114,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 187.26577050983906,
+          "elapsed_ms": 184,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 167.9899264127016,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 136.3284159451723,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 194.20462660491467,
+          "elapsed_ms": 191,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 166.27258248627186,
+          "elapsed_ms": 163,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 132.59274140000343,
+          "elapsed_ms": 130,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 170.77819630503654,
+          "elapsed_ms": 167,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 179.84743788838387,
+          "elapsed_ms": 176,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 137.57720962166786,
+          "elapsed_ms": 135,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 171.64074815809727,
+          "elapsed_ms": 168,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 158.54674391448498,
+          "elapsed_ms": 155,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 101.09390877187252,
+          "elapsed_ms": 98,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 131.99658878147602,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 145.54476365447044,
+          "elapsed_ms": 142,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 93.4588797390461,
+          "elapsed_ms": 91,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 168.0282261222601,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 153.65138091146946,
+          "elapsed_ms": 150,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 89.14857171475887,
+          "elapsed_ms": 86,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 136.56212203204632,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 150.1085739582777,
+          "elapsed_ms": 147,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 116.3508053869009,
+          "elapsed_ms": 113,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 184.82753075659275,
+          "elapsed_ms": 181,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 157.2580821812153,
+          "elapsed_ms": 154,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 123.96342121064663,
+          "elapsed_ms": 121,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 185.1355265825987,
+          "elapsed_ms": 174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 142.8638994693756,
+          "elapsed_ms": 140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 125.13488903641701,
+          "elapsed_ms": 122,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 193.1037250906229,
+          "elapsed_ms": 190,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 147.78579771518707,
+          "elapsed_ms": 144,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 135.73500327765942,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 180.29110319912434,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 159.0143945068121,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 93.53653714060783,
+          "elapsed_ms": 91,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 179.98220585286617,
+          "elapsed_ms": 177,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 168.39325800538063,
+          "elapsed_ms": 165,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 130.23392856121063,
+          "elapsed_ms": 127,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 156.53902478516102,
+          "elapsed_ms": 153,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 165.74382781982422,
+          "elapsed_ms": 163,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 118.99995990097523,
+          "elapsed_ms": 116,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 176.59802176058292,
+          "elapsed_ms": 173,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 132.55265168845654,
+          "elapsed_ms": 129,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.16809578239918,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 176.92244797945023,
+          "elapsed_ms": 173,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 140.59403911232948,
+          "elapsed_ms": 137,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 122.38386459648609,
+          "elapsed_ms": 119,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 171.5240813791752,
+          "elapsed_ms": 168,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 127.72265262901783,
+          "elapsed_ms": 124,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 119.91887353360653,
+          "elapsed_ms": 117,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 151.27752348780632,
+          "elapsed_ms": 148,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 159.13058631122112,
+          "elapsed_ms": 156,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 101.99288092553616,
+          "elapsed_ms": 99,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 179.31837774813175,
+          "elapsed_ms": 176,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 135.8400397002697,
+          "elapsed_ms": 133,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 130.86087629199028,
+          "elapsed_ms": 128,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 136.76117360591888,
+          "elapsed_ms": 134,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 177.26301960647106,
+          "elapsed_ms": 174,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 106.02949559688568,
+          "elapsed_ms": 103,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 167.45820827782154,
+          "elapsed_ms": 164,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 125.8605308830738,
+          "elapsed_ms": 123,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 120.46917155385017,
+          "elapsed_ms": 118,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 188.1667785346508,
+          "elapsed_ms": 185,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 129.8981588333845,
+          "elapsed_ms": 126,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "chinese.png",
+          "mode": "fast",
+          "wall_ms": 134.42938402295113,
+          "elapsed_ms": 132,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "dense_invoice.png",
+          "mode": "fast",
+          "wall_ms": 171.55401408672333,
+          "elapsed_ms": 168,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "layout_two_columns.png",
+          "mode": "fast",
+          "wall_ms": 147.61510863900185,
+          "elapsed_ms": 144,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_fast",
+      "mode": "fast",
+      "requests": 14,
+      "success": 14,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 16.047043843194842,
+      "requests_per_second": 0.872434832035251,
+      "p50_ms": 1159.6999038010836,
+      "p95_ms": 1214.2204325646162,
+      "max_ms": 1224.5737705379725,
+      "samples": [
+        {
+          "time": 1793272460.324196,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 2,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.98%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "17.98%",
+            "MemUsage": "736.3MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "23.8MB / 2.94MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "15, 66.05, 18008"
+        },
+        {
+          "time": 1793272462.313777,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.21%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "19.24%",
+            "MemUsage": "788.1MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "26.6MB / 3.18MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "14, 65.07, 18008"
+        },
+        {
+          "time": 1793272464.3223383,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.76%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.00%",
+            "MemUsage": "737.2MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "28MB / 3.29MB",
+            "PIDs": "11"
+          },
+          "whole_gpu_util_power_memory": "0, 66.43, 18008"
+        },
+        {
+          "time": 1793272466.3309958,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.37%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "19.27%",
+            "MemUsage": "789.4MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "30.8MB / 3.52MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 65.69, 18008"
+        },
+        {
+          "time": 1793272468.3404896,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "104.15%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "17.95%",
+            "MemUsage": "735.3MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "33.5MB / 3.76MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "14, 65.50, 18008"
+        },
+        {
+          "time": 1793272470.3481085,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.09%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.11%",
+            "MemUsage": "741.7MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "34.9MB / 3.87MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "13, 65.38, 18008"
+        },
+        {
+          "time": 1793272472.375082,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "99.11%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.21%",
+            "MemUsage": "745.7MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "37.7MB / 4.1MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 67.03, 18008"
+        },
+        {
+          "time": 1793272474.383241,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.89%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.68%",
+            "MemUsage": "765MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "40.5MB / 4.34MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "14, 66.64, 18008"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1207.651885226369,
+          "elapsed_ms": 1191,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1030.4398816078901,
+          "elapsed_ms": 1013,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1156.680840998888,
+          "elapsed_ms": 1140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1224.5737705379725,
+          "elapsed_ms": 1209,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1175.0922240316868,
+          "elapsed_ms": 1159,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1075.295740738511,
+          "elapsed_ms": 1058,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1156.2998108565807,
+          "elapsed_ms": 1140,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1067.4584284424782,
+          "elapsed_ms": 1050,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1214.2204325646162,
+          "elapsed_ms": 1198,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1213.8645723462105,
+          "elapsed_ms": 1197,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1112.655684351921,
+          "elapsed_ms": 1098,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1187.314884737134,
+          "elapsed_ms": 1172,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1162.7189666032791,
+          "elapsed_ms": 1146,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "fast",
+          "wall_ms": 1060.150993987918,
+          "elapsed_ms": 1043,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    },
+    {
+      "workers": 1,
+      "clients": 1,
+      "workload": "large_high_resolution",
+      "mode": "high_resolution",
+      "requests": 6,
+      "success": 6,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 15.71009653992951,
+      "requests_per_second": 0.38191999551053823,
+      "p50_ms": 2605.2188677713275,
+      "p95_ms": 2630.7329908013344,
+      "max_ms": 2731.3498351722956,
+      "samples": [
+        {
+          "time": 1793272476.4106522,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.38%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.86%",
+            "MemUsage": "772.5MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "41.9MB / 4.45MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 68.89, 18008"
+        },
+        {
+          "time": 1793272478.4068675,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 11,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.45%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.99%",
+            "MemUsage": "777.9MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "43.2MB / 4.7MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "11, 62.42, 18008"
+        },
+        {
+          "time": 1793272480.4146633,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.38%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "19.10%",
+            "MemUsage": "782.5MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "44.6MB / 4.96MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "8, 64.29, 18008"
+        },
+        {
+          "time": 1793272482.405372,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.07%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.42%",
+            "MemUsage": "754.3MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "44.6MB / 4.96MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 70.34, 18008"
+        },
+        {
+          "time": 1793272484.4305034,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 8,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.32%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.56%",
+            "MemUsage": "760.3MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "46MB / 5.21MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "10, 68.97, 18008"
+        },
+        {
+          "time": 1793272486.4225006,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 11,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "98.65%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.78%",
+            "MemUsage": "769.2MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "47.4MB / 5.47MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "12, 64.54, 18008"
+        },
+        {
+          "time": 1793272488.4301488,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 9,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "97.58%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "19.00%",
+            "MemUsage": "778.1MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "48.8MB / 5.72MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 63.96, 18008"
+        },
+        {
+          "time": 1793272490.484666,
+          "app_gpu_memory_mib": [
+            906
+          ],
+          "app_sm_percent": 7,
+          "app_memory_util_percent": 0,
+          "container": {
+            "BlockIO": "0B / 0B",
+            "CPUPerc": "100.42%",
+            "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+            "ID": "1fc6df8836cb",
+            "MemPerc": "18.60%",
+            "MemUsage": "762MiB / 4GiB",
+            "Name": "adoring_kalam",
+            "NetIO": "48.8MB / 5.72MB",
+            "PIDs": "12"
+          },
+          "whole_gpu_util_power_memory": "0, 69.18, 18008"
+        }
+      ],
+      "requests_detail": [
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2601.6043424606323,
+          "elapsed_ms": 2576,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2630.7329908013344,
+          "elapsed_ms": 2604,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2731.3498351722956,
+          "elapsed_ms": 2705,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2555.8747071772814,
+          "elapsed_ms": 2532,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2608.8333930820227,
+          "elapsed_ms": 2584,
+          "exact": true,
+          "mismatch": null
+        },
+        {
+          "status": 200,
+          "image": "accuracy-sample.jpg",
+          "mode": "high_resolution",
+          "wall_ms": 2579.139309003949,
+          "elapsed_ms": 2554,
+          "exact": true,
+          "mismatch": null
+        }
+      ]
+    }
+  ],
+  "startup": [
+    {
+      "workers": 1,
+      "ready_ms": 12503.893183544278,
+      "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+      "idle": {
+        "time": 1793272407.901194,
+        "app_gpu_memory_mib": [
+          906
+        ],
+        "app_sm_percent": 7,
+        "app_memory_util_percent": 0,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.06%",
+          "Container": "1fc6df8836cb92a0891bbea8300d15365cd85c5601d50a0491647bd1720fba18",
+          "ID": "1fc6df8836cb",
+          "MemPerc": "16.83%",
+          "MemUsage": "689.4MiB / 4GiB",
+          "Name": "adoring_kalam",
+          "NetIO": "6.02kB / 30.5kB",
+          "PIDs": "10"
+        },
+        "whole_gpu_util_power_memory": "0, 56.62, 18008"
+      }
+    }
+  ],
+  "final_states": [
+    {
+      "workers": 1,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1652982,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-29T11:13:16.361415362Z",
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-29T19:13:22.262487751+08:00",
+              "End": "2026-10-29T19:13:22.546326632+08:00",
+              "ExitCode": 1,
+              "Output": "curl: (7) Failed to connect to 127.0.0.1 port 7676 after 0 ms: Connection refused\n"
+            },
+            {
+              "Start": "2026-10-29T19:13:27.547439822+08:00",
+              "End": "2026-10-29T19:13:27.617079641+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:13:57.618227715+08:00",
+              "End": "2026-10-29T19:13:57.67921695+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-29T19:14:27.68020916+08:00",
+              "End": "2026-10-29T19:14:27.762183546+08:00",
+              "ExitCode": 0,
+              "Output": ""
+            }
+          ]
+        }
+      },
+      "restart_count": 0
+    }
+  ],
+  "production_state": "wxocr-web:cuda-fragment-20261029 healthy 0"
+}

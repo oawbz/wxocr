@@ -1,0 +1,331 @@
+{
+  "conditions": {
+    "clients": 1,
+    "resident_engines": 1,
+    "cpu_quota_cores": 1,
+    "container_ram_limit_gib": 4,
+    "gpu": "RTX4090, shared with unchanged existing services",
+    "workload_duration_s": 15,
+    "preview": false,
+    "production_changed": false
+  },
+  "models": {
+    "current_fast": {
+      "accuracy": {
+        "reference_characters": 2464,
+        "character_errors": 9,
+        "exact_lines": 180,
+        "reference_lines": 182,
+        "observed_lines": 183,
+        "line_matching_cer": 0.0036525974025974025,
+        "case_errors": 0
+      },
+      "table_fields": {
+        "fields": {
+          "sequence": {
+            "correct": 0,
+            "total": 10
+          },
+          "name": {
+            "correct": 5,
+            "total": 10
+          },
+          "birth": {
+            "correct": 8,
+            "total": 10
+          },
+          "work": {
+            "correct": 4,
+            "total": 10
+          },
+          "none": {
+            "correct": 1,
+            "total": 10
+          },
+          "retirement": {
+            "correct": 0,
+            "total": 10
+          },
+          "job": {
+            "correct": 8,
+            "total": 10
+          },
+          "source_numeric_strings": {
+            "correct": 11,
+            "total": 13
+          }
+        },
+        "selected_cells_correct": 26,
+        "selected_cells_total": 70,
+        "accepted_lines": 149,
+        "scored_lines": 149,
+        "candidate_lines": 33,
+        "doc_angle": null,
+        "coordinate_space": "original"
+      },
+      "app_gpu_peak_mib": 906,
+      "container_ram_peak_mib": 789.4,
+      "cpu_peak_percent": 104.15,
+      "table_accuracy_run_median_ms": 1078.8216814398766,
+      "tests": [
+        {
+          "workload": "small_fast",
+          "requests": 102,
+          "success": 102,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 15.027690012007952,
+          "requests_per_second": 6.78747032434768,
+          "p50_ms": 144.7068816050887,
+          "p95_ms": 187.26577050983906
+        },
+        {
+          "workload": "large_fast",
+          "requests": 14,
+          "success": 14,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 16.047043843194842,
+          "requests_per_second": 0.872434832035251,
+          "p50_ms": 1159.6999038010836,
+          "p95_ms": 1214.2204325646162
+        }
+      ]
+    },
+    "current_high": {
+      "accuracy": {
+        "reference_characters": 2464,
+        "character_errors": 9,
+        "exact_lines": 180,
+        "reference_lines": 182,
+        "observed_lines": 183,
+        "line_matching_cer": 0.0036525974025974025,
+        "case_errors": 0
+      },
+      "table_fields": {
+        "fields": {
+          "sequence": {
+            "correct": 10,
+            "total": 10
+          },
+          "name": {
+            "correct": 10,
+            "total": 10
+          },
+          "birth": {
+            "correct": 10,
+            "total": 10
+          },
+          "work": {
+            "correct": 10,
+            "total": 10
+          },
+          "none": {
+            "correct": 10,
+            "total": 10
+          },
+          "retirement": {
+            "correct": 10,
+            "total": 10
+          },
+          "job": {
+            "correct": 10,
+            "total": 10
+          },
+          "source_numeric_strings": {
+            "correct": 13,
+            "total": 13
+          }
+        },
+        "selected_cells_correct": 70,
+        "selected_cells_total": 70,
+        "accepted_lines": 214,
+        "scored_lines": 214,
+        "candidate_lines": 12,
+        "doc_angle": null,
+        "coordinate_space": "original"
+      },
+      "app_gpu_peak_mib": 906,
+      "container_ram_peak_mib": 789.4,
+      "cpu_peak_percent": 104.15,
+      "table_accuracy_run_median_ms": 2606.925904750824,
+      "tests": [
+        {
+          "workload": "large_high_resolution",
+          "requests": 6,
+          "success": 6,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 15.71009653992951,
+          "requests_per_second": 0.38191999551053823,
+          "p50_ms": 2605.2188677713275,
+          "p95_ms": 2630.7329908013344
+        }
+      ]
+    },
+    "ppocr6_default": {
+      "accuracy": {
+        "reference_characters": 2464,
+        "character_errors": 0,
+        "exact_lines": 182,
+        "reference_lines": 182,
+        "observed_lines": 182,
+        "line_matching_cer": 0.0,
+        "case_errors": 0
+      },
+      "table_fields": {
+        "fields": {
+          "sequence": {
+            "correct": 10,
+            "total": 10
+          },
+          "name": {
+            "correct": 10,
+            "total": 10
+          },
+          "birth": {
+            "correct": 10,
+            "total": 10
+          },
+          "work": {
+            "correct": 10,
+            "total": 10
+          },
+          "none": {
+            "correct": 10,
+            "total": 10
+          },
+          "retirement": {
+            "correct": 10,
+            "total": 10
+          },
+          "job": {
+            "correct": 10,
+            "total": 10
+          },
+          "source_numeric_strings": {
+            "correct": 13,
+            "total": 13
+          }
+        },
+        "selected_cells_correct": 70,
+        "selected_cells_total": 70,
+        "accepted_lines": 195,
+        "scored_lines": 195,
+        "candidate_lines": 0,
+        "doc_angle": 90,
+        "coordinate_space": "document_oriented"
+      },
+      "app_gpu_peak_mib": 4928,
+      "container_ram_peak_mib": 1587.2,
+      "cpu_peak_percent": 100.54,
+      "table_accuracy_run_median_ms": 1727.572774514556,
+      "tests": [
+        {
+          "workload": "small_default",
+          "requests": 135,
+          "success": 135,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 15.096480766311288,
+          "requests_per_second": 8.942481502129999,
+          "p50_ms": 118.4320468455553,
+          "p95_ms": 141.51562377810478
+        },
+        {
+          "workload": "large_default",
+          "requests": 9,
+          "success": 9,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 15.282698780298233,
+          "requests_per_second": 0.588901222839149,
+          "p50_ms": 1695.2622011303902,
+          "p95_ms": 1715.0068990886211
+        }
+      ]
+    },
+    "ppocr6_1280": {
+      "accuracy": {
+        "reference_characters": 2464,
+        "character_errors": 0,
+        "exact_lines": 182,
+        "reference_lines": 182,
+        "observed_lines": 182,
+        "line_matching_cer": 0.0,
+        "case_errors": 0
+      },
+      "table_fields": {
+        "fields": {
+          "sequence": {
+            "correct": 10,
+            "total": 10
+          },
+          "name": {
+            "correct": 10,
+            "total": 10
+          },
+          "birth": {
+            "correct": 10,
+            "total": 10
+          },
+          "work": {
+            "correct": 10,
+            "total": 10
+          },
+          "none": {
+            "correct": 10,
+            "total": 10
+          },
+          "retirement": {
+            "correct": 10,
+            "total": 10
+          },
+          "job": {
+            "correct": 10,
+            "total": 10
+          },
+          "source_numeric_strings": {
+            "correct": 13,
+            "total": 13
+          }
+        },
+        "selected_cells_correct": 70,
+        "selected_cells_total": 70,
+        "accepted_lines": 193,
+        "scored_lines": 193,
+        "candidate_lines": 0,
+        "doc_angle": 90,
+        "coordinate_space": "document_oriented"
+      },
+      "app_gpu_peak_mib": 1702,
+      "container_ram_peak_mib": 1294.336,
+      "cpu_peak_percent": 100.22,
+      "table_accuracy_run_median_ms": 1366.5966801345348,
+      "tests": [
+        {
+          "workload": "small_limit1280",
+          "requests": 131,
+          "success": 131,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 15.065310571342707,
+          "requests_per_second": 8.695472913063519,
+          "p50_ms": 131.36840611696243,
+          "p95_ms": 137.36496306955814
+        },
+        {
+          "workload": "large_limit1280",
+          "requests": 11,
+          "success": 11,
+          "failures": 0,
+          "result_mismatches": 0,
+          "wall_s": 15.201689671725035,
+          "requests_per_second": 0.7236037728397964,
+          "p50_ms": 1367.9396491497755,
+          "p95_ms": 1418.8538528978825
+        }
+      ]
+    }
+  }
+}

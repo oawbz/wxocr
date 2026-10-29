@@ -1,0 +1,84 @@
+{
+  "config": {
+    "engine_workers": "8",
+    "max_concurrent_tasks": "8",
+    "requests_per_minute": "0"
+  },
+  "mixed_eight_requests": [
+    {
+      "mode": "fast",
+      "elapsed_ms": 1432,
+      "result_sha256": "5aa69d4be9f19b0f543c7740f338193aeccf1351f75cd60e7739ac8196e39ad5",
+      "lines": 148
+    },
+    {
+      "mode": "high_resolution",
+      "elapsed_ms": 2884,
+      "result_sha256": "bb7171e0d3f36f378fde953c845b130d112f2c918a8c916f99e3f63beb2bf181",
+      "lines": 214
+    },
+    {
+      "mode": "fast",
+      "elapsed_ms": 1447,
+      "result_sha256": "5aa69d4be9f19b0f543c7740f338193aeccf1351f75cd60e7739ac8196e39ad5",
+      "lines": 148
+    },
+    {
+      "mode": "high_resolution",
+      "elapsed_ms": 2996,
+      "result_sha256": "bb7171e0d3f36f378fde953c845b130d112f2c918a8c916f99e3f63beb2bf181",
+      "lines": 214
+    },
+    {
+      "mode": "fast",
+      "elapsed_ms": 1511,
+      "result_sha256": "5aa69d4be9f19b0f543c7740f338193aeccf1351f75cd60e7739ac8196e39ad5",
+      "lines": 148
+    },
+    {
+      "mode": "high_resolution",
+      "elapsed_ms": 2952,
+      "result_sha256": "bb7171e0d3f36f378fde953c845b130d112f2c918a8c916f99e3f63beb2bf181",
+      "lines": 214
+    },
+    {
+      "mode": "fast",
+      "elapsed_ms": 1450,
+      "result_sha256": "5aa69d4be9f19b0f543c7740f338193aeccf1351f75cd60e7739ac8196e39ad5",
+      "lines": 148
+    },
+    {
+      "mode": "high_resolution",
+      "elapsed_ms": 3037,
+      "result_sha256": "bb7171e0d3f36f378fde953c845b130d112f2c918a8c916f99e3f63beb2bf181",
+      "lines": 214
+    }
+  ],
+  "quota_check_success": 72,
+  "quota_check_wall_s": 1.1246683448553085,
+  "all_results_exact": true,
+  "image": "wxocr-web:cuda-modes-20261029",
+  "health": "healthy",
+  "restart_count": 0,
+  "oom_killed": false,
+  "system_memory_limit_bytes": 4294967296,
+  "cpu_limits": {
+    "NanoCpus": 0,
+    "CpuQuota": 0,
+    "CpusetCpus": ""
+  },
+  "app_gpu_memory_mib": [
+    4820
+  ],
+  "stats": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.05%",
+    "Container": "wxocr-4090-ocr-1",
+    "ID": "46a68732c83f",
+    "MemPerc": "28.60%",
+    "MemUsage": "1.144GiB / 4GiB",
+    "Name": "wxocr-4090-ocr-1",
+    "NetIO": "15.9MB / 2.05MB",
+    "PIDs": "29"
+  }
+}

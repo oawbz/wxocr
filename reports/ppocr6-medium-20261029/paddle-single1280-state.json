@@ -1,0 +1,18 @@
+{
+  "name": "ppocr6-medium-test",
+  "image_tag": "ppocr6-medium:test-20261029",
+  "image_id": "sha256:fa97995588d646e99cac5c068267f685ab20666b72b9d4364b1a234eb123804f",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Pid": 1672392,
+    "ExitCode": 0,
+    "OOMKilled": false,
+    "StartedAt": "2026-10-29T11:16:01.786971617Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "restart_count": 0,
+  "memory_limit_bytes": 4294967296,
+  "nano_cpus": 1000000000,
+  "health_status": null
+}

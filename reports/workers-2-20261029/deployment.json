@@ -1,0 +1,71 @@
+{
+  "before": {
+    "image": "wxocr-web:cuda-fragment-20261029",
+    "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+    "pid": 1746738,
+    "health": "healthy",
+    "devices": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "restarts": 0
+  },
+  "requested_workers": 2,
+  "requested_concurrency_limit": 2,
+  "status": "deployed",
+  "compose_output": "Container wxocr-4090-ocr-1  Recreate\n Container wxocr-4090-ocr-1  Recreated\n Container wxocr-4090-ocr-1  Starting\n Container wxocr-4090-ocr-1  Started",
+  "after": {
+    "image": "wxocr-web:cuda-fragment-20261029",
+    "image_id": "sha256:68db3c1245fd43f730684ccc066887c1661eff4949e706b4a50c34d12516a054",
+    "pid": 1759776,
+    "health": "healthy",
+    "devices": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "restarts": 0
+  },
+  "checks": [
+    {
+      "image": "chinese.png",
+      "mode": "fast",
+      "http_status": 200,
+      "wall_ms": 152.89042331278324,
+      "accepted_texts_match": true
+    },
+    {
+      "image": "accuracy-sample.jpg",
+      "mode": "high_resolution",
+      "http_status": 200,
+      "wall_ms": 2498.9600237458944,
+      "accepted_texts_match": true
+    }
+  ],
+  "app_gpu_memory": [
+    "GPU-eefd2b51-d4d8-4290-af35-4121fb84dbc5, 1759776, 1276 MiB"
+  ],
+  "gpu_state": "0, NVIDIA GeForce RTX 4070 Ti, 1441 MiB\n1, NVIDIA GeForce RTX 4090, 12367 MiB",
+  "config_sha256": "f31ff3dd7c31b11db028d48133e1a535a186469b53e04ad064808b0bd4cfb557"
+}

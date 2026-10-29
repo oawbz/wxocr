@@ -8,7 +8,7 @@ token: wxocr-local-demo-change-this-token
 max_concurrent_tasks: 2
 engine_workers: 2
 # 全服务有效鉴权请求的令牌桶速率，启动时允许同数突发；0 表示关闭此项。
-requests_per_minute: 60
+requests_per_minute: 0
 # true：启动时加载并常驻；false：每次识别时加载，结束后释放。
 model_resident: true
 # 在监听前预热所有检测尺寸、文字行宽度和段落模型。

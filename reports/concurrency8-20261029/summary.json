@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-29",
+  "method": "Closed-loop client concurrency equals independent engine workers, 30 seconds per workload plus drain; 4GiB container, PID limit256, startup warmup enabled, rate limit0 in isolated localhost container; no previews; every full result checked against the same-image two-worker warm reference. Production remains unchanged.",
+  "image_tag": "wxocr-web:cuda-modes-20261029",
+  "duration_target_s": 30,
+  "startup": [
+    {
+      "workers": 2,
+      "ready_ms": 6985.720951110125,
+      "image_id": "sha256:d3dc959bbb19223a78afb41e13e60e97b1480732c1e79cdecaea8ad4103f8540",
+      "idle": {
+        "time": 1793265413.3795562,
+        "app_gpu_memory_mib": [
+          1486
+        ],
+        "app_sm_percent": 9,
+        "app_memory_util_percent": 0,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.05%",
+          "Container": "9aa69b7604bc366452cabd30f8fc5242c0bd661863eec58e46c61c4082ce0c2e",
+          "ID": "9aa69b7604bc",
+          "MemPerc": "17.74%",
+          "MemUsage": "726.7MiB / 4GiB",
+          "Name": "flamboyant_stonebraker",
+          "NetIO": "3.57kB / 29.3kB",
+          "PIDs": "19"
+        },
+        "whole_gpu_util_power_memory": "0, 56.10, 15340"
+      }
+    },
+    {
+      "workers": 8,
+      "ready_ms": 12862.967181950808,
+      "image_id": "sha256:d3dc959bbb19223a78afb41e13e60e97b1480732c1e79cdecaea8ad4103f8540",
+      "idle": {
+        "time": 1793265527.329949,
+        "app_gpu_memory_mib": [
+          4790
+        ],
+        "app_sm_percent": 10,
+        "app_memory_util_percent": 0,
+        "container": {
+          "BlockIO": "0B / 0B",
+          "CPUPerc": "0.06%",
+          "Container": "d68171fa6cfac3a1a3168843f729da8d434f5525423af6ba02684a7be1f71a06",
+          "ID": "d68171fa6cfa",
+          "MemPerc": "26.23%",
+          "MemUsage": "1.049GiB / 4GiB",
+          "Name": "wonderful_wilson",
+          "NetIO": "5.75kB / 30.5kB",
+          "PIDs": "20"
+        },
+        "whole_gpu_util_power_memory": "0, 57.44, 18644"
+      }
+    }
+  ],
+  "errors": [],
+  "tests": [
+    {
+      "workers": 2,
+      "clients": 2,
+      "workload": "small_fast",
+      "mode": "fast",
+      "requests": 372,
+      "success": 372,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.078189151361585,
+      "requests_per_second": 12.367765829518373,
+      "p50_ms": 171.94789741188288,
+      "p95_ms": 196.83491066098213,
+      "max_ms": 214.6568987518549,
+      "resources": {
+        "sample_count": 15,
+        "app_gpu_memory_peak_mib": 1486,
+        "app_sm_mean_percent": 10.6,
+        "app_sm_max_percent": 13,
+        "container_cpu_peak_percent": 223.15,
+        "container_memory_peak_mib": 774.4
+      },
+      "error_examples": []
+    },
+    {
+      "workers": 2,
+      "clients": 2,
+      "workload": "large_fast",
+      "mode": "fast",
+      "requests": 58,
+      "success": 58,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.552305817604065,
+      "requests_per_second": 1.8983837208967949,
+      "p50_ms": 1054.9149680882692,
+      "p95_ms": 1108.4660310298204,
+      "max_ms": 1125.3905221819878,
+      "resources": {
+        "sample_count": 16,
+        "app_gpu_memory_peak_mib": 1486,
+        "app_sm_mean_percent": 17.3125,
+        "app_sm_max_percent": 20,
+        "container_cpu_peak_percent": 210.68,
+        "container_memory_peak_mib": 911.9
+      },
+      "error_examples": []
+    },
+    {
+      "workers": 2,
+      "clients": 2,
+      "workload": "large_high_resolution",
+      "mode": "high_resolution",
+      "requests": 24,
+      "success": 24,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.576877364888787,
+      "requests_per_second": 0.7849068338011203,
+      "p50_ms": 2520.049446262419,
+      "p95_ms": 2672.505881637335,
+      "max_ms": 2762.1555887162685,
+      "resources": {
+        "sample_count": 16,
+        "app_gpu_memory_peak_mib": 1486,
+        "app_sm_mean_percent": 16.75,
+        "app_sm_max_percent": 25,
+        "container_cpu_peak_percent": 207.88,
+        "container_memory_peak_mib": 939.3
+      },
+      "error_examples": []
+    },
+    {
+      "workers": 8,
+      "clients": 8,
+      "workload": "small_fast",
+      "mode": "fast",
+      "requests": 1462,
+      "success": 1462,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.114650137722492,
+      "requests_per_second": 48.547799602979815,
+      "p50_ms": 175.58251786977053,
+      "p95_ms": 205.49874380230904,
+      "max_ms": 247.88315407931805,
+      "resources": {
+        "sample_count": 15,
+        "app_gpu_memory_peak_mib": 4790,
+        "app_sm_mean_percent": 36.333333333333336,
+        "app_sm_max_percent": 39,
+        "container_cpu_peak_percent": 798.54,
+        "container_memory_peak_mib": 1250.304
+      },
+      "error_examples": []
+    },
+    {
+      "workers": 8,
+      "clients": 8,
+      "workload": "large_fast",
+      "mode": "fast",
+      "requests": 192,
+      "success": 192,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 30.873584711924195,
+      "requests_per_second": 6.218908552133388,
+      "p50_ms": 1263.529864139855,
+      "p95_ms": 1387.1372696012259,
+      "max_ms": 1531.3645713031292,
+      "resources": {
+        "sample_count": 16,
+        "app_gpu_memory_peak_mib": 4790,
+        "app_sm_mean_percent": 47.875,
+        "app_sm_max_percent": 52,
+        "container_cpu_peak_percent": 786.28,
+        "container_memory_peak_mib": 1712.128
+      },
+      "error_examples": []
+    },
+    {
+      "workers": 8,
+      "clients": 8,
+      "workload": "large_high_resolution",
+      "mode": "high_resolution",
+      "requests": 80,
+      "success": 80,
+      "failures": 0,
+      "result_mismatches": 0,
+      "wall_s": 31.41674369573593,
+      "requests_per_second": 2.546412854711549,
+      "p50_ms": 3102.868204936385,
+      "p95_ms": 3312.7378281205893,
+      "max_ms": 3366.0618476569653,
+      "resources": {
+        "sample_count": 16,
+        "app_gpu_memory_peak_mib": 4790,
+        "app_sm_mean_percent": 45.8125,
+        "app_sm_max_percent": 59,
+        "container_cpu_peak_percent": 791.65,
+        "container_memory_peak_mib": 1838.08
+      },
+      "error_examples": []
+    }
+  ],
+  "production_state": "wxocr-web:cuda-modes-20261029 healthy 0",
+  "resources_note": "App GPU memory and SM are per process; CPU and RAM are per container. Observed sampled peaks are not hard maxima. Whole-GPU metrics include other services. Docker CPU100% equals one logical core.",
+  "final_states": [
+    {
+      "workers": 2,
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0
+    },
+    {
+      "workers": 8,
+      "running": true,
+      "oom_killed": false,
+      "restart_count": 0
+    }
+  ],
+  "production_config": {
+    "engine_workers": "2",
+    "max_concurrent_tasks": "2",
+    "requests_per_minute": "60",
+    "model_resident": "true",
+    "startup_warmup": "true"
+  }
+}

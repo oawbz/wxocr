@@ -1,0 +1,16 @@
+{
+  "raw_accuracy_cases": {
+    "baseline_single": 50,
+    "paddle_single_default": 25,
+    "paddle_single_limit1280": 25
+  },
+  "all_three_repetitions_succeeded_and_text_stable": true,
+  "all_single_load_requests_succeeded": true,
+  "source_jpeg_hash_verified_against_local_original": true,
+  "dataset_25_hashes_verified_on_server": true,
+  "scoring_assignment_checked_against_100_exhaustive_small_matrices": true,
+  "python_compile_passed": true,
+  "production_pid_unchanged": 1218640,
+  "production_http_status": 200,
+  "test_container_running": false
+}
